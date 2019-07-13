@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>E:/GIT/my_projects/Blinking_LED/Blinking_LED/Blinking_LED_Blinking_LED.jed</File>
-			<FileTime>07/13/19 20:52:30</FileTime>
-			<JedecChecksum>0xE71D</JedecChecksum>
+			<FileTime>07/13/19 21:08:34</FileTime>
+			<JedecChecksum>0xE737</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

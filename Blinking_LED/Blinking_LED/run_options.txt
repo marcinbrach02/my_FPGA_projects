@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version M-2017.03L-SP1-1
 #--  Project file E:\GIT\my_projects\Blinking_LED\Blinking_LED\run_options.txt
-#--  Written on Sat Jul 13 20:52:15 2019
+#--  Written on Sat Jul 13 21:08:15 2019
 
 
 #project files

@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: MARCIN-VAIO
 
-# Sat Jul 13 20:52:15 2019
+# Sat Jul 13 21:08:15 2019
 
 #Implementation: Blinking_LED
 
@@ -34,14 +34,14 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 Verilog syntax check successful!
 File E:\GIT\my_projects\Blinking_LED\Blinking_LED.v changed - recompiling
 Selecting top level module Blinking_LED
-@N: CG364 :"E:\GIT\my_projects\Blinking_LED\Blinking_LED.v":2:7:2:18|Synthesizing module Blinking_LED in library work.
+@N: CG364 :"E:\GIT\my_projects\Blinking_LED\Blinking_LED.v":1:7:1:18|Synthesizing module Blinking_LED in library work.
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 13 20:52:15 2019
+# Sat Jul 13 21:08:15 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -53,7 +53,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 13 20:52:15 2019
+# Sat Jul 13 21:08:16 2019
 
 ###########################################################]
 @END
@@ -63,7 +63,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 13 20:52:15 2019
+# Sat Jul 13 21:08:16 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -75,10 +75,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Jul 13 20:52:17 2019
+# Sat Jul 13 21:08:17 2019
 
 ###########################################################]
-# Sat Jul 13 20:52:17 2019
+# Sat Jul 13 21:08:17 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -123,8 +123,8 @@ Level     Clock                  Frequency     Period        Type         Group 
 0 -       Blinking_LED|CLK24     1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     26   
 =======================================================================================================
 
-@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":16:1:16:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":22:2:22:7|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":14:1:14:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":20:1:20:6|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -140,13 +140,13 @@ Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jul 13 20:52:18 2019
+# Sat Jul 13 21:08:18 2019
 
 ###########################################################]
-# Sat Jul 13 20:52:18 2019
+# Sat Jul 13 21:08:18 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -179,8 +179,8 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
-@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":22:2:22:7|Found counter in view:work.Blinking_LED(verilog) instance counter2[25:0] 
-@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":16:1:16:6|Found counter in view:work.Blinking_LED(verilog) instance counter[26:0] 
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":20:1:20:6|Found counter in view:work.Blinking_LED(verilog) instance counter2[25:0] 
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":14:1:14:6|Found counter in view:work.Blinking_LED(verilog) instance counter[26:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
@@ -247,7 +247,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00
 
 Writing Analyst data base E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\Blinking_LED_Blinking_LED_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED.edi
@@ -257,14 +257,14 @@ M-2017.03L-SP1-1
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 @W: MT420 |Found inferred clock Blinking_LED|CLK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLK50"
 @W: MT420 |Found inferred clock Blinking_LED|CLK24 with period 1000.00ns. Please declare a user-defined clock on object "p:CLK24"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Jul 13 20:52:19 2019
+# Timing Report written on Sat Jul 13 21:08:21 2019
 #
 
 
@@ -562,10 +562,10 @@ counter[26]           FD1S3DX     D        In      0.000     5.779       -
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -588,10 +588,10 @@ VHI:            1
 VLO:            1
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Jul 13 20:52:20 2019
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sat Jul 13 21:08:21 2019
 
 ###########################################################]
 

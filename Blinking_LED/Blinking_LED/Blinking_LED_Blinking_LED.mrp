@@ -14,7 +14,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  07/13/19  20:53:45
+Mapped on:  07/13/19  21:08:22
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Blinking_LED                                  Date:  07/13/19  20:53:45
+Design:  Blinking_LED                                  Date:  07/13/19  21:08:22
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Signal counter_cry_0_S0[0] undriven or does not drive anything - clipped.
 
 
 
-Design:  Blinking_LED                                  Date:  07/13/19  20:53:45
+Design:  Blinking_LED                                  Date:  07/13/19  21:08:22
 
 Removed logic (cont)
 --------------------

@@ -1,9 +1,9 @@
 C:\lscc\diamond\3.10_x64\synpbase\bin64\c_hdl.exe  -osyn  E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\Blinking_LED_Blinking_LED_comp.srs  -top  Blinking_LED  -hdllog  E:\GIT\my_projects\Blinking_LED\Blinking_LED\synlog\Blinking_LED_Blinking_LED_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver   -I E:\GIT\my_projects\Blinking_LED  -I E:\GIT\my_projects\Blinking_LED\Blinking_LED\  -I C:\lscc\diamond\3.10_x64\synpbase\lib   -v2001  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v  -encrypt  -pro  -dmgen  E:\GIT\my_projects\Blinking_LED\Blinking_LED\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work E:\GIT\my_projects\Blinking_LED\Blinking_LED.v  -jobname  "compiler" 
 relcom:C:\lscc\diamond\3.10_x64\synpbase\bin64\c_hdl.exe -osyn ..\synwork\Blinking_LED_Blinking_LED_comp.srs -top Blinking_LED -hdllog ..\synlog\Blinking_LED_Blinking_LED_compiler.srr -encrypt -mp 4 -verification_mode 0 -verilog -prodtype synplify_pro -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver -I ..\..\..\Blinking_LED -I ..\ -I C:\lscc\diamond\3.10_x64\synpbase\lib -v2001 -devicelib C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v -devicelib C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v -encrypt -pro -dmgen ..\dm -ui -fid2 -ram -sharing on -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work ..\..\Blinking_LED.v -jobname "compiler"
-rc:0 success:1 runtime:1
-file:..\synwork\Blinking_LED_Blinking_LED_comp.srs|io:o|time:1563043935|size:2100|exec:0|csum:
-file:..\synlog\Blinking_LED_Blinking_LED_compiler.srr|io:o|time:1563043935|size:2907|exec:0|csum:
+rc:0 success:1 runtime:2
+file:..\synwork\Blinking_LED_Blinking_LED_comp.srs|io:o|time:1563044896|size:2102|exec:0|csum:
+file:..\synlog\Blinking_LED_Blinking_LED_compiler.srr|io:o|time:1563044896|size:2907|exec:0|csum:
 file:C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1501885416|size:54295|exec:0|csum:D5667017EB528EBD3C317EFCC9D2C19B
 file:C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1501885416|size:40584|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:..\..\Blinking_LED.v|io:i|time:1563043931|size:483|exec:0|csum:B9757FF806B37635D36999E033E4FB5C
+file:..\..\Blinking_LED.v|io:i|time:1563044731|size:488|exec:0|csum:1C47A03CA038667C63B5B764A1AE00F5
 file:C:\lscc\diamond\3.10_x64\synpbase\bin64\c_hdl.exe|io:i|time:1501881158|size:5526016|exec:1|csum:B0FC75282263C9BC65A760D01C67ECBA

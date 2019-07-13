@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jul 13 20:53:46 2019
+Sat Jul 13 21:08:23 2019
 
 C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f Blinking_LED_Blinking_LED.p2t
 Blinking_LED_Blinking_LED_map.ncd Blinking_LED_Blinking_LED.dir
@@ -25,16 +25,16 @@ Preference file: Blinking_LED_Blinking_LED.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            -            -            -            05           Success
+5_1   *      0            -            -            -            -            07           Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 5 secs 
+Total (real) run time for 1-seed: 7 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;Blinking_LED_Blinking_LED_map.ncd&quot;
-Sat Jul 13 20:53:46 2019
+Sat Jul 13 21:08:23 2019
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -91,12 +91,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 Starting Placer Phase 1.
 ....................
 Placer score = 1738.
-Finished Placer Phase 1.  REAL time: 4 secs 
+Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  1738
-Finished Placer Phase 2.  REAL time: 4 secs 
+Finished Placer Phase 2.  REAL time: 5 secs 
 
 
 
@@ -152,9 +152,9 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 0 connections routed; 163 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 5 secs 
+Completed router resource preassignment. Real time: 6 secs 
 
-Start NBR router at 20:53:51 07/13/19
+Start NBR router at 21:08:29 07/13/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -169,24 +169,24 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 20:53:51 07/13/19
+Start NBR special constraint process at 21:08:29 07/13/19
 
-Start NBR section for initial routing at 20:53:51 07/13/19
+Start NBR section for initial routing at 21:08:29 07/13/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 20:53:51 07/13/19
+Start NBR section for normal routing at 21:08:29 07/13/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 
-Start NBR section for re-routing at 20:53:51 07/13/19
+Start NBR section for re-routing at 21:08:29 07/13/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 
-Start NBR section for post-routing at 20:53:51 07/13/19
+Start NBR section for post-routing at 21:08:29 07/13/19
 
 End NBR router with 0 unrouted connection
 
@@ -202,7 +202,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 5 secs 
-Total REAL time: 5 secs 
+Total REAL time: 6 secs 
 Completely routed.
 End of route.  163 routed (100.00%); 0 unrouted.
 
@@ -224,8 +224,8 @@ PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 5 secs 
-Total REAL time to completion: 5 secs 
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 7 secs 
 
 par done!
 

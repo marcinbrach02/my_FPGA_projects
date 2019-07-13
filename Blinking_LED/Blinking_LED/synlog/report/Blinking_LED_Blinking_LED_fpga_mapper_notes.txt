@@ -1,7 +1,7 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":22:2:22:7|Found counter in view:work.Blinking_LED(verilog) instance counter2[25:0] 
-@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":16:1:16:6|Found counter in view:work.Blinking_LED(verilog) instance counter[26:0] 
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":20:1:20:6|Found counter in view:work.Blinking_LED(verilog) instance counter2[25:0] 
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":14:1:14:6|Found counter in view:work.Blinking_LED(verilog) instance counter[26:0] 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 

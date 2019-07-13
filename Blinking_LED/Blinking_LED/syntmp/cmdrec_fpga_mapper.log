@@ -1,11 +1,11 @@
 C:\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  E:\GIT\my_projects\Blinking_LED\Blinking_LED   -part LCMXO2_4000HC  -package TG144C  -grade -4    -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile E:\GIT\my_projects\Blinking_LED\Blinking_LED\synlog\report\Blinking_LED_Blinking_LED_fpga_mapper.xml  -top_level_module  Blinking_LED  -flow mapping  -multisrs  -oedif  E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED.edi   -freq 1.000   E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\Blinking_LED_Blinking_LED_prem.srd  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  E:\GIT\my_projects\Blinking_LED\Blinking_LED\syntmp\Blinking_LED_Blinking_LED.plg  -osyn  E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED.srm  -prjdir  E:\GIT\my_projects\Blinking_LED\Blinking_LED\  -prjname  proj_1  -log  E:\GIT\my_projects\Blinking_LED\Blinking_LED\synlog\Blinking_LED_Blinking_LED_fpga_mapper.srr  -jobname  "fpga_mapper" 
 relcom:C:\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\Blinking_LED -part LCMXO2_4000HC -package TG144C -grade -4 -maxfan 1000 -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile ..\synlog\report\Blinking_LED_Blinking_LED_fpga_mapper.xml -top_level_module Blinking_LED -flow mapping -multisrs -oedif ..\Blinking_LED_Blinking_LED.edi -freq 1.000 ..\synwork\Blinking_LED_Blinking_LED_prem.srd -devicelib C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v -devicelib C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v -ologparam Blinking_LED_Blinking_LED.plg -osyn ..\Blinking_LED_Blinking_LED.srm -prjdir ..\ -prjname proj_1 -log ..\synlog\Blinking_LED_Blinking_LED_fpga_mapper.srr -jobname "fpga_mapper"
-rc:1 success:1 runtime:2
-file:..\Blinking_LED_Blinking_LED.edi|io:o|time:1563043939|size:60507|exec:0|csum:
-file:..\synwork\Blinking_LED_Blinking_LED_prem.srd|io:i|time:1563043937|size:3152|exec:0|csum:05EDEC4F992BA1FC5339BEBFEDEB0D09
+rc:1 success:1 runtime:3
+file:..\Blinking_LED_Blinking_LED.edi|io:o|time:1563044900|size:60506|exec:0|csum:
+file:..\synwork\Blinking_LED_Blinking_LED_prem.srd|io:i|time:1563044898|size:3151|exec:0|csum:05EDEC4F992BA1FC5339BEBFEDEB0D09
 file:C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v|io:i|time:1501885416|size:54295|exec:0|csum:D5667017EB528EBD3C317EFCC9D2C19B
 file:C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1501885416|size:40584|exec:0|csum:530CC5906D70AB3C6A4AA0861AC94BDF
-file:Blinking_LED_Blinking_LED.plg|io:o|time:1563043940|size:611|exec:0|csum:
-file:..\Blinking_LED_Blinking_LED.srm|io:o|time:1563043939|size:10235|exec:0|csum:
-file:..\synlog\Blinking_LED_Blinking_LED_fpga_mapper.srr|io:o|time:1563043940|size:26112|exec:0|csum:
+file:Blinking_LED_Blinking_LED.plg|io:o|time:1563044901|size:611|exec:0|csum:
+file:..\Blinking_LED_Blinking_LED.srm|io:o|time:1563044900|size:10231|exec:0|csum:
+file:..\synlog\Blinking_LED_Blinking_LED_fpga_mapper.srr|io:o|time:1563044901|size:26112|exec:0|csum:
 file:C:\lscc\diamond\3.10_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1501888314|size:29299200|exec:1|csum:5C77397B47E7811864C32F4FC7D86D2F

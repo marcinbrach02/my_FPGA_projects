@@ -26,25 +26,25 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:16:1:16:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:14:1:14:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\git\my_projects\blinking_led\blinking_led.v</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>14</Navigation>
             <Navigation>1</Navigation>
-            <Navigation>16</Navigation>
+            <Navigation>14</Navigation>
             <Navigation>6</Navigation>
             <Navigation>Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:22:2:22:7|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:20:1:20:6|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\git\my_projects\blinking_led\blinking_led.v</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>2</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>7</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>6</Navigation>
             <Navigation>Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
