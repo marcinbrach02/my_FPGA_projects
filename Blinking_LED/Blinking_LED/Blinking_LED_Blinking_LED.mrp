@@ -1,0 +1,204 @@
+
+         Lattice Mapping Report File for Design Module 'Blinking_LED'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial
+     Blinking_LED_Blinking_LED.ngd -o Blinking_LED_Blinking_LED_map.ncd -pr
+     Blinking_LED_Blinking_LED.prf -mp Blinking_LED_Blinking_LED.mrp -lpf E:/GIT
+     /my_projects/Blinking_LED/Blinking_LED/Blinking_LED_Blinking_LED_synplify.l
+     pf -lpf E:/GIT/my_projects/Blinking_LED/Blinking_LED.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
+Mapped on:  07/13/19  20:53:45
+
+Design Summary
+--------------
+
+   Number of registers:     53 out of  4665 (1%)
+      PFU registers:           53 out of  4320 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        28 out of  2160 (1%)
+      SLICEs as Logic/ROM:     28 out of  2160 (1%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         28 out of  2160 (1%)
+   Number of LUT4s:         56 out of  4320 (1%)
+      Number used as logic LUTs:          0
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       56
+      Number used as shift registers:     0
+   Number of PIO sites used: 5 + 4(JTAG) out of 115 (8%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net CLK50_c: 14 loads, 14 rising, 0 falling (Driver: PIO CLK50 )
+     Net CLK24_c: 14 loads, 14 rising, 0 falling (Driver: PIO CLK24 )
+   Number of Clock Enables:  0
+
+                                    Page 1
+
+
+
+
+Design:  Blinking_LED                                  Date:  07/13/19  20:53:45
+
+Design Summary (cont)
+---------------------
+   Number of local set/reset loads for net RST_c merged into GSR:  53
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net LED0_c: 2 loads
+     Net LED1_c: 2 loads
+     Net counter2[0]: 1 loads
+     Net counter2_s[0]: 1 loads
+     Net counter2_s[1]: 1 loads
+     Net counter[0]: 1 loads
+     Net counter[1]: 1 loads
+     Net counter_cry[0]: 1 loads
+     Net counter_s[0]: 1 loads
+     Net counter_s[1]: 1 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: Using local reset signal 'RST_c' to infer global GSR net.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| LED0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CLK50               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RST                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| CLK24               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal RST_c_i was merged into signal RST_c
+Signal GND undriven or does not drive anything - clipped.
+Signal counter_cry_0_COUT[25] undriven or does not drive anything - clipped.
+Signal counter2_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal N_2 undriven or does not drive anything - clipped.
+Signal counter2_s_0_S1[25] undriven or does not drive anything - clipped.
+Signal counter2_s_0_COUT[25] undriven or does not drive anything - clipped.
+Signal counter_cry_0_S0[0] undriven or does not drive anything - clipped.
+
+                                    Page 2
+
+
+
+
+Design:  Blinking_LED                                  Date:  07/13/19  20:53:45
+
+Removed logic (cont)
+--------------------
+Signal N_1 undriven or does not drive anything - clipped.
+Block RST_pad_RNIDDB3 was optimized away.
+Block GND was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'RST_c' of the design has been inferred as Global Set
+        Reset (GSR). The reset signal used for GSR control is 'RST_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 48 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

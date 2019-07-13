@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Blinking_LED" device="LCMXO2-4000HC-4TG144C" default_implementation="Blinking_LED">
+    <Options/>
+    <Implementation title="Blinking_LED" dir="Blinking_LED" description="Blinking_LED" synthesis="synplify" default_strategy="Strategy1">
+        <Options/>
+        <Source name="Blinking_LED.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Blinking_LED1.sty"/>
+</BaliProject>

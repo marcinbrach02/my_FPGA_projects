@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell Blinking_LED
+   Instance path: Blinking_LED
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      28.00        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	         53        100.0
+                                RIPPLE	         28        100.0

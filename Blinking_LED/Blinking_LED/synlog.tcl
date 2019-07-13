@@ -1,0 +1,1 @@
+run_tcl -fg Blinking_LED_Blinking_LED_synplify.tcl

@@ -1,0 +1,19 @@
+----------------------------------------------------------------------
+Report for cell Blinking_LED.verilog
+
+Register bits: 53 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       28       100.0
+                            FD1S3DX       53       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                                INV        1       100.0
+                                 OB        2       100.0
+                                PUR        1       100.0
+                                VHI        1       100.0
+                                VLO        1       100.0
+                            
+                         TOTAL            91           
