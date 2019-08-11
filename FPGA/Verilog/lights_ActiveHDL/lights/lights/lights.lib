@@ -1,0 +1,56 @@
+timestamp=1565556756689
+
+[~A]
+LastVerilogToplevel=testbench
+ModifyID=81
+Version=74
+c:/My_Designs/lights/lights/src/lights.v=0*56192*57745
+c:/My_Designs/lights/lights/src/lights.v_lights_testbench.v=0*187684*189464
+c:/My_Designs/lights/lights/src/lights_testbench.v=0*191797*192351
+c:/My_Designs/lights/lights/src/tb.v=0*26120*26420
+c:/My_Designs/lights/lights/src/testbench.v=0*10726*11017
+
+[$root]
+A/$root=22|||1*423386
+BinI32/$root=3*424578
+SLP=3*424682
+Version=10.5.217.6767 (Windows)|00000008789cd3f53752d02d33ca0600084a020f|c73a565f2ade592f8ac1c68f484c92162915f61eaeb04e16dc80e7208783577d
+
+[light]
+A/light=22|./../src/lights.v|1|1*38900
+BinI32/light=3*43336
+R=./../src/lights.v|1
+SLP=3*47701
+Version=10.5.217.6767 (Windows)|00000008789cd3f53752d02d33ca0600084a020f|81d921c7708f47c05f383de5311b854aa29a2e22b2d8b50aa5cab656ff7f1efb
+
+[lights]
+A/lights=22|./../src/lights.v|1|1*414477
+BinI32/lights=3*415793
+R=./../src/lights.v|1
+SLP=3*419884
+Version=10.5.217.6767 (Windows)|00000008789cd3f53752d02d33ca0600084a020f|b9302ee6e4ddcf7fae29b426ab9bae2e1a5a2a56ab7f2f2bb61937949b1822b0
+
+[tb]
+BinI32/tb=3*65166
+R=./../src/tb.v|25
+SLP=3*65267
+Version=10.5.217.6767 (Windows)|00000008789cd3f53752d02d33ca0600084a020f|8db8692708dc0985d408d2497dbc95fa325c036694c641da73f08228d739f7d8
+
+[testbench]
+A/testbench=22|./../src/lights_testbench.v|5|1*423776
+BinI32/testbench=3*424750
+R=./../src/lights_testbench.v|5
+SLP=3*425443
+Version=10.5.217.6767 (Windows)|00000008789cd3f53752d02d33ca0600084a020f|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d791312d301ea7451517d5e4ec4ef2580cfe3
+
+[~MFT]
+0=6|0lights.mgf|192351|138026
+1=4|1lights.mgf|423776|411818
+3=8|3lights.mgf|425443|410897
+
+[~U]
+$root=12|0*191427|
+light=12|0*16954||0x10
+lights=12|0*187103|
+tb=12|0*25978||0x10
+testbench=12|0*191625||0x10

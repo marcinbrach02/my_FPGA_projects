@@ -1,0 +1,26 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module lights found in current working library."
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+WARNING VCP2605 "Port connection for port P_R violates IEEE 1364. Only net expression can be connected to output/inout port." "c:/My_Designs/lights/lights/src/lights_testbench.v" 10  1
+WARNING VCP2605 "Port connection for port P_G violates IEEE 1364. Only net expression can be connected to output/inout port." "c:/My_Designs/lights/lights/src/lights_testbench.v" 10  1
+WARNING VCP2605 "Port connection for port A_R violates IEEE 1364. Only net expression can be connected to output/inout port." "c:/My_Designs/lights/lights/src/lights_testbench.v" 10  1
+WARNING VCP2605 "Port connection for port A_Y violates IEEE 1364. Only net expression can be connected to output/inout port." "c:/My_Designs/lights/lights/src/lights_testbench.v" 10  1
+WARNING VCP2605 "Port connection for port A_G violates IEEE 1364. Only net expression can be connected to output/inout port." "c:/My_Designs/lights/lights/src/lights_testbench.v" 10  1
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 86
+UPDATEPROGRESS 93
+UPDATEPROGRESS 100
+MESSAGE "Unit top modules: testbench."
+MESSAGE "$root top modules: light tb testbench."
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 5 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"
