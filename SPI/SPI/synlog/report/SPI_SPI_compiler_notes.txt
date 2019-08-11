@@ -1,0 +1,19 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG334 :"E:\GIT\my_projects\SPI\SPI.v":69:12:69:24|Read directive translate_off.
+@N: CG333 :"E:\GIT\my_projects\SPI\SPI.v":71:12:71:23|Read directive translate_on.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":140:28:140:36|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":140:38:140:50|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":235:30:235:38|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":235:40:235:52|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":269:33:269:41|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":269:43:269:55|Read a parallel_case directive.
+@N: CG334 :"E:\GIT\my_projects\SPI\fifo4.v":53:12:53:24|Read directive translate_off.
+@N: CG333 :"E:\GIT\my_projects\SPI\fifo4.v":55:12:55:23|Read directive translate_on.
+@N: CG364 :"E:\GIT\my_projects\SPI\fifo4.v":59:7:59:11|Synthesizing module fifo4 in library work.
+@N: CL134 :"E:\GIT\my_projects\SPI\fifo4.v":114:0:114:5|Found RAM mem, depth=4, width=8
+@N: CG364 :"E:\GIT\my_projects\SPI\SPI.v":73:7:73:9|Synthesizing module SPI in library work.
+@N: CL189 :"E:\GIT\my_projects\SPI\SPI.v":231:2:231:7|Register bit clkcnt[11] is always 0.
+@N: CL201 :"E:\GIT\my_projects\SPI\SPI.v":254:2:254:7|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

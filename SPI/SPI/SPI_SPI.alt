@@ -1,0 +1,36 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Jul 21 21:36:12 2019 *
+NOTE DESIGN NAME: SPI *
+NOTE DEVICE NAME: LCMXO2-4000HC-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS dat_o[0] : 85 : out *
+NOTE PINS clk_i : 55 : in *
+NOTE PINS miso_i : 86 : in *
+NOTE PINS mosi_o : 109 : out *
+NOTE PINS sck_o : 110 : out *
+NOTE PINS inta_o : 89 : out *
+NOTE PINS ack_o : 95 : out *
+NOTE PINS dat_o[7] : 104 : out *
+NOTE PINS dat_o[6] : 107 : out *
+NOTE PINS dat_o[5] : 106 : out *
+NOTE PINS dat_o[4] : 100 : out *
+NOTE PINS dat_o[3] : 91 : out *
+NOTE PINS dat_o[2] : 78 : out *
+NOTE PINS dat_o[1] : 84 : out *
+NOTE PINS dat_i[7] : 93 : in *
+NOTE PINS dat_i[6] : 97 : in *
+NOTE PINS dat_i[5] : 99 : in *
+NOTE PINS dat_i[4] : 98 : in *
+NOTE PINS dat_i[3] : 96 : in *
+NOTE PINS dat_i[2] : 94 : in *
+NOTE PINS dat_i[1] : 92 : in *
+NOTE PINS dat_i[0] : 87 : in *
+NOTE PINS we_i : 83 : in *
+NOTE PINS adr_i[1] : 105 : in *
+NOTE PINS adr_i[0] : 103 : in *
+NOTE PINS stb_i : 81 : in *
+NOTE PINS cyc_i : 82 : in *
+NOTE PINS rst_i : 125 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

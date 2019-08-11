@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SPI_SPI.log"
+-o "SPI_SPI.csv"
+-pr "SPI_SPI.prf"
