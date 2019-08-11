@@ -1,0 +1,1058 @@
+Analysis & Synthesis report for DLX
+Sun Aug 11 22:06:32 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |DLX|sterowanie:c1|state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_divide:Div0
+ 15. Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_mult:Mult1
+ 16. Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_divide:Div1
+ 17. Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_mult:Mult0
+ 18. lpm_mult Parameter Settings by Entity Instance
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Aug 11 22:06:32 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; DLX                                             ;
+; Top-level Entity Name              ; DLX                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 9,048                                           ;
+;     Total combinational functions  ; 9,016                                           ;
+;     Dedicated logic registers      ; 1,167                                           ;
+; Total registers                    ; 1167                                            ;
+; Total pins                         ; 102                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 4                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; DLX                ; DLX                ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; DLX.vhd                          ; yes             ; User VHDL File               ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/DLX.vhd                            ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File               ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/ALU.vhd                            ;         ;
+; rejestry.vhd                     ; yes             ; User VHDL File               ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/rejestry.vhd                       ;         ;
+; uklad.vhd                        ; yes             ; User VHDL File               ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/uklad.vhd                          ;         ;
+; sterowanie.vhd                   ; yes             ; User VHDL File               ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/sterowanie.vhd                     ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_pto.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/lpm_divide_pto.tdf              ;         ;
+; db/abs_divider_6dg.tdf           ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/abs_divider_6dg.tdf             ;         ;
+; db/alt_u_div_o5f.tdf             ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/alt_u_div_o5f.tdf               ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/add_sub_lkc.tdf                 ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/add_sub_mkc.tdf                 ;         ;
+; db/lpm_abs_1s9.tdf               ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/lpm_abs_1s9.tdf                 ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf        ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc     ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc        ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc        ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc        ;         ;
+; db/mult_l8t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/mult_l8t.tdf                    ;         ;
+; db/lpm_divide_1gm.tdf            ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/lpm_divide_1gm.tdf              ;         ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/sign_div_unsign_bnh.tdf         ;         ;
+; db/mult_h1t.tdf                  ; yes             ; Auto-Generated Megafunction  ; E:/GIT/FPGA/VHDL/DLX_processor/DLX/db/mult_h1t.tdf                    ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 9,048 ;
+;                                             ;       ;
+; Total combinational functions               ; 9016  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 4397  ;
+;     -- 3 input functions                    ; 4277  ;
+;     -- <=2 input functions                  ; 342   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 6718  ;
+;     -- arithmetic mode                      ; 2298  ;
+;                                             ;       ;
+; Total registers                             ; 1167  ;
+;     -- Dedicated logic registers            ; 1167  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 102   ;
+; Embedded Multiplier 9-bit elements          ; 4     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 1167  ;
+; Total fan-out                               ; 36533 ;
+; Average fan-out                             ; 3.55  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                               ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |DLX                                      ; 9016 (1)          ; 1167 (0)     ; 0           ; 4            ; 0       ; 2         ; 102  ; 0            ; |DLX                                                                                                                              ; work         ;
+;    |ALU:c2|                               ; 3994 (1566)       ; 1 (1)        ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |DLX|ALU:c2                                                                                                                       ; work         ;
+;       |lpm_divide:Div0|                   ; 1288 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0                                                                                                       ; work         ;
+;          |lpm_divide_pto:auto_generated|  ; 1288 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated                                                                         ; work         ;
+;             |abs_divider_6dg:divider|     ; 1288 (39)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated|abs_divider_6dg:divider                                                 ; work         ;
+;                |alt_u_div_o5f:divider|    ; 1149 (1148)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated|abs_divider_6dg:divider|alt_u_div_o5f:divider                           ; work         ;
+;                   |add_sub_mkc:add_sub_1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated|abs_divider_6dg:divider|alt_u_div_o5f:divider|add_sub_mkc:add_sub_1     ; work         ;
+;                |lpm_abs_1s9:my_abs_den|   ; 55 (55)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated|abs_divider_6dg:divider|lpm_abs_1s9:my_abs_den                          ; work         ;
+;                |lpm_abs_1s9:my_abs_num|   ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div0|lpm_divide_pto:auto_generated|abs_divider_6dg:divider|lpm_abs_1s9:my_abs_num                          ; work         ;
+;       |lpm_divide:Div1|                   ; 1140 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div1                                                                                                       ; work         ;
+;          |lpm_divide_1gm:auto_generated|  ; 1140 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div1|lpm_divide_1gm:auto_generated                                                                         ; work         ;
+;             |sign_div_unsign_bnh:divider| ; 1140 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div1|lpm_divide_1gm:auto_generated|sign_div_unsign_bnh:divider                                             ; work         ;
+;                |alt_u_div_o5f:divider|    ; 1140 (1139)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div1|lpm_divide_1gm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider                       ; work         ;
+;                   |add_sub_lkc:add_sub_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|ALU:c2|lpm_divide:Div1|lpm_divide_1gm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_o5f:divider|add_sub_lkc:add_sub_0 ; work         ;
+;       |lpm_mult:Mult0|                    ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |DLX|ALU:c2|lpm_mult:Mult0                                                                                                        ; work         ;
+;          |mult_h1t:auto_generated|        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |DLX|ALU:c2|lpm_mult:Mult0|mult_h1t:auto_generated                                                                                ; work         ;
+;       |lpm_mult:Mult1|                    ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |DLX|ALU:c2|lpm_mult:Mult1                                                                                                        ; work         ;
+;          |mult_l8t:auto_generated|        ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |DLX|ALU:c2|lpm_mult:Mult1|mult_l8t:auto_generated                                                                                ; work         ;
+;    |Rejestry:c3|                          ; 4649 (4649)       ; 1088 (1088)  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|Rejestry:c3                                                                                                                  ; work         ;
+;    |sterowanie:c1|                        ; 244 (244)         ; 78 (78)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|sterowanie:c1                                                                                                                ; work         ;
+;    |uklad:c4|                             ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DLX|uklad:c4                                                                                                                     ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 2           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 4           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |DLX|sterowanie:c1|state                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+
+; Name       ; state.m112 ; state.m111 ; state.m110 ; state.m109 ; state.m108 ; state.m107 ; state.m106 ; state.m105 ; state.m104 ; state.m103 ; state.m102 ; state.m101 ; state.m100 ; state.m99 ; state.m98 ; state.m97 ; state.m96 ; state.m95 ; state.m94 ; state.m93 ; state.m92 ; state.m91 ; state.m90 ; state.m89 ; state.m88 ; state.m87 ; state.m86 ; state.m85 ; state.m84 ; state.m83 ; state.m82 ; state.m81 ; state.m80 ; state.m71 ; state.m70 ; state.m69 ; state.m68 ; state.m67 ; state.m66 ; state.m65 ; state.m64 ; state.m63 ; state.m62 ; state.m61 ; state.m60 ; state.m55 ; state.m54 ; state.m53 ; state.m52 ; state.m51 ; state.m50 ; state.m49 ; state.m48 ; state.m47 ; state.m46 ; state.m45 ; state.m44 ; state.m43 ; state.m42 ; state.m41 ; state.m40 ; state.m32 ; state.m31 ; state.m30 ; state.m29 ; state.m28 ; state.m27 ; state.m26 ; state.m25 ; state.m24 ; state.m23 ; state.m22 ; state.m21 ; state.m20 ; state.m12 ; state.m11 ; state.m10 ; state.m1 ; state.m0 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+
+; state.m0   ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 0        ;
+; state.m1   ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1        ; 1        ;
+; state.m10  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0        ; 1        ;
+; state.m11  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0        ; 1        ;
+; state.m12  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0        ; 1        ;
+; state.m20  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m21  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m22  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m23  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m24  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m25  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m26  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m27  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m28  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m29  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m30  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m31  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m32  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m40  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m41  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m42  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m43  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m44  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m45  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m46  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m47  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m48  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m49  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m50  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m51  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m52  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m53  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m54  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m55  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m60  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m61  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m62  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m63  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m64  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m65  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m66  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m67  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m68  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m69  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m70  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m71  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m80  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m81  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m82  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m83  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m84  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m85  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m86  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m87  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m88  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m89  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m90  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m91  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m92  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m93  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m94  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m95  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m96  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m97  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m98  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m99  ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m100 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m101 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m102 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m103 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m104 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m105 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m106 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m107 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m108 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m109 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m110 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m111 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
+; state.m112 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0         ; 0        ; 1        ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+----------+----------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                      ;
++------------------------------------------------------+--------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal      ; Free of Timing Hazards ;
++------------------------------------------------------+--------------------------+------------------------+
+; uklad:c4|MAR[0]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[1]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[2]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[3]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[4]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[5]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[6]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[7]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[8]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[9]                                      ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[10]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[11]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[12]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[13]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[14]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[15]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[16]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[17]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[18]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[19]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[20]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[21]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[22]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[23]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[24]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[25]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[26]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[27]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[28]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[29]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[30]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|MAR[31]                                     ; sterowanie:c1|Selector91 ; yes                    ;
+; uklad:c4|Dzap[0]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[1]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[2]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[3]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[4]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[5]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[6]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[7]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[8]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[9]                                     ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[10]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[11]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[12]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[13]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[14]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[15]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[16]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[17]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[18]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[19]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[20]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[21]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[22]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[23]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[24]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[25]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[26]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[27]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[28]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[29]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[30]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; uklad:c4|Dzap[31]                                    ; sterowanie:c1|WideOr10   ; yes                    ;
+; ALU:c2|wy[32]                                        ; ALU:c2|Mux66             ; yes                    ;
+; uklad:c4|MBRin[31]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[0]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[30]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[29]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[28]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[27]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[26]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[25]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[24]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[23]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[22]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[21]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[20]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[19]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[18]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[17]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[16]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[15]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[14]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[13]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[12]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[11]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[10]                                   ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[9]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[8]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[7]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[6]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[5]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[4]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[3]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[2]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; uklad:c4|MBRin[1]                                    ; sterowanie:c1|Selector97 ; yes                    ;
+; ALU:c2|wyU[32]                                       ; ALU:c2|Mux68             ; yes                    ;
+; uklad:c4|MBRout[0]                                   ; sterowanie:c1|WideOr51   ; yes                    ;
+; uklad:c4|MBRout[1]                                   ; sterowanie:c1|WideOr51   ; yes                    ;
+; Number of user-specified and inferred latches = 130  ;                          ;                        ;
++------------------------------------------------------+--------------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; Rejestry:c3|R0[1..31]                  ; Merged with Rejestry:c3|R0[0]          ;
+; Rejestry:c3|R0[0]                      ; Stuck at GND due to stuck port data_in ;
+; sterowanie:c1|state.m12                ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 33 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1167  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 962   ;
+; Number of registers using Asynchronous Clear ; 78    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1088  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |DLX|Rejestry:c3|PC[8]         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DLX|sterowanie:c1|state       ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |DLX|Rejestry:c3|Mux32         ;
+; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; No         ; |DLX|sterowanie:c1|Mux144      ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |DLX|Rejestry:c3|Mux2966       ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 64 LEs               ; 16 LEs                 ; No         ; |DLX|Rejestry:c3|Mux2981       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |DLX|Rejestry:c3|Mux50         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |DLX|Rejestry:c3|Mux63         ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |DLX|Rejestry:c3|Mux2116       ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |DLX|Rejestry:c3|Mux2992       ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DLX|sterowanie:c1|Selector141 ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DLX|sterowanie:c1|Selector121 ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |DLX|sterowanie:c1|Selector126 ;
+; 19:1               ; 31 bits   ; 372 LEs       ; 124 LEs              ; 248 LEs                ; No         ; |DLX|ALU:c2|Mux47              ;
+; 45:1               ; 7 bits    ; 210 LEs       ; 112 LEs              ; 98 LEs                 ; No         ; |DLX|ALU:c2|Mux18              ;
+; 45:1               ; 7 bits    ; 210 LEs       ; 112 LEs              ; 98 LEs                 ; No         ; |DLX|ALU:c2|Mux8               ;
+; 62:1               ; 8 bits    ; 328 LEs       ; 280 LEs              ; 48 LEs                 ; No         ; |DLX|Rejestry:c3|Mux2935       ;
+; 47:1               ; 4 bits    ; 124 LEs       ; 68 LEs               ; 56 LEs                 ; No         ; |DLX|ALU:c2|Mux25              ;
+; 47:1               ; 4 bits    ; 124 LEs       ; 68 LEs               ; 56 LEs                 ; No         ; |DLX|ALU:c2|Mux5               ;
+; 49:1               ; 2 bits    ; 64 LEs        ; 38 LEs               ; 26 LEs                 ; No         ; |DLX|ALU:c2|Mux30              ;
+; 49:1               ; 2 bits    ; 64 LEs        ; 38 LEs               ; 26 LEs                 ; No         ; |DLX|ALU:c2|Mux3               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------+
+; Parameter Name         ; Value          ; Type                          ;
++------------------------+----------------+-------------------------------+
+; LPM_WIDTHN             ; 33             ; Untyped                       ;
+; LPM_WIDTHD             ; 33             ; Untyped                       ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                       ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                       ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                       ;
+; CBXI_PARAMETER         ; lpm_divide_pto ; Untyped                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                ;
++------------------------+----------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_mult:Mult1            ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16         ; Untyped             ;
+; LPM_WIDTHB                                     ; 16         ; Untyped             ;
+; LPM_WIDTHP                                     ; 32         ; Untyped             ;
+; LPM_WIDTHR                                     ; 32         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_l8t   ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------+
+; Parameter Name         ; Value          ; Type                          ;
++------------------------+----------------+-------------------------------+
+; LPM_WIDTHN             ; 33             ; Untyped                       ;
+; LPM_WIDTHD             ; 33             ; Untyped                       ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                       ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                       ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                       ;
+; CBXI_PARAMETER         ; lpm_divide_1gm ; Untyped                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                ;
++------------------------+----------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ALU:c2|lpm_mult:Mult0            ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16         ; Untyped             ;
+; LPM_WIDTHB                                     ; 16         ; Untyped             ;
+; LPM_WIDTHP                                     ; 32         ; Untyped             ;
+; LPM_WIDTHR                                     ; 32         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_h1t   ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                ;
++---------------------------------------+-----------------------+
+; Name                                  ; Value                 ;
++---------------------------------------+-----------------------+
+; Number of entity instances            ; 2                     ;
+; Entity Instance                       ; ALU:c2|lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 16                    ;
+;     -- LPM_WIDTHB                     ; 16                    ;
+;     -- LPM_WIDTHP                     ; 32                    ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED              ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                    ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                    ;
+;     -- USE_EAB                        ; OFF                   ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                  ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                    ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                    ;
+; Entity Instance                       ; ALU:c2|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                    ;
+;     -- LPM_WIDTHB                     ; 16                    ;
+;     -- LPM_WIDTHP                     ; 32                    ;
+;     -- LPM_REPRESENTATION             ; SIGNED                ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                    ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                    ;
+;     -- USE_EAB                        ; OFF                   ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                  ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                    ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                    ;
++---------------------------------------+-----------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:41     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Aug 11 22:05:45 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DLX -c DLX
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file dlx.vhd
+    Info (12022): Found design unit 1: DLX-RTL
+    Info (12023): Found entity 1: DLX
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-RTL
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file rejestry.vhd
+    Info (12022): Found design unit 1: Rejestry-RTL
+    Info (12023): Found entity 1: Rejestry
+Info (12021): Found 2 design units, including 1 entities, in source file uklad.vhd
+    Info (12022): Found design unit 1: uklad-RTL
+    Info (12023): Found entity 1: uklad
+Info (12021): Found 2 design units, including 1 entities, in source file sterowanie.vhd
+    Info (12022): Found design unit 1: sterowanie-RTL
+    Info (12023): Found entity 1: sterowanie
+Info (12127): Elaborating entity "DLX" for the top level hierarchy
+Info (12128): Elaborating entity "sterowanie" for hierarchy "sterowanie:c1"
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Sadr", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Sbb", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Sba", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Sbc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Salu", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Sid", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "zapis", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "odczyt", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "SIRa", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "SIRb", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "SIRc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "SIRadr", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Smar", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "Smbr", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "WRout", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "RDout", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at sterowanie.vhd(166): inferring latch(es) for signal or variable "INTA", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "INTA" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "RDout" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "WRout" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Smbr" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Smar" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRadr[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRadr[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRc[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRc[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRc[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRb[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRb[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRa[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "SIRa[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "odczyt[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "odczyt[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "zapis[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "zapis[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "zapis[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sid[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sid[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Salu[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Salu[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Salu[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Salu[3]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Salu[4]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbc[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbc[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbc[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbc[3]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbc[4]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sba[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sba[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sba[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sba[3]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sba[4]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbb[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbb[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbb[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbb[3]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sbb[4]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sadr[0]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sadr[1]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sadr[2]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sadr[3]" at sterowanie.vhd(166)
+Info (10041): Inferred latch for "Sadr[4]" at sterowanie.vhd(166)
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:c2"
+Warning (10631): VHDL Process Statement warning at ALU.vhd(19): inferring latch(es) for signal or variable "wy", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at ALU.vhd(19): inferring latch(es) for signal or variable "wyU", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "wyU[32]" at ALU.vhd(19)
+Info (10041): Inferred latch for "wy[32]" at ALU.vhd(19)
+Info (12128): Elaborating entity "Rejestry" for hierarchy "Rejestry:c3"
+Info (12128): Elaborating entity "uklad" for hierarchy "uklad:c4"
+Warning (10631): VHDL Process Statement warning at uklad.vhd(24): inferring latch(es) for signal or variable "MAR", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at uklad.vhd(24): inferring latch(es) for signal or variable "MBRout", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at uklad.vhd(24): inferring latch(es) for signal or variable "MBRin", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at uklad.vhd(24): inferring latch(es) for signal or variable "Dzap", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Dzap[0]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[1]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[2]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[3]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[4]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[5]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[6]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[7]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[8]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[9]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[10]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[11]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[12]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[13]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[14]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[15]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[16]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[17]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[18]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[19]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[20]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[21]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[22]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[23]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[24]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[25]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[26]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[27]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[28]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[29]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[30]" at uklad.vhd(24)
+Info (10041): Inferred latch for "Dzap[31]" at uklad.vhd(24)
+Info (10041): Inferred latch for "MBRin[0]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[1]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[2]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[3]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[4]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[5]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[6]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[7]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[8]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[9]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[10]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[11]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[12]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[13]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[14]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[15]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[16]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[17]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[18]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[19]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[20]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[21]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[22]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[23]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[24]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[25]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[26]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[27]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[28]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[29]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[30]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRin[31]" at uklad.vhd(33)
+Info (10041): Inferred latch for "MBRout[0]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[1]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[2]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[3]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[4]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[5]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[6]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[7]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[8]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[9]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[10]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[11]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[12]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[13]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[14]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[15]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[16]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[17]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[18]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[19]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[20]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[21]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[22]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[23]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[24]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[25]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[26]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[27]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[28]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[29]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[30]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MBRout[31]" at uklad.vhd(31)
+Info (10041): Inferred latch for "MAR[0]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[1]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[2]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[3]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[4]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[5]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[6]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[7]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[8]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[9]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[10]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[11]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[12]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[13]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[14]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[15]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[16]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[17]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[18]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[19]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[20]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[21]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[22]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[23]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[24]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[25]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[26]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[27]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[28]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[29]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[30]" at uklad.vhd(29)
+Info (10041): Inferred latch for "MAR[31]" at uklad.vhd(29)
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:c2|Div0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ALU:c2|Mult1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:c2|Div1"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ALU:c2|Mult0"
+Info (12130): Elaborated megafunction instantiation "ALU:c2|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "ALU:c2|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "33"
+    Info (12134): Parameter "LPM_WIDTHD" = "33"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_pto.tdf
+    Info (12023): Found entity 1: lpm_divide_pto
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_6dg.tdf
+    Info (12023): Found entity 1: abs_divider_6dg
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_o5f.tdf
+    Info (12023): Found entity 1: alt_u_div_o5f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_1s9.tdf
+    Info (12023): Found entity 1: lpm_abs_1s9
+Info (12130): Elaborated megafunction instantiation "ALU:c2|lpm_mult:Mult1"
+Info (12133): Instantiated megafunction "ALU:c2|lpm_mult:Mult1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_l8t.tdf
+    Info (12023): Found entity 1: mult_l8t
+Info (12130): Elaborated megafunction instantiation "ALU:c2|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "ALU:c2|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "33"
+    Info (12134): Parameter "LPM_WIDTHD" = "33"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1gm.tdf
+    Info (12023): Found entity 1: lpm_divide_1gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh
+Info (12130): Elaborated megafunction instantiation "ALU:c2|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "ALU:c2|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_h1t.tdf
+    Info (12023): Found entity 1: mult_h1t
+Info (13014): Ignored 62 buffer(s)
+    Info (13016): Ignored 62 CARRY_SUM buffer(s)
+Warning (13012): Latch uklad:c4|MAR[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[8] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[9] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[10] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[11] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[12] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[13] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[14] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[15] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[16] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[17] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[18] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[19] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[20] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[21] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[22] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[23] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[24] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[25] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[26] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[27] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[28] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[29] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[30] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch uklad:c4|MAR[31] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ALU:c2|ZF
+Warning (13012): Latch ALU:c2|wy[32] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sterowanie:c1|WideOr20
+Warning (13012): Latch ALU:c2|wyU[32] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sterowanie:c1|state.m40
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 9201 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 35 input pins
+    Info (21059): Implemented 67 output pins
+    Info (21061): Implemented 9095 logic cells
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 92 warnings
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Sun Aug 11 22:06:32 2019
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:45
+
+

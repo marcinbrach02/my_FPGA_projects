@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLK'
+Slack : -156.356
+TNS   : -167093.308
+
+Type  : Slow Model Setup 'sterowanie:c1|state.m28'
+Slack : -150.325
+TNS   : -5121.472
+
+Type  : Slow Model Setup 'sterowanie:c1|state.m102'
+Slack : -148.799
+TNS   : -172.587
+
+Type  : Slow Model Setup 'ALU:c2|ZF'
+Slack : -8.946
+TNS   : -277.372
+
+Type  : Slow Model Hold 'sterowanie:c1|state.m102'
+Slack : -1.278
+TNS   : -1.994
+
+Type  : Slow Model Hold 'sterowanie:c1|state.m28'
+Slack : -1.218
+TNS   : -13.097
+
+Type  : Slow Model Hold 'ALU:c2|ZF'
+Slack : -0.459
+TNS   : -3.801
+
+Type  : Slow Model Hold 'CLK'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'sterowanie:c1|state.m102'
+Slack : -1.587
+TNS   : -25.816
+
+Type  : Slow Model Minimum Pulse Width 'CLK'
+Slack : -1.380
+TNS   : -1168.380
+
+Type  : Slow Model Minimum Pulse Width 'ALU:c2|ZF'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'sterowanie:c1|state.m28'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLK'
+Slack : -70.289
+TNS   : -75253.467
+
+Type  : Fast Model Setup 'sterowanie:c1|state.m28'
+Slack : -68.115
+TNS   : -2292.259
+
+Type  : Fast Model Setup 'sterowanie:c1|state.m102'
+Slack : -67.708
+TNS   : -78.769
+
+Type  : Fast Model Setup 'ALU:c2|ZF'
+Slack : -3.609
+TNS   : -111.472
+
+Type  : Fast Model Hold 'sterowanie:c1|state.m28'
+Slack : -0.803
+TNS   : -16.878
+
+Type  : Fast Model Hold 'sterowanie:c1|state.m102'
+Slack : -0.681
+TNS   : -1.099
+
+Type  : Fast Model Hold 'ALU:c2|ZF'
+Slack : -0.510
+TNS   : -8.537
+
+Type  : Fast Model Hold 'CLK'
+Slack : -0.192
+TNS   : -0.322
+
+Type  : Fast Model Minimum Pulse Width 'CLK'
+Slack : -1.380
+TNS   : -1168.380
+
+Type  : Fast Model Minimum Pulse Width 'sterowanie:c1|state.m102'
+Slack : -0.443
+TNS   : -6.480
+
+Type  : Fast Model Minimum Pulse Width 'ALU:c2|ZF'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'sterowanie:c1|state.m28'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------
