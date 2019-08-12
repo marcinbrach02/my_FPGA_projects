@@ -1,0 +1,52 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'lights' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work lights $dsn/src/lights.v $dsn/src/lights_testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'lights' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 11 (100.00%) other processes in SLP
+# SLP: 22 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5534 kB (elbread=1280 elab2=4121 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location e:\GIT\my_projects\FPGA\Verilog\lights_ActiveHDL\lights\lights\lights\src\wave.asdb
+#  22:09, poniedzia³ek, 12 sierpnia 2019
+#  Simulation has been initialized
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/lights_ActiveHDL/lights/lights/lights/src/wave.asdb'.
+run @2us
+# KERNEL: stopped at time: 2 us
+# Adding file e:\GIT\my_projects\FPGA\Verilog\lights_ActiveHDL\lights\lights\lights\src\wave.awc ... Done

@@ -1,0 +1,75 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=lights
+[Library]
+lights=.\lights\lights.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice MACHXO2
+WireDelay=2
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+VerilogLanguage=8
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+AdditionalOptions=
+ErrorOutputLimit=0
+MonitoringOfEventsUDP=0
+DisablePulseError=0
+PulseErrorFilter=0
+ErrorLimit=100
+RejectionLimit=100
+SetErrorLimit=0
+SetRejectionLimit=0
+InitialRegsValue=X
+HasInitialRegsValue=0
+LibNames=
+PriorityLibNames=
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+lights=.
+Active_lib=
+[Files]
+/lights.v=-1
+/lights_testbench.v=-1
+/wave.awc=-1
+[Files.Data]
+.\src\lights.v=Verilog Source Code
+.\src\lights_testbench.v=Verilog Source Code
+.\src\wave.awc=Accelerated Waveform Configuration
+[DefineMacro]
+Global=
+[LocalVerilogDirs]
+Count=0
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
