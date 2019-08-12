@@ -1,0 +1,7 @@
+4
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "./../src/lights.v" 1 lights
+~A 1 "./../src/lights.v" 1 lights
+~M 3 "./../src/lights_testbench.v" 5 testbench
+~A 1 "./../src/lights_testbench.v" 5 testbench

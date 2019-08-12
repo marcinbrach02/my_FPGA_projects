@@ -1,0 +1,47 @@
+<config>
+    <version>
+        2.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="3c077158a5f06cc7515d2c1680010000">wave.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/testbench/R</signal>
+        <signal>/testbench/C</signal>
+        <signal>/testbench/AR</signal>
+        <signal>/testbench/AY</signal>
+        <signal>/testbench/AG</signal>
+        <signal>/testbench/K</signal>
+        <signal>/testbench/PR</signal>
+        <signal>/testbench/PG</signal>
+        </signallist>
+    </signallists>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="2065" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="2000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
