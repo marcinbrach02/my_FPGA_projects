@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RST_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CLK50_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>CLK50</Dynamic>
+            <Dynamic>105</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:14:1:14:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>e:\git\my_projects\blinking_led\blinking_led.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\blinking_led\blinking_led.v&quot;:20:1:20:6|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>e:\git\my_projects\blinking_led\blinking_led.v</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock Blinking_LED|CLK50 with period 1000.00ns. Please declare a user-defined clock on object &quot;p:CLK50&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Blinking_LED|CLK50 with period 1000.00ns. Please declare a user-defined clock on object &quot;p:CLK50&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock Blinking_LED|CLK24 with period 1000.00ns. Please declare a user-defined clock on object &quot;p:CLK24&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock Blinking_LED|CLK24 with period 1000.00ns. Please declare a user-defined clock on object &quot;p:CLK24&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

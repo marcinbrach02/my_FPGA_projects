@@ -1,0 +1,1030 @@
+
+synpwrap -msg -prj "Blinking_LED_Blinking_LED_synplify.tcl" -log "Blinking_LED_Blinking_LED.srf"
+Copyright (C) 1992-2018 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.10.3.144
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of Blinking_LED_Blinking_LED.srf
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: MARCIN-VAIO
+
+# Sat Jul 13 21:08:15 2019
+
+#Implementation: Blinking_LED
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"E:\GIT\my_projects\Blinking_LED\Blinking_LED.v" (library work)
+Verilog syntax check successful!
+File E:\GIT\my_projects\Blinking_LED\Blinking_LED.v changed - recompiling
+Selecting top level module Blinking_LED
+@N: CG364 :"E:\GIT\my_projects\Blinking_LED\Blinking_LED.v":1:7:1:18|Synthesizing module Blinking_LED in library work.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 13 21:08:15 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 13 21:08:16 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 13 21:08:16 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\Blinking_LED_Blinking_LED_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 13 21:08:17 2019
+
+###########################################################]
+# Sat Jul 13 21:08:17 2019
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED_scck.rpt 
+Printing clock  summary report in "E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=10  set on top level netlist Blinking_LED
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+Clock Summary
+******************
+
+          Start                  Requested     Requested     Clock        Clock                   Clock
+Level     Clock                  Frequency     Period        Type         Group                   Load 
+-------------------------------------------------------------------------------------------------------
+0 -       Blinking_LED|CLK50     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     27   
+                                                                                                       
+0 -       Blinking_LED|CLK24     1.0 MHz       1000.000      inferred     Inferred_clkgroup_1     26   
+=======================================================================================================
+
+@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":14:1:14:6|Found inferred clock Blinking_LED|CLK50 which controls 27 sequential elements including counter[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\blinking_led\blinking_led.v":20:1:20:6|Found inferred clock Blinking_LED|CLK24 which controls 26 sequential elements including counter2[25:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 13 21:08:18 2019
+
+###########################################################]
+# Sat Jul 13 21:08:18 2019
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":20:1:20:6|Found counter in view:work.Blinking_LED(verilog) instance counter2[25:0] 
+@N: MO231 :"e:\git\my_projects\blinking_led\blinking_led.v":14:1:14:6|Found counter in view:work.Blinking_LED(verilog) instance counter[26:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		   994.68ns		   1 /        53
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 53 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       CLK50               port                   27         counter[0]     
+@K:CKID0002       CLK24               port                   26         counter2[0]    
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+
+Writing Analyst data base E:\GIT\my_projects\Blinking_LED\Blinking_LED\synwork\Blinking_LED_Blinking_LED_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: E:\GIT\my_projects\Blinking_LED\Blinking_LED\Blinking_LED_Blinking_LED.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+@W: MT420 |Found inferred clock Blinking_LED|CLK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLK50"
+@W: MT420 |Found inferred clock Blinking_LED|CLK24 with period 1000.00ns. Please declare a user-defined clock on object "p:CLK24"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jul 13 21:08:21 2019
+#
+
+
+Top view:               Blinking_LED
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 994.115
+
+                       Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock         Frequency     Frequency     Period        Period        Slack       Type         Group              
+---------------------------------------------------------------------------------------------------------------------------
+Blinking_LED|CLK24     1.0 MHz       169.9 MHz     1000.000      5.885         994.115     inferred     Inferred_clkgroup_1
+Blinking_LED|CLK50     1.0 MHz       169.9 MHz     1000.000      5.885         994.115     inferred     Inferred_clkgroup_0
+===========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                  |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------
+Starting            Ending              |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------
+Blinking_LED|CLK50  Blinking_LED|CLK50  |  1000.000    994.115  |  No paths    -      |  No paths    -      |  No paths    -    
+Blinking_LED|CLK24  Blinking_LED|CLK24  |  1000.000    994.115  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Blinking_LED|CLK24
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                                   Arrival            
+Instance        Reference              Type        Pin     Net             Time        Slack  
+                Clock                                                                         
+----------------------------------------------------------------------------------------------
+counter2[0]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[0]     0.972       994.115
+counter2[1]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[1]     0.972       994.258
+counter2[2]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[2]     0.972       994.258
+counter2[3]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[3]     0.972       994.401
+counter2[4]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[4]     0.972       994.401
+counter2[5]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[5]     0.972       994.544
+counter2[6]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[6]     0.972       994.544
+counter2[7]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[7]     0.972       994.687
+counter2[8]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[8]     0.972       994.687
+counter2[9]     Blinking_LED|CLK24     FD1S3DX     Q       counter2[9]     0.972       994.830
+==============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                      Required            
+Instance         Reference              Type        Pin     Net                Time         Slack  
+                 Clock                                                                             
+---------------------------------------------------------------------------------------------------
+counter2[25]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[25]     999.894      994.115
+counter2[23]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[23]     999.894      994.258
+counter2[24]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[24]     999.894      994.258
+counter2[21]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[21]     999.894      994.401
+counter2[22]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[22]     999.894      994.401
+counter2[19]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[19]     999.894      994.544
+counter2[20]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[20]     999.894      994.544
+counter2[17]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[17]     999.894      994.687
+counter2[18]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[18]     999.894      994.687
+counter2[15]     Blinking_LED|CLK24     FD1S3DX     D       counter2_s[15]     999.894      994.830
+===================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      5.779
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     994.115
+
+    Number of logic level(s):                14
+    Starting point:                          counter2[0] / Q
+    Ending point:                            counter2[25] / D
+    The start point is clocked by            Blinking_LED|CLK24 [rising] on pin CK
+    The end   point is clocked by            Blinking_LED|CLK24 [rising] on pin CK
+
+Instance / Net                     Pin      Pin               Arrival     No. of    
+Name                   Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------
+counter2[0]            FD1S3DX     Q        Out     0.972     0.972       -         
+counter2[0]            Net         -        -       -         -           1         
+counter2_cry_0[0]      CCU2D       A1       In      0.000     0.972       -         
+counter2_cry_0[0]      CCU2D       COUT     Out     1.544     2.516       -         
+counter2_cry[0]        Net         -        -       -         -           1         
+counter2_cry_0[1]      CCU2D       CIN      In      0.000     2.516       -         
+counter2_cry_0[1]      CCU2D       COUT     Out     0.143     2.659       -         
+counter2_cry[2]        Net         -        -       -         -           1         
+counter2_cry_0[3]      CCU2D       CIN      In      0.000     2.659       -         
+counter2_cry_0[3]      CCU2D       COUT     Out     0.143     2.802       -         
+counter2_cry[4]        Net         -        -       -         -           1         
+counter2_cry_0[5]      CCU2D       CIN      In      0.000     2.802       -         
+counter2_cry_0[5]      CCU2D       COUT     Out     0.143     2.945       -         
+counter2_cry[6]        Net         -        -       -         -           1         
+counter2_cry_0[7]      CCU2D       CIN      In      0.000     2.945       -         
+counter2_cry_0[7]      CCU2D       COUT     Out     0.143     3.087       -         
+counter2_cry[8]        Net         -        -       -         -           1         
+counter2_cry_0[9]      CCU2D       CIN      In      0.000     3.087       -         
+counter2_cry_0[9]      CCU2D       COUT     Out     0.143     3.230       -         
+counter2_cry[10]       Net         -        -       -         -           1         
+counter2_cry_0[11]     CCU2D       CIN      In      0.000     3.230       -         
+counter2_cry_0[11]     CCU2D       COUT     Out     0.143     3.373       -         
+counter2_cry[12]       Net         -        -       -         -           1         
+counter2_cry_0[13]     CCU2D       CIN      In      0.000     3.373       -         
+counter2_cry_0[13]     CCU2D       COUT     Out     0.143     3.516       -         
+counter2_cry[14]       Net         -        -       -         -           1         
+counter2_cry_0[15]     CCU2D       CIN      In      0.000     3.516       -         
+counter2_cry_0[15]     CCU2D       COUT     Out     0.143     3.659       -         
+counter2_cry[16]       Net         -        -       -         -           1         
+counter2_cry_0[17]     CCU2D       CIN      In      0.000     3.659       -         
+counter2_cry_0[17]     CCU2D       COUT     Out     0.143     3.801       -         
+counter2_cry[18]       Net         -        -       -         -           1         
+counter2_cry_0[19]     CCU2D       CIN      In      0.000     3.801       -         
+counter2_cry_0[19]     CCU2D       COUT     Out     0.143     3.944       -         
+counter2_cry[20]       Net         -        -       -         -           1         
+counter2_cry_0[21]     CCU2D       CIN      In      0.000     3.944       -         
+counter2_cry_0[21]     CCU2D       COUT     Out     0.143     4.087       -         
+counter2_cry[22]       Net         -        -       -         -           1         
+counter2_cry_0[23]     CCU2D       CIN      In      0.000     4.087       -         
+counter2_cry_0[23]     CCU2D       COUT     Out     0.143     4.230       -         
+counter2_cry[24]       Net         -        -       -         -           1         
+counter2_s_0[25]       CCU2D       CIN      In      0.000     4.230       -         
+counter2_s_0[25]       CCU2D       S0       Out     1.549     5.779       -         
+counter2_s[25]         Net         -        -       -         -           1         
+counter2[25]           FD1S3DX     D        In      0.000     5.779       -         
+====================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: Blinking_LED|CLK50
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+               Starting                                                  Arrival            
+Instance       Reference              Type        Pin     Net            Time        Slack  
+               Clock                                                                        
+--------------------------------------------------------------------------------------------
+counter[0]     Blinking_LED|CLK50     FD1S3DX     Q       counter[0]     0.972       994.115
+counter[1]     Blinking_LED|CLK50     FD1S3DX     Q       counter[1]     0.972       994.258
+counter[2]     Blinking_LED|CLK50     FD1S3DX     Q       counter[2]     0.972       994.258
+counter[3]     Blinking_LED|CLK50     FD1S3DX     Q       counter[3]     0.972       994.401
+counter[4]     Blinking_LED|CLK50     FD1S3DX     Q       counter[4]     0.972       994.401
+counter[5]     Blinking_LED|CLK50     FD1S3DX     Q       counter[5]     0.972       994.544
+counter[6]     Blinking_LED|CLK50     FD1S3DX     Q       counter[6]     0.972       994.544
+counter[7]     Blinking_LED|CLK50     FD1S3DX     Q       counter[7]     0.972       994.687
+counter[8]     Blinking_LED|CLK50     FD1S3DX     Q       counter[8]     0.972       994.687
+counter[9]     Blinking_LED|CLK50     FD1S3DX     Q       counter[9]     0.972       994.830
+============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                     Required            
+Instance        Reference              Type        Pin     Net               Time         Slack  
+                Clock                                                                            
+-------------------------------------------------------------------------------------------------
+counter[25]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[25]     999.894      994.115
+counter[26]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[26]     999.894      994.115
+counter[23]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[23]     999.894      994.258
+counter[24]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[24]     999.894      994.258
+counter[21]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[21]     999.894      994.401
+counter[22]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[22]     999.894      994.401
+counter[19]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[19]     999.894      994.544
+counter[20]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[20]     999.894      994.544
+counter[17]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[17]     999.894      994.687
+counter[18]     Blinking_LED|CLK50     FD1S3DX     D       counter_s[18]     999.894      994.687
+=================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      5.779
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     994.115
+
+    Number of logic level(s):                14
+    Starting point:                          counter[0] / Q
+    Ending point:                            counter[26] / D
+    The start point is clocked by            Blinking_LED|CLK50 [rising] on pin CK
+    The end   point is clocked by            Blinking_LED|CLK50 [rising] on pin CK
+
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                  Type        Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+counter[0]            FD1S3DX     Q        Out     0.972     0.972       -         
+counter[0]            Net         -        -       -         -           1         
+counter_cry_0[0]      CCU2D       A1       In      0.000     0.972       -         
+counter_cry_0[0]      CCU2D       COUT     Out     1.544     2.516       -         
+counter_cry[0]        Net         -        -       -         -           1         
+counter_cry_0[1]      CCU2D       CIN      In      0.000     2.516       -         
+counter_cry_0[1]      CCU2D       COUT     Out     0.143     2.659       -         
+counter_cry[2]        Net         -        -       -         -           1         
+counter_cry_0[3]      CCU2D       CIN      In      0.000     2.659       -         
+counter_cry_0[3]      CCU2D       COUT     Out     0.143     2.802       -         
+counter_cry[4]        Net         -        -       -         -           1         
+counter_cry_0[5]      CCU2D       CIN      In      0.000     2.802       -         
+counter_cry_0[5]      CCU2D       COUT     Out     0.143     2.945       -         
+counter_cry[6]        Net         -        -       -         -           1         
+counter_cry_0[7]      CCU2D       CIN      In      0.000     2.945       -         
+counter_cry_0[7]      CCU2D       COUT     Out     0.143     3.087       -         
+counter_cry[8]        Net         -        -       -         -           1         
+counter_cry_0[9]      CCU2D       CIN      In      0.000     3.087       -         
+counter_cry_0[9]      CCU2D       COUT     Out     0.143     3.230       -         
+counter_cry[10]       Net         -        -       -         -           1         
+counter_cry_0[11]     CCU2D       CIN      In      0.000     3.230       -         
+counter_cry_0[11]     CCU2D       COUT     Out     0.143     3.373       -         
+counter_cry[12]       Net         -        -       -         -           1         
+counter_cry_0[13]     CCU2D       CIN      In      0.000     3.373       -         
+counter_cry_0[13]     CCU2D       COUT     Out     0.143     3.516       -         
+counter_cry[14]       Net         -        -       -         -           1         
+counter_cry_0[15]     CCU2D       CIN      In      0.000     3.516       -         
+counter_cry_0[15]     CCU2D       COUT     Out     0.143     3.659       -         
+counter_cry[16]       Net         -        -       -         -           1         
+counter_cry_0[17]     CCU2D       CIN      In      0.000     3.659       -         
+counter_cry_0[17]     CCU2D       COUT     Out     0.143     3.801       -         
+counter_cry[18]       Net         -        -       -         -           1         
+counter_cry_0[19]     CCU2D       CIN      In      0.000     3.801       -         
+counter_cry_0[19]     CCU2D       COUT     Out     0.143     3.944       -         
+counter_cry[20]       Net         -        -       -         -           1         
+counter_cry_0[21]     CCU2D       CIN      In      0.000     3.944       -         
+counter_cry_0[21]     CCU2D       COUT     Out     0.143     4.087       -         
+counter_cry[22]       Net         -        -       -         -           1         
+counter_cry_0[23]     CCU2D       CIN      In      0.000     4.087       -         
+counter_cry_0[23]     CCU2D       COUT     Out     0.143     4.230       -         
+counter_cry[24]       Net         -        -       -         -           1         
+counter_cry_0[25]     CCU2D       CIN      In      0.000     4.230       -         
+counter_cry_0[25]     CCU2D       S1       Out     1.549     5.779       -         
+counter_s[26]         Net         -        -       -         -           1         
+counter[26]           FD1S3DX     D        In      0.000     5.779       -         
+===================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 53 of 4320 (1%)
+PIC Latch:       0
+I/O cells:       5
+
+
+Details:
+CCU2D:          28
+FD1S3DX:        53
+GSR:            1
+IB:             3
+INV:            1
+OB:             2
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 31MB peak: 145MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sat Jul 13 21:08:21 2019
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "E:/GIT/my_projects/Blinking_LED/Blinking_LED" -path "E:/GIT/my_projects/Blinking_LED"   "E:/GIT/my_projects/Blinking_LED/Blinking_LED/Blinking_LED_Blinking_LED.edi" "Blinking_LED_Blinking_LED.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to Blinking_LED_Blinking_LED.ngo...
+
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "E:/GIT/my_projects/Blinking_LED/Blinking_LED" -p "E:/GIT/my_projects/Blinking_LED"  "Blinking_LED_Blinking_LED.ngo" "Blinking_LED_Blinking_LED.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'Blinking_LED_Blinking_LED.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+     90 blocks expanded
+Complete the first expansion.
+Writing 'Blinking_LED_Blinking_LED.ngd' ...
+Total CPU Time: 0 secs  
+
+Total REAL Time: 0 secs  
+
+
+map -a "MachXO2" -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial   "Blinking_LED_Blinking_LED.ngd" -o "Blinking_LED_Blinking_LED_map.ncd" -pr "Blinking_LED_Blinking_LED.prf" -mp "Blinking_LED_Blinking_LED.mrp" -lpf "E:/GIT/my_projects/Blinking_LED/Blinking_LED/Blinking_LED_Blinking_LED_synplify.lpf" -lpf "E:/GIT/my_projects/Blinking_LED/Blinking_LED.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.3.144
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Blinking_LED_Blinking_LED.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCTQFP144, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+2 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="RST_c"  />
+
+
+
+Design Summary:
+   Number of registers:     53 out of  4665 (1%)
+      PFU registers:           53 out of  4320 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        28 out of  2160 (1%)
+      SLICEs as Logic/ROM:     28 out of  2160 (1%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         28 out of  2160 (1%)
+   Number of LUT4s:         56 out of  4320 (1%)
+      Number used as logic LUTs:          0
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       56
+      Number used as shift registers:     0
+   Number of PIO sites used: 5 + 4(JTAG) out of 115 (8%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net CLK50_c: 14 loads, 14 rising, 0 falling (Driver: PIO CLK50 )
+     Net CLK24_c: 14 loads, 14 rising, 0 falling (Driver: PIO CLK24 )
+   Number of Clock Enables:  0
+   Number of local set/reset loads for net RST_c merged into GSR:  53
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net LED0_c: 2 loads
+     Net LED1_c: 2 loads
+     Net counter2[0]: 1 loads
+     Net counter2_s[0]: 1 loads
+     Net counter2_s[1]: 1 loads
+     Net counter[0]: 1 loads
+     Net counter[1]: 1 loads
+     Net counter_cry[0]: 1 loads
+     Net counter_s[0]: 1 loads
+     Net counter_s[1]: 1 loads
+ 
+
+   Number of warnings:  1
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 48 MB
+
+Dumping design to file Blinking_LED_Blinking_LED_map.ncd.
+
+mpartrce -p "Blinking_LED_Blinking_LED.p2t" -f "Blinking_LED_Blinking_LED.p3t" -tf "Blinking_LED_Blinking_LED.pt" "Blinking_LED_Blinking_LED_map.ncd" "Blinking_LED_Blinking_LED.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Blinking_LED_Blinking_LED_map.ncd"
+Sat Jul 13 21:08:23 2019
+
+PAR: Place And Route Diamond (64-bit) 3.10.3.144.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Blinking_LED_Blinking_LED_map.ncd Blinking_LED_Blinking_LED.dir/5_1.ncd Blinking_LED_Blinking_LED.prf
+Preference file: Blinking_LED_Blinking_LED.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Blinking_LED_Blinking_LED_map.ncd.
+Design name: Blinking_LED
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    5+4(JTAG)/280     3% used
+                   5+4(JTAG)/115     8% bonded
+
+   SLICE             28/2160          1% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 135
+Number of Connections: 163
+
+Pin Constraint Summary:
+   5 out of 5 pins locked (100% locked).
+
+The following 2 signals are selected to use the primary clock routing resources:
+    CLK50_c (driver: CLK50, clk load #: 14)
+    CLK24_c (driver: CLK24, clk load #: 14)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="CLK50_c" arg1="Primary" arg2="CLK50" arg3="105" arg4="Primary"  />
+
+No signal is selected as secondary clock.
+
+Signal RST_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 1738.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  1738
+Finished Placer Phase 2.  REAL time: 5 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "CLK50_c" from comp "CLK50" on PIO site "105 (PR3A)", clk load = 14
+  PRIMARY "CLK24_c" from comp "CLK24" on CLK_PIN site "5 (PL6A)", clk load = 14
+
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   5 + 4(JTAG) out of 280 (3.2%) PIO sites used.
+   5 + 4(JTAG) out of 115 (7.8%) bonded PIO sites used.
+   Number of PIO comps: 5; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 28 (  0%) | -          | -         |
+| 1        | 1 / 29 (  3%) | 2.5V       | -         |
+| 2        | 0 / 29 (  0%) | -          | -         |
+| 3        | 0 / 9 (  0%)  | -          | -         |
+| 4        | 3 / 10 ( 30%) | 2.5V       | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 4 secs 
+
+Dumping design to file Blinking_LED_Blinking_LED.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 163 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 6 secs 
+
+Start NBR router at 21:08:29 07/13/19
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 21:08:29 07/13/19
+
+Start NBR section for initial routing at 21:08:29 07/13/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 21:08:29 07/13/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for re-routing at 21:08:29 07/13/19
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+
+Start NBR section for post-routing at 21:08:29 07/13/19
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 5 secs 
+Total REAL time: 6 secs 
+Completely routed.
+End of route.  163 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file Blinking_LED_Blinking_LED.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "Blinking_LED_Blinking_LED.t2b" -w "Blinking_LED_Blinking_LED.ncd" -jedec "Blinking_LED_Blinking_LED.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.3.144
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Blinking_LED_Blinking_LED.ncd.
+Design name: Blinking_LED
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Blinking_LED_Blinking_LED.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Blinking_LED_Blinking_LED.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

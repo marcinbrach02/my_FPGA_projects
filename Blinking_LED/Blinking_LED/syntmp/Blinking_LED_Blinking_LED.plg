@@ -1,0 +1,13 @@
+@P:  Worst Slack : 994.115
+@P:  Blinking_LED|CLK24 - Estimated Frequency : 169.9 MHz
+@P:  Blinking_LED|CLK24 - Requested Frequency : 1.0 MHz
+@P:  Blinking_LED|CLK24 - Estimated Period : 5.885
+@P:  Blinking_LED|CLK24 - Requested Period : 1000.000
+@P:  Blinking_LED|CLK24 - Slack : 994.115
+@P:  Blinking_LED|CLK50 - Estimated Frequency : 169.9 MHz
+@P:  Blinking_LED|CLK50 - Requested Frequency : 1.0 MHz
+@P:  Blinking_LED|CLK50 - Estimated Period : 5.885
+@P:  Blinking_LED|CLK50 - Requested Period : 1000.000
+@P:  Blinking_LED|CLK50 - Slack : 994.115
+@P:  Total Area : 1.0
+@P:  CPU Time : 0h:00m:01s
