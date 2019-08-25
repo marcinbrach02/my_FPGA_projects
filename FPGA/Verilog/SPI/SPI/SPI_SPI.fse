@@ -1,0 +1,10 @@
+
+fsm_encoding {618621861} sequential
+
+fsm_state_encoding {618621861} 00 {00}
+
+fsm_state_encoding {618621861} 01 {01}
+
+fsm_state_encoding {618621861} 11 {10}
+
+fsm_registers {618621861} {state[1]}  {state[0]} 

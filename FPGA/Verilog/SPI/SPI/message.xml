@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst_i_c</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dw</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dw</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dw</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>dw</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v&quot;:30:19:30:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Object rreg is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v&quot;:163:2:163:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v</Navigation>
+            <Navigation>163</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>163</Navigation>
+            <Navigation>7</Navigation>
+            <Navigation>Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\spi\fifo4.v&quot;:69:0:69:5|Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\spi\fifo4.v</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>69</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;e:\git\my_projects\fpga\verilog\spi\spi.v&quot;:167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\spi\spi.v</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;e:\git\my_projects\fpga\verilog\spi\spi.v&quot;:167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\spi\spi.v</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;e:\git\my_projects\fpga\verilog\spi\spi.v&quot;:167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\spi\spi.v</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;e:\git\my_projects\fpga\verilog\spi\spi.v&quot;:167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\spi\spi.v</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>167</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock SPI|clk_i with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_i&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock SPI|clk_i with period 1000.00ns. Please declare a user-defined clock on object &quot;p:clk_i&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

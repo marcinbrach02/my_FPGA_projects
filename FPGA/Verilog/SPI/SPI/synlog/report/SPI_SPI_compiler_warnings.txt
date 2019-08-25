@@ -1,0 +1,3 @@
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":30:19:30:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":163:2:163:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

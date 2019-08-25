@@ -1,0 +1,44 @@
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: MARCIN-VAIO
+
+# Sun Jul 21 21:34:16 2019
+
+#Implementation: SPI
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"E:\GIT\my_projects\SPI\SPI.v" (library work)
+@N: CG334 :"E:\GIT\my_projects\SPI\SPI.v":69:12:69:24|Read directive translate_off.
+@N: CG333 :"E:\GIT\my_projects\SPI\SPI.v":71:12:71:23|Read directive translate_on.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":140:28:140:36|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":140:38:140:50|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":235:30:235:38|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":235:40:235:52|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":269:33:269:41|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":269:43:269:55|Read a parallel_case directive.
+Verilog syntax check successful!
+Selecting top level module SPI
+@E: CG389 :"E:\GIT\my_projects\SPI\SPI.v":205:2:205:6|Reference to undefined module fifo4
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul 21 21:34:18 2019
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Jul 21 21:34:18 2019
+
+###########################################################]
