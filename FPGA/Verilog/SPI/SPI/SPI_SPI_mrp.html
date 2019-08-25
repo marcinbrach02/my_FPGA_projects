@@ -15,13 +15,14 @@
 
 Command line:   map -a MachXO2 -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial
      SPI_SPI.ngd -o SPI_SPI_map.ncd -pr SPI_SPI.prf -mp SPI_SPI.mrp -lpf
-     E:/GIT/my_projects/SPI/SPI/SPI_SPI_synplify.lpf -lpf
-     E:/GIT/my_projects/SPI/SPI.lpf -c 0 -gui 
+     E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI_synplify.lpf -lpf
+     E:/GIT/my_projects/FPGA/Verilog/SPI/SPI.lpf -c 0 -gui -msgset
+     E:/GIT/my_projects/FPGA/Verilog/SPI/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  07/21/19  21:35:47
+Mapped on:  08/25/19  10:40:19
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -66,8 +67,8 @@ Mapped on:  07/21/19  21:35:47
      Net clk_i_c: 56 loads, 56 rising, 0 falling (Driver: PIO clk_i )
    Number of Clock Enables:  8
      Net un1_sck_o_1_sqmuxa_0: 1 loads, 1 LSLICEs
-     Net sper_0_sqmuxa: 5 loads, 4 LSLICEs
 
+     Net sper_0_sqmuxa: 5 loads, 4 LSLICEs
      Net spcr_0_sqmuxa: 7 loads, 0 LSLICEs
      Net wfifo/un1_clr_1_0: 1 loads, 1 LSLICEs
      Net wfifo/un1_re_0: 1 loads, 1 LSLICEs
@@ -126,8 +127,8 @@ WARNING - map: Using local reset signal 'rst_i_c' to infer global GSR net.
 | inta_o              | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | ack_o               | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
 
++---------------------+-----------+-----------+------------+
 | dat_o[7]            | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | dat_o[6]            | OUTPUT    | LVCMOS25  | OUT        |
@@ -184,8 +185,8 @@ Signal GND undriven or does not drive anything - clipped.
 Signal rfifo/GND undriven or does not drive anything - clipped.
 Signal wfifo/GND undriven or does not drive anything - clipped.
 Signal VCC undriven or does not drive anything - clipped.
-Signal clkcnt_cry_0_COUT[9] undriven or does not drive anything - clipped.
 
+Signal clkcnt_cry_0_COUT[9] undriven or does not drive anything - clipped.
 Signal clkcnt_cry_0_S0[0] undriven or does not drive anything - clipped.
 Signal N_1 undriven or does not drive anything - clipped.
 Block spcr_0io_RNIDB28[6] was optimized away.
@@ -244,8 +245,8 @@ GSR Component:
      inferred reset domain. The components will respond to the reset signal
      'rst_i_c' via the local reset on the component and not the GSR component.
 
-     Type and number of components of the type: 
 
+     Type and number of components of the type: 
    Register = 2 
 
      Type and instance name of component: 
@@ -258,10 +259,9 @@ GSR Component:
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
+   Total REAL Time: 2 secs  
    Peak Memory Usage: 34 MB
         
-
 
 
 

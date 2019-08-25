@@ -2,4 +2,4 @@
 
 -g RamCfg:Reset
 
--path "E:/GIT/my_projects/SPI"  
+-path "E:/GIT/my_projects/FPGA/Verilog/SPI"  

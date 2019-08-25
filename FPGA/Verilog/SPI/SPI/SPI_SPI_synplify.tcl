@@ -43,15 +43,15 @@ set_option -resolve_multiple_driver 0
 
 
 #-- add_file options
-set_option -include_path {E:/GIT/my_projects/SPI}
-add_file -verilog {E:/GIT/my_projects/SPI/SPI.v}
-add_file -verilog {E:/GIT/my_projects/SPI/fifo4.v}
+set_option -include_path {E:/GIT/my_projects/FPGA/Verilog/SPI}
+add_file -verilog {E:/GIT/my_projects/FPGA/Verilog/SPI/SPI.v}
+add_file -verilog {E:/GIT/my_projects/FPGA/Verilog/SPI/fifo4.v}
 
 #-- top module name
 set_option -top_module SPI
 
 #-- set result format/file last
-project -result_file {E:/GIT/my_projects/SPI/SPI/SPI_SPI.edi}
+project -result_file {E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI.edi}
 
 #-- error message log file
 project -log_file {SPI_SPI.srf}

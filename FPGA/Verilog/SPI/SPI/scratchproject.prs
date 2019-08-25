@@ -1,23 +1,23 @@
 #--  Synopsys, Inc.
 #--  Version M-2017.03L-SP1-1
-#--  Project file E:\GIT\my_projects\SPI\SPI\scratchproject.prs
+#--  Project file E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\scratchproject.prs
 
 #project files
-add_file -verilog "E:/GIT/my_projects/SPI/SPI.v"
-add_file -verilog "E:/GIT/my_projects/SPI/fifo4.v"
+add_file -verilog "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI.v"
+add_file -verilog "E:/GIT/my_projects/FPGA/Verilog/SPI/fifo4.v"
 
 
 
 #implementation: "SPI"
-impl -add E:\GIT\my_projects\SPI\SPI -type fpga
+impl -add E:\GIT\my_projects\FPGA\Verilog\SPI\SPI -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {E:/GIT/my_projects/SPI/SPI/}
-set_option -include_path {E:/GIT/my_projects/SPI}
+set_option -include_path {E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/}
+set_option -include_path {E:/GIT/my_projects/FPGA/Verilog/SPI}
 
 #device options
 set_option -technology MACHXO2
@@ -70,8 +70,8 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "E:/GIT/my_projects/SPI/SPI/SPI_SPI.edi"
+project -result_file "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI.edi"
 
 #set log file 
-set_option log_file "E:/GIT/my_projects/SPI/SPI/SPI_SPI.srf" 
+set_option log_file "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI.srf" 
 impl -active "SPI"

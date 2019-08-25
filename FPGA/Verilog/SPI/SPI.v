@@ -1,4 +1,3 @@
-
 // synopsys translate_off
 `include "timescale.v"
 // synopsys translate_on
@@ -255,4 +254,3 @@ module SPI(
   assign tirq = ~|tcnt & rfwe;
 
 endmodule
-

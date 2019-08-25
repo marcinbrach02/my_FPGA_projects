@@ -1,14 +1,14 @@
 Selecting top level module SPI
-@N: CG364 :"E:\GIT\my_projects\SPI\fifo4.v":59:7:59:11|Synthesizing module fifo4 in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":6:7:6:11|Synthesizing module fifo4 in library work.
 
 	dw=32'b00000000000000000000000000001000
    Generated name = fifo4_8s
-@N: CL134 :"E:\GIT\my_projects\SPI\fifo4.v":114:0:114:5|Found RAM mem, depth=4, width=8
-@N: CG364 :"E:\GIT\my_projects\SPI\SPI.v":73:7:73:9|Synthesizing module SPI in library work.
-@W: CG133 :"E:\GIT\my_projects\SPI\SPI.v":98:19:98:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.
-@N: CL189 :"E:\GIT\my_projects\SPI\SPI.v":231:2:231:7|Register bit clkcnt[11] is always 0.
-@W: CL260 :"E:\GIT\my_projects\SPI\SPI.v":231:2:231:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"E:\GIT\my_projects\SPI\SPI.v":254:2:254:7|Trying to extract state machine for register state.
+@N: CL134 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":61:0:61:5|Found RAM mem, depth=4, width=8
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":5:7:5:9|Synthesizing module SPI in library work.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":30:19:30:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":163:2:163:7|Register bit clkcnt[11] is always 0.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":163:2:163:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":186:2:186:7|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 3 reachable states with original encodings of:
    00

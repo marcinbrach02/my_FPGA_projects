@@ -1,4 +1,4 @@
-# Sun Jul 21 21:35:37 2019
+# Sun Aug 25 10:40:10 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -7,8 +7,8 @@ Product Version M-2017.03L-SP1-1
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
 @A: MF827 |No constraint file specified.
-@L: E:\GIT\my_projects\SPI\SPI\SPI_SPI_scck.rpt 
-Printing clock  summary report in "E:\GIT\my_projects\SPI\SPI\SPI_SPI_scck.rpt" file 
+@L: E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI_scck.rpt 
+Printing clock  summary report in "E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -18,10 +18,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
@@ -41,7 +41,7 @@ Level     Clock         Frequency     Period        Type         Group          
 0 -       SPI|clk_i     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     84   
 ==============================================================================================
 
-@W: MT529 :"e:\git\my_projects\spi\fifo4.v":122:0:122:5|Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":69:0:69:5|Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -58,13 +58,13 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Tim
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sun Jul 21 21:35:39 2019
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Aug 25 10:40:12 2019
 
 ###########################################################]

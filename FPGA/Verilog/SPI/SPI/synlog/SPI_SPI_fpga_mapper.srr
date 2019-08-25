@@ -1,4 +1,4 @@
-# Sun Jul 21 21:35:39 2019
+# Sun Aug 25 10:40:13 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -15,60 +15,60 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"e:\git\my_projects\spi\spi.v":235:6:235:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 2 bits.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"e:\git\my_projects\spi\spi.v":235:6:235:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 7 bits.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 2 bits.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 7 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Encoding state machine state[2:0] (in view: work.SPI(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    11 -> 10
-@N: MO231 :"e:\git\my_projects\spi\spi.v":231:2:231:7|Found counter in view:work.SPI(verilog) instance clkcnt[10:0] 
+@N: MO231 :"e:\git\my_projects\fpga\verilog\spi\spi.v":163:2:163:7|Found counter in view:work.SPI(verilog) instance clkcnt[10:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
@@ -77,24 +77,24 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
    1		0h:00m:00s		   991.52ns		  96 /        67
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
-@N: BN362 :"e:\git\my_projects\spi\spi.v":119:2:119:7|Removing sequential instance spcr[4] (in view: work.SPI(verilog)) because it does not drive other instances.
-@A: BN291 :"e:\git\my_projects\spi\spi.v":119:2:119:7|Boundary register spcr[4] (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"e:\git\my_projects\fpga\verilog\spi\spi.v":51:2:51:7|Removing sequential instance spcr[4] (in view: work.SPI(verilog)) because it does not drive other instances.
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":51:2:51:7|Boundary register spcr[4] (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: FO126 :"e:\git\my_projects\spi\fifo4.v":114:0:114:5|Generating RAM wfifo.mem[8:1]
-@N: FO126 :"e:\git\my_projects\spi\fifo4.v":114:0:114:5|Generating RAM rfifo.mem[8:1]
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_0_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_7_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_6_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_5_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_4_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_3_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_2_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_1_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register sck_o.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: FO126 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":61:0:61:5|Generating RAM wfifo.mem[8:1]
+@N: FO126 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":61:0:61:5|Generating RAM rfifo.mem[8:1]
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_0_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_7_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_6_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_5_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_4_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_3_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_2_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_1_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register sck_o.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 
 
@@ -117,18 +117,18 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 144MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 144MB)
 
-Writing Analyst data base E:\GIT\my_projects\SPI\SPI\synwork\SPI_SPI_m.srm
+Writing Analyst data base E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\synwork\SPI_SPI_m.srm
 
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: E:\GIT\my_projects\SPI\SPI\SPI_SPI.edi
+@N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI.edi
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 148MB)
@@ -137,7 +137,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Jul 21 21:35:42 2019
+# Timing Report written on Sun Aug 25 10:40:15 2019
 #
 
 
@@ -333,9 +333,9 @@ VHI:            3
 VLO:            3
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 148MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 148MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun Jul 21 21:35:42 2019
+# Sun Aug 25 10:40:15 2019
 
 ###########################################################]

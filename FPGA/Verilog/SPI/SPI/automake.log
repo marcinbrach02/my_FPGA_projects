@@ -10,7 +10,7 @@ Lattice Diamond Version 3.10.3.144
 #OS: Windows 8 6.2
 #Hostname: MARCIN-VAIO
 
-# Sun Jul 21 21:35:27 2019
+# Sun Aug 25 10:39:59 2019
 
 #Implementation: SPI
 
@@ -28,30 +28,31 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"E:\GIT\my_projects\SPI\SPI.v" (library work)
-@N: CG334 :"E:\GIT\my_projects\SPI\SPI.v":69:12:69:24|Read directive translate_off.
-@N: CG333 :"E:\GIT\my_projects\SPI\SPI.v":71:12:71:23|Read directive translate_on.
-@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":140:28:140:36|Read full_case directive.
-@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":140:38:140:50|Read a parallel_case directive.
-@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":235:30:235:38|Read full_case directive.
-@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":235:40:235:52|Read a parallel_case directive.
-@N: CG346 :"E:\GIT\my_projects\SPI\SPI.v":269:33:269:41|Read full_case directive.
-@N: CG347 :"E:\GIT\my_projects\SPI\SPI.v":269:43:269:55|Read a parallel_case directive.
-@I::"E:\GIT\my_projects\SPI\fifo4.v" (library work)
-@N: CG334 :"E:\GIT\my_projects\SPI\fifo4.v":53:12:53:24|Read directive translate_off.
-@N: CG333 :"E:\GIT\my_projects\SPI\fifo4.v":55:12:55:23|Read directive translate_on.
+@I::"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v" (library work)
+@N: CG334 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":1:12:1:24|Read directive translate_off.
+@N: CG333 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":3:12:3:23|Read directive translate_on.
+@N: CG346 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":72:28:72:36|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":72:38:72:50|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":167:30:167:38|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":167:40:167:52|Read a parallel_case directive.
+@N: CG346 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":201:33:201:41|Read full_case directive.
+@N: CG347 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":201:43:201:55|Read a parallel_case directive.
+@I::"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v" (library work)
+@N: CG334 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":1:12:1:24|Read directive translate_off.
+@N: CG333 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":3:12:3:23|Read directive translate_on.
 Verilog syntax check successful!
+Options changed - recompiling
 Selecting top level module SPI
-@N: CG364 :"E:\GIT\my_projects\SPI\fifo4.v":59:7:59:11|Synthesizing module fifo4 in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":6:7:6:11|Synthesizing module fifo4 in library work.
 
 	dw=32'b00000000000000000000000000001000
    Generated name = fifo4_8s
-@N: CL134 :"E:\GIT\my_projects\SPI\fifo4.v":114:0:114:5|Found RAM mem, depth=4, width=8
-@N: CG364 :"E:\GIT\my_projects\SPI\SPI.v":73:7:73:9|Synthesizing module SPI in library work.
-@W: CG133 :"E:\GIT\my_projects\SPI\SPI.v":98:19:98:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.
-@N: CL189 :"E:\GIT\my_projects\SPI\SPI.v":231:2:231:7|Register bit clkcnt[11] is always 0.
-@W: CL260 :"E:\GIT\my_projects\SPI\SPI.v":231:2:231:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"E:\GIT\my_projects\SPI\SPI.v":254:2:254:7|Trying to extract state machine for register state.
+@N: CL134 :"E:\GIT\my_projects\FPGA\Verilog\SPI\fifo4.v":61:0:61:5|Found RAM mem, depth=4, width=8
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":5:7:5:9|Synthesizing module SPI in library work.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":30:19:30:22|Object rreg is declared but not assigned. Either assign a value or remove the declaration.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":163:2:163:7|Register bit clkcnt[11] is always 0.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":163:2:163:7|Pruning register bit 11 of clkcnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\SPI\SPI.v":186:2:186:7|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 3 reachable states with original encodings of:
    00
@@ -63,44 +64,44 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 21 21:35:27 2019
+# Sun Aug 25 10:40:02 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
+File E:\GIT\my_projects\SPI\SPI\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 21 21:35:28 2019
+# Sun Aug 25 10:40:03 2019
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 21 21:35:28 2019
+# Sun Aug 25 10:40:03 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
+File E:\GIT\my_projects\SPI\SPI\synwork\SPI_SPI_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jul 21 21:35:30 2019
+# Sun Aug 25 10:40:04 2019
 
 ###########################################################]
-Pre-mapping Report
-
-# Sun Jul 21 21:35:37 2019
+# Sun Aug 25 10:40:10 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -109,8 +110,8 @@ Product Version M-2017.03L-SP1-1
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
 @A: MF827 |No constraint file specified.
-@L: E:\GIT\my_projects\SPI\SPI\SPI_SPI_scck.rpt 
-Printing clock  summary report in "E:\GIT\my_projects\SPI\SPI\SPI_SPI_scck.rpt" file 
+@L: E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI_scck.rpt 
+Printing clock  summary report in "E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -120,10 +121,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
@@ -143,7 +144,7 @@ Level     Clock         Frequency     Period        Type         Group          
 0 -       SPI|clk_i     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     84   
 ==============================================================================================
 
-@W: MT529 :"e:\git\my_projects\spi\fifo4.v":122:0:122:5|Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":69:0:69:5|Found inferred clock SPI|clk_i which controls 84 sequential elements including rfifo.gb. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -160,19 +161,17 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Tim
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sun Jul 21 21:35:39 2019
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Aug 25 10:40:12 2019
 
 ###########################################################]
-Map & Optimize Report
-
-# Sun Jul 21 21:35:39 2019
+# Sun Aug 25 10:40:13 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -189,60 +188,60 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"e:\git\my_projects\spi\spi.v":235:6:235:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 2 bits.
-@W: FA239 :"e:\git\my_projects\spi\spi.v":235:6:235:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"e:\git\my_projects\spi\spi.v":235:6:235:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 7 bits.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[9:8] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 2 bits.
+@W: FA239 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|ROM clkcnt_3[6:0] (in view: work.SPI(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"e:\git\my_projects\fpga\verilog\spi\spi.v":167:6:167:9|Found ROM .delname. (in view: work.SPI(verilog)) with 12 words by 7 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Encoding state machine state[2:0] (in view: work.SPI(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    11 -> 10
-@N: MO231 :"e:\git\my_projects\spi\spi.v":231:2:231:7|Found counter in view:work.SPI(verilog) instance clkcnt[10:0] 
+@N: MO231 :"e:\git\my_projects\fpga\verilog\spi\spi.v":163:2:163:7|Found counter in view:work.SPI(verilog) instance clkcnt[10:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
@@ -251,24 +250,24 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
    1		0h:00m:00s		   991.52ns		  96 /        67
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
-@N: BN362 :"e:\git\my_projects\spi\spi.v":119:2:119:7|Removing sequential instance spcr[4] (in view: work.SPI(verilog)) because it does not drive other instances.
-@A: BN291 :"e:\git\my_projects\spi\spi.v":119:2:119:7|Boundary register spcr[4] (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"e:\git\my_projects\fpga\verilog\spi\spi.v":51:2:51:7|Removing sequential instance spcr[4] (in view: work.SPI(verilog)) because it does not drive other instances.
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":51:2:51:7|Boundary register spcr[4] (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@N: FO126 :"e:\git\my_projects\spi\fifo4.v":114:0:114:5|Generating RAM wfifo.mem[8:1]
-@N: FO126 :"e:\git\my_projects\spi\fifo4.v":114:0:114:5|Generating RAM rfifo.mem[8:1]
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_0_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_7_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_6_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_5_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_4_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_3_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_2_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register treg_1_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\spi\spi.v":254:2:254:7|Boundary register sck_o.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: FO126 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":61:0:61:5|Generating RAM wfifo.mem[8:1]
+@N: FO126 :"e:\git\my_projects\fpga\verilog\spi\fifo4.v":61:0:61:5|Generating RAM rfifo.mem[8:1]
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_0_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_7_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_6_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_5_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_4_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_3_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_2_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register treg_1_.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\spi\spi.v":186:2:186:7|Boundary register sck_o.fb (in view: work.SPI(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 
 
@@ -291,18 +290,18 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 144MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 144MB)
 
-Writing Analyst data base E:\GIT\my_projects\SPI\SPI\synwork\SPI_SPI_m.srm
+Writing Analyst data base E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\synwork\SPI_SPI_m.srm
 
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: E:\GIT\my_projects\SPI\SPI\SPI_SPI.edi
+@N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\SPI\SPI\SPI_SPI.edi
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 148MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 148MB)
@@ -311,7 +310,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Jul 21 21:35:42 2019
+# Timing Report written on Sun Aug 25 10:40:15 2019
 #
 
 
@@ -507,17 +506,17 @@ VHI:            3
 VLO:            3
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 148MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 148MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun Jul 21 21:35:42 2019
+# Sun Aug 25 10:40:15 2019
 
 ###########################################################]
 
 
 Synthesis exit by 0.
 
-edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "E:/GIT/my_projects/SPI/SPI" -path "E:/GIT/my_projects/SPI"   "E:/GIT/my_projects/SPI/SPI/SPI_SPI.edi" "SPI_SPI.ngo"   
+edif2ngd  -l "MachXO2" -d LCMXO2-4000HC -path "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI" -path "E:/GIT/my_projects/FPGA/Verilog/SPI"   "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI.edi" "SPI_SPI.ngo"   
 edif2ngd:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -536,7 +535,7 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs  
 
 
-ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "E:/GIT/my_projects/SPI/SPI" -p "E:/GIT/my_projects/SPI"  "SPI_SPI.ngo" "SPI_SPI.ngd"  	
+ngdbuild  -a "MachXO2" -d LCMXO2-4000HC  -p "C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data"  -p "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI" -p "E:/GIT/my_projects/FPGA/Verilog/SPI"  "SPI_SPI.ngo" "SPI_SPI.ngd"  	
 ngdbuild:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -564,7 +563,7 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs  
 
 
-map -a "MachXO2" -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial   "SPI_SPI.ngd" -o "SPI_SPI_map.ncd" -pr "SPI_SPI.prf" -mp "SPI_SPI.mrp" -lpf "E:/GIT/my_projects/SPI/SPI/SPI_SPI_synplify.lpf" -lpf "E:/GIT/my_projects/SPI/SPI.lpf" -c 0            
+map -a "MachXO2" -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial   "SPI_SPI.ngd" -o "SPI_SPI_map.ncd" -pr "SPI_SPI.prf" -mp "SPI_SPI.mrp" -lpf "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI_synplify.lpf" -lpf "E:/GIT/my_projects/FPGA/Verilog/SPI/SPI.lpf" -c 0            
 map:  version Diamond (64-bit) 3.10.3.144
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -669,7 +668,7 @@ Design Summary:
 
 
 Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 34 MB
 
 Dumping design to file SPI_SPI_map.ncd.
@@ -681,10 +680,10 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SPI_SPI_map.ncd"
-Sun Jul 21 21:35:49 2019
+Sun Aug 25 10:40:22 2019
 
 PAR: Place And Route Diamond (64-bit) 3.10.3.144.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SPI_SPI_map.ncd SPI_SPI.dir/5_1.ncd SPI_SPI.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/GIT/my_projects/FPGA/Verilog/SPI/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SPI_SPI_map.ncd SPI_SPI.dir/5_1.ncd SPI_SPI.prf
 Preference file: SPI_SPI.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -730,17 +729,17 @@ Signal rst_i_c is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
 .............
-Finished Placer Phase 0.  REAL time: 3 secs 
+Finished Placer Phase 0.  REAL time: 4 secs 
 
 Starting Placer Phase 1.
 ....................
 Placer score = 22631.
-Finished Placer Phase 1.  REAL time: 13 secs 
+Finished Placer Phase 1.  REAL time: 11 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  22627
-Finished Placer Phase 2.  REAL time: 13 secs 
+Finished Placer Phase 2.  REAL time: 11 secs 
 
 
 ------------------ Clock Report ------------------
@@ -781,7 +780,7 @@ I/O Bank Usage Summary:
 | 5        | 0 / 10 (  0%)  | -          | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 10 secs 
+Total placer CPU time: 8 secs 
 
 Dumping design to file SPI_SPI.dir/5_1.ncd.
 
@@ -793,9 +792,9 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 0 connections routed; 642 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 15 secs 
+Completed router resource preassignment. Real time: 13 secs 
 
-Start NBR router at 21:36:04 07/21/19
+Start NBR router at 10:40:35 08/25/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -810,28 +809,28 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 21:36:04 07/21/19
+Start NBR special constraint process at 10:40:36 08/25/19
 
-Start NBR section for initial routing at 21:36:04 07/21/19
+Start NBR section for initial routing at 10:40:36 08/25/19
 Level 4, iteration 1
-15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 15 secs 
+15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:36:04 07/21/19
+Start NBR section for normal routing at 10:40:36 08/25/19
 Level 4, iteration 1
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 15 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
 Level 4, iteration 2
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 15 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
 Level 4, iteration 3
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 16 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
 
-Start NBR section for re-routing at 21:36:05 07/21/19
+Start NBR section for re-routing at 10:40:36 08/25/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 16 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 14 secs 
 
-Start NBR section for post-routing at 21:36:05 07/21/19
+Start NBR section for post-routing at 10:40:36 08/25/19
 
 End NBR router with 0 unrouted connection
 
@@ -846,8 +845,8 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 12 secs 
-Total REAL time: 16 secs 
+Total CPU time 10 secs 
+Total REAL time: 14 secs 
 Completely routed.
 End of route.  642 routed (100.00%); 0 unrouted.
 
@@ -866,8 +865,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 12 secs 
-Total REAL time to completion: 17 secs 
+Total CPU  time to completion: 10 secs 
+Total REAL time to completion: 15 secs 
 
 par done!
 
