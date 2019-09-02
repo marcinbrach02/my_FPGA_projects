@@ -1,0 +1,24 @@
+Active-HDL 10.5.217.6767 2019-09-02 21:57:33
+
+Elaboration top modules:
+Verilog Module                testbench
+
+
+-----------------------------------------------------------------------------------------
+Verilog Module          | Library | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------
+testbench               | counter |      | 10.5.217.6767 (Windows) | -O2 -sv2k12
+counter                 | counter |      | 10.5.217.6767 (Windows) | -O2 -sv2k12
+-----------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------
+Library                 | Comment
+-----------------------------------------------------------------------------------------
+counter                 | None
+-----------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+testbench testbench
+
+
+The performance of simulation is reduced. Version Student Edition
