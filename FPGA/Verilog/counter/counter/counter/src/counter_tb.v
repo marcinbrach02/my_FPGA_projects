@@ -6,15 +6,16 @@
 module testbench();
 	
 reg R, C, LED;	   
+reg [2:0] T;
 
-counter count1(.RST(R), .CLK50(C), .LED0(LED));
+counter count1(.RST(R), .CLK50(C), .LED0(LED), .TEMP(T));
 
 	   
 
 initial begin
 		R=0;
-	#20 R=1;  
-	#10 R=0;
+	#10 R=1;  
+	#4 R=0;
 end
 
 

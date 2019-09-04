@@ -32,9 +32,11 @@ Active_lib=
 [Files]
 /counter.v=-1
 /counter_tb.v=-1
+/wave_demo.awc=-1
 [Files.Data]
 .\src\counter.v=Verilog Source Code
 .\src\counter_tb.v=Verilog Source Code
+.\src\wave_demo.awc=Accelerated Waveform Configuration
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]

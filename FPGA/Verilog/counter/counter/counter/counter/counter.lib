@@ -1,38 +1,40 @@
-timestamp=1567454248688
+timestamp=1567623424655
 
 [~A]
 E:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v=0*367*908
 E:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v_counter_tb.v=0*15157*15887
 LastVerilogToplevel=testbench
-ModifyID=9
+ModifyID=29
 Version=74
+e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v=0*20577*21086
+e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v_counter_tb.v=0*52800*53562
 
 [$root]
-A/$root=22|||1*20592
-BinI32/$root=3*14801
-SLP=3*14905
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216f544323c31883ce600a4618d942e597f
+A/$root=22|||1*76550
+BinI32/$root=3*52518
+SLP=3*52622
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216f176d27edb10b3801d76e2b8c47170ee
 
 [counter]
-A/counter=22|./../src/counter.v|1|1*20966
-BinI32/counter=3*14973
+A/counter=22|./../src/counter.v|1|1*76924
+BinI32/counter=3*52690
 R=./../src/counter.v|1
-SLP=3*15556
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a6006485864f323d01c2661d301095317
+SLP=3*53275
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a1d2c3296f8117b613170be692a03de95
 
 [testbench]
-A/testbench=22|./../src/counter_tb.v|6|1*22224
-BinI32/testbench=3*15863
+A/testbench=22|./../src/counter_tb.v|6|1*78271
+BinI32/testbench=3*53603
 R=./../src/counter_tb.v|6
-SLP=3*16463
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79139a5e4057a05d07c880625263a616eddc
+SLP=3*54202
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79132f1dd312e065f5ba3fe1a23bbb836314
 
 [~MFT]
-0=7|0counter.mgf|15887|9243
-1=6|1counter.mgf|22224|20592
-3=12|3counter.mgf|16463|14801
+0=7|0counter.mgf|53562|33285
+1=6|1counter.mgf|78271|76550
+3=12|3counter.mgf|54202|52518
 
 [~U]
-$root=12|0*14602|
-counter=12|0*14784|
-testbench=12|0*14985||0x10
+$root=12|0*52228|
+counter=12|0*52410|
+testbench=12|0*52628||0x10
