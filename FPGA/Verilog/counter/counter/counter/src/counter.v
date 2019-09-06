@@ -9,9 +9,9 @@ module counter(
 reg [3:0] period;
 
 
-always@(posedge CLK50 or posedge RST)		 	//proces umo¿liwiaj¹cy zliczanie zdarzeñ zegarowych
-	if ((RST) || (period[3] == 1)) 				//i generowanie sygna³u zegarowego o zmiennym wype³nieniu 
-		period = 2;								//zaleznym od ustawionej wartoœci period
+always@(posedge CLK50 or posedge RST)		 	//proces umozliwiajacy zliczanie zdarzen zegarowych
+	if ((RST) || (period[3] == 1)) 				//i generowanie sygnalu zegarowego o zmiennym czasie pomiedzy impulsami
+		period = 2;								//zaleznym od ustawionej wartosci period
 	else
 		period = period - 1;
 
@@ -21,8 +21,8 @@ assign TEMP = period;
  
 
 /*
-always @(posedge CLK50 or posedge RST)		   //proces umo¿liwiaj¹cy zliczanie taktów i ³apanie
-	if(RST) 								   //bitu na okreœlonej pozycji - gwarantowane wype³nienie 1/2
+always @(posedge CLK50 or posedge RST)		   //proces umozliwiajacy zliczanie taktow i lapanie
+	if(RST) 								   //bitu na okreslonej pozycji - gwarantowane wypelnienie 1/2
 		period = 0;
 	else
 		period = period + 1;

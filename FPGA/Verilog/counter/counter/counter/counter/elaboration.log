@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-09-04 20:57:07
+Active-HDL 10.5.217.6767 2019-09-07 01:05:47
 
 Elaboration top modules:
 Verilog Module                testbench
@@ -16,9 +16,3 @@ Library                 | Comment
 -----------------------------------------------------------------------------------------
 counter                 | None
 -----------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+testbench testbench
-
-
-The performance of simulation is reduced. Version Student Edition
