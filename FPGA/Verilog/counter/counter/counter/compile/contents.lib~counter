@@ -1,0 +1,7 @@
+29
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "./../src/counter.v" 1 counter
+~A 1 "./../src/counter.v" 1 counter
+~M 3 "./../src/counter_tb.v" 6 testbench
+~A 1 "./../src/counter_tb.v" 6 testbench

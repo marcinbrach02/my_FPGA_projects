@@ -1,0 +1,40 @@
+timestamp=1567623424655
+
+[~A]
+E:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v=0*367*908
+E:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v_counter_tb.v=0*15157*15887
+LastVerilogToplevel=testbench
+ModifyID=29
+Version=74
+e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v=0*20577*21086
+e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/counter.v_counter_tb.v=0*52800*53562
+
+[$root]
+A/$root=22|||1*76550
+BinI32/$root=3*52518
+SLP=3*52622
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216f176d27edb10b3801d76e2b8c47170ee
+
+[counter]
+A/counter=22|./../src/counter.v|1|1*76924
+BinI32/counter=3*52690
+R=./../src/counter.v|1
+SLP=3*53275
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a1d2c3296f8117b613170be692a03de95
+
+[testbench]
+A/testbench=22|./../src/counter_tb.v|6|1*78271
+BinI32/testbench=3*53603
+R=./../src/counter_tb.v|6
+SLP=3*54202
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d79132f1dd312e065f5ba3fe1a23bbb836314
+
+[~MFT]
+0=7|0counter.mgf|53562|33285
+1=6|1counter.mgf|78271|76550
+3=12|3counter.mgf|54202|52518
+
+[~U]
+$root=12|0*52228|
+counter=12|0*52410|
+testbench=12|0*52628||0x10
