@@ -5,16 +5,16 @@ module microSD(
 	input wire W_STB,
 	input wire [7:0] W_DATA,
 	
-	output wire R_STB,
+	input wire R_STB,
 	output reg [7:0] R_DATA,
 	
 	output reg MOSI,
 	input reg MISO,
 	output wire SCLK,
-	output reg CS
+	output reg CS,	
+	
 );
 
-wire CLK;
 wire CLK8;
 wire CLK74;
 reg [1:0] period; 
@@ -23,35 +23,36 @@ reg [7:0] period2;
 reg [7:0] DATA;
 
 
-always @(posedge CLK50 or posedge RST)				//dzielnik czêstotliwoœci do 100 - 400 kHz
-	if(RST) 
-		period = 0;
+always @(posedge CLK50 or posedge RST)								//dzielnik czêstotliwoœci do 100 - 400 kHz
+	if(RST) 														//przy zegarze 50 MHz dla period[8] ~ 195 KHz
+		period = 0;													//period[1] = 25MHz 
 	else
 		period = period + 1;
 
-assign CLK = period[1];
 assign SCLK = period[1];
 
-always@(posedge CLK or posedge RST)								//odmierzanie 8 taktow	 	
+always@(posedge SCLK or posedge RST)								//odmierzanie 8 taktow dla odbioru wiadomoœci gdy period1 = 8	 	
 	if (MISO == 0) 				
-		period1 = 7;								
+		period1 = 8;								
 	else
 		period1 = period1 - 1;
 
 assign CLK8 = period1[3];
 
 
-always@(posedge CLK or posedge RST)								//odmierzanie >=74 takty	 	
-	if (RST) 				
-		period2 = 75;								
+always@(posedge SCLK or posedge RST)								//odmierzanie 74 takty	 	
+	if (RST == 1)													//dla period2[7] i period2 = 74
+		period2 = 4;
+	else if(period2[3] == 1)
+		period2 = 4'b1111;	
 	else
 		period2 = period2 - 1;
 
-assign CLK74 = period2[7];
+assign CLK74 = period2[3];
 					
 
 
-always @(posedge CLK or posedge W_STB or posedge CLK74 or posedge CS)
+always @(posedge SCLK or posedge W_STB or posedge CLK74 or posedge CS)	   	//wys³anie komendy do karty
 	if(W_STB)
 		DATA <= W_DATA;	
 	else if (CLK74 == 0)
@@ -61,20 +62,24 @@ always @(posedge CLK or posedge W_STB or posedge CLK74 or posedge CS)
 		end	
 	else if (CLK74 == 1)
 		begin
-			MOSI <= 1;
-			CS <= 0;
+			CS <= 0; 
+			MOSI <= DATA[7];					   
+		    DATA <= DATA << 1;
+			if ((DATA == 8'b0000_0000) && (W_STB == 1))	 
+				begin
+				DATA <= W_DATA;
+				end		
+			else if ((DATA == 8'b0000_0000) && (W_STB == 0))	 
+				begin
+				MOSI <= 1;
+				end	
 		end	
-	else if (CS == 0) 
-		begin
-		MOSI <= DATA[7];
-		DATA <= DATA << 1; 
-		end
 		
 		
-always @(posedge CLK or posedge R_STB)
+always @(posedge SCLK or posedge R_STB)	   					//odbiór danych
 	if (R_STB)
 		R_DATA <= DATA;
-	else if ((MISO == 0) || (CLK8 == 1))
+	else if ((MISO == 0) || (CLK8 == 0))
 		begin
 		DATA[0] <= MISO;
 		DATA <= DATA << 1;

@@ -31,8 +31,14 @@ microSD=.
 Active_lib=
 [Files]
 /microSD.v=-1
+/microSD_tb.v=-1
+/wave_SPI.asdb=-1
+/wave_SPI.awc=-1
 [Files.Data]
 .\src\microSD.v=Verilog Source Code
+.\src\microSD_tb.v=Verilog Source Code
+.\src\wave_SPI.asdb=Accelerated Waveform File
+.\src\wave_SPI.awc=Accelerated Waveform Configuration
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]

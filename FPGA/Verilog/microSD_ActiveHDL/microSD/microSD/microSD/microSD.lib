@@ -1,30 +1,39 @@
-timestamp=1568229425786
+timestamp=1568572818935
 
 [~A]
 E:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/microSD.v=0*4059*4866
-LastVerilogToplevel=microSD
-ModifyID=15
+LastVerilogToplevel=microSD_tb
+ModifyID=87
 Version=74
 e:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/microSD.v=0*26495*27398
+e:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/microSD.v_microSD_tb.v=0*206191*207524
 
 [$root]
-A/$root=22|||1*43025
-BinI32/$root=3*33624
-SLP=3*33728
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216bdc183c1ae1d271a280b3f9ac1db15af
+A/$root=22|||1*402385
+BinI32/$root=3*340361
+SLP=3*340465
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921674ff37e6521686fe0e8060709d99758e
 
 [microSD]
-A/microSD=22|./../src/microSD.v|1|1*43399
-BinI32/microSD=3*33796
+A/microSD=22|./../src/microSD.v|1|1*402759
+BinI32/microSD=3*340533
 R=./../src/microSD.v|1
-SLP=3*35180
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|69115ed33f8263668252cb8bdef22ad826527262ddaa47cb266f3a3c4d9b973a970f8e259c5a2c06e71ace1a4ff91605
+SLP=3*342118
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|69115ed33f8263668252cb8bdef22ad826527262ddaa47cb266f3a3c4d9b973aaf95d661750e906656b76000b914161a
+
+[microSD_tb]
+A/microSD_tb=22|./../src/microSD_tb.v|4|1*405518
+BinI32/microSD_tb=3*343371
+R=./../src/microSD_tb.v|4
+SLP=3*344409
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d1d491d749a8c37ede91686d7622777e8a64d9024ff498befc7c0fb121207ba890bee18463e2d3861405f13632825906
 
 [~MFT]
-0=6|0microSD.mgf|27398|18523
-1=4|1microSD.mgf|43399|43025
-3=8|3microSD.mgf|35180|33624
+0=7|0microSD.mgf|207524|151465
+1=6|1microSD.mgf|405518|402385
+3=12|3microSD.mgf|344409|340361
 
 [~U]
-$root=12|0*26054|
-microSD=12|0*26220||0x10
+$root=12|0*205568|
+microSD=12|0*205750|
+microSD_tb=12|0*206024||0x10

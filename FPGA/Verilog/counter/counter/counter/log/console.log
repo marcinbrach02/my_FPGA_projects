@@ -1,0 +1,4 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'counter' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# Waveform file 'e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/wave_demo.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/counter/counter/counter/src/wave.asdb'.
