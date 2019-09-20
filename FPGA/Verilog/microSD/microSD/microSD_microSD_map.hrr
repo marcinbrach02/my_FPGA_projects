@@ -1,0 +1,11 @@
+---------------------------------------------------
+Report for cell microSD
+   Instance path: microSD
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.00        100.0
+                                 IOLGC	      10.00        100.0
+                                  LUT4	      29.00        100.0
+                                 IOREG	         10        100.0
+                                 IOBUF	         24        100.0
+                                PFUREG	         19        100.0

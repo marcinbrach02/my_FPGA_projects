@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-09-17 18:00:52
+Active-HDL 10.5.217.6767 2019-09-20 22:14:23
 
 Elaboration top modules:
 Verilog Module                microSD_tb
@@ -16,3 +16,9 @@ Library                 | Comment
 -----------------------------------------------------------------------------------------
 microsd                 | None
 -----------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+microSD_tb microSD_tb
+
+
+The performance of simulation is reduced. Version Student Edition

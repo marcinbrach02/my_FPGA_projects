@@ -3,10 +3,13 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=microSD
+
 [Library]
 microSD=.\microSD\microSD.lib
+
 [Settings]
 AccessRead=0
 AccessReadWrite=0
@@ -21,27 +24,35 @@ LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=Lattice MACHXO2
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 microSD=.
 Active_lib=
-[Files]
-/microSD.v=-1
-/microSD_tb.v=-1
-/wave_SPI.asdb=-1
-/wave_SPI.awc=-1
-[Files.Data]
-.\src\microSD.v=Verilog Source Code
-.\src\microSD_tb.v=Verilog Source Code
-.\src\wave_SPI.asdb=Accelerated Waveform File
-.\src\wave_SPI.awc=Accelerated Waveform Configuration
+
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/microSD.v=-1
+/microSD_tb.v=-1
+/basic_wave.asdb=-1
+/basic_wave.awc=-1
+
+[Files.Data]
+.\src\microSD.v=Verilog Source Code
+.\src\microSD_tb.v=Verilog Source Code
+.\src\basic_wave.asdb=Accelerated Waveform File
+.\src\basic_wave.awc=Accelerated Waveform Configuration
+

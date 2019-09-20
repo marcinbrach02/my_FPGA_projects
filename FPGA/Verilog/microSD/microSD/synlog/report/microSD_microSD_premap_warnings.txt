@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"e:\git\my_projects\fpga\verilog\microsd\microsd.v":27:0:27:5|Found inferred clock microSD|CLK50 which controls 2 sequential elements including period[1:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

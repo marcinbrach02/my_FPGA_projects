@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "microSD_microSD.log"
+-o "microSD_microSD.csv"
+-pr "microSD_microSD.prf"

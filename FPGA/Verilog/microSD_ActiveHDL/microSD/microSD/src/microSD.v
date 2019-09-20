@@ -9,14 +9,15 @@ module microSD(
 	output reg [7:0] R_DATA,
 	
 	output reg MOSI,
-	input reg MISO,
+	input wire MISO,
 	output wire SCLK,
-	output reg CS,	
+	output reg CS	
 	
 );
 
 wire CLK8;
 wire CLK74;
+reg temp = 1'b0;
 reg [1:0] period; 
 reg [3:0] period1;
 reg [7:0] period2;
@@ -31,9 +32,12 @@ always @(posedge CLK50 or posedge RST)								//dzielnik czêstotliwoœci do 100 -
 
 assign SCLK = period[1];
 
-always@(posedge SCLK or posedge RST)								//odmierzanie 8 taktow dla odbioru wiadomoœci gdy period1 = 8	 	
-	if (MISO == 0) 				
-		period1 = 8;								
+always@(posedge SCLK)												//odmierzanie 8 taktow dla odbioru wiadomoœci gdy period1 = 8	 	
+	if ((MISO == 0) && (temp == 0)) 								//pierwsza odebrana wartosæ musi byæ zerem
+		begin
+		period1 = 7;
+		temp = 1;
+		end	
 	else
 		period1 = period1 - 1;
 
@@ -52,7 +56,8 @@ assign CLK74 = period2[3];
 					
 
 
-always @(posedge SCLK or posedge W_STB or posedge CLK74 or posedge CS)	   	//wys³anie komendy do karty
+always @(posedge SCLK)	   											//wys³anie komendy do karty
+begin	
 	if(W_STB)
 		DATA <= W_DATA;	
 	else if (CLK74 == 0)
@@ -75,15 +80,14 @@ always @(posedge SCLK or posedge W_STB or posedge CLK74 or posedge CS)	   	//wys
 				end	
 		end	
 		
-		
-always @(posedge SCLK or posedge R_STB)	   					//odbiór danych
-	if (R_STB)
+   					
+	if (R_STB)														//odbiór danych
 		R_DATA <= DATA;
 	else if ((MISO == 0) || (CLK8 == 0))
 		begin
 		DATA[0] <= MISO;
 		DATA <= DATA << 1;
 		end
-		
+end		
 		
 endmodule
