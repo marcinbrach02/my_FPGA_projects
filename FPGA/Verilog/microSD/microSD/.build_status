@@ -6,37 +6,37 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1569010821"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1569014861"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1569010804">
-            <Task name="Map" build_result="2" update_result="0" update_time="1569010804"/>
+        <Milestone name="Map" build_result="2" build_time="1569014842">
+            <Task name="Map" build_result="2" update_result="0" update_time="1569014842"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1569010817">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1569010817"/>
+        <Milestone name="PAR" build_result="2" build_time="1569014857">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1569014857"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1569010803">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1569010803"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1569014841">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1569014841"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1569010449"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1569014828"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1569010804">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1569010804"/>
+        <Milestone name="Translate" build_result="2" build_time="1569014841">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1569014841"/>
         </Milestone>
-        <Report name="microSD_microSD.bgn" last_build_time="1569010821" last_build_size="4247"/>
-        <Report name="microSD_microSD.edi" last_build_time="1569010801" last_build_size="39532"/>
-        <Report name="microSD_microSD.jed" last_build_time="1569010821" last_build_size="849727"/>
-        <Report name="microSD_microSD.ncd" last_build_time="1569010817" last_build_size="51773"/>
-        <Report name="microSD_microSD.ngd" last_build_time="1569010804" last_build_size="42579"/>
-        <Report name="microSD_microSD_map.ncd" last_build_time="1569010804" last_build_size="38817"/>
+        <Report name="microSD_microSD.bgn" last_build_time="1569014861" last_build_size="4247"/>
+        <Report name="microSD_microSD.edi" last_build_time="1569014840" last_build_size="44055"/>
+        <Report name="microSD_microSD.jed" last_build_time="1569014861" last_build_size="849734"/>
+        <Report name="microSD_microSD.ncd" last_build_time="1569014857" last_build_size="59494"/>
+        <Report name="microSD_microSD.ngd" last_build_time="1569014841" last_build_size="47474"/>
+        <Report name="microSD_microSD_map.ncd" last_build_time="1569014842" last_build_size="44551"/>
     </Strategy>
 </BuildStatus>

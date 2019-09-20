@@ -23,19 +23,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  09/20/19  22:20:04
+Mapped on:  09/20/19  23:27:22
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of registers:     29 out of  4665 (1%)
       PFU registers:           19 out of  4320 (0%)
       PIO registers:           10 out of   345 (3%)
-   Number of SLICEs:        15 out of  2160 (1%)
-      SLICEs as Logic/ROM:     15 out of  2160 (1%)
+   Number of SLICEs:        21 out of  2160 (1%)
+      SLICEs as Logic/ROM:     21 out of  2160 (1%)
       SLICEs as RAM:            0 out of  1620 (0%)
       SLICEs as Carry:          0 out of  2160 (0%)
-   Number of LUT4s:         29 out of  4320 (1%)
-      Number used as logic LUTs:         29
+   Number of LUT4s:         39 out of  4320 (1%)
+      Number used as logic LUTs:         39
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
@@ -69,24 +69,25 @@ Mapped on:  09/20/19  22:20:04
    Number of Clock Enables:  4
 
      Net period_RNINBI[0]: 5 loads, 5 LSLICEs
-     Net period_RNIAI28[0]: 2 loads, 0 LSLICEs
-     Net period2_RNI88601[3]: 4 loads, 4 LSLICEs
-     Net R_STB_pad_RNI5ALB: 8 loads, 0 LSLICEs
+     Net period_RNINVDB[0]: 2 loads, 0 LSLICEs
+     Net period_RNIIN0F[0]: 8 loads, 0 LSLICEs
+     Net DATA_0_sqmuxa_i_o4_0_RNITH571: 4 loads, 4 LSLICEs
    Number of local set/reset loads for net RST_c merged into GSR:  6
-   Number of LSRs:  1
+   Number of LSRs:  2
      Net MISO_pad_RNIPCE3: 3 loads, 3 LSLICEs
+     Net period_RNI4PT3[0]: 2 loads, 0 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net R_STB_c: 10 loads
      Net W_STB_c: 10 loads
-     Net R_DATA3: 9 loads
-     Net period[0]: 8 loads
-     Net R_STB_pad_RNI5ALB: 8 loads
-     Net SCLK_c: 8 loads
+     Net N_50: 9 loads
+     Net period[0]: 9 loads
+     Net SCLK_c: 9 loads
+     Net period_RNIIN0F[0]: 8 loads
      Net period_RNINBI[0]: 6 loads
      Net period2[3]: 5 loads
-     Net CO0_0: 4 loads
-     Net period1[0]: 4 loads
-     Net period2_RNI88601[3]: 4 loads
+     Net RST_c: 5 loads
+     Net DATA_0_sqmuxa_i_o4_0_RNITH571: 4 loads
 
 
 
@@ -126,8 +127,8 @@ WARNING - map: Using local reset signal 'RST_c' to infer global GSR net.
 +---------------------+-----------+-----------+------------+
 | R_DATA[6]           | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
-| R_DATA[5]           | OUTPUT    | LVCMOS25  | OUT        |
 
+| R_DATA[5]           | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | R_DATA[4]           | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
@@ -187,8 +188,8 @@ GSR Component:
         
 
      GSR Property:
-   The design components with GSR property set to ENABLED will respond to global
 
+   The design components with GSR property set to ENABLED will respond to global
         set reset while the components with GSR property set to DISABLED will
         not.
         
@@ -202,7 +203,6 @@ GSR Component:
    Total REAL Time: 0 secs  
    Peak Memory Usage: 33 MB
         
-
 
 
 

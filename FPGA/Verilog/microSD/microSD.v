@@ -57,8 +57,14 @@ assign CLK74 = period2[3];
 
 
 always @(posedge SCLK)	   											//wys³anie komendy do karty
-begin	
-	if(W_STB)
+begin
+	if(RST)
+		begin
+		R_DATA <= 0;
+		MOSI <= 0;
+		CS <= 0;
+		end	
+	else if(W_STB)
 		DATA <= W_DATA;	
 	else if (CLK74 == 0)
 		begin

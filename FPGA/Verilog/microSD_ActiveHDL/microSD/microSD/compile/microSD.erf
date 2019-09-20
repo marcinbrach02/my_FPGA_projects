@@ -18,6 +18,6 @@ MESSAGE "Unit top modules: microSD_tb."
 MESSAGE "$root top modules: microSD_tb."
 UPDATEPROGRESS 100
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
 WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
 MESSAGE "done"

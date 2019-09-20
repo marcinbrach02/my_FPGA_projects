@@ -12,7 +12,7 @@
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0001       CLK50               port                   29         DATA[0]        
+@K:CKID0001       CLK50               port                   29         CS_0io         
 =======================================================================================
 
 
