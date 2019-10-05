@@ -1,31 +1,31 @@
-timestamp=1570299017923
+timestamp=1570304606417
 
 [~A]
 LastVerilogToplevel=SPI_cont_tb
-ModifyID=98
+ModifyID=99
 Version=74
 e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/SPI_cont.v=0*434*1338
-e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/SPI_cont.v_SPI_cont_tb.v=0*253547*254994
+e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/SPI_cont.v_SPI_cont_tb.v=0*256238*257669
 
 [$root]
-A/$root=22|||1*514477
-BinI32/$root=3*457779
-SLP=3*457883
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92164f54c86fb6ccb568fc403db0eca72ccd
+A/$root=22|||1*520015
+BinI32/$root=3*462980
+SLP=3*463084
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216a9ecdcbc7aced43cd21a31f626a29a63
 
 [SPI_cont]
-A/SPI_cont=22|./../src/SPI_cont.v|3|1*514867
-BinI32/SPI_cont=3*457951
+A/SPI_cont=22|./../src/SPI_cont.v|3|1*520405
+BinI32/SPI_cont=3*463152
 R=./../src/SPI_cont.v|3
-SLP=3*459648
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9cdd2b3d3c0df01a4ff7cb6ef71ad8a9ebc2582dc002f1bcd1f4a5252457779063c870190db15ec36d5aace89fc20eee
+SLP=3*464851
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9cdd2b3d3c0df01a4ff7cb6ef71ad8a9ebc2582dc002f1bcd1f4a525245777907064321ce89ff41bcdffad3a524624df
 
 [SPI_cont_tb]
-A/SPI_cont_tb=22|./../src/SPI_cont_tb.v|4|1*517766
-BinI32/SPI_cont_tb=3*460962
+A/SPI_cont_tb=22|./../src/SPI_cont_tb.v|4|1*523295
+BinI32/SPI_cont_tb=3*466086
 R=./../src/SPI_cont_tb.v|4
-SLP=3*462178
-Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|143c9059c5f4d0dd777a8a65a9248dd4e2d14fe22eb5a42fb710518e66358549de16f63f8d9fc4269885dc5c09fac4c9
+SLP=3*467302
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|143c9059c5f4d0dd777a8a65a9248dd4e2d14fe22eb5a42fb710518e66358549797b5f7e46b0723ffe1f0a6224787011
 
 [microSD_tb]
 A/microSD_tb=22|./../src/SPI_cont_tb.v|4|1*5942
@@ -35,12 +35,12 @@ SLP=3*6559
 Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d1d491d749a8c37ede91686d7622777e8a64d9024ff498befc7c0fb121207ba8ba6fa0af1a8f6865a89a9123de5a2cec
 
 [~MFT]
-0=7|0SPI_cont.mgf|254994|186640
-1=6|1SPI_cont.mgf|517766|512709
-3=12|3SPI_cont.mgf|462178|456067
+0=7|0SPI_cont.mgf|257669|188662
+1=6|1SPI_cont.mgf|523295|518247
+3=12|3SPI_cont.mgf|467302|461268
 
 [~U]
-$root=12|0*252878|
-SPI_cont=12|0*253076|
-SPI_cont_tb=12|0*253378||0x10
+$root=12|0*255569|
+SPI_cont=12|0*255767|
+SPI_cont_tb=12|0*256069||0x10
 microSD_tb=12|0*2365||0x10

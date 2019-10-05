@@ -14,7 +14,7 @@ module SPI_cont(
 	
 	output reg MOSI,
 	input wire MISO,
-	output wire SCLK,
+	output wire SCLK
 	//output reg CS					sygna³ przeniesiony do top level
 	
 );
@@ -44,12 +44,10 @@ always@(posedge CLK50 or posedge RST)							 //period[1] = 25MHz
 assign SCLK = period[divider];
 
 
-always@(posedge SCLK or posedge RST)	   						//proces zapisu
+always@(posedge SCLK)	   						//proces zapisu
 begin
 	if(RST)
 		begin 
-		R_STB <= 0;
-		R_DATA <= 0;
 		MOSI <= 0;
 		end	
 	else if(W_STB)
@@ -79,13 +77,12 @@ end
 
 		
 		
-always@(negedge SCLK or negedge RST)	   						//proces odczytu					
+always@(negedge SCLK)	   						//proces odczytu					
 begin
 	if(RST)
 		begin 
 		R_STB <= 0;
 		R_DATA <= 0;
-		MOSI <= 0;
 		end	
 	else if((MISO == 0) && (rd_ready == 0))
 		begin		
