@@ -1,4 +1,4 @@
-1
+2
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
 ~M 3 "./../src/SPI_cont.v" 1 SPI_cont

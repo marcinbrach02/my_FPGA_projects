@@ -1,21 +1,19 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
 UPDATEPROGRESS 17
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol CLK74 has not been declared in module card_driver." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 57  15
+MESSAGE_SP VCP2876 "Implicit net declaration, symbol CLK8 has not been declared in module card_driver." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 68  14
 UPDATEPROGRESS 35
 MESSAGE "Pass 2. Processing instantiations."
 UPDATEPROGRESS 45
 MESSAGE "Pass 3. Processing behavioral statements."
+ERROR VCP5103 "Undeclared identifier: temp." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 60  30
+ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 62  17
+ERROR VCP5103 "Undeclared identifier: temp." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 63  14
+ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 66  17
+ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 66  27
+ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 68  25
 UPDATEPROGRESS 80
-MESSAGE "Running Optimizer."
-MESSAGE "ELB/DAG code generating."
-UPDATEPROGRESS 83
-UPDATEPROGRESS 86
-UPDATEPROGRESS 90
-UPDATEPROGRESS 93
-MESSAGE "Unit top modules: SPI_cont card_driver."
-MESSAGE "$root top modules: SPI_cont card_driver."
-UPDATEPROGRESS 100
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
-WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "done"
+FAILURE "Compile failure 6 Errors 0 Warnings  Analysis time: 2[s]."

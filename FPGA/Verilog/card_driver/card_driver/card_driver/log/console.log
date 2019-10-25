@@ -1,16 +1,14 @@
-# Design: Design card_driver already active.
-# 
-# DESIGN: Default Design Language: VERILOG
-# DESIGN: Default BDE Language: VERILOG
-# DESIGN: Flow Manager: Not Defined
 alog -O2 -sve -msg 5 -sv2k12 -work card_driver $dsn/src/SPI_cont.v $dsn/src/card_driver.v
 # Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2876 card_driver.v : (57, 15): Implicit net declaration, symbol CLK74 has not been declared in module card_driver.
+# Info: VCP2876 card_driver.v : (68, 14): Implicit net declaration, symbol CLK8 has not been declared in module card_driver.
 # Pass 2. Processing instantiations.
 # Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Unit top modules: SPI_cont card_driver.
-# $root top modules: SPI_cont card_driver.
-# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
+# Error: VCP5103 card_driver.v : (60, 30): Undeclared identifier: temp.
+# Error: VCP5103 card_driver.v : (62, 17): Undeclared identifier: period1.
+# Error: VCP5103 card_driver.v : (63, 14): Undeclared identifier: temp.
+# Error: VCP5103 card_driver.v : (66, 17): Undeclared identifier: period1.
+# Error: VCP5103 card_driver.v : (66, 27): Undeclared identifier: period1.
+# Error: VCP5103 card_driver.v : (68, 25): Undeclared identifier: period1.
+# Compile failure 6 Errors 0 Warnings  Analysis time: 2[s].
