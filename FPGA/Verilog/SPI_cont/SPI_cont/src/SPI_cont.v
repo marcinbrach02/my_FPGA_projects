@@ -1,7 +1,7 @@
 `timescale 1 ns / 1 ns
 
 module SPI_cont(
-	input wire CLK50,
+	input wire IN_SCLK,
 	input wire RST,
 	
 	input wire W_STB,
@@ -19,7 +19,6 @@ module SPI_cont(
 	
 );
 
-wire CLK8;
 
 reg wr_ready = 0;	
 reg rd_ready = 0;
@@ -32,16 +31,7 @@ reg [7:0] WR_DATA;
 reg [7:0] RD_DATA;
 
 
-parameter divider = 1;											 //parametr do dzielnika czêstotliwoœci;
-																 //dzielnik czêstotliwoœci do 100 - 400 kHz
-																 //przy zegarze 50 MHz dla period[8] ~ 195 KHz
-always@(posedge CLK50 or posedge RST)							 //period[1] = 25MHz 
-	if(RST) 														
-		period = 0;													
-	else
-		period = period + 1;
-
-assign SCLK = period[divider];
+assign SCLK = IN_SCLK;
 
 
 always@(posedge SCLK)	   						//proces zapisu

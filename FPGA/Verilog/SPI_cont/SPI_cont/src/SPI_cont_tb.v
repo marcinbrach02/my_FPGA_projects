@@ -7,7 +7,7 @@ reg R, C, WAC, WR, RAC, RD, SCK, MI, MO;
 reg [7:0] WR_DATA, RD_DATA;
 
 
-SPI_cont SPI(.CLK50(C), .RST(R), .W_STB(WR), .W_DATA(WR_DATA), .W_ACK(WAC), .R_STB(RD), .R_DATA(RD_DATA), .R_ACK(RAC), .MOSI(MO), .MISO(MI), .SCLK(SCK) );
+SPI_cont SPI(.IN_SCLK(C), .RST(R), .W_STB(WR), .W_DATA(WR_DATA), .W_ACK(WAC), .R_STB(RD), .R_DATA(RD_DATA), .R_ACK(RAC), .MOSI(MO), .MISO(MI), .SCLK(SCK) );
 
 
 
@@ -40,11 +40,11 @@ reg ready;
 reg [3:0] peri;
 
 
-always @(posedge SCK ) 
+always @(negedge SCK ) 
 begin	
 	if(WAC)
 		begin
-		do_wysylki = 8'b0000_0001;
+		do_wysylki = 8'b0010_1001;
 		ready <= 1;
 		peri = 8;	
 		end
