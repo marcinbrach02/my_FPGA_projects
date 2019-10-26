@@ -16,4 +16,4 @@ ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog
 ERROR VCP5103 "Undeclared identifier: period1." "e:/GIT/my_projects/FPGA/Verilog/card_driver/card_driver/card_driver/src/card_driver.v" 68  25
 UPDATEPROGRESS 80
 ENDPROGRESS Compiling...
-FAILURE "Compile failure 6 Errors 0 Warnings  Analysis time: 2[s]."
+FAILURE "Compile failure 6 Errors 0 Warnings  Analysis time: 1[s]."
