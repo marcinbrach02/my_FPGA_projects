@@ -1,0 +1,25 @@
+Active-HDL 10.5.217.6767 2019-11-01 15:01:59
+
+Elaboration top modules:
+Verilog Module                card_driver_tb
+
+
+---------------------------------------------------------------------------------------------
+Verilog Module          | Library     | Info | Compiler Version        | Compilation Options
+---------------------------------------------------------------------------------------------
+card_driver_tb          | card_driver |      | 10.5.217.6767 (Windows) | -O2 -sv2k12
+card_driver             | card_driver |      | 10.5.217.6767 (Windows) | -O2 -sv2k12
+SPI_cont                | card_driver |      | 10.5.217.6767 (Windows) | -O2 -sv2k12
+---------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------
+Library                 | Comment
+---------------------------------------------------------------------------------------------
+card_driver             | None
+---------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+card_driver_tb card_driver_tb
+
+
+The performance of simulation is reduced. Version Student Edition

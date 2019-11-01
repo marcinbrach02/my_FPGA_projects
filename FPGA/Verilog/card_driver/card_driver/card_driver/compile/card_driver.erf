@@ -1,7 +1,8 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
-UPDATEPROGRESS 17
+UPDATEPROGRESS 11
+UPDATEPROGRESS 23
 UPDATEPROGRESS 35
 MESSAGE "Pass 2. Processing instantiations."
 UPDATEPROGRESS 45
@@ -10,12 +11,13 @@ UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
-UPDATEPROGRESS 83
-UPDATEPROGRESS 86
-UPDATEPROGRESS 90
-UPDATEPROGRESS 93
-MESSAGE "Unit top modules: card_driver."
-MESSAGE "$root top modules: card_driver."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 85
+UPDATEPROGRESS 88
+UPDATEPROGRESS 91
+UPDATEPROGRESS 94
+MESSAGE "Unit top modules: card_driver_tb."
+MESSAGE "$root top modules: card_driver_tb."
 UPDATEPROGRESS 100
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."

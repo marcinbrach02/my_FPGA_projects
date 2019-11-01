@@ -32,9 +32,11 @@ Active_lib=
 [Files]
 /SPI_cont.v=-1
 /card_driver.v=-1
+/card_driver_tb.v=-1
 [Files.Data]
 .\src\SPI_cont.v=Verilog Source Code
 .\src\card_driver.v=Verilog Source Code
+.\src\card_driver_tb.v=Verilog Source Code
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]

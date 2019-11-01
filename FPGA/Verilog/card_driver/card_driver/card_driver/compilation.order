@@ -1,2 +1,3 @@
 .\src\SPI_cont.v
 .\src\card_driver.v
+.\src\card_driver_tb.v
