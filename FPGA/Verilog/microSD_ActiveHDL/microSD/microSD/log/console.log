@@ -1,0 +1,88 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'microSD' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# Waveform file 'e:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/basic_wave.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/basic_wave.asdb'.
+alog -O2 -sve -msg 5 -sv2k12 -work microSD $dsn/src/microSD.v $dsn/src/microSD_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2858 microSD.v : (65, 18): SCLK is not a valid left-hand side of a procedural assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work microSD $dsn/src/microSD.v $dsn/src/microSD_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2980 microSD.v : (65, 18): Variable 'SCLK' cannot be driven by both procedural and continuous assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work microSD $dsn/src/microSD.v $dsn/src/microSD_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2980 microSD.v : (65, 18): Variable 'SCLK' cannot be driven by both procedural and continuous assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work microSD $dsn/src/microSD.v $dsn/src/microSD_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: microSD_tb.
+# $root top modules: microSD_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work microSD $dsn/src/microSD.v $dsn/src/microSD_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: microSD_tb.
+# $root top modules: microSD_tb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+microSD_tb microSD_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'microSD' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.9 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 0 primitives and 12 (100.00%) other processes in SLP
+# SLP: 27 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5520 kB (elbread=1280 elab2=4106 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location e:\GIT\my_projects\FPGA\Verilog\microSD_ActiveHDL\microSD\microSD\src\wave.asdb
+#  23:24, pi¹tek, 20 wrzeœnia 2019
+#  Simulation has been initialized
+# 10 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/microSD_ActiveHDL/microSD/microSD/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns

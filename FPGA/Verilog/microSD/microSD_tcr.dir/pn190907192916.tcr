@@ -1,0 +1,4 @@
+#Start recording tcl command: 9/7/2019 17:48:22
+#Project Location: E:/GIT/my_projects/FPGA/Verilog/microSD; Project name: microSD
+prj_project open "E:/GIT/my_projects/FPGA/Verilog/microSD/microSD.ldf"
+#Stop recording: 9/7/2019 19:29:16

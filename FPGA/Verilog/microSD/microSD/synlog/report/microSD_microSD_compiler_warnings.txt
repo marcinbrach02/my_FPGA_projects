@@ -1,0 +1,17 @@
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[7:7]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[7]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[6:6]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[6]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[5:5]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[5]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[4:4]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[4]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[3:3]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[3]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[2:2]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[2]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[1:1]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[1]; possible missing assignment in an if or case statement.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Feedback mux created for signal R_DATA[0:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":79:0:79:5|Latch generated from always block for signal R_DATA[0]; possible missing assignment in an if or case statement.
+

@@ -1,0 +1,5 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":1:7:1:13|Synthesizing module microSD in library work.
+@N|Running in 64-bit mode
+

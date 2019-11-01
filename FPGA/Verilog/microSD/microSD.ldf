@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="microSD" device="LCMXO2-4000HC-4TG144C" default_implementation="microSD">
     <Options/>
     <Implementation title="microSD" dir="microSD" description="microSD" synthesis="synplify" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="microSD"/>
         <Source name="microSD.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="microSD"/>
         </Source>
         <Source name="microSD.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
