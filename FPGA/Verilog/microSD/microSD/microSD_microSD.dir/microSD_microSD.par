@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.10.3.144.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Sep 20 23:27:22 2019
+
+C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f microSD_microSD.p2t
+microSD_microSD_map.ncd microSD_microSD.dir microSD_microSD.prf -gui -msgset
+E:/GIT/my_projects/FPGA/Verilog/microSD/promote.xml
+
+
+Preference file: microSD_microSD.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            -            -            -            15           Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 15 secs 
+
+par done!

@@ -1,0 +1,32 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Sep 20 23:27:41 2019 *
+NOTE DESIGN NAME: microSD *
+NOTE DEVICE NAME: LCMXO2-4000HC-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS R_DATA[0] : 96 : out *
+NOTE PINS CLK50 : 55 : in *
+NOTE PINS CS : 97 : out *
+NOTE PINS SCLK : 100 : out *
+NOTE PINS MISO : 103 : in *
+NOTE PINS MOSI : 98 : out *
+NOTE PINS R_DATA[7] : 95 : out *
+NOTE PINS R_DATA[6] : 89 : out *
+NOTE PINS R_DATA[5] : 91 : out *
+NOTE PINS R_DATA[4] : 92 : out *
+NOTE PINS R_DATA[3] : 87 : out *
+NOTE PINS R_DATA[2] : 94 : out *
+NOTE PINS R_DATA[1] : 93 : out *
+NOTE PINS R_STB : 104 : in *
+NOTE PINS W_DATA[7] : 83 : in *
+NOTE PINS W_DATA[6] : 84 : in *
+NOTE PINS W_DATA[5] : 85 : in *
+NOTE PINS W_DATA[4] : 86 : in *
+NOTE PINS W_DATA[3] : 81 : in *
+NOTE PINS W_DATA[2] : 82 : in *
+NOTE PINS W_DATA[1] : 107 : in *
+NOTE PINS W_DATA[0] : 105 : in *
+NOTE PINS W_STB : 99 : in *
+NOTE PINS RST : 109 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

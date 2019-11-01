@@ -1,0 +1,16 @@
+#OPTIONS:"|-layerid|0|-orig_srs|E:\\GIT\\my_projects\\FPGA\\Verilog\\microSD\\microSD\\synwork\\microSD_microSD_comp.srs|-top|microSD|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|E:\\GIT\\my_projects\\FPGA\\Verilog\\microSD|-I|E:\\GIT\\my_projects\\FPGA\\Verilog\\microSD\\microSD\\|-I|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\machxo2.v|-devicelib|C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\bin64\\c_ver.exe":1501881216
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\machxo2.v":1501885416
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\lucent\\pmi_def.v":1501885416
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\hypermods.v":1501880624
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\umr_capim.v":1501880624
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\scemi_objects.v":1501880624
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vlog\\scemi_pipes.svh":1501880624
+#CUR:"E:\\GIT\\my_projects\\FPGA\\Verilog\\microSD\\microSD.v":1569014828
+0			"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work microSD 0

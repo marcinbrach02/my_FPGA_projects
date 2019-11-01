@@ -1,0 +1,46 @@
+timestamp=1572095790269
+
+[~A]
+LastVerilogToplevel=SPI_cont_tb
+ModifyID=118
+Version=74
+e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/SPI_cont.v=0*434*1338
+e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/SPI_cont.v_SPI_cont_tb.v=0*305715*307066
+
+[$root]
+A/$root=22|||1*619987
+BinI32/$root=3*551815
+SLP=3*551919
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216212abd1b7c2656bb3904b96c1e15150e
+
+[SPI_cont]
+A/SPI_cont=22|./../src/SPI_cont.v|3|1*620377
+BinI32/SPI_cont=3*551987
+R=./../src/SPI_cont.v|3
+SLP=3*553166
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9cdd2b3d3c0df01a4ff7cb6ef71ad8a9ebc2582dc002f1bcd1f4a5252457779056b0cd6f7f9efabd3d4076397f3ee11b
+
+[SPI_cont_tb]
+A/SPI_cont_tb=22|./../src/SPI_cont_tb.v|4|1*622879
+BinI32/SPI_cont_tb=3*554269
+R=./../src/SPI_cont_tb.v|4
+SLP=3*555488
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|143c9059c5f4d0dd777a8a65a9248dd4e2d14fe22eb5a42fb710518e663585498c8ee8866d93968b4fbbd4a72392574b
+
+[microSD_tb]
+A/microSD_tb=22|./../src/SPI_cont_tb.v|4|1*5942
+BinI32/microSD_tb=3*5522
+R=./../src/SPI_cont_tb.v|4
+SLP=3*6559
+Version=10.5.217.6767 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d1d491d749a8c37ede91686d7622777e8a64d9024ff498befc7c0fb121207ba8ba6fa0af1a8f6865a89a9123de5a2cec
+
+[~MFT]
+0=7|0SPI_cont.mgf|307066|225704
+1=6|1SPI_cont.mgf|622879|618219
+3=12|3SPI_cont.mgf|555488|550103
+
+[~U]
+$root=12|0*305065|
+SPI_cont=12|0*305263|
+SPI_cont_tb=12|0*305546||0x10
+microSD_tb=12|0*2365||0x10
