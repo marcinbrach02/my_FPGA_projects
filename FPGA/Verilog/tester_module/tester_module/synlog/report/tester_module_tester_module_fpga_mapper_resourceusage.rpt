@@ -1,0 +1,24 @@
+Resource Usage Report
+Part: lcmxo2_4000hc-4
+
+Register bits: 94 of 4320 (2%)
+PIC Latch:       0
+I/O cells:       25
+
+Details:
+CCU2D:          4
+FD1P3BX:        9
+FD1P3DX:        39
+FD1S3BX:        2
+FD1S3DX:        24
+GSR:            1
+IB:             13
+IFS1P3DX:       9
+INV:            4
+OB:             12
+OFS1P3BX:       1
+OFS1P3DX:       10
+ORCALUT4:       60
+PUR:            1
+VHI:            3
+VLO:            3

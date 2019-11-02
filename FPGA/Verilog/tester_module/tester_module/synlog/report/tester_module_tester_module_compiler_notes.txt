@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":20:7:20:17|Synthesizing module dev_uart_tx in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":17:7:17:18|Synthesizing module dev_uart_asy in library work.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":103:0:103:5|Trying to extract state machine for register rxstate.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Trying to extract state machine for register txstate.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Trying to extract state machine for register rxstate.
+@N|Running in 64-bit mode
+

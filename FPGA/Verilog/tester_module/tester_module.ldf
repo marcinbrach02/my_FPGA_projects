@@ -2,15 +2,24 @@
 <BaliProject version="3.2" title="tester_module" device="LCMXO2-4000HC-4TG144C" default_implementation="tester_module">
     <Options/>
     <Implementation title="tester_module" dir="tester_module" description="tester_module" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="SPI_cont"/>
+        <Options def_top="dev_uart_asy"/>
         <Source name="tester_module.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="SPI_cont.v" type="Verilog" type_short="Verilog">
-            <Options top_module="SPI_cont"/>
+            <Options/>
         </Source>
         <Source name="card_driver.v" type="Verilog" type_short="Verilog">
+            <Options top_module="card_driver"/>
+        </Source>
+        <Source name="dev_uart_rx.v" type="Verilog" type_short="Verilog">
             <Options/>
+        </Source>
+        <Source name="dev_uart_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="dev_uart_asy.v" type="Verilog" type_short="Verilog">
+            <Options top_module="dev_uart_asy"/>
         </Source>
         <Source name="tester_module.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

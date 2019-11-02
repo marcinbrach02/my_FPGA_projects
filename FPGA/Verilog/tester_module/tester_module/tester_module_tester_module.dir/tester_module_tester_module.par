@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 3.10.3.144.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Nov 02 12:30:02 2019
+
+C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f
+tester_module_tester_module.p2t tester_module_tester_module_map.ncd
+tester_module_tester_module.dir tester_module_tester_module.prf -gui -msgset
+E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml
+
+
+Preference file: tester_module_tester_module.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -            -            -            -            12           Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 12 secs 
+
+par done!

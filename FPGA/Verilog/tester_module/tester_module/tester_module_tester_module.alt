@@ -1,0 +1,33 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Nov 02 12:30:19 2019 *
+NOTE DESIGN NAME: dev_uart_asy *
+NOTE DEVICE NAME: LCMXO2-4000HC-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS TxD_PIN : 77 : out *
+NOTE PINS CLK : 55 : in *
+NOTE PINS TX_RDY : 76 : out *
+NOTE PINS TX_ACK : 73 : out *
+NOTE PINS TX_DAT[7] : 82 : in *
+NOTE PINS TX_DAT[6] : 85 : in *
+NOTE PINS TX_DAT[5] : 84 : in *
+NOTE PINS TX_DAT[4] : 81 : in *
+NOTE PINS TX_DAT[3] : 86 : in *
+NOTE PINS TX_DAT[2] : 83 : in *
+NOTE PINS TX_DAT[1] : 78 : in *
+NOTE PINS TX_DAT[0] : 75 : in *
+NOTE PINS TX_STB : 74 : in *
+NOTE PINS RX_ACK : 60 : in *
+NOTE PINS RX_DAT[7] : 70 : out *
+NOTE PINS RX_DAT[6] : 71 : out *
+NOTE PINS RX_DAT[5] : 69 : out *
+NOTE PINS RX_DAT[4] : 68 : out *
+NOTE PINS RX_DAT[3] : 65 : out *
+NOTE PINS RX_DAT[2] : 61 : out *
+NOTE PINS RX_DAT[1] : 63 : out *
+NOTE PINS RX_DAT[0] : 62 : out *
+NOTE PINS RX_STB : 67 : out *
+NOTE PINS RxD_PIN : 59 : in *
+NOTE PINS RST : 142 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

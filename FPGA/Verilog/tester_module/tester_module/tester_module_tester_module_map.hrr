@@ -1,0 +1,32 @@
+---------------------------------------------------
+Report for cell dev_uart_asy
+   Instance path: dev_uart_asy
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      42.00        100.0
+                                 IOLGC	      20.00        100.0
+                                  LUT4	      62.00        100.0
+                                 IOREG	         20        100.0
+                                 IOBUF	         25        100.0
+                                PFUREG	         74        100.0
+                                RIPPLE	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           dev_uart_tx	          1        25.4
+                           dev_uart_rx	          1        44.0
+---------------------------------------------------
+Report for cell dev_uart_tx
+   Instance path: dev_uart_asy/tx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.67        25.4
+                                  LUT4	      14.00        22.6
+                                PFUREG	         20        27.0
+---------------------------------------------------
+Report for cell dev_uart_rx
+   Instance path: dev_uart_asy/rx
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.50        44.0
+                                  LUT4	      26.00        41.9
+                                PFUREG	         37        50.0

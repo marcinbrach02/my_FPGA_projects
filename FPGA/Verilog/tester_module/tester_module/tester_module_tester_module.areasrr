@@ -1,0 +1,56 @@
+----------------------------------------------------------------------
+Report for cell dev_uart_asy.verilog
+
+Register bits: 94 of 4320 (2%)
+PIC Latch:       0
+I/O cells:       25
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        4       100.0
+                            FD1P3BX        9       100.0
+                            FD1P3DX       39       100.0
+                            FD1S3BX        2       100.0
+                            FD1S3DX       24       100.0
+                                GSR        1       100.0
+                                 IB       13       100.0
+                           IFS1P3DX        9       100.0
+                                INV        4       100.0
+                                 OB       12       100.0
+                           OFS1P3BX        1       100.0
+                           OFS1P3DX       10       100.0
+                           ORCALUT4       60       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        3       100.0
+SUB MODULES 
+                        dev_uart_rx        1       100.0
+                        dev_uart_tx        1       100.0
+                            
+                         TOTAL           197           
+----------------------------------------------------------------------
+Report for cell dev_uart_tx.netlist
+     Instance path:  tx
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        8        88.9
+                            FD1P3DX        9        23.1
+                            FD1S3BX        1        50.0
+                            FD1S3DX        2         8.3
+                           ORCALUT4       14        23.3
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell dev_uart_rx.netlist
+     Instance path:  rx
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX       29        74.4
+                            FD1S3BX        1        50.0
+                            FD1S3DX        7        29.2
+                           ORCALUT4       26        43.3
+                                VHI        1        33.3
+                                VLO        1        33.3
+                            
+                         TOTAL            65           

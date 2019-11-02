@@ -3,8 +3,8 @@
   
 module card_driver_tb();
 	
-reg R, C, WR_S, WR_AC, WD_S, WD_AC, RD_S, RD_AC, RES_S, RES_AC, SCK, MI, MO, CS, C8_temp; 	   
-reg [7:0] WD_D, RES_D;
+reg R, C, WR_S, WR_AC, WD_S, WD_AC, RD_S, RD_AC, RES_S, RES_AC, SCK, MI, MO, CS, C8_temp, T74_temp, W_STB_I_TE; 	   
+reg [7:0] WD_D, RES_D, W_DATA_I_TE;
 reg [31:0] WR_A, RD_A;
 	   
 
@@ -28,8 +28,12 @@ card_driver driver(
 .MISO(MI), 
 .SCLK(SCK),
 .CS(CS), 
-.CLK8_temp(C8_temp)
 
+.CLK8_temp(C8_temp),
+.TICK74_temp(T74_temp),
+
+.W_STB_I_TEMP(W_STB_I_TE),
+.W_DATA_I_TEMP(W_DATA_I_TE)
 );
 
 
