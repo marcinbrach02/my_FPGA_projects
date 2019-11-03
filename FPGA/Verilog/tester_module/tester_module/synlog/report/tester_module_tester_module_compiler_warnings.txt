@@ -1,4 +1,38 @@
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Optimizing register bit txreg[9] to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Pruning register bit 9 of txreg[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":9:12:9:17|Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":37:10:37:14|Object count is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":94:0:94:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":16:5:16:10|Removing wire WR_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|Removing wire WR_ADDR, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|Removing wire RD_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:12:25:18|Removing wire RD_ADDR, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":34:12:34:17|Object RX_STB is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":35:12:35:17|Object RX_DAT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":36:12:36:17|Removing wire RX_ACK, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":38:12:38:17|Removing wire TX_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":39:12:39:17|Removing wire TX_DAT, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":40:12:40:17|Object TX_ACK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":41:12:41:17|Object TX_RDY is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":16:5:16:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:12:25:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 

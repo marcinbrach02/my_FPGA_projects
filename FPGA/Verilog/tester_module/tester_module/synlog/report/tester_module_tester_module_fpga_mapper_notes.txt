@@ -1,9 +1,20 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance rxstb_and (in view: work.dev_uart_asy(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "01000000000000000" on instance driver.reset[47:31].
+@N: FX493 |Applying initial value "00" on instance driver.reset[24:23].
+@N: FX493 |Applying initial value "00" on instance driver.reset[16:15].
+@N: FX493 |Applying initial value "01" on instance driver.reset[8:7].
 @N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy(verilog)); safe FSM implementation is not required.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Removing sequential instance driver.SPI.W_ACK (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
+@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":69:11:69:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":65:0:65:5|Pushed in register period[8:0].
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\tester_module_tester_module.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock card_driver|SCLK_derived_clock with period 1000.00ns 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

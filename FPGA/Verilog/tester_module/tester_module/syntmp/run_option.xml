@@ -3,7 +3,7 @@
   Synopsys, Inc.
   Version M-2017.03L-SP1-1
   Project file E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\syntmp\run_option.xml
-  Written on Sat Nov  2 12:29:44 2019
+  Written on Sun Nov  3 22:21:12 2019
 
 
 --> 
@@ -11,7 +11,7 @@
      <option name="project_name" display_name="Project Name">proj_1</option>
      <option name="device_name" display_name="Device Name">tester_module: Lattice MachXO2 : LCMXO2_4000HC</option>
      <option name="impl_name" display_name="Implementation Name">tester_module</option>
-     <option name="top_module" display_name="Top Module">dev_uart_asy</option>
+     <option name="top_module" display_name="Top Module">tester_module</option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>

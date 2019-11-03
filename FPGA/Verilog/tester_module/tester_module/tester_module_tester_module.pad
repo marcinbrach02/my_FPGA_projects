@@ -6,37 +6,19 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.44
 
-Sat Nov 02 12:30:12 2019
+Sun Nov 03 22:21:23 2019
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| CLK       | 55/2     | LVCMOS25_IN  | PB20A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RST       | 142/0    | LVCMOS25_IN  | PT9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RX_ACK    | 60/2     | LVCMOS25_IN  | PB23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RX_DAT[0] | 62/2     | LVCMOS25_OUT | PB24B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[1] | 63/2     | LVCMOS25_OUT | PB24D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[2] | 61/2     | LVCMOS25_OUT | PB24A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[3] | 65/2     | LVCMOS25_OUT | PB27A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[4] | 68/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[5] | 69/2     | LVCMOS25_OUT | PB29B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[6] | 71/2     | LVCMOS25_OUT | PB30B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_DAT[7] | 70/2     | LVCMOS25_OUT | PB30A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RX_STB    | 67/2     | LVCMOS25_OUT | PB27B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RxD_PIN   | 59/2     | LVCMOS25_IN  | PB23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_ACK    | 73/1     | LVCMOS25_OUT | PR19B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| TX_DAT[0] | 75/1     | LVCMOS25_IN  | PR18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[1] | 78/1     | LVCMOS25_IN  | PR16A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[2] | 83/1     | LVCMOS25_IN  | PR14B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[3] | 86/1     | LVCMOS25_IN  | PR13A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[4] | 81/1     | LVCMOS25_IN  | PR15B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[5] | 84/1     | LVCMOS25_IN  | PR14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[6] | 85/1     | LVCMOS25_IN  | PR13B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_DAT[7] | 82/1     | LVCMOS25_IN  | PR15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TX_RDY    | 76/1     | LVCMOS25_OUT | PR18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| TX_STB    | 74/1     | LVCMOS25_IN  | PR19A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| TxD_PIN   | 77/1     | LVCMOS25_OUT | PR16B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| CLOCK50   | 105/1    | LVCMOS25_IN  | PR3A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| CS        | 9/5      | LVCMOS25_OUT | PL7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MISO      | 11/5     | LVCMOS25_IN  | PL8A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| MOSI      | 12/5     | LVCMOS25_OUT | PL8B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| RESET     | 23/4     | LVCMOS25_IN  | PL14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| SCLK      | 10/5     | LVCMOS25_OUT | PL7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| TxD_PIN   | 122/0    | LVCMOS25_OUT | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -45,7 +27,8 @@ Vccio by Bank:
 +------+-------+
 | 0    | 2.5V  |
 | 1    | 2.5V  |
-| 2    | 2.5V  |
+| 4    | 2.5V  |
+| 5    | 2.5V  |
 +------+-------+
 
 Vref by Bank:
@@ -64,10 +47,10 @@ Pinout by Pin Number:
 | 4/5      |     unused, PULL:DOWN |            |              | PL4B  | L_GPLLC_IN     |           |           |
 | 5/5      |     unused, PULL:DOWN |            |              | PL6A  | PCLKT5_0       |           |           |
 | 6/5      |     unused, PULL:DOWN |            |              | PL6B  | PCLKC5_0       |           |           |
-| 9/5      |     unused, PULL:DOWN |            |              | PL7A  |                |           |           |
-| 10/5     |     unused, PULL:DOWN |            |              | PL7B  |                |           |           |
-| 11/5     |     unused, PULL:DOWN |            |              | PL8A  |                |           |           |
-| 12/5     |     unused, PULL:DOWN |            |              | PL8B  |                |           |           |
+| 9/5      | CS                    | LOCATED    | LVCMOS25_OUT | PL7A  |                |           |           |
+| 10/5     | SCLK                  | LOCATED    | LVCMOS25_OUT | PL7B  |                |           |           |
+| 11/5     | MISO                  | LOCATED    | LVCMOS25_IN  | PL8A  |                |           |           |
+| 12/5     | MOSI                  | LOCATED    | LVCMOS25_OUT | PL8B  |                |           |           |
 | 13/4     |     unused, PULL:DOWN |            |              | PL9A  |                |           |           |
 | 14/4     |     unused, PULL:DOWN |            |              | PL9B  |                |           |           |
 | 15/4     |     unused, PULL:DOWN |            |              | PL10A |                |           |           |
@@ -76,7 +59,7 @@ Pinout by Pin Number:
 | 20/4     |     unused, PULL:DOWN |            |              | PL10D | PCLKC4_0       |           |           |
 | 21/4     |     unused, PULL:DOWN |            |              | PL13A |                |           |           |
 | 22/4     |     unused, PULL:DOWN |            |              | PL13B |                |           |           |
-| 23/4     |     unused, PULL:DOWN |            |              | PL14A |                |           |           |
+| 23/4     | RESET                 | LOCATED    | LVCMOS25_IN  | PL14A |                |           |           |
 | 24/4     |     unused, PULL:DOWN |            |              | PL14B |                |           |           |
 | 25/3     |     unused, PULL:DOWN |            |              | PL16A |                |           |           |
 | 26/3     |     unused, PULL:DOWN |            |              | PL16B |                |           |           |
@@ -101,33 +84,33 @@ Pinout by Pin Number:
 | 50/2     |     unused, PULL:DOWN |            |              | PB13B | PCLKC2_0       |           |           |
 | 52/2     |     unused, PULL:DOWN |            |              | PB15A |                |           |           |
 | 54/2     |     unused, PULL:DOWN |            |              | PB15B |                |           |           |
-| 55/2     | CLK                   |            | LVCMOS25_IN  | PB20A | PCLKT2_1       |           |           |
+| 55/2     |     unused, PULL:DOWN |            |              | PB20A | PCLKT2_1       |           |           |
 | 56/2     |     unused, PULL:DOWN |            |              | PB20B | PCLKC2_1       |           |           |
 | 57/2     |     unused, PULL:DOWN |            |              | PB21A |                |           |           |
 | 58/2     |     unused, PULL:DOWN |            |              | PB21B |                |           |           |
-| 59/2     | RxD_PIN               |            | LVCMOS25_IN  | PB23A |                |           |           |
-| 60/2     | RX_ACK                |            | LVCMOS25_IN  | PB23B |                |           |           |
-| 61/2     | RX_DAT[2]             |            | LVCMOS25_OUT | PB24A |                |           |           |
-| 62/2     | RX_DAT[0]             |            | LVCMOS25_OUT | PB24B |                |           |           |
-| 63/2     | RX_DAT[1]             |            | LVCMOS25_OUT | PB24D |                |           |           |
-| 65/2     | RX_DAT[3]             |            | LVCMOS25_OUT | PB27A |                |           |           |
-| 67/2     | RX_STB                |            | LVCMOS25_OUT | PB27B |                |           |           |
-| 68/2     | RX_DAT[4]             |            | LVCMOS25_OUT | PB29A |                |           |           |
-| 69/2     | RX_DAT[5]             |            | LVCMOS25_OUT | PB29B |                |           |           |
-| 70/2     | RX_DAT[7]             |            | LVCMOS25_OUT | PB30A | SN             |           |           |
-| 71/2     | RX_DAT[6]             |            | LVCMOS25_OUT | PB30B | SI/SISPI       |           |           |
-| 73/1     | TX_ACK                |            | LVCMOS25_OUT | PR19B | DQ1            |           |           |
-| 74/1     | TX_STB                |            | LVCMOS25_IN  | PR19A | DQ1            |           |           |
-| 75/1     | TX_DAT[0]             |            | LVCMOS25_IN  | PR18B | DQ1            |           |           |
-| 76/1     | TX_RDY                |            | LVCMOS25_OUT | PR18A | DQ1            |           |           |
-| 77/1     | TxD_PIN               |            | LVCMOS25_OUT | PR16B | DQ1            |           |           |
-| 78/1     | TX_DAT[1]             |            | LVCMOS25_IN  | PR16A | DQ1            |           |           |
-| 81/1     | TX_DAT[4]             |            | LVCMOS25_IN  | PR15B | DQ1            |           |           |
-| 82/1     | TX_DAT[7]             |            | LVCMOS25_IN  | PR15A | DQ1            |           |           |
-| 83/1     | TX_DAT[2]             |            | LVCMOS25_IN  | PR14B | DQ1            |           |           |
-| 84/1     | TX_DAT[5]             |            | LVCMOS25_IN  | PR14A | DQ1            |           |           |
-| 85/1     | TX_DAT[6]             |            | LVCMOS25_IN  | PR13B | DQS1N          |           |           |
-| 86/1     | TX_DAT[3]             |            | LVCMOS25_IN  | PR13A | DQS1           |           |           |
+| 59/2     |     unused, PULL:DOWN |            |              | PB23A |                |           |           |
+| 60/2     |     unused, PULL:DOWN |            |              | PB23B |                |           |           |
+| 61/2     |     unused, PULL:DOWN |            |              | PB24A |                |           |           |
+| 62/2     |     unused, PULL:DOWN |            |              | PB24B |                |           |           |
+| 63/2     |     unused, PULL:DOWN |            |              | PB24D |                |           |           |
+| 65/2     |     unused, PULL:DOWN |            |              | PB27A |                |           |           |
+| 67/2     |     unused, PULL:DOWN |            |              | PB27B |                |           |           |
+| 68/2     |     unused, PULL:DOWN |            |              | PB29A |                |           |           |
+| 69/2     |     unused, PULL:DOWN |            |              | PB29B |                |           |           |
+| 70/2     |     unused, PULL:DOWN |            |              | PB30A | SN             |           |           |
+| 71/2     |     unused, PULL:DOWN |            |              | PB30B | SI/SISPI       |           |           |
+| 73/1     |     unused, PULL:DOWN |            |              | PR19B | DQ1            |           |           |
+| 74/1     |     unused, PULL:DOWN |            |              | PR19A | DQ1            |           |           |
+| 75/1     |     unused, PULL:DOWN |            |              | PR18B | DQ1            |           |           |
+| 76/1     |     unused, PULL:DOWN |            |              | PR18A | DQ1            |           |           |
+| 77/1     |     unused, PULL:DOWN |            |              | PR16B | DQ1            |           |           |
+| 78/1     |     unused, PULL:DOWN |            |              | PR16A | DQ1            |           |           |
+| 81/1     |     unused, PULL:DOWN |            |              | PR15B | DQ1            |           |           |
+| 82/1     |     unused, PULL:DOWN |            |              | PR15A | DQ1            |           |           |
+| 83/1     |     unused, PULL:DOWN |            |              | PR14B | DQ1            |           |           |
+| 84/1     |     unused, PULL:DOWN |            |              | PR14A | DQ1            |           |           |
+| 85/1     |     unused, PULL:DOWN |            |              | PR13B | DQS1N          |           |           |
+| 86/1     |     unused, PULL:DOWN |            |              | PR13A | DQS1           |           |           |
 | 87/1     |     unused, PULL:DOWN |            |              | PR10D |                |           |           |
 | 89/1     |     unused, PULL:DOWN |            |              | PR10C |                |           |           |
 | 91/1     |     unused, PULL:DOWN |            |              | PR10B | PCLKC1_0/DQ0   |           |           |
@@ -142,7 +125,7 @@ Pinout by Pin Number:
 | 100/1    |     unused, PULL:DOWN |            |              | PR5A  | DQ0            |           |           |
 | 103/1    |     unused, PULL:DOWN |            |              | PR4C  |                |           |           |
 | 104/1    |     unused, PULL:DOWN |            |              | PR3B  | R_GPLLC_IN/DQ0 |           |           |
-| 105/1    |     unused, PULL:DOWN |            |              | PR3A  | R_GPLLT_IN/DQ0 |           |           |
+| 105/1    | CLOCK50               | LOCATED    | LVCMOS25_IN  | PR3A  | R_GPLLT_IN/DQ0 |           |           |
 | 106/1    |     unused, PULL:DOWN |            |              | PR2B  | R_GPLLC_FB/DQ0 |           |           |
 | 107/1    |     unused, PULL:DOWN |            |              | PR2A  | R_GPLLT_FB/DQ0 |           |           |
 | 109/0    |     unused, PULL:DOWN |            |              | PT28D | DONE           |           |           |
@@ -156,7 +139,7 @@ Pinout by Pin Number:
 | 119/0    |     unused, PULL:DOWN |            |              | PT23D | PROGRAMN       |           |           |
 | 120/0    |     unused, PULL:DOWN |            |              | PT23C | JTAGENB        |           |           |
 | 121/0    |     unused, PULL:DOWN |            |              | PT21B |                |           |           |
-| 122/0    |     unused, PULL:DOWN |            |              | PT21A |                |           |           |
+| 122/0    | TxD_PIN               | LOCATED    | LVCMOS25_OUT | PT21A |                |           |           |
 | 125/0    |     unused, PULL:DOWN |            |              | PT20D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT20C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
@@ -171,7 +154,7 @@ Pinout by Pin Number:
 | 139/0    |     unused, PULL:DOWN |            |              | PT11A |                |           |           |
 | 140/0    |     unused, PULL:DOWN |            |              | PT10B |                |           |           |
 | 141/0    |     unused, PULL:DOWN |            |              | PT10A |                |           |           |
-| 142/0    | RST                   |            | LVCMOS25_IN  | PT9B  |                |           |           |
+| 142/0    |     unused, PULL:DOWN |            |              | PT9B  |                |           |           |
 | 143/0    |     unused, PULL:DOWN |            |              | PT9A  |                |           |           |
 | PB3C/2   |     unused, PULL:DOWN |            |              | PB3C  |                |           |           |
 | PB3D/2   |     unused, PULL:DOWN |            |              | PB3D  |                |           |           |
@@ -356,31 +339,13 @@ Dedicated sysCONFIG Pins:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
-LOCATE  COMP  "CLK"  SITE  "55";
-LOCATE  COMP  "RST"  SITE  "142";
-LOCATE  COMP  "RX_ACK"  SITE  "60";
-LOCATE  COMP  "RX_DAT[0]"  SITE  "62";
-LOCATE  COMP  "RX_DAT[1]"  SITE  "63";
-LOCATE  COMP  "RX_DAT[2]"  SITE  "61";
-LOCATE  COMP  "RX_DAT[3]"  SITE  "65";
-LOCATE  COMP  "RX_DAT[4]"  SITE  "68";
-LOCATE  COMP  "RX_DAT[5]"  SITE  "69";
-LOCATE  COMP  "RX_DAT[6]"  SITE  "71";
-LOCATE  COMP  "RX_DAT[7]"  SITE  "70";
-LOCATE  COMP  "RX_STB"  SITE  "67";
-LOCATE  COMP  "RxD_PIN"  SITE  "59";
-LOCATE  COMP  "TX_ACK"  SITE  "73";
-LOCATE  COMP  "TX_DAT[0]"  SITE  "75";
-LOCATE  COMP  "TX_DAT[1]"  SITE  "78";
-LOCATE  COMP  "TX_DAT[2]"  SITE  "83";
-LOCATE  COMP  "TX_DAT[3]"  SITE  "86";
-LOCATE  COMP  "TX_DAT[4]"  SITE  "81";
-LOCATE  COMP  "TX_DAT[5]"  SITE  "84";
-LOCATE  COMP  "TX_DAT[6]"  SITE  "85";
-LOCATE  COMP  "TX_DAT[7]"  SITE  "82";
-LOCATE  COMP  "TX_RDY"  SITE  "76";
-LOCATE  COMP  "TX_STB"  SITE  "74";
-LOCATE  COMP  "TxD_PIN"  SITE  "77";
+LOCATE  COMP  "CLOCK50"  SITE  "105";
+LOCATE  COMP  "CS"  SITE  "9";
+LOCATE  COMP  "MISO"  SITE  "11";
+LOCATE  COMP  "MOSI"  SITE  "12";
+LOCATE  COMP  "RESET"  SITE  "23";
+LOCATE  COMP  "SCLK"  SITE  "10";
+LOCATE  COMP  "TxD_PIN"  SITE  "122";
 
 
 
@@ -392,5 +357,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Nov 02 12:30:12 2019
+Sun Nov 03 22:21:23 2019
 

@@ -1,7 +1,7 @@
-C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  dev_uart_asy  -multisrs  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_comp.srs  -osyn  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_mult.srs  -log  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\tester_module_tester_module_multi_srs_gen.srr 
-relcom:C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top dev_uart_asy -multisrs ..\synwork\tester_module_tester_module_comp.srs -osyn ..\synwork\tester_module_tester_module_mult.srs -log ..\synlog\tester_module_tester_module_multi_srs_gen.srr
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  tester_module  -multisrs  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_comp.srs  -osyn  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_mult.srs  -log  E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\tester_module_tester_module_multi_srs_gen.srr 
+relcom:C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top tester_module -multisrs ..\synwork\tester_module_tester_module_comp.srs -osyn ..\synwork\tester_module_tester_module_mult.srs -log ..\synlog\tester_module_tester_module_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\tester_module_tester_module_comp.srs|io:i|time:1572694188|size:7908|exec:0|csum:468EBB701F9325D7C5A06EBF4B75C3E1
-file:..\synwork\tester_module_tester_module_mult.srs|io:o|time:1572694189|size:4613|exec:0|csum:
-file:..\synlog\tester_module_tester_module_multi_srs_gen.srr|io:o|time:1572694189|size:409|exec:0|csum:
+file:..\synwork\tester_module_tester_module_comp.srs|io:i|time:1572816073|size:15510|exec:0|csum:5711C4B240E88C91C3593752AE593913
+file:..\synwork\tester_module_tester_module_mult.srs|io:o|time:1572816074|size:3176|exec:0|csum:
+file:..\synlog\tester_module_tester_module_multi_srs_gen.srr|io:o|time:1572816074|size:542|exec:0|csum:
 file:C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501881390|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

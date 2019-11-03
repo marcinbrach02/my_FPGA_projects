@@ -10,7 +10,7 @@
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
  <tr> <td class="optionTitle" align="left"> Project Name</td> <td> proj_1</td> <td class="optionTitle" align="left"> Device Name</td> <td> tester_module: Lattice MachXO2 : LCMXO2_4000HC</td> </tr>
-<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> tester_module</td> <td class="optionTitle" align="left"> Top Module</td> <td> dev_uart_asy</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> tester_module</td> <td class="optionTitle" align="left"> Top Module</td> <td> tester_module</td> </tr>
  		 </thead> 
 		 <tbody> <tr> <td class="optionTitle" align="left"> Pipelining</td> <td> 1</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
 <tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 1000</td> </tr>
@@ -34,40 +34,40 @@
          </tr>
   <tr>
   <td class="optionTitle"> (compiler)</td><td>Complete</td>
- <td>10</td>
- <td>3</td>
+ <td>38</td>
+ <td>37</td>
 <td>0</td>
 <td>-</td>
-<td>00m:04s</td>
+<td>00m:01s</td>
 <td>-</td>
-<td><font size="-1">02.11.2019</font><br/><font size="-2">12:29:48</font></td>
+<td><font size="-1">03.11.2019</font><br/><font size="-2">22:21:13</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (premap)</td><td>Complete</td>
- <td>5</td>
- <td>1</td>
+ <td>14</td>
+ <td>2</td>
 <td>0</td>
 <td>0m:00s</td>
-<td>0m:02s</td>
+<td>0m:00s</td>
 <td>141MB</td>
-<td><font size="-1">02.11.2019</font><br/><font size="-2">12:29:55</font></td>
+<td><font size="-1">03.11.2019</font><br/><font size="-2">22:21:15</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
- <td>9</td>
- <td>1</td>
+ <td>20</td>
+ <td>11</td>
 <td>0</td>
 <td>0m:01s</td>
-<td>0m:02s</td>
+<td>0m:01s</td>
 <td>145MB</td>
-<td><font size="-1">02.11.2019</font><br/><font size="-2">12:29:57</font></td>
+<td><font size="-1">03.11.2019</font><br/><font size="-2">22:21:17</font></td>
 </tr> 
 
 <tr>
   <td class="optionTitle">Multi-srs Generator</td>
-  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td><font size="-1">02.11.2019</font><br/><font size="-2">12:29:49</font></td> 		</tbody>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td><font size="-1">03.11.2019</font><br/><font size="-2">22:21:14</font></td> 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -75,8 +75,8 @@
 <tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>94</td>
-<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>25</td>
+<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>120</td>
+<td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>7</td>
 </tr>
 <tr> 
 <td title ="Total Block RAMs used" class="optionTitle" align="left">Block RAMs
@@ -86,7 +86,7 @@
 </tr>
 <tr> 
 <td title ="Total ORCA LUTs used" class="optionTitle" align="left">ORCA LUTs
-(total_luts)</td> <td>60</td>
+(total_luts)</td> <td>81</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>
@@ -96,14 +96,15 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">dev_uart_asy|CLK</td><td  align="left">1.0 MHz</td><td  align="left">202.0 MHz</td><td  align="left">498.428</td></tr> 
+<tr> <td  align="left">card_driver|SCLK_derived_clock</td><td  align="left">1.0 MHz</td><td  align="left">333.4 MHz</td><td  align="left">498.500</td></tr> 
+<tr> <td  align="left">tester_module|CLOCK50</td><td  align="left">1.0 MHz</td><td  align="left">182.4 MHz</td><td  align="left">994.519</td></tr> 
 </tbody> 
  </table>
 <br>
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
  				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
  <tbody> <tr> 
-<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 0</td>
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>1 / 1</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>

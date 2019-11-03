@@ -1,19 +1,48 @@
 [ START MERGED ]
-TX_ACK.CN CLK_c
-rxstate_i[1] rxstate[1]
+driver.SPI.R_STB.CN driver.SCLK_i
 [ END MERGED ]
 [ START CLIPPED ]
-GND
+uart/GND
+driver/GND
 VCC
-un7_counter_fast_cry_5_0_COUT
-un7_counter_fast_cry_0_0_S1
-un7_counter_fast_cry_0_0_S0
-N_4
+GND
+uart/un7_counter_fast_cry_5_0_COUT
+uart/un7_counter_fast_cry_0_0_S1
+uart/un7_counter_fast_cry_0_0_S0
+uart/N_20
+driver/un5_period_74_1_cry_0_0_S1
+driver/un5_period_74_1_cry_0_0_S0
+driver/N_1
+driver/un5_period_74_1_s_7_0_S1
+driver/un5_period_74_1_s_7_0_COUT
+driver/un3_period_1_cry_0_0_S1
+driver/un3_period_1_cry_0_0_S0
+driver/N_2
+driver/un3_period_1_cry_1_0_S1
+driver/un3_period_1_cry_1_0_S0
+driver/un3_period_1_cry_3_0_S1
+driver/un3_period_1_cry_3_0_S0
+driver/un3_period_1_cry_5_0_S1
+driver/un3_period_1_cry_5_0_S0
+driver/un3_period_1_cry_7_0_S0
+driver/un3_period_1_cry_7_0_COUT
+driver/un3_period_cry_0_0_S1
+driver/un3_period_cry_0_0_S0
+driver/N_3
+driver/un3_period_s_7_0_S1
+driver/un3_period_s_7_0_COUT
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Sat Nov 02 12:30:02 2019
+# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Sun Nov 03 22:21:20 2019
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "MOSI" SITE "12" ;
+LOCATE COMP "CLOCK50" SITE "105" ;
+LOCATE COMP "TxD_PIN" SITE "122" ;
+LOCATE COMP "CS" SITE "9" ;
+LOCATE COMP "SCLK" SITE "10" ;
+LOCATE COMP "MISO" SITE "11" ;
+LOCATE COMP "RESET" SITE "23" ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

@@ -1,56 +1,111 @@
 ----------------------------------------------------------------------
-Report for cell dev_uart_asy.verilog
+Report for cell tester_module.verilog
 
-Register bits: 94 of 4320 (2%)
+Register bits: 120 of 4320 (3%)
 PIC Latch:       0
-I/O cells:       25
+I/O cells:       7
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2D        4       100.0
-                            FD1P3BX        9       100.0
-                            FD1P3DX       39       100.0
+                              CCU2D       19       100.0
+                            FD1P3AX       31       100.0
+                            FD1P3AY        1       100.0
+                            FD1P3BX       14       100.0
+                            FD1P3DX       24       100.0
+                            FD1P3IX       13       100.0
+                            FD1P3JX        2       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3AY        2       100.0
                             FD1S3BX        2       100.0
-                            FD1S3DX       24       100.0
+                            FD1S3DX       25       100.0
+                            FD1S3JX        1       100.0
                                 GSR        1       100.0
-                                 IB       13       100.0
-                           IFS1P3DX        9       100.0
-                                INV        4       100.0
-                                 OB       12       100.0
+                                 IB        3       100.0
+                           IFS1P3DX        1       100.0
+                                INV        5       100.0
+                                 OB        4       100.0
                            OFS1P3BX        1       100.0
-                           OFS1P3DX       10       100.0
-                           ORCALUT4       60       100.0
+                           OFS1P3IX        2       100.0
+                           ORCALUT4       81       100.0
                                 PUR        1       100.0
-                                VHI        3       100.0
-                                VLO        3       100.0
+                                VHI        5       100.0
+                                VLO        5       100.0
 SUB MODULES 
-                        dev_uart_rx        1       100.0
+                           SPI_cont        1       100.0
+                        card_driver        1       100.0
+                       dev_uart_asy        1       100.0
                         dev_uart_tx        1       100.0
                             
-                         TOTAL           197           
+                         TOTAL           248           
+----------------------------------------------------------------------
+Report for cell card_driver.netlist
+     Instance path:  driver
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       15        78.9
+                            FD1P3AX       31       100.0
+                            FD1P3AY        1       100.0
+                            FD1P3BX        6        42.9
+                            FD1P3DX        6        25.0
+                            FD1P3IX       13       100.0
+                            FD1P3JX        2       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3AY        2       100.0
+                            FD1S3BX        1        50.0
+                            FD1S3DX       10        40.0
+                            FD1S3JX        1       100.0
+                                INV        3        60.0
+                           ORCALUT4       53        65.4
+                                VHI        2        40.0
+                                VLO        2        40.0
+SUB MODULES 
+                           SPI_cont        1       100.0
+                            
+                         TOTAL           150           
+----------------------------------------------------------------------
+Report for cell SPI_cont.netlist
+     Instance path:  driver.SPI
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX       20        64.5
+                            FD1P3IX       10        76.9
+                            FD1P3JX        2       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3JX        1       100.0
+                                INV        1        20.0
+                           ORCALUT4       29        35.8
+                                VHI        1        20.0
+                                VLO        1        20.0
+                            
+                         TOTAL            66           
+----------------------------------------------------------------------
+Report for cell dev_uart_asy.netlist
+     Instance path:  uart
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        4        21.1
+                            FD1P3BX        8        57.1
+                            FD1P3DX       18        75.0
+                            FD1S3BX        1        50.0
+                            FD1S3DX       15        60.0
+                                INV        2        40.0
+                           ORCALUT4       27        33.3
+                                VHI        2        40.0
+                                VLO        2        40.0
+SUB MODULES 
+                        dev_uart_tx        1       100.0
+                            
+                         TOTAL            80           
 ----------------------------------------------------------------------
 Report for cell dev_uart_tx.netlist
-     Instance path:  tx
+     Instance path:  uart.tx
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3BX        8        88.9
-                            FD1P3DX        9        23.1
+                            FD1P3BX        8        57.1
+                            FD1P3DX        9        37.5
                             FD1S3BX        1        50.0
-                            FD1S3DX        2         8.3
-                           ORCALUT4       14        23.3
-                                VHI        1        33.3
-                                VLO        1        33.3
+                            FD1S3DX        2         8.0
+                           ORCALUT4       14        17.3
+                                VHI        1        20.0
+                                VLO        1        20.0
                             
                          TOTAL            36           
-----------------------------------------------------------------------
-Report for cell dev_uart_rx.netlist
-     Instance path:  rx
-                                          Cell usage:
-                               cell       count    Res Usage(%)
-                            FD1P3DX       29        74.4
-                            FD1S3BX        1        50.0
-                            FD1S3DX        7        29.2
-                           ORCALUT4       26        43.3
-                                VHI        1        33.3
-                                VLO        1        33.3
-                            
-                         TOTAL            65           

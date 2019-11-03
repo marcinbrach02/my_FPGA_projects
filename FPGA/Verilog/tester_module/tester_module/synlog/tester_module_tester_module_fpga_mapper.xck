@@ -1,1 +1,2 @@
-CKID0001:@|S:CLK@|E:RX_DAT_0io[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:driver.period[8]@|E:driver.SPI.RD_DATA[7]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:CLOCK50@|E:driver_CSio@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 

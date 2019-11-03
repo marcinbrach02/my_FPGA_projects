@@ -15,9 +15,15 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>dev_uart_asy|CLK</data>
+<data>card_driver|SCLK_derived_clock</data>
 <data>1.0 MHz</data>
-<data>202.0 MHz</data>
-<data>498.428</data>
+<data>333.4 MHz</data>
+<data>498.500</data>
+</row>
+<row>
+<data>tester_module|CLOCK50</data>
+<data>1.0 MHz</data>
+<data>182.4 MHz</data>
+<data>994.519</data>
 </row>
 </report_table>

@@ -1,12 +1,12 @@
 # Synopsys Constraint Checker, version maplat, Build 1796R, built Aug  4 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Sat Nov  2 12:29:55 2019
+# Written on Sun Nov  3 22:21:15 2019
 
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "dev_uart_asy"
+Top View:                "tester_module"
 Constraint File(s):      (none)
 
 
@@ -24,10 +24,12 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------------------------
-dev_uart_asy|CLK     dev_uart_asy|CLK     |     1000.000         |     No paths         |     500.000          |     No paths                         
-=====================================================================================================================================================
+Starting                           Ending                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+tester_module|CLOCK50              tester_module|CLOCK50              |     1000.000         |     No paths         |     No paths         |     No paths                         
+card_driver|SCLK_derived_clock     tester_module|CLOCK50              |     No paths         |     No paths         |     No paths         |     500.000                          
+card_driver|SCLK_derived_clock     card_driver|SCLK_derived_clock     |     1000.000         |     1000.000         |     No paths         |     No paths                         
+=================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -35,29 +37,11 @@ dev_uart_asy|CLK     dev_uart_asy|CLK     |     1000.000         |     No paths 
 Unconstrained Start/End Points
 ******************************
 
-p:RST
-p:RX_ACK
-p:RX_DAT[0]
-p:RX_DAT[1]
-p:RX_DAT[2]
-p:RX_DAT[3]
-p:RX_DAT[4]
-p:RX_DAT[5]
-p:RX_DAT[6]
-p:RX_DAT[7]
-p:RX_STB
+p:CS
+p:MISO
+p:MOSI
+p:RESET
 p:RxD_PIN
-p:TX_ACK
-p:TX_DAT[0]
-p:TX_DAT[1]
-p:TX_DAT[2]
-p:TX_DAT[3]
-p:TX_DAT[4]
-p:TX_DAT[5]
-p:TX_DAT[6]
-p:TX_DAT[7]
-p:TX_RDY
-p:TX_STB
 p:TxD_PIN
 
 

@@ -8,7 +8,7 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 Command: bitgen -g RamCfg:Reset -path E:/GIT/my_projects/FPGA/Verilog/tester_module -w -jedec -gui -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml tester_module_tester_module.ncd tester_module_tester_module.prf 
 
 Loading design for application Bitgen from file tester_module_tester_module.ncd.
-Design name: dev_uart_asy
+Design name: tester_module
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LCMXO2-4000HC

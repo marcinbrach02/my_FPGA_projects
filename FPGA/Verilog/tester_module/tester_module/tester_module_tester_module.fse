@@ -1,14 +1,4 @@
 
-fsm_encoding {1110301032} sequential
-
-fsm_state_encoding {1110301032} 00 {00}
-
-fsm_state_encoding {1110301032} 01 {01}
-
-fsm_state_encoding {1110301032} 10 {10}
-
-fsm_registers {1110301032} {rxstate[1]}  {rxstate[0]} 
-
 fsm_encoding {1114201421} sequential
 
 fsm_state_encoding {1114201421} 00 {00}
@@ -20,36 +10,6 @@ fsm_state_encoding {1114201421} 10 {10}
 fsm_state_encoding {1114201421} 11 {11}
 
 fsm_registers {1114201421} {txstate[1]}  {txstate[0]} 
-
-fsm_encoding {9420424} onehot
-
-fsm_state_encoding {9420424} 0000000 {0000000000001}
-
-fsm_state_encoding {9420424} 0000001 {0000000000010}
-
-fsm_state_encoding {9420424} 0000010 {0000000000100}
-
-fsm_state_encoding {9420424} 0000011 {0000000001000}
-
-fsm_state_encoding {9420424} 0000100 {0000000010000}
-
-fsm_state_encoding {9420424} 0000101 {0000000100000}
-
-fsm_state_encoding {9420424} 0000110 {0000001000000}
-
-fsm_state_encoding {9420424} 0000111 {0000010000000}
-
-fsm_state_encoding {9420424} 0001000 {0000100000000}
-
-fsm_state_encoding {9420424} 0001001 {0001000000000}
-
-fsm_state_encoding {9420424} 0001010 {0010000000000}
-
-fsm_state_encoding {9420424} 0001011 {0100000000000}
-
-fsm_state_encoding {9420424} 0001100 {1000000000000}
-
-fsm_registers {9420424} {rxstate[12]}  {rxstate[11]}  {rxstate[10]}  {rxstate[9]}  {rxstate[8]}  {rxstate[7]}  {rxstate[6]}  {rxstate[5]}  {rxstate[4]}  {rxstate[3]}  {rxstate[2]}  {rxstate[1]}  {rxstate[0]} 
 
 fsm_encoding {10410413} onehot
 

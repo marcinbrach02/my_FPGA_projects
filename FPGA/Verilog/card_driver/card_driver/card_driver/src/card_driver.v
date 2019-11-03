@@ -10,25 +10,26 @@ module card_driver(
 	
 	input wire WD_STB,
 	input wire [7:0] WD_DATA,
-	output reg WD_ACK,
+	output wire WD_ACK,
 	
 
 	input wire RD_STB,
 	input wire [31:0] RD_ADDR,
    	output reg RD_ACK,
 	   
-	output reg RES_STB,
-	output reg [7:0] RES_DATA,
-   	output reg RES_ACK,	   
+	output wire RES_STB,
+	output wire [7:0] RES_DATA,
+   	output wire RES_ACK,	   
 	   
 	   
-	output reg MOSI,
+	output wire MOSI,
 	input wire MISO,
 	output wire SCLK,
 	output reg CS,
 	
 	
 	output wire CLK8_temp,
+	output wire CLK48_temp,
 	output wire TICK74_temp,	
 	
 	output wire W_STB_I_TEMP,
@@ -40,11 +41,12 @@ module card_driver(
 reg W_STB_INS;
 reg [7:0] W_DATA_INS;
 
+reg [3:0] count_CS = 1;
 reg [1:0] count;
 reg [8:0] period;
 reg [4:0] period_8;	 
 reg [3:0] period_48;
-reg [3:0] period_74;
+reg [7:0] period_74;
 
 reg [47:0] reset = 48'b01000000_00000000_00000000_00000000_00000000_10010101;
 
@@ -79,14 +81,14 @@ assign IN_SCLK = period[divider];
 
 always @(posedge SCLK or posedge RESET)								//odmierzanie 74 takty	 	
 	if (RESET)														//dla period_74[7] i period_74 = 74
-		period_74 = 4;
-	else if(period_74[3] == 1)
-		period_74 = 4'b1111;	
+		period_74 = 10;
+	else if(period_74[7] == 1)
+		period_74 = 8'b1111_1111;	
 	else
 		period_74 = period_74 - 1;
 
-assign TICK74 = period_74[3];
-assign TICK74_temp = period_74[3];
+assign TICK74 = period_74[7];
+assign TICK74_temp = period_74[7];
 
 always@(posedge SCLK or posedge RESET)		 	
 	if ((RESET) || (period_8[4] == 1)) 				
@@ -99,20 +101,28 @@ assign CLK8_temp = period_8[4];
 
 
 
- always@(posedge CLK8 or posedge RESET)		 	
+always@(posedge CLK8 or posedge RESET)		 	
 	if ((RESET) || (period_48[3] == 1)) 				
 		period_48 = counter_40;								
 	else
 		period_48 = period_48 - 1;
 
 assign CLK48 = period_48[3];
-
-
-		
+assign CLK48_temp = period_48[3];
+/*
 always @(posedge SCLK)
 begin
+   if(count_CS == 0)
+	   CS = 1;
+   else
+	   count_CS = count_CS - 1;
+end
+*/
+
+always @(posedge SCLK)
+begin  
 	if(TICK74 == 0)
-		CS=1;  	
+		CS=1;
 	if((CLK8) && (TICK74))
 		begin
 		W_STB_INS = 1;	
@@ -124,21 +134,26 @@ begin
 			begin
 			W_STB_INS = 0;	
 			W_DATA_INS [7:0] = 0;
-			CS = 1;
-			end
+			if(count_CS == 0)
+	   			CS = 1;
+   			else
+	   			count_CS = count_CS - 1;
+ 			
+			end	
+	
 		end
 	else
 		begin
 		W_STB_INS = 0;	
 		W_DATA_INS [7:0] = 0;
 		end	
-	
 end		
-		
-		
 
+
+
+		
+		
 assign W_STB_I_TEMP = W_STB_INS;
-
 assign W_DATA_I_TEMP = W_DATA_INS;
 		
 		

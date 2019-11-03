@@ -52,7 +52,7 @@ add_file -verilog {E:/GIT/my_projects/FPGA/Verilog/tester_module/dev_uart_tx.v}
 add_file -verilog {E:/GIT/my_projects/FPGA/Verilog/tester_module/dev_uart_asy.v}
 
 #-- top module name
-set_option -top_module dev_uart_asy
+set_option -top_module tester_module
 
 #-- set result format/file last
 project -result_file {E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module/tester_module_tester_module.edi}

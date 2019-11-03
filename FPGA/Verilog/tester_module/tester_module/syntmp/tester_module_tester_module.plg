@@ -1,10 +1,17 @@
-@P:  Worst Slack : 498.428
-@P:  dev_uart_asy|CLK - Estimated Frequency : 202.0 MHz
-@P:  dev_uart_asy|CLK - Requested Frequency : 1.0 MHz
-@P:  dev_uart_asy|CLK - Estimated Period : 4.951
-@P:  dev_uart_asy|CLK - Requested Period : 1000.000
-@P:  dev_uart_asy|CLK - Slack : 498.428
-@P:  Total Area : 64.0
+@P:  Worst Slack : 498.500
+@P:  card_driver|SCLK_derived_clock - Estimated Frequency : 333.4 MHz
+@P:  card_driver|SCLK_derived_clock - Requested Frequency : 1.0 MHz
+@P:  card_driver|SCLK_derived_clock - Estimated Period : 3.000
+@P:  card_driver|SCLK_derived_clock - Requested Period : 1000.000
+@P:  card_driver|SCLK_derived_clock - Slack : 498.500
+@P:  tester_module|CLOCK50 - Estimated Frequency : 182.4 MHz
+@P:  tester_module|CLOCK50 - Requested Frequency : 1.0 MHz
+@P:  tester_module|CLOCK50 - Estimated Period : 5.481
+@P:  tester_module|CLOCK50 - Requested Period : 1000.000
+@P:  tester_module|CLOCK50 - Slack : 994.519
+@P:  Total Area : 86.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  CPU Time : 0h:00m:01s

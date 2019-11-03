@@ -1,3 +1,5 @@
+`timescale 1 ns / 1 ns
+
 module card_driver(
 	input wire CLOCK50,
 	input wire RESET,
@@ -13,7 +15,7 @@ module card_driver(
 
 	input wire RD_STB,
 	input wire [31:0] RD_ADDR,
-   	output wire RD_ACK,
+   	output reg RD_ACK,
 	   
 	output wire RES_STB,
 	output wire [7:0] RES_DATA,
@@ -23,26 +25,20 @@ module card_driver(
 	output wire MOSI,
 	input wire MISO,
 	output wire SCLK,
-	output reg CS,
-	
-	
-	output wire CLK8_temp,
-	output wire TICK74_temp,	
-	
-	output wire W_STB_I_TEMP,
-	output wire [7:0] W_DATA_I_TEMP		
-	
+	output reg CS
+
 	
 );
 
 reg W_STB_INS;
 reg [7:0] W_DATA_INS;
 
+reg [3:0] count_CS = 1;
 reg [1:0] count;
 reg [8:0] period;
 reg [4:0] period_8;	 
 reg [3:0] period_48;
-reg [3:0] period_74;
+reg [7:0] period_74;
 
 reg [47:0] reset = 48'b01000000_00000000_00000000_00000000_00000000_10010101;
 
@@ -55,7 +51,7 @@ wire CLK48;
 wire TICK74;
 
 
-parameter divider = 1;											 //parametr do dzielnika czêstotliwoœci;
+parameter divider = 8;											 //parametr do dzielnika czêstotliwoœci;
 																 //dzielnik czêstotliwoœci do 100 - 400 kHz
 																 //przy zegarze 50 MHz dla period[8] ~ 195 KHz
 																 //period[1] = 25MHz
@@ -77,14 +73,13 @@ assign IN_SCLK = period[divider];
 
 always @(posedge SCLK or posedge RESET)								//odmierzanie 74 takty	 	
 	if (RESET)														//dla period_74[7] i period_74 = 74
-		period_74 = 4;
-	else if(period_74[3] == 1)
-		period_74 = 4'b1111;	
+		period_74 = 75;
+	else if(period_74[7] == 1)
+		period_74 = 8'b1111_1111;	
 	else
 		period_74 = period_74 - 1;
 
-assign TICK74 = period_74[3];
-assign TICK74_temp = period_74[3];
+assign TICK74 = period_74[7];
 
 always@(posedge SCLK or posedge RESET)		 	
 	if ((RESET) || (period_8[4] == 1)) 				
@@ -93,11 +88,10 @@ always@(posedge SCLK or posedge RESET)
 		period_8 = period_8 - 1;
 
 assign CLK8 = period_8[4];
-assign CLK8_temp = period_8[4];
 
 
 
- always@(posedge CLK8 or posedge RESET)		 	
+always@(posedge CLK8 or posedge RESET)		 	
 	if ((RESET) || (period_48[3] == 1)) 				
 		period_48 = counter_40;								
 	else
@@ -106,11 +100,10 @@ assign CLK8_temp = period_8[4];
 assign CLK48 = period_48[3];
 
 
-		
 always @(posedge SCLK)
-begin
+begin  
 	if(TICK74 == 0)
-		CS=1;  	
+		CS=1;
 	if((CLK8) && (TICK74))
 		begin
 		W_STB_INS = 1;	
@@ -122,22 +115,21 @@ begin
 			begin
 			W_STB_INS = 0;	
 			W_DATA_INS [7:0] = 0;
-			CS = 1;
-			end
+			if(count_CS == 0)
+	   			CS = 1;
+   			else
+	   			count_CS = count_CS - 1;
+ 			
+			end	
+	
 		end
 	else
 		begin
 		W_STB_INS = 0;	
 		W_DATA_INS [7:0] = 0;
 		end	
-	
 end		
-		
-		
 
-assign W_STB_I_TEMP = W_STB_INS;
-
-assign W_DATA_I_TEMP = W_DATA_INS;
 		
 		
 SPI_cont SPI(
