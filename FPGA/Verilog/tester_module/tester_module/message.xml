@@ -2,6 +2,22 @@
 <BaliMessageLog>
     <Task name="Map">
         <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(12): Semantic error in &quot;LOCATE COMP &quot;RxD_PIN&quot; SITE &quot;112&quot; ;&quot;: </Dynamic>
+            <Dynamic>RxD_PIN</Dynamic>
+            <Navigation>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13): Semantic error in &quot;LOCATE COMP &quot;TxD_PIN&quot; SITE &quot;114&quot; ;&quot;: </Dynamic>
+            <Dynamic>TxD_PIN</Dynamic>
+            <Navigation>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
             <ID>51001030</ID>
             <Severity>Warning</Severity>
             <Dynamic>RESET_c</Dynamic>
@@ -9,7 +25,7 @@
         <Message>
             <ID>51001046</ID>
             <Severity>Warning</Severity>
-            <Dynamic>RxD_PIN</Dynamic>
+            <Dynamic>RxD</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">
@@ -58,8 +74,8 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>RxD_PIN</Dynamic>
-            <Navigation>RxD_PIN</Navigation>
+            <Dynamic>RxD</Dynamic>
+            <Navigation>RxD</Navigation>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -147,12 +163,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:94:0:94:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:91:0:91:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>94</Navigation>
+            <Navigation>91</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>94</Navigation>
+            <Navigation>91</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
@@ -339,180 +355,180 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:103:0:103:5|Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:100:0:100:5|Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
         </Message>
@@ -538,120 +554,120 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:103:0:103:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:100:0:100:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>103</Navigation>
+            <Navigation>100</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>

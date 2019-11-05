@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.44
 
-Sun Nov 03 22:21:23 2019
+Tue Nov 05 21:43:09 2019
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -18,15 +18,15 @@ Pinout by Port Name:
 | MOSI      | 12/5     | LVCMOS25_OUT | PL8B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | RESET     | 23/4     | LVCMOS25_IN  | PL14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCLK      | 10/5     | LVCMOS25_OUT | PL7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| TxD_PIN   | 122/0    | LVCMOS25_OUT | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| TxD       | 50/2     | LVCMOS25_OUT | PB13B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
-| 0    | 2.5V  |
 | 1    | 2.5V  |
+| 2    | 2.5V  |
 | 4    | 2.5V  |
 | 5    | 2.5V  |
 +------+-------+
@@ -81,7 +81,7 @@ Pinout by Pin Number:
 | 47/2     |     unused, PULL:DOWN |            |              | PB10A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB10B |                |           |           |
 | 49/2     |     unused, PULL:DOWN |            |              | PB13A | PCLKT2_0       |           |           |
-| 50/2     |     unused, PULL:DOWN |            |              | PB13B | PCLKC2_0       |           |           |
+| 50/2     | TxD                   |            | LVCMOS25_OUT | PB13B | PCLKC2_0       |           |           |
 | 52/2     |     unused, PULL:DOWN |            |              | PB15A |                |           |           |
 | 54/2     |     unused, PULL:DOWN |            |              | PB15B |                |           |           |
 | 55/2     |     unused, PULL:DOWN |            |              | PB20A | PCLKT2_1       |           |           |
@@ -139,7 +139,7 @@ Pinout by Pin Number:
 | 119/0    |     unused, PULL:DOWN |            |              | PT23D | PROGRAMN       |           |           |
 | 120/0    |     unused, PULL:DOWN |            |              | PT23C | JTAGENB        |           |           |
 | 121/0    |     unused, PULL:DOWN |            |              | PT21B |                |           |           |
-| 122/0    | TxD_PIN               | LOCATED    | LVCMOS25_OUT | PT21A |                |           |           |
+| 122/0    |     unused, PULL:DOWN |            |              | PT21A |                |           |           |
 | 125/0    |     unused, PULL:DOWN |            |              | PT20D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT20C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
@@ -345,7 +345,7 @@ LOCATE  COMP  "MISO"  SITE  "11";
 LOCATE  COMP  "MOSI"  SITE  "12";
 LOCATE  COMP  "RESET"  SITE  "23";
 LOCATE  COMP  "SCLK"  SITE  "10";
-LOCATE  COMP  "TxD_PIN"  SITE  "122";
+LOCATE  COMP  "TxD"  SITE  "50";
 
 
 
@@ -357,5 +357,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov 03 22:21:23 2019
+Tue Nov 05 21:43:09 2019
 

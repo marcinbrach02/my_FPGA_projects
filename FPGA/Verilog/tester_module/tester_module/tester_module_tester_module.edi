@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2019 11 3 22 21 17)
+      (timeStamp 2019 11 5 21 43 3)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "M-2017.03L-SP1-1, mapper maplat, Build 1796R"))
      )
@@ -2785,8 +2785,8 @@
            (port MISO (direction INPUT))
            (port SCLK (direction OUTPUT))
            (port CS (direction OUTPUT))
-           (port RxD_PIN (direction INPUT))
-           (port TxD_PIN (direction OUTPUT))
+           (port RxD (direction INPUT))
+           (port TxD (direction OUTPUT))
          )
          (contents
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
@@ -2808,7 +2808,7 @@
           (instance driver_CSio (viewRef PRIM (cellRef OFS1P3IX (libraryRef LUCENT)))
            (property IOB (string "FALSE"))
           )
-          (instance TxD_PIN_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance TxD_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
           (instance CS_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
           (instance SCLK_pad (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
           (instance MISO_pad (viewRef PRIM (cellRef IB (libraryRef LUCENT)))
@@ -2973,16 +2973,16 @@
            (portRef O (instanceRef CS_pad))
            (portRef CS)
           ))
-          (net RxD_PIN (joined
-           (portRef RxD_PIN)
+          (net RxD (joined
+           (portRef RxD)
           ))
-          (net TxD_PIN_c (joined
+          (net TxD_c (joined
            (portRef Q (instanceRef uart_tx_txregio_0))
-           (portRef I (instanceRef TxD_PIN_pad))
+           (portRef I (instanceRef TxD_pad))
           ))
-          (net TxD_PIN (joined
-           (portRef O (instanceRef TxD_PIN_pad))
-           (portRef TxD_PIN)
+          (net TxD (joined
+           (portRef O (instanceRef TxD_pad))
+           (portRef TxD)
           ))
          )
         (property orig_inst_of (string "tester_module"))

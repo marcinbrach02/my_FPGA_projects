@@ -7,8 +7,8 @@ module tester_module(
 	output wire SCLK,
 	output wire CS,
 
-	input  wire RxD_PIN,        
-	output wire TxD_PIN        
+	input  wire RxD,        
+	output wire TxD        
                                    
 
 );
@@ -46,8 +46,8 @@ dev_uart_asy uart(
 .CLK(CLOCK50),
 .RST(RESET),
 
-.RxD_PIN(RxD_PIN),
-.TxD_PIN(TxD_PIN),
+.RxD_PIN(RxD),
+.TxD_PIN(TxD),
 
 .RX_STB(WD_STB),
 .RX_DAT(WD_DATA),

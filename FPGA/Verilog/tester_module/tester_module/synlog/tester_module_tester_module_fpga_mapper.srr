@@ -1,4 +1,4 @@
-# Sun Nov  3 22:21:16 2019
+# Tue Nov  5 21:43:02 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -35,16 +35,16 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 Encoding state machine txstate[3:0] (in view: work.dev_uart_asy(verilog))
 original code -> new code
    00 -> 00
@@ -69,24 +69,24 @@ original code -> new code
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Removing sequential instance driver.SPI.W_ACK (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
 
 Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
+@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":69:11:69:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
-@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":65:0:65:5|Pushed in register period[8:0].
+@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":66:11:66:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":62:0:62:5|Pushed in register period[8:0].
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
@@ -109,7 +109,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Boundary register driver.SPI.MOSI.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
@@ -161,7 +161,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov  3 22:21:17 2019
+# Timing Report written on Tue Nov  5 21:43:04 2019
 #
 
 
@@ -431,6 +431,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov  3 22:21:17 2019
+# Tue Nov  5 21:43:04 2019
 
 ###########################################################]

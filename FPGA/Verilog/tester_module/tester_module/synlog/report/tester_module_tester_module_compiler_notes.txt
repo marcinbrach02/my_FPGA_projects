@@ -6,25 +6,25 @@
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\SPI_cont.v":1:7:1:14|Synthesizing module SPI_cont in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":3:7:3:17|Synthesizing module card_driver in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[1] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[3] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[5] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[6] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[3] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[9] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[11] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[13] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[14] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[2] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[17] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[19] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[21] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[22] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[1] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[25] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[27] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[29] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[30] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[1] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[3] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[5] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[6] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[3] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[9] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[11] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[13] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[14] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[2] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[17] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[19] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[21] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[22] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[1] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[25] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[27] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[29] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[30] is always 0.
 @N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":7:12:7:17|Input WR_STB is unused.
 @N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":8:19:8:25|Input WR_ADDR is unused.
 @N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":11:12:11:17|Input WD_STB is unused.

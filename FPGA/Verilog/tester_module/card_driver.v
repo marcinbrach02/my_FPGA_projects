@@ -55,13 +55,10 @@ parameter divider = 8;											 //parametr do dzielnika czêstotliwoœci;
 																 //dzielnik czêstotliwoœci do 100 - 400 kHz
 																 //przy zegarze 50 MHz dla period[8] ~ 195 KHz
 																 //period[1] = 25MHz
-
 parameter counter_8 = 6;
 parameter counter_40 = 5;
-
-
-
-																 
+				
+				
 always @(posedge CLOCK50 or posedge RESET)							  
 	if(RESET) 														
 		period = 0;													

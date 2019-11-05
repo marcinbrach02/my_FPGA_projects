@@ -1,12 +1,12 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sun Nov 03 22:21:28 2019 *
+NOTE DATE CREATED: Tue Nov 05 21:43:14 2019 *
 NOTE DESIGN NAME: tester_module *
 NOTE DEVICE NAME: LCMXO2-4000HC-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS MOSI : 12 : out *
 NOTE PINS CLOCK50 : 105 : in *
-NOTE PINS TxD_PIN : 122 : out *
+NOTE PINS TxD : 50 : out *
 NOTE PINS CS : 9 : out *
 NOTE PINS SCLK : 10 : out *
 NOTE PINS MISO : 11 : in *

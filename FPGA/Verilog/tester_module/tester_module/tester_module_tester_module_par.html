@@ -12,7 +12,7 @@ Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov 03 22:21:20 2019
+Tue Nov 05 21:43:06 2019
 
 C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f
 tester_module_tester_module.p2t tester_module_tester_module_map.ncd
@@ -26,16 +26,16 @@ Preference file: tester_module_tester_module.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            -            -            -            03           Success
+5_1   *      0            -            -            -            -            04           Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 3 secs 
+Total (real) run time for 1-seed: 4 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;tester_module_tester_module_map.ncd&quot;
-Sun Nov 03 22:21:21 2019
+Tue Nov 05 21:43:06 2019
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -75,7 +75,7 @@ Number of Signals: 243
 Number of Connections: 552
 
 Pin Constraint Summary:
-   7 out of 7 pins locked (100% locked).
+   6 out of 7 pins locked (85% locked).
 
 The following 2 signals are selected to use the primary clock routing resources:
     CLOCK50_c (driver: CLOCK50, clk load #: 58)
@@ -87,19 +87,20 @@ The following 1 signal is selected to use the secondary clock routing resources:
     driver/period_RNIETNI[8] (driver: driver/SLICE_80, clk load #: 0, sr load #: 0, ce load #: 11)
 
 Signal RESET_c is selected as Global Set/Reset.
+.
 Starting Placer Phase 0.
-.........
+..........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
 ..................
-Placer score = 25092.
-Finished Placer Phase 1.  REAL time: 2 secs 
+Placer score = 23431.
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  24992
-Finished Placer Phase 2.  REAL time: 2 secs 
+Placer score =  23219
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 
@@ -114,8 +115,8 @@ Global Clock Resources:
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY &quot;CLOCK50_c&quot; from comp &quot;CLOCK50&quot; on PIO site &quot;105 (PR3A)&quot;, clk load = 58
-  PRIMARY &quot;driver.SCLK_i&quot; from Q1 on comp &quot;driver/SLICE_45&quot; on site &quot;R2C16B&quot;, clk load = 14
-  SECONDARY &quot;driver/period_RNIETNI[8]&quot; from F1 on comp &quot;driver/SLICE_80&quot; on site &quot;R12C15C&quot;, clk load = 0, ce load = 11, sr load = 0
+  PRIMARY &quot;driver.SCLK_i&quot; from Q1 on comp &quot;driver/SLICE_45&quot; on site &quot;R2C16C&quot;, clk load = 14
+  SECONDARY &quot;driver/period_RNIETNI[8]&quot; from F1 on comp &quot;driver/SLICE_80&quot; on site &quot;R12C15B&quot;, clk load = 0, ce load = 11, sr load = 0
 
   PRIMARY  : 2 out of 8 (25%)
   SECONDARY: 1 out of 8 (12%)
@@ -136,9 +137,9 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+-----------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref |
 +----------+---------------+------------+-----------+
-| 0        | 1 / 28 (  3%) | 2.5V       | -         |
+| 0        | 0 / 28 (  0%) | -          | -         |
 | 1        | 1 / 29 (  3%) | 2.5V       | -         |
-| 2        | 0 / 29 (  0%) | -          | -         |
+| 2        | 1 / 29 (  3%) | 2.5V       | -         |
 | 3        | 0 / 9 (  0%)  | -          | -         |
 | 4        | 1 / 10 ( 10%) | 2.5V       | -         |
 | 5        | 4 / 10 ( 40%) | 2.5V       | -         |
@@ -156,9 +157,9 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 0 connections routed; 552 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 3 secs 
+Completed router resource preassignment. Real time: 4 secs 
 
-Start NBR router at 22:21:24 11/03/19
+Start NBR router at 21:43:10 11/05/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -173,36 +174,28 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:21:24 11/03/19
+Start NBR special constraint process at 21:43:10 11/05/19
 
-Start NBR section for initial routing at 22:21:24 11/03/19
+Start NBR section for initial routing at 21:43:10 11/05/19
 Level 4, iteration 1
-13(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:21:24 11/03/19
+Start NBR section for normal routing at 21:43:10 11/05/19
 Level 4, iteration 1
-7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 2
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 3
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 4
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 5
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 6
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
-Level 4, iteration 7
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 
-Start NBR section for re-routing at 22:21:24 11/03/19
+Start NBR section for re-routing at 21:43:10 11/05/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 
-Start NBR section for post-routing at 22:21:24 11/03/19
+Start NBR section for post-routing at 21:43:10 11/05/19
 
 End NBR router with 0 unrouted connection
 
@@ -218,7 +211,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 3 secs 
-Total REAL time: 3 secs 
+Total REAL time: 4 secs 
 Completely routed.
 End of route.  552 routed (100.00%); 0 unrouted.
 
@@ -241,7 +234,7 @@ PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 3 secs 
+Total REAL time to completion: 4 secs 
 
 par done!
 

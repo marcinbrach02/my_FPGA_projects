@@ -20,14 +20,15 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module/tester_module_tester_module.jed</File>
-			<FileTime>11/03/19 16:28:07</FileTime>
-			<JedecChecksum>0x14F8</JedecChecksum>
+			<FileTime>11/05/19 21:43:14</FileTime>
+			<JedecChecksum>0x3AF1</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>552</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>
@@ -44,7 +45,7 @@
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
-		<PortAdd>FTUSB-1</PortAdd>
-		<USBID>FT2232H MiniModule B Location 0001 Serial FTL67CSUB</USBID>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>FT2232H MiniModule A Location 0000</USBID>
 	</CableOptions>
 </ispXCF>

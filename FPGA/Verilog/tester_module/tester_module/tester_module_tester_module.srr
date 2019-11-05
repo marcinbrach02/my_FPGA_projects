@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: MARCIN-VAIO
 
-# Sun Nov  3 22:21:12 2019
+# Tue Nov  5 21:42:58 2019
 
 #Implementation: tester_module
 
@@ -28,7 +28,7 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v" (library work)
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v" (library work)
 Verilog syntax check successful!
-File E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v changed - recompiling
+Options changed - recompiling
 Selecting top level module tester_module
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
@@ -41,7 +41,7 @@ Selecting top level module tester_module
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":9:12:9:17|Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":37:10:37:14|Object count is declared but not assigned. Either assign a value or remove the declaration.
-@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":94:0:94:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":91:0:91:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":16:5:16:10|Removing wire WR_STB, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|Removing wire WR_ADDR, as there is no assignment to it.
@@ -58,40 +58,40 @@ Selecting top level module tester_module
 @W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:12:25:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[1] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[3] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[5] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[6] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[3] is always 0.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[9] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[11] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[13] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[14] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[2] is always 0.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[17] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[19] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[21] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[22] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit count_CS[1] is always 0.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[25] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[27] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[29] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Register bit reset[30] is always 0.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":103:0:103:5|Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[1] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[3] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[5] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[6] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[3] is always 0.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 3 of count_CS[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bits 6 to 5 of reset[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 3 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 1 of reset[47:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[9] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[11] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[13] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[14] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[2] is always 0.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 2 of count_CS[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bits 14 to 13 of reset[47:7]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 11 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 9 of reset[47:7]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[17] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[19] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[21] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[22] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[1] is always 0.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 1 of count_CS[1:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bits 22 to 21 of reset[47:15]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 19 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 17 of reset[47:15]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[25] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[27] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[29] is always 0.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[30] is always 0.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bits 30 to 29 of reset[47:23]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 27 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Pruning register bit 25 of reset[47:23]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":9:12:9:17|*Unassigned bits of WR_ACK are referenced and tied to 0 -- simulation mismatch possible.
 @A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|*Unassigned bits of RD_ACK are referenced and tied to 0 -- simulation mismatch possible.
 @N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":7:12:7:17|Input WR_STB is unused.
@@ -149,7 +149,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov  3 22:21:13 2019
+# Tue Nov  5 21:42:59 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -160,7 +160,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov  3 22:21:13 2019
+# Tue Nov  5 21:42:59 2019
 
 ###########################################################]
 @END
@@ -170,22 +170,24 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov  3 22:21:13 2019
+# Tue Nov  5 21:42:59 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
-File E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_comp.srs changed - recompiling
+Options changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov  3 22:21:14 2019
+# Tue Nov  5 21:43:01 2019
 
 ###########################################################]
-# Sun Nov  3 22:21:14 2019
+Pre-mapping Report
+
+# Tue Nov  5 21:43:01 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -281,10 +283,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov  3 22:21:15 2019
+# Tue Nov  5 21:43:02 2019
 
 ###########################################################]
-# Sun Nov  3 22:21:16 2019
+Map & Optimize Report
+
+# Tue Nov  5 21:43:02 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -321,16 +325,16 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 Encoding state machine txstate[3:0] (in view: work.dev_uart_asy(verilog))
 original code -> new code
    00 -> 00
@@ -355,24 +359,24 @@ original code -> new code
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Removing sequential instance driver.SPI.W_ACK (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
 
 Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
+@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
-@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":69:11:69:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
-@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":65:0:65:5|Pushed in register period[8:0].
+@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":66:11:66:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":62:0:62:5|Pushed in register period[8:0].
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
@@ -395,7 +399,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:0:103:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Boundary register driver.SPI.MOSI.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
@@ -447,7 +451,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov  3 22:21:17 2019
+# Timing Report written on Tue Nov  5 21:43:04 2019
 #
 
 
@@ -717,6 +721,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov  3 22:21:17 2019
+# Tue Nov  5 21:43:04 2019
 
 ###########################################################]

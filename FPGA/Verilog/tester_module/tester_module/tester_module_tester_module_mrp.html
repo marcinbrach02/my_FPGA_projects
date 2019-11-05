@@ -24,7 +24,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  11/03/19  22:21:20
+Mapped on:  11/05/19  21:43:06
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -108,7 +108,7 @@ Mapped on:  11/03/19  22:21:20
 
 
 
-   Number of warnings:  2
+   Number of warnings:  4
    Number of errors:    0
      
 
@@ -117,8 +117,17 @@ Mapped on:  11/03/19  22:21:20
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
+WARNING - map:
+     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(12):
+     Semantic error in "LOCATE COMP "RxD_PIN" SITE "112" ;": COMP "RxD_PIN"
+     cannot be found in design. This preference has been disabled.
+WARNING - map:
+     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13):
+     Semantic error in "LOCATE COMP "TxD_PIN" SITE "114" ;": COMP "TxD_PIN"
+     cannot be found in design. This preference has been disabled.
 WARNING - map: Using local reset signal 'RESET_c' to infer global GSR net.
-WARNING - map: IO buffer missing for top level port RxD_PIN...logic will be
+
+WARNING - map: IO buffer missing for top level port RxD...logic will be
      discarded.
 
 
@@ -127,14 +136,13 @@ WARNING - map: IO buffer missing for top level port RxD_PIN...logic will be
 
 +---------------------+-----------+-----------+------------+
 | IO Name             | Direction | Levelmode | IO         |
-
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
 | MOSI                | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | CLOCK50             | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| TxD_PIN             | OUTPUT    | LVCMOS25  | OUT        |
+| TxD                 | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | CS                  | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
@@ -177,6 +185,7 @@ Signal driver/un5_period_74_1_s_7_0_S1 undriven or does not drive anything -
      clipped.
 Signal driver/un5_period_74_1_s_7_0_COUT undriven or does not drive anything -
      clipped.
+
 Signal driver/un3_period_1_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal driver/un3_period_1_cry_0_0_S0 undriven or does not drive anything -
@@ -185,7 +194,6 @@ Signal driver/N_2 undriven or does not drive anything - clipped.
 Signal driver/un3_period_1_cry_1_0_S1 undriven or does not drive anything -
      clipped.
 Signal driver/un3_period_1_cry_1_0_S0 undriven or does not drive anything -
-
      clipped.
 Signal driver/un3_period_1_cry_3_0_S1 undriven or does not drive anything -
      clipped.
@@ -238,13 +246,13 @@ GSR Component:
      Components on inferred reset domain with GSR Property disabled
 --------------------------------------------------------------
 
+
      These components have the GSR property set to DISABLED and are on the
      inferred reset domain. The components will respond to the reset signal
      'RESET_c' via the local reset on the component and not the GSR component.
 
      Type and number of components of the type: 
    Register = 1 
-
 
      Type and instance name of component: 
    Register : driver/SPI/R_STB
@@ -258,14 +266,6 @@ GSR Component:
    Total REAL Time: 0 secs  
    Peak Memory Usage: 49 MB
         
-
-
-
-
-
-
-
-
 
 
 
