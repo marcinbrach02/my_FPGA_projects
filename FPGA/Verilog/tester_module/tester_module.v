@@ -13,6 +13,8 @@ module tester_module(
 
 );
 
+wire nRESET;
+
 wire WR_STB;
 wire [31:0] WR_ADDR;
 wire WR_ACK;
@@ -41,10 +43,12 @@ reg         TX_ACK;
 reg         TX_RDY;        
 
 
+assign nRESET = RESET;
+
 
 dev_uart_asy uart(
 .CLK(CLOCK50),
-.RST(RESET),
+.RST(nRESET),
 
 .RxD_PIN(RxD),
 .TxD_PIN(TxD),
@@ -64,7 +68,7 @@ dev_uart_asy uart(
 
 card_driver driver(
 .CLOCK50(CLOCK50), 
-.RESET(RESET),
+.RESET(nRESET),
 
 .WR_STB(WR_STB),
 .WR_ADDR(WR_ADDR),

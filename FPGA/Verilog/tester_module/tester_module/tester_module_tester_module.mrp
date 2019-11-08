@@ -16,7 +16,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  11/05/19  21:43:06
+Mapped on:  11/08/19  21:40:00
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  tester_module                                 Date:  11/05/19  21:43:06
+Design:  tester_module                                 Date:  11/08/19  21:40:00
 
 Design Summary (cont)
 ---------------------
@@ -118,12 +118,12 @@ Design Errors/Warnings
 ----------------------
 
 WARNING - map:
-     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(12):
-     Semantic error in "LOCATE COMP "RxD_PIN" SITE "112" ;": COMP "RxD_PIN"
+     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13):
+     Semantic error in "LOCATE COMP "RxD_PIN" SITE "121" ;": COMP "RxD_PIN"
      cannot be found in design. This preference has been disabled.
 WARNING - map:
-     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13):
-     Semantic error in "LOCATE COMP "TxD_PIN" SITE "114" ;": COMP "TxD_PIN"
+     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(14):
+     Semantic error in "LOCATE COMP "TxD_PIN" SITE "122" ;": COMP "TxD_PIN"
      cannot be found in design. This preference has been disabled.
 WARNING - map: Using local reset signal 'RESET_c' to infer global GSR net.
 
@@ -132,7 +132,7 @@ WARNING - map: Using local reset signal 'RESET_c' to infer global GSR net.
 
 
 
-Design:  tester_module                                 Date:  11/05/19  21:43:06
+Design:  tester_module                                 Date:  11/08/19  21:40:00
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -198,7 +198,7 @@ Signal driver/un5_period_74_1_s_7_0_COUT undriven or does not drive anything -
 
 
 
-Design:  tester_module                                 Date:  11/05/19  21:43:06
+Design:  tester_module                                 Date:  11/08/19  21:40:00
 
 Removed logic (cont)
 --------------------
@@ -264,7 +264,7 @@ GSR Component:
 
 
 
-Design:  tester_module                                 Date:  11/05/19  21:43:06
+Design:  tester_module                                 Date:  11/08/19  21:40:00
 
 GSR Usage (cont)
 ----------------
@@ -283,7 +283,7 @@ Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 0 secs  
+   Total REAL Time: 3 secs  
    Peak Memory Usage: 49 MB
         
 

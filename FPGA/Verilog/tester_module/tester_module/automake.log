@@ -10,7 +10,7 @@ Lattice Diamond Version 3.10.3.144
 #OS: Windows 8 6.2
 #Hostname: MARCIN-VAIO
 
-# Tue Nov  5 21:42:58 2019
+# Fri Nov  8 21:39:44 2019
 
 #Implementation: tester_module
 
@@ -35,7 +35,9 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v" (library work)
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module tester_module
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
@@ -50,21 +52,21 @@ Selecting top level module tester_module
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":37:10:37:14|Object count is declared but not assigned. Either assign a value or remove the declaration.
 @W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":91:0:91:5|Pruning unused register period_48[3:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":16:5:16:10|Removing wire WR_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|Removing wire WR_ADDR, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|Removing wire RD_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:12:25:18|Removing wire RD_ADDR, as there is no assignment to it.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":34:12:34:17|Object RX_STB is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":35:12:35:17|Object RX_DAT is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":36:12:36:17|Removing wire RX_ACK, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":38:12:38:17|Removing wire TX_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":39:12:39:17|Removing wire TX_DAT, as there is no assignment to it.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":40:12:40:17|Object TX_ACK is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":41:12:41:17|Object TX_RDY is declared but not assigned. Either assign a value or remove the declaration.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":16:5:16:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":17:12:17:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:12:25:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":18:5:18:10|Removing wire WR_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":19:12:19:18|Removing wire WR_ADDR, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":26:5:26:10|Removing wire RD_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":27:12:27:18|Removing wire RD_ADDR, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":36:12:36:17|Object RX_STB is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":37:12:37:17|Object RX_DAT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":38:12:38:17|Removing wire RX_ACK, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":40:12:40:17|Removing wire TX_STB, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":41:12:41:17|Removing wire TX_DAT, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":42:12:42:17|Object TX_ACK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":43:12:43:17|Object TX_RDY is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":18:5:18:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":19:12:19:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":26:5:26:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":27:12:27:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[1] is always 0.
 @N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[3] is always 0.
 @N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[5] is always 0.
@@ -151,12 +153,12 @@ State machine has 13 reachable states with original encodings of:
    0001011
    0001100
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov  5 21:42:59 2019
+# Fri Nov  8 21:39:46 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -167,34 +169,32 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov  5 21:42:59 2019
+# Fri Nov  8 21:39:47 2019
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov  5 21:42:59 2019
+# Fri Nov  8 21:39:47 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
-Options changed - recompiling
+File E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov  5 21:43:01 2019
+# Fri Nov  8 21:39:49 2019
 
 ###########################################################]
-Pre-mapping Report
-
-# Tue Nov  5 21:43:01 2019
+# Fri Nov  8 21:39:50 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -208,16 +208,16 @@ Printing clock  summary report in "E:\GIT\my_projects\FPGA\Verilog\tester_module
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 Fixing fake multiple drivers on net SCLK.
@@ -237,7 +237,7 @@ Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=10  set on top level netlist tester_module
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 
 
@@ -255,7 +255,7 @@ Level     Clock                                Frequency     Period        Type 
 
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
 Encoding state machine txstate[10:0] (in view: work.dev_uart_tx(verilog))
 original code -> new code
@@ -278,24 +278,22 @@ original code -> new code
    11 -> 11
 @N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy(verilog)); safe FSM implementation is not required.
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 141MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov  5 21:43:02 2019
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Fri Nov  8 21:39:53 2019
 
 ###########################################################]
-Map & Optimize Report
-
-# Tue Nov  5 21:43:02 2019
+# Fri Nov  8 21:39:53 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -391,25 +389,25 @@ Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elaps
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
    1		0h:00m:00s		   498.67ns		  87 /       112
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Boundary register driver.SPI.MOSI.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
 
@@ -437,7 +435,7 @@ Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
 
 Writing Analyst data base E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_m.srm
 
@@ -448,17 +446,17 @@ Writing EDIF Netlist and constraint files
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 @W: MT420 |Found inferred clock tester_module|CLOCK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLOCK50"
 @N: MT615 |Found clock card_driver|SCLK_derived_clock with period 1000.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov  5 21:43:04 2019
+# Timing Report written on Fri Nov  8 21:39:56 2019
 #
 
 
@@ -685,10 +683,10 @@ driver_CSio                  OFS1P3IX     CD       In      0.000     4.678      
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -725,10 +723,10 @@ VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov  5 21:43:04 2019
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Nov  8 21:39:56 2019
 
 ###########################################################]
 
@@ -806,8 +804,8 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-4000HCTQFP144, Performance used: 4.
 
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(12): Semantic error in &quot;LOCATE COMP &quot;RxD_PIN&quot; SITE &quot;112&quot; ;&quot;: " arg1="RxD_PIN" arg2="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf" arg3="12"  />
-    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13): Semantic error in &quot;LOCATE COMP &quot;TxD_PIN&quot; SITE &quot;114&quot; ;&quot;: " arg1="TxD_PIN" arg2="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf" arg3="13"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13): Semantic error in &quot;LOCATE COMP &quot;RxD_PIN&quot; SITE &quot;121&quot; ;&quot;: " arg1="RxD_PIN" arg2="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf" arg3="13"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(14): Semantic error in &quot;LOCATE COMP &quot;TxD_PIN&quot; SITE &quot;122&quot; ;&quot;: " arg1="TxD_PIN" arg2="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf" arg3="14"  />
 Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
 Package Status:                     Final          Version 1.44.
 
@@ -905,7 +903,7 @@ Design Summary:
 
 
 Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 3 secs  
 Peak Memory Usage: 49 MB
 
 Dumping design to file tester_module_tester_module_map.ncd.
@@ -917,7 +915,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "tester_module_tester_module_map.ncd"
-Tue Nov 05 21:43:06 2019
+Fri Nov 08 21:40:03 2019
 
 PAR: Place And Route Diamond (64-bit) 3.10.3.144.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF tester_module_tester_module_map.ncd tester_module_tester_module.dir/5_1.ncd tester_module_tester_module.prf
@@ -969,17 +967,17 @@ Signal RESET_c is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 0 secs 
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 ..................
 Placer score = 23431.
-Finished Placer Phase 1.  REAL time: 3 secs 
+Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 Placer score =  23219
-Finished Placer Phase 2.  REAL time: 3 secs 
+Finished Placer Phase 2.  REAL time: 4 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1035,9 +1033,9 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 0 connections routed; 552 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 4 secs 
+Completed router resource preassignment. Real time: 5 secs 
 
-Start NBR router at 21:43:10 11/05/19
+Start NBR router at 21:40:08 11/08/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1052,28 +1050,28 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 21:43:10 11/05/19
+Start NBR special constraint process at 21:40:08 11/08/19
 
-Start NBR section for initial routing at 21:43:10 11/05/19
+Start NBR section for initial routing at 21:40:08 11/08/19
 Level 4, iteration 1
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:43:10 11/05/19
+Start NBR section for normal routing at 21:40:08 11/08/19
 Level 4, iteration 1
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 2
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 3
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for re-routing at 21:43:10 11/05/19
+Start NBR section for re-routing at 21:40:08 11/08/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for post-routing at 21:43:10 11/05/19
+Start NBR section for post-routing at 21:40:08 11/08/19
 
 End NBR router with 0 unrouted connection
 
@@ -1089,7 +1087,7 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 3 secs 
-Total REAL time: 4 secs 
+Total REAL time: 5 secs 
 Completely routed.
 End of route.  552 routed (100.00%); 0 unrouted.
 
@@ -1109,7 +1107,7 @@ PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  time to completion: 3 secs 
-Total REAL time to completion: 4 secs 
+Total REAL time to completion: 6 secs 
 
 par done!
 
