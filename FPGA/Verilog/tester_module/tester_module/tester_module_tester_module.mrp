@@ -16,24 +16,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  11/08/19  21:40:00
+Mapped on:  11/12/19  22:33:56
 
 Design Summary
 --------------
 
-   Number of registers:    120 out of  4665 (3%)
-      PFU registers:          116 out of  4320 (3%)
+   Number of registers:    166 out of  4665 (4%)
+      PFU registers:          162 out of  4320 (4%)
       PIO registers:            4 out of   345 (1%)
-   Number of SLICEs:        68 out of  2160 (3%)
-      SLICEs as Logic/ROM:     68 out of  2160 (3%)
+   Number of SLICEs:        90 out of  2160 (4%)
+      SLICEs as Logic/ROM:     90 out of  2160 (4%)
       SLICEs as RAM:            0 out of  1620 (0%)
-      SLICEs as Carry:         19 out of  2160 (1%)
-   Number of LUT4s:        122 out of  4320 (3%)
-      Number used as logic LUTs:         84
+      SLICEs as Carry:         23 out of  2160 (1%)
+   Number of LUT4s:        156 out of  4320 (4%)
+      Number used as logic LUTs:        110
       Number used as distributed RAM:     0
-      Number used as ripple logic:       38
+      Number used as ripple logic:       46
       Number used as shift registers:     0
-   Number of PIO sites used: 7 + 4(JTAG) out of 115 (10%)
+   Number of PIO sites used: 11 + 4(JTAG) out of 115 (13%)
    Number of block RAMs:  0 out of 10 (0%)
    Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
@@ -58,84 +58,60 @@ Design Summary
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  2
-     Net CLOCK50_c: 58 loads, 58 rising, 0 falling (Driver: PIO CLOCK50 )
+   Number of clocks:  1
+     Net CLOCK50_c: 94 loads, 93 rising, 1 falling (Driver: PIO CLOCK50 )
 
                                     Page 1
 
 
 
 
-Design:  tester_module                                 Date:  11/08/19  21:40:00
+Design:  tester_module                                 Date:  11/12/19  22:33:56
 
 Design Summary (cont)
 ---------------------
-     Net driver.SCLK_i: 14 loads, 0 rising, 14 falling (Driver: driver/period[8]
-     )
-   Number of Clock Enables:  13
-     Net period_RNI4ED11[8]: 1 loads, 0 LSLICEs
-     Net reset6_RNINB6C1_0: 5 loads, 5 LSLICEs
-     Net driver.SPI.un1_RST_7_i: 3 loads, 2 LSLICEs
-     Net N_74_i: 6 loads, 5 LSLICEs
-     Net driver/period_RNIETNI[8]: 11 loads, 11 LSLICEs
-     Net MOSI_cnv: 1 loads, 0 LSLICEs
-     Net driver/SPI/wr_ready_RNO: 1 loads, 1 LSLICEs
-     Net driver/SPI/wr_ready_cnv_0: 6 loads, 6 LSLICEs
-     Net driver/SPI/un1_MISO_2_i: 5 loads, 5 LSLICEs
-     Net driver/SPI/RD_DATAce[1]: 4 loads, 4 LSLICEs
-     Net uart/txstate_20_d: 4 loads, 4 LSLICEs
-     Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
+   Number of Clock Enables:  15
+     Net driver.SPI.WR_DATA10: 5 loads, 4 LSLICEs
+     Net driver.N_274_i: 2 loads, 1 LSLICEs
+     Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
+     Net driver/SPI/un1_W_STB_2_i: 5 loads, 5 LSLICEs
+     Net driver/SPI/periode: 6 loads, 6 LSLICEs
+     Net driver/SPI/un1_W_STB_4_i: 1 loads, 1 LSLICEs
+     Net driver/R_STB: 13 loads, 13 LSLICEs
+     Net driver/N_361_i: 4 loads, 4 LSLICEs
+     Net driver/un1_state_3_0_a2_0_a2: 1 loads, 1 LSLICEs
+     Net driver/N_265_i: 4 loads, 4 LSLICEs
+     Net uart/txstate_s0_0_o2_i_a3: 4 loads, 4 LSLICEs
+     Net uart/N_15_i_i: 1 loads, 1 LSLICEs
      Net uart/un1_txstate_0_0[3]: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net RESET_c merged into GSR:  66
-   Number of LSRs:  6
-     Net reset6_RNINB6C1_0: 1 loads, 0 LSLICEs
-     Net RESET_c: 1 loads, 1 LSLICEs
-     Net driver_SPI_MOSIio_RNO: 1 loads, 0 LSLICEs
-     Net driver/reset6_RNINB6C1: 2 loads, 2 LSLICEs
-     Net driver/SPI/rd_ready_RNI1A0P_1: 3 loads, 3 LSLICEs
-     Net driver/SPI/rd_ready_RNI1A0P: 4 loads, 4 LSLICEs
+     Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
+     Net N_12_i: 6 loads, 5 LSLICEs
+   Number of local set/reset loads for net nRESET_c merged into GSR:  166
+   Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net driver/W_STB_INS: 17 loads
-     Net driver/period_RNIETNI[8]: 14 loads
+     Net driver/W_STB: 27 loads
+     Net driver/R_STB: 17 loads
+     Net driver/N_297: 14 loads
      Net uart/tx/txstate[1]: 12 loads
-     Net driver/period_74[7]: 11 loads
-     Net driver/period_8[4]: 11 loads
-     Net RESET_c: 11 loads
      Net uart/counter_slow[3]: 9 loads
-     Net driver.un3_period_1_axb_8: 8 loads
-     Net driver/SPI/rd_ready: 8 loads
      Net uart/counter_fast[6]: 8 loads
+     Net driver/counter[8]: 7 loads
+     Net driver/state[18]: 7 loads
+     Net driver/state[23]: 7 loads
+     Net driver/state[30]: 7 loads
 
 
 
 
-   Number of warnings:  4
+   Number of warnings:  2
    Number of errors:    0
      
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map:
-     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(13):
-     Semantic error in "LOCATE COMP "RxD_PIN" SITE "121" ;": COMP "RxD_PIN"
-     cannot be found in design. This preference has been disabled.
-WARNING - map:
-     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf(14):
-     Semantic error in "LOCATE COMP "TxD_PIN" SITE "122" ;": COMP "TxD_PIN"
-     cannot be found in design. This preference has been disabled.
-WARNING - map: Using local reset signal 'RESET_c' to infer global GSR net.
-
-                                    Page 2
-
-
-
-
-Design:  tester_module                                 Date:  11/08/19  21:40:00
-
-Design Errors/Warnings (cont)
------------------------------
+WARNING - map: Using local reset signal 'nRESET_c' to infer global GSR net.
 WARNING - map: IO buffer missing for top level port RxD...logic will be
      discarded.
 
@@ -150,6 +126,24 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | CLOCK50             | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  tester_module                                 Date:  11/12/19  22:33:56
+
+IO (PIO) Attributes (cont)
+--------------------------
+| LED[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
 | TxD                 | OUTPUT    | LVCMOS25  | OUT        |
 +---------------------+-----------+-----------+------------+
 | CS                  | OUTPUT    | LVCMOS25  | OUT        |
@@ -158,83 +152,53 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | MISO                | INPUT     | LVCMOS25  | IN         |
 +---------------------+-----------+-----------+------------+
-| RESET               | INPUT     | LVCMOS25  |            |
+| nRESET              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
-Block VCC undriven or does not drive anything - clipped.
-Block GND undriven or does not drive anything - clipped.
 Block uart/VCC undriven or does not drive anything - clipped.
 Block uart/tx/GND undriven or does not drive anything - clipped.
 Block uart/tx/VCC undriven or does not drive anything - clipped.
-Block driver/SPI/VCC undriven or does not drive anything - clipped.
+Block driver/VCC undriven or does not drive anything - clipped.
 Block driver/SPI/GND undriven or does not drive anything - clipped.
-Signal driver.SPI.R_STB.CN was merged into signal driver.SCLK_i
+Block driver/SPI/VCC undriven or does not drive anything - clipped.
+Signal nRESET_c_i was merged into signal nRESET_c
+Signal uart/CN was merged into signal CLOCK50_c
+Signal GND undriven or does not drive anything - clipped.
 Signal uart/GND undriven or does not drive anything - clipped.
 Signal driver/GND undriven or does not drive anything - clipped.
-Signal VCC undriven or does not drive anything - clipped.
-Signal GND undriven or does not drive anything - clipped.
-Signal uart/un7_counter_fast_cry_5_0_COUT undriven or does not drive anything -
-     clipped.
+Signal counter_cry_0_COUT[25] undriven or does not drive anything - clipped.
 Signal uart/un7_counter_fast_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal uart/un7_counter_fast_cry_0_0_S0 undriven or does not drive anything -
      clipped.
-Signal uart/N_20 undriven or does not drive anything - clipped.
-Signal driver/un5_period_74_1_cry_0_0_S1 undriven or does not drive anything -
+Signal uart/N_1 undriven or does not drive anything - clipped.
+Signal uart/un7_counter_fast_cry_5_0_COUT undriven or does not drive anything -
      clipped.
-Signal driver/un5_period_74_1_cry_0_0_S0 undriven or does not drive anything -
+Signal driver/un7_counter_cry_0_0_S1 undriven or does not drive anything -
      clipped.
-Signal driver/N_1 undriven or does not drive anything - clipped.
-Signal driver/un5_period_74_1_s_7_0_S1 undriven or does not drive anything -
+Signal driver/un7_counter_cry_0_0_S0 undriven or does not drive anything -
      clipped.
-Signal driver/un5_period_74_1_s_7_0_COUT undriven or does not drive anything -
+Signal driver/N_34 undriven or does not drive anything - clipped.
+Signal driver/un7_counter_cry_7_0_COUT undriven or does not drive anything -
      clipped.
+Signal counter_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block nRESET_pad_RNI5681 was optimized away.
+Block uart/TX_ACK.CN was optimized away.
+Block GND was optimized away.
+Block uart/GND was optimized away.
+Block driver/GND was optimized away.
+
 
                                     Page 3
 
 
 
 
-Design:  tester_module                                 Date:  11/08/19  21:40:00
-
-Removed logic (cont)
---------------------
-Signal driver/un3_period_1_cry_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/N_2 undriven or does not drive anything - clipped.
-Signal driver/un3_period_1_cry_1_0_S1 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_1_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_3_0_S1 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_3_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_5_0_S1 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_5_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_7_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_1_cry_7_0_COUT undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_cry_0_0_S1 undriven or does not drive anything -
-     clipped.
-Signal driver/un3_period_cry_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal driver/N_3 undriven or does not drive anything - clipped.
-Signal driver/un3_period_s_7_0_S1 undriven or does not drive anything - clipped.
-     
-Signal driver/un3_period_s_7_0_COUT undriven or does not drive anything -
-     clipped.
-Block driver/SPI/rd_ready.CN was optimized away.
-Block uart/GND was optimized away.
-Block driver/GND was optimized away.
+Design:  tester_module                                 Date:  11/12/19  22:33:56
 
 Memory Usage
 ------------
@@ -246,8 +210,8 @@ GSR Usage
 ---------
 
 GSR Component:
-   The local reset signal 'RESET_c' of the design has been inferred as Global
-        Set Reset (GSR). The reset signal used for GSR control is 'RESET_c'.
+   The local reset signal 'nRESET_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'nRESET_c'.
         
 
      GSR Property:
@@ -256,34 +220,11 @@ GSR Component:
         not.
         
 
-     Components on inferred reset domain with GSR Property disabled
---------------------------------------------------------------
-
-                                    Page 4
-
-
-
-
-Design:  tester_module                                 Date:  11/08/19  21:40:00
-
-GSR Usage (cont)
-----------------
-
-     These components have the GSR property set to DISABLED and are on the
-     inferred reset domain. The components will respond to the reset signal
-     'RESET_c' via the local reset on the component and not the GSR component.
-
-     Type and number of components of the type: 
-   Register = 1 
-
-     Type and instance name of component: 
-   Register : driver/SPI/R_STB
-
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
-   Total REAL Time: 3 secs  
+   Total REAL Time: 0 secs  
    Peak Memory Usage: 49 MB
         
 
@@ -318,14 +259,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-                                    Page 5
+                                    Page 4
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

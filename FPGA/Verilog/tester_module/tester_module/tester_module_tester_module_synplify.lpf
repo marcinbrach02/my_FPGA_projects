@@ -4,7 +4,6 @@
 
 # Period Constraints 
 #FREQUENCY PORT "CLOCK50" 1.0 MHz;
-#FREQUENCY NET "driver/SCLK_c" 1.0 MHz;
 
 
 # Output Constraints 
@@ -13,7 +12,6 @@
 
 # Point-to-point Delay Constraints 
 
-#MULTICYCLE FROM CLKNET "driver/SCLK_c"  TO CLKNET "driver/SCLK_c"  2X;
 
 
 # Block Path Constraints 

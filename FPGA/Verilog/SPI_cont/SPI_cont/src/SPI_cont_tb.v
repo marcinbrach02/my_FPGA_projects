@@ -1,66 +1,68 @@
 `timescale 1 ns / 1 ns
-
+`default_nettype none
   
 module SPI_cont_tb();
 	
-reg R, C, WAC, WR, RAC, RD, SCK, MI, MO; 	   
-reg [7:0] WR_DATA, RD_DATA;
+reg RST, CLK, W_STB, R_STB, SCK, MO; 	   
+wire MI;
+reg [7:0] W_DATA, R_DATA;
 
 
-SPI_cont SPI(.IN_SCLK(C), .RST(R), .W_STB(WR), .W_DATA(WR_DATA), .W_ACK(WAC), .R_STB(RD), .R_DATA(RD_DATA), .R_ACK(RAC), .MOSI(MO), .MISO(MI), .SCLK(SCK) );
 
+localparam DIVIDER_WIDTH = 10;
+localparam DIVIDER = 5;
+reg [DIVIDER_WIDTH-1:0] counter;	 
+wire TICK = counter[DIVIDER_WIDTH-1];
 
+always @(posedge CLK or posedge RST) counter <= (RST) ? DIVIDER-1 : (TICK) ? DIVIDER-1 : counter-1;
+	
+SPI_cont SPI(.CLK(CLK), .RST(RST), .TICK(TICK), .W_STB(W_STB), .W_DATA(W_DATA), .W_READY(), .R_STB(R_STB), .R_DATA(R_DATA), .MOSI(MO), .MISO(MI), .SCLK(SCK) );
 
 
 
 initial begin
-	   R=0;
-	#1 R=1;  
-	#2 R=0;
+	    RST=0;
+	#10 RST=1;  
+	#20 RST=0;
 end
 
 initial begin
-	   C=0;
+	   CLK=0;
 end
 
-always #1 C = ~C;
+always #1 CLK = ~CLK;
 
 initial begin
-			WR=0;
-	#5  	WR=1; WR_DATA=171;
-	#8		WR=0; WR_DATA=0;
-	//#64	WR=1; WR_DATA=254;
-	//#8		WR=0; WR_DATA=0;
+	W_STB=0; 	 
+	@(posedge CLK);
+	@(negedge RST);
+	#103;
+	@(posedge CLK);
+	W_STB=1; W_DATA=171;  // 0xAB  1010 1011
+	@(posedge CLK);
+	W_STB=0; W_DATA=0;
+	@(posedge R_STB);	
+	@(posedge CLK);
+	W_STB=1; W_DATA=171;  // 0xAB  1010 1011
+	@(posedge CLK);
+	W_STB=0; W_DATA=0;
+	@(posedge CLK);
+	//#64	W_STB=1; W_DATA=254;
+	//#8		W_STB=0; W_DATA=0;
 end	
 
 
  
-reg [7:0] do_wysylki;
-reg ready;
-reg [3:0] peri;
+localparam DATA_WIDTH = 16;
 
+reg [DATA_WIDTH-1:0] do_wysylki;
 
-always @(negedge SCK ) 
-begin	
-	if(WAC)
-		begin
-		do_wysylki = 8'b0010_1001;
-		ready <= 1;
-		peri = 8;	
-		end
-	else if(ready)	
-		begin
-		MI <= do_wysylki[7];
-		do_wysylki <= do_wysylki << 1;	 
-		peri = peri - 1;			
-			if(peri[3])
-				begin
-				ready <= 0;
-				MI <= 1;
-				end
-		end	 
-	else
-		MI <= 1;
-end
+always @(negedge SCK or posedge RST ) 						   
+if (RST)	
+	do_wysylki <= {8'b0010_1001, 8'b0110_0011};
+else 	
+	do_wysylki <= do_wysylki << 1;	
+
+assign MI = do_wysylki[DATA_WIDTH-1];
    
 endmodule	

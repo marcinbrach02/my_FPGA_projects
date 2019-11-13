@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.44
 
-Fri Nov 08 21:40:07 2019
+Tue Nov 12 22:33:59 2019
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -14,19 +14,23 @@ Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 | CLOCK50   | 105/1    | LVCMOS25_IN  | PR3A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | CS        | 9/5      | LVCMOS25_OUT | PL7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LED[0]    | 15/4     | LVCMOS25_OUT | PL10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LED[1]    | 17/4     | LVCMOS25_OUT | PL10B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LED[2]    | 19/4     | LVCMOS25_OUT | PL10C |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| LED[3]    | 20/4     | LVCMOS25_OUT | PL10D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MISO      | 11/5     | LVCMOS25_IN  | PL8A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | MOSI      | 12/5     | LVCMOS25_OUT | PL8B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| RESET     | 23/4     | LVCMOS25_IN  | PL14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCLK      | 10/5     | LVCMOS25_OUT | PL7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| TxD       | 50/2     | LVCMOS25_OUT | PB13B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| TxD       | 122/0    | LVCMOS25_OUT | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| nRESET    | 23/4     | LVCMOS25_IN  | PL14A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
+| 0    | 2.5V  |
 | 1    | 2.5V  |
-| 2    | 2.5V  |
 | 4    | 2.5V  |
 | 5    | 2.5V  |
 +------+-------+
@@ -53,13 +57,13 @@ Pinout by Pin Number:
 | 12/5     | MOSI                  | LOCATED    | LVCMOS25_OUT | PL8B  |                |           |           |
 | 13/4     |     unused, PULL:DOWN |            |              | PL9A  |                |           |           |
 | 14/4     |     unused, PULL:DOWN |            |              | PL9B  |                |           |           |
-| 15/4     |     unused, PULL:DOWN |            |              | PL10A |                |           |           |
-| 17/4     |     unused, PULL:DOWN |            |              | PL10B |                |           |           |
-| 19/4     |     unused, PULL:DOWN |            |              | PL10C | PCLKT4_0       |           |           |
-| 20/4     |     unused, PULL:DOWN |            |              | PL10D | PCLKC4_0       |           |           |
+| 15/4     | LED[0]                | LOCATED    | LVCMOS25_OUT | PL10A |                |           |           |
+| 17/4     | LED[1]                | LOCATED    | LVCMOS25_OUT | PL10B |                |           |           |
+| 19/4     | LED[2]                | LOCATED    | LVCMOS25_OUT | PL10C | PCLKT4_0       |           |           |
+| 20/4     | LED[3]                | LOCATED    | LVCMOS25_OUT | PL10D | PCLKC4_0       |           |           |
 | 21/4     |     unused, PULL:DOWN |            |              | PL13A |                |           |           |
 | 22/4     |     unused, PULL:DOWN |            |              | PL13B |                |           |           |
-| 23/4     | RESET                 | LOCATED    | LVCMOS25_IN  | PL14A |                |           |           |
+| 23/4     | nRESET                | LOCATED    | LVCMOS25_IN  | PL14A |                |           |           |
 | 24/4     |     unused, PULL:DOWN |            |              | PL14B |                |           |           |
 | 25/3     |     unused, PULL:DOWN |            |              | PL16A |                |           |           |
 | 26/3     |     unused, PULL:DOWN |            |              | PL16B |                |           |           |
@@ -81,7 +85,7 @@ Pinout by Pin Number:
 | 47/2     |     unused, PULL:DOWN |            |              | PB10A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB10B |                |           |           |
 | 49/2     |     unused, PULL:DOWN |            |              | PB13A | PCLKT2_0       |           |           |
-| 50/2     | TxD                   |            | LVCMOS25_OUT | PB13B | PCLKC2_0       |           |           |
+| 50/2     |     unused, PULL:DOWN |            |              | PB13B | PCLKC2_0       |           |           |
 | 52/2     |     unused, PULL:DOWN |            |              | PB15A |                |           |           |
 | 54/2     |     unused, PULL:DOWN |            |              | PB15B |                |           |           |
 | 55/2     |     unused, PULL:DOWN |            |              | PB20A | PCLKT2_1       |           |           |
@@ -139,7 +143,7 @@ Pinout by Pin Number:
 | 119/0    |     unused, PULL:DOWN |            |              | PT23D | PROGRAMN       |           |           |
 | 120/0    |     unused, PULL:DOWN |            |              | PT23C | JTAGENB        |           |           |
 | 121/0    |     unused, PULL:DOWN |            |              | PT21B |                |           |           |
-| 122/0    |     unused, PULL:DOWN |            |              | PT21A |                |           |           |
+| 122/0    | TxD                   | LOCATED    | LVCMOS25_OUT | PT21A |                |           |           |
 | 125/0    |     unused, PULL:DOWN |            |              | PT20D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT20C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
@@ -341,11 +345,15 @@ to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste):
 
 LOCATE  COMP  "CLOCK50"  SITE  "105";
 LOCATE  COMP  "CS"  SITE  "9";
+LOCATE  COMP  "LED[0]"  SITE  "15";
+LOCATE  COMP  "LED[1]"  SITE  "17";
+LOCATE  COMP  "LED[2]"  SITE  "19";
+LOCATE  COMP  "LED[3]"  SITE  "20";
 LOCATE  COMP  "MISO"  SITE  "11";
 LOCATE  COMP  "MOSI"  SITE  "12";
-LOCATE  COMP  "RESET"  SITE  "23";
 LOCATE  COMP  "SCLK"  SITE  "10";
-LOCATE  COMP  "TxD"  SITE  "50";
+LOCATE  COMP  "TxD"  SITE  "122";
+LOCATE  COMP  "nRESET"  SITE  "23";
 
 
 
@@ -357,5 +365,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Nov 08 21:40:07 2019
+Tue Nov 12 22:33:59 2019
 

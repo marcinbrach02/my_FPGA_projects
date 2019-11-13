@@ -1,9 +1,10 @@
-`timescale 1 ns / 1 ns
+	  `timescale 1 ns / 1 ns
+`default_nettype none
 
 module card_driver(
-	input wire CLOCK50,
-	input wire RESET,
-
+	input wire CLK,
+	input wire RST,
+			  /*
 	input wire WR_STB,
 	input wire [31:0] WR_ADDR,
 	output reg WR_ACK,
@@ -11,164 +12,91 @@ module card_driver(
 	input wire WD_STB,
 	input wire [7:0] WD_DATA,
 	output wire WD_ACK,
-	
 
 	input wire RD_STB,
 	input wire [31:0] RD_ADDR,
    	output reg RD_ACK,
-	   
-	output wire RES_STB,
-	output wire [7:0] RES_DATA,
+*/
+
+	output reg RES_STB,
+	output reg [7:0] RES_DATA,
    	output wire RES_ACK,	   
 	   
 	   
 	output wire MOSI,
-	input wire MISO,
+	input  wire MISO,
 	output wire SCLK,
-	output reg CS,
+	output reg  CS
+				  		   	   
+);		
+
+parameter DIVIDER = 5;
+							   
+localparam DIVIDER_WIDTH = 2; // log2(255)
+
+reg [DIVIDER_WIDTH-1:0] counter;	 
+wire TICK = counter[DIVIDER_WIDTH-1];
+
+always @(posedge CLK or posedge RST) counter <= (RST) ? DIVIDER-1 : (TICK) ? DIVIDER-1 : counter-1;
 	
 	
-	output wire CLK8_temp,
-	output wire CLK48_temp,
-	output wire TICK74_temp,	
-	
-	output wire W_STB_I_TEMP,
-	output wire [7:0] W_DATA_I_TEMP		
-	
-	
-);
 
-reg W_STB_INS;
-reg [7:0] W_DATA_INS;
+reg [7:0] state;
 
-reg [3:0] count_CS = 1;
-reg [1:0] count;
-reg [8:0] period;
-reg [4:0] period_8;	 
-reg [3:0] period_48;
-reg [7:0] period_74;
+reg W_STB;
+reg [7:0] W_DATA; 
+wire W_READY;
 
-reg [47:0] reset = 48'b01000000_00000000_00000000_00000000_00000000_10010101;
+wire R_STB;
+wire [7:0] R_DATA;
 
+always@(posedge CLK or posedge RST)	
+if (RST) begin
+	state <= 0;
+	CS <= 1;
+	W_STB <= 0;
+	W_DATA <= 0; 
+	RES_DATA <= 0;
+end else case(state)
 
-wire IN_SCLK;
-
-wire CLK8; 
-wire CLK48;	
-
-wire TICK74;
-
-
-parameter divider = 1;											 //parametr do dzielnika czêstotliwoœci;
-																 //dzielnik czêstotliwoœci do 100 - 400 kHz
-																 //przy zegarze 50 MHz dla period[8] ~ 195 KHz
-																 //period[1] = 25MHz
-
-parameter counter_8 = 6;
-parameter counter_40 = 5;
-
-
-
-																 
-always @(posedge CLOCK50 or posedge RESET)							  
-	if(RESET) 														
-		period = 0;													
-	else
-		period = period + 1;
-
-assign SCLK = period[divider];
-assign IN_SCLK = period[divider];
-
-always @(posedge SCLK or posedge RESET)								//odmierzanie 74 takty	 	
-	if (RESET)														//dla period_74[7] i period_74 = 74
-		period_74 = 10;
-	else if(period_74[7] == 1)
-		period_74 = 8'b1111_1111;	
-	else
-		period_74 = period_74 - 1;
-
-assign TICK74 = period_74[7];
-assign TICK74_temp = period_74[7];
-
-always@(posedge SCLK or posedge RESET)		 	
-	if ((RESET) || (period_8[4] == 1)) 				
-		period_8 = counter_8;								
-	else
-		period_8 = period_8 - 1;
-
-assign CLK8 = period_8[4];
-assign CLK8_temp = period_8[4];
-
-
-
-always@(posedge CLK8 or posedge RESET)		 	
-	if ((RESET) || (period_48[3] == 1)) 				
-		period_48 = counter_40;								
-	else
-		period_48 = period_48 - 1;
-
-assign CLK48 = period_48[3];
-assign CLK48_temp = period_48[3];
-/*
-always @(posedge SCLK)
-begin
-   if(count_CS == 0)
-	   CS = 1;
-   else
-	   count_CS = count_CS - 1;
-end
-*/
-
-always @(posedge SCLK)
-begin  
-	if(TICK74 == 0)
-		CS=1;
-	if((CLK8) && (TICK74))
-		begin
-		W_STB_INS = 1;	
-		W_DATA_INS [7:0] = reset[47:40];
-		CS = 0;
-		if(reset != 0)
-			reset <= reset << 8;
-		else if(reset == 0)
-			begin
-			W_STB_INS = 0;	
-			W_DATA_INS [7:0] = 0;
-			if(count_CS == 0)
-	   			CS = 1;
-   			else
-	   			count_CS = count_CS - 1;
- 			
-			end	
-	
-		end
-	else
-		begin
-		W_STB_INS = 0;	
-		W_DATA_INS [7:0] = 0;
-		end	
-end		
-
-
-
-		
-		
-assign W_STB_I_TEMP = W_STB_INS;
-assign W_DATA_I_TEMP = W_DATA_INS;
-		
-		
+  // inicjalizacja 74 takty CS=1, MOSI=1
+  0: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  1; end
+  1: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  2; end
+  2: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  3; end
+  3: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  4; end
+  4: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  6; end
+  6: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  7; end
+  7: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  8; end
+  8: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <=  9; end
+  9: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 10; end
+  // komendy  														                                           			  
+ 10: begin CS<=0; W_DATA <= 8'b01000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 11; end
+ 11: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 12; end
+ 12: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 13; end
+ 13: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 14; end
+ 14: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 15; end
+ 15: begin CS<=0; W_DATA <= 8'b10010101; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 16; end
+ 16: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 17; end
+ 17: begin CS<=1; 			             W_STB <= 0;                  RES_STB <= !RES_ACK;                     if (RES_ACK) state <= 18; end              
+ 18: begin                                                            RES_STB <= 1;        RES_DATA <= 65;                  state <= 19; end
+ 19: begin                                                            RES_STB <= !RES_ACK;                     if (RES_ACK) state <= 20; end               
+ 20: begin end
+endcase
+			
 SPI_cont SPI(
-.IN_SCLK(IN_SCLK), 
-.RST(RESET),
-.W_STB(W_STB_INS),
-.W_DATA(W_DATA_INS),
-.W_ACK(WD_ACK),
-.R_STB(RES_STB),
-.R_DATA(RES_DATA),
-.R_ACK(RES_ACK),
+.CLK(CLK), 
+.RST(RST),
+.TICK(TICK),
+.W_STB(W_STB),
+.W_DATA(W_DATA),
+.W_READY(W_READY),
+
+.R_STB(R_STB),
+.R_DATA(R_DATA),
 .MOSI(MOSI),
 .MISO(MISO),
-.SCLK(SCLK) );	  
+.SCLK(SCLK) 
+);	  
 
 
 endmodule

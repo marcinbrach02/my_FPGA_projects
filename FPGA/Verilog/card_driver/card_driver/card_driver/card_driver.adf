@@ -8,12 +8,12 @@ compile=card_driver
 [Library]
 card_driver=.\card_driver\card_driver.lib
 [Settings]
-AccessRead=0
+AccessRead=1
 AccessReadWrite=0
 AccessACCB=0
 AccessACCR=0
 AccessReadWriteSLP=0
-AccessReadTopLevel=1
+AccessReadTopLevel=0
 DisableC=1
 ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
@@ -21,6 +21,12 @@ LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=Lattice MACHXO2
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
@@ -30,12 +36,12 @@ CompileWithDebug=0
 card_driver=.
 Active_lib=
 [Files]
-/SPI_cont.v=-1
 /card_driver.v=-1
+/SPI_cont.v=-1
 /card_driver_tb.v=-1
 [Files.Data]
-.\src\SPI_cont.v=Verilog Source Code
 .\src\card_driver.v=Verilog Source Code
+.\src\SPI_cont.v=Verilog Source Code
 .\src\card_driver_tb.v=Verilog Source Code
 [SpecTracer]
 WindowVisible=0

@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-11-08 20:53:22
+Active-HDL 10.5.217.6767 2019-11-13 21:23:16
 
 Elaboration top modules:
 Verilog Module                card_driver_tb
@@ -19,7 +19,7 @@ card_driver             | None
 ---------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+card_driver_tb card_driver_tb
+Simulation Options: asim -O5 +access +r card_driver_tb
 
 
 The performance of simulation is reduced. Version Student Edition

@@ -1,19 +1,21 @@
 module tester_module(
 	input wire CLOCK50,
-	input wire RESET,
+	input wire nRESET,
 
 	output wire MOSI,
-	input wire MISO,
+	input  wire MISO,
 	output wire SCLK,
 	output wire CS,
 
 	input  wire RxD,        
-	output wire TxD        
+	output wire TxD,
+	
+	output wire [3:0] LED
                                    
 
 );
 
-wire nRESET;
+wire RESET;
 
 wire WR_STB;
 wire [31:0] WR_ADDR;
@@ -42,34 +44,71 @@ wire  [7:0] TX_DAT;
 reg         TX_ACK;        
 reg         TX_RDY;        
 
+wire        r_stb;        
+wire  [7:0] r_dat;         
+wire        r_ack;  
 
-assign nRESET = RESET;
+assign RESET = !nRESET;
 
+/*
 
-dev_uart_asy uart(
+dev_uart_asy 
+#(.CLK_MHZ(50))
+uart(
 .CLK(CLOCK50),
-.RST(nRESET),
+.RST(RESET),
 
 .RxD_PIN(RxD),
 .TxD_PIN(TxD),
 
-.RX_STB(WD_STB),
-.RX_DAT(WD_DATA),
-.RX_ACK(WD_ACK),
+.RX_STB(r_stb),
+.RX_DAT(r_dat),
+.RX_ACK(r_ack),
+
+.TX_STB(r_stb),
+.TX_DAT(r_dat+1),
+.TX_ACK(r_ack),
+.TX_RDY()
+);
+
+reg [31:0] counter;
+always @(posedge CLOCK50 or posedge RESET) counter <= (RESET) ? 0 : counter+1;
+	
+assign LED = counter>>23;
+
+*/
+
+
+dev_uart_asy 
+#(.CLK_MHZ(50))
+uart(
+.CLK(CLOCK50),
+.RST(RESET),
+
+.RxD_PIN(RxD),
+.TxD_PIN(TxD),
+
+.RX_STB(),
+.RX_DAT(),
+.RX_ACK(1),
 
 .TX_STB(RES_STB),
 .TX_DAT(RES_DATA),
 .TX_ACK(RES_ACK),
-.TX_RDY(RES_ACK)
-
+.TX_RDY()
 );
 
 
 
-card_driver driver(
-.CLOCK50(CLOCK50), 
-.RESET(nRESET),
-
+card_driver 
+#(
+  .DIVIDER(255)
+) 
+driver
+(
+.CLK(CLOCK50), 
+.RST(RESET),
+/*
 .WR_STB(WR_STB),
 .WR_ADDR(WR_ADDR),
 .WR_ACK(WR_ACK),
@@ -81,7 +120,7 @@ card_driver driver(
 .RD_STB(RD_STB),
 .RD_ADDR(RD_ADDR),
 .RD_ACK(RD_ACK),
-
+*/
 .RES_STB(RES_STB),
 .RES_DATA(RES_DATA),
 .RES_ACK(RES_ACK),
@@ -93,6 +132,11 @@ card_driver driver(
 );	
 
 
+
+reg [31:0] counter;
+always @(posedge CLOCK50 or posedge RESET) counter <= (RESET) ? 0 : counter+1;
+	
+assign LED = counter>>23;
 
 endmodule
  

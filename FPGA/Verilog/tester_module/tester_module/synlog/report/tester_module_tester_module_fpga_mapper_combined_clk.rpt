@@ -5,20 +5,15 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 98 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
-45 instances converted, 22 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 166 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       CLOCK50             port                   98         driver_CSio    
+@K:CKID0001       CLOCK50             port                   166        counter[0]     
 =======================================================================================
-========================================================================= Gated/Generated Clocks =========================================================================
-Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance           Explanation                                                            
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       driver.period[8]     FD1S3DX                22         driver.SPI.RD_DATA[7]     Inferred clock from port CLOCK50 (in view: work.tester_module(verilog))
-==========================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

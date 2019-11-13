@@ -1,6 +1,0 @@
-#Start recording tcl command: 8/20/2019 19:34:19
-#Project Location: E:/GIT/my_projects/FPGA/Verilog/microSD; Project name: microSD
-prj_project new -name "microSD" -impl "microSD" -dev LCMXO2-4000HC-4TG144C -synthesis "synplify"
-prj_project save
-prj_src add "E:/GIT/my_projects/FPGA/Verilog/microSD/microSD.v"
-#Stop recording: 8/20/2019 21:14:23

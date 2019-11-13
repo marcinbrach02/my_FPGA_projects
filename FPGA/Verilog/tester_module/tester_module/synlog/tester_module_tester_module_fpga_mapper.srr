@@ -1,4 +1,4 @@
-# Fri Nov  8 21:39:53 2019
+# Tue Nov 12 22:33:52 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -28,30 +28,17 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@N: FX493 |Applying initial value "01000000000000000" on instance driver.reset[47:31].
-@N: FX493 |Applying initial value "00" on instance driver.reset[24:23].
-@N: FX493 |Applying initial value "00" on instance driver.reset[16:15].
-@N: FX493 |Applying initial value "01" on instance driver.reset[8:7].
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[2] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[4] because it is equivalent to instance driver.reset[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[12] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[8] because it is equivalent to instance driver.reset[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[20] because it is equivalent to instance driver.reset[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[18] because it is equivalent to instance driver.reset[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[37] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[35] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[38] because it is equivalent to instance driver.reset[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing instance driver.reset[26] because it is equivalent to instance driver.reset[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-Encoding state machine txstate[3:0] (in view: work.dev_uart_asy(verilog))
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":137:0:137:5|Found counter in view:work.tester_module(verilog) instance counter[26:0] 
+Encoding state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog))
 original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
    11 -> 11
-@N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy(verilog)); safe FSM implementation is not required.
+@N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)); safe FSM implementation is not required.
 Encoding state machine txstate[10:0] (in view: work.dev_uart_tx(verilog))
 original code -> new code
    0000 -> 00000000001
@@ -65,54 +52,81 @@ original code -> new code
    1000 -> 00100000000
    1001 -> 01000000000
    1010 -> 10000000000
+Encoding state machine state[32:0] (in view: work.card_driver_255s_9s(verilog))
+original code -> new code
+   00000000 -> 000000000000000000000000000000001
+   00000001 -> 000000000000000000000000000000010
+   00000010 -> 000000000000000000000000000000100
+   00000011 -> 000000000000000000000000000001000
+   00000100 -> 000000000000000000000000000010000
+   00000101 -> 000000000000000000000000000100000
+   00000110 -> 000000000000000000000000001000000
+   00000111 -> 000000000000000000000000010000000
+   00001000 -> 000000000000000000000000100000000
+   00001001 -> 000000000000000000000001000000000
+   00001010 -> 000000000000000000000010000000000
+   00001011 -> 000000000000000000000100000000000
+   00001100 -> 000000000000000000001000000000000
+   00001101 -> 000000000000000000010000000000000
+   00001110 -> 000000000000000000100000000000000
+   00001111 -> 000000000000000001000000000000000
+   00010000 -> 000000000000000010000000000000000
+   00010001 -> 000000000000000100000000000000000
+   00010010 -> 000000000000001000000000000000000
+   00010011 -> 000000000000010000000000000000000
+   00010100 -> 000000000000100000000000000000000
+   00010101 -> 000000000001000000000000000000000
+   00010110 -> 000000000010000000000000000000000
+   00010111 -> 000000000100000000000000000000000
+   00011000 -> 000000001000000000000000000000000
+   00011001 -> 000000010000000000000000000000000
+   00011010 -> 000000100000000000000000000000000
+   00011011 -> 000001000000000000000000000000000
+   00011100 -> 000010000000000000000000000000000
+   00011101 -> 000100000000000000000000000000000
+   00011110 -> 001000000000000000000000000000000
+   00011111 -> 010000000000000000000000000000000
+   00100000 -> 100000000000000000000000000000000
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":38:0:38:5|Found counter in view:work.SPI_cont(verilog) instance period[3:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
-
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Removing sequential instance driver.SPI.W_ACK (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[33] (in view: work.tester_module(verilog)) because it does not drive other instances.
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.W_DATA_INS[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Removing sequential instance driver.reset[41] (in view: work.tester_module(verilog)) because it does not drive other instances.
-
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-@N: MF578 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Incompatible asynchronous control logic preventing generated clock conversion of driver.count_CS[0] (in view: work.tester_module(verilog)).
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
-
-@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":66:11:66:21|Pipelining module un3_period[8:0]. For more information, search for "pipelining" in Online Help.
-@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":62:0:62:5|Pushed in register period[8:0].
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		   498.67ns		  87 /       112
+   1		0h:00m:01s		   497.88ns		 112 /       158
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":100:0:100:5|Boundary register driver.CS.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":34:0:34:5|Boundary register driver.SPI.MOSI.fb (in view: work.tester_module(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
 
 
 
@@ -121,47 +135,41 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 98 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
-45 instances converted, 22 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 166 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0002       CLOCK50             port                   98         driver_CSio    
+@K:CKID0001       CLOCK50             port                   166        counter[0]     
 =======================================================================================
-========================================================================= Gated/Generated Clocks =========================================================================
-Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance           Explanation                                                            
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       driver.period[8]     FD1S3DX                22         driver.SPI.RD_DATA[7]     Inferred clock from port CLOCK50 (in view: work.tester_module(verilog))
-==========================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 141MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 144MB)
 
 Writing Analyst data base E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 141MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\tester_module_tester_module.edi
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
 
 @W: MT420 |Found inferred clock tester_module|CLOCK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLOCK50"
-@N: MT615 |Found clock card_driver|SCLK_derived_clock with period 1000.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Nov  8 21:39:56 2019
+# Timing Report written on Tue Nov 12 22:33:54 2019
 #
 
 
@@ -180,14 +188,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 498.500
+Worst slack in design: 498.268
 
-                                   Requested     Estimated     Requested     Estimated                 Clock                                    Clock              
-Starting Clock                     Frequency     Frequency     Period        Period        Slack       Type                                     Group              
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-card_driver|SCLK_derived_clock     1.0 MHz       333.4 MHz     1000.000      3.000         498.500     derived (from tester_module|CLOCK50)     Inferred_clkgroup_0
-tester_module|CLOCK50              1.0 MHz       182.4 MHz     1000.000      5.481         994.519     inferred                                 Inferred_clkgroup_0
-===================================================================================================================================================================
+                          Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock            Frequency     Frequency     Period        Period        Slack       Type         Group              
+------------------------------------------------------------------------------------------------------------------------------
+tester_module|CLOCK50     1.0 MHz       134.3 MHz     1000.000      7.447         498.268     inferred     Inferred_clkgroup_0
+==============================================================================================================================
 
 
 
@@ -196,14 +203,12 @@ tester_module|CLOCK50              1.0 MHz       182.4 MHz     1000.000      5.4
 Clock Relationships
 *******************
 
-Clocks                                                          |    rise  to  rise     |    fall  to  fall      |    rise  to  fall   |    fall  to  rise   
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                        Ending                          |  constraint  slack    |  constraint  slack     |  constraint  slack  |  constraint  slack  
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-tester_module|CLOCK50           tester_module|CLOCK50           |  1000.000    994.519  |  No paths    -         |  No paths    -      |  No paths    -      
-card_driver|SCLK_derived_clock  tester_module|CLOCK50           |  No paths    -        |  No paths    -         |  No paths    -      |  500.000     498.500
-card_driver|SCLK_derived_clock  card_driver|SCLK_derived_clock  |  No paths    -        |  1000.000    1995.987  |  No paths    -      |  No paths    -      
-=============================================================================================================================================================
+Clocks                                        |    rise  to  rise     |    fall  to  fall   |    rise  to  fall     |    fall  to  rise   
+------------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
+------------------------------------------------------------------------------------------------------------------------------------------
+tester_module|CLOCK50  tester_module|CLOCK50  |  1000.000    992.553  |  No paths    -      |  500.000     498.364  |  500.000     498.268
+==========================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -213,87 +218,6 @@ Interface Information
 *********************
 
 No IO constraint found
-
-
-
-====================================
-Detailed Report for Clock: card_driver|SCLK_derived_clock
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                            Starting                                                                Arrival             
-Instance                    Reference                          Type        Pin     Net              Time        Slack   
-                            Clock                                                                                       
-------------------------------------------------------------------------------------------------------------------------
-driver.SPI.R_STB            card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_STB          0.972       498.500 
-driver.SPI.R_DATA[0]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[0]      0.972       498.923 
-driver.SPI.R_DATA[1]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[1]      0.972       498.923 
-driver.SPI.R_DATA[2]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[2]      0.972       498.923 
-driver.SPI.R_DATA[3]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[3]      0.972       498.923 
-driver.SPI.R_DATA[4]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[4]      0.972       498.923 
-driver.SPI.R_DATA[5]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[5]      0.972       498.923 
-driver.SPI.R_DATA[6]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[6]      0.972       498.923 
-driver.SPI.R_DATA[7]        card_driver|SCLK_derived_clock     FD1P3IX     Q       RES_DATA[7]      0.972       498.923 
-driver.SPI.rd_period[0]     card_driver|SCLK_derived_clock     FD1S3JX     Q       rd_period[0]     1.180       1995.987
-========================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                         Starting                                                                Required             
-Instance                 Reference                          Type        Pin     Net              Time         Slack   
-                         Clock                                                                                        
-----------------------------------------------------------------------------------------------------------------------
-uart.txstate[0]          card_driver|SCLK_derived_clock     FD1S3DX     D       m3_i             500.089      498.500 
-uart.txq[0]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[0]      499.894      498.923 
-uart.txq[1]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[1]      499.894      498.923 
-uart.txq[2]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[2]      499.894      498.923 
-uart.txq[3]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[3]      499.894      498.923 
-uart.txq[4]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[4]      499.894      498.923 
-uart.txq[5]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[5]      499.894      498.923 
-uart.txq[6]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[6]      499.894      498.923 
-uart.txq[7]              card_driver|SCLK_derived_clock     FD1P3DX     D       RES_DATA[7]      499.894      498.923 
-driver.SPI.R_DATA[0]     card_driver|SCLK_derived_clock     FD1P3IX     SP      un1_MISO_2_i     1999.528     1995.987
-======================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      500.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         500.089
-
-    - Propagation time:                      1.589
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     498.500
-
-    Number of logic level(s):                1
-    Starting point:                          driver.SPI.R_STB / Q
-    Ending point:                            uart.txstate[0] / D
-    The start point is clocked by            card_driver|SCLK_derived_clock [falling] on pin CK
-    The end   point is clocked by            tester_module|CLOCK50 [rising] on pin CK
-
-Instance / Net                             Pin      Pin               Arrival     No. of    
-Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------
-driver.SPI.R_STB              FD1P3IX      Q        Out     0.972     0.972       -         
-RES_STB                       Net          -        -       -         -           1         
-uart.txstate_ns_1_0_.m3_i     ORCALUT4     A        In      0.000     0.972       -         
-uart.txstate_ns_1_0_.m3_i     ORCALUT4     Z        Out     0.617     1.589       -         
-m3_i                          Net          -        -       -         -           1         
-uart.txstate[0]               FD1S3DX      D        In      0.000     1.589       -         
-============================================================================================
-
 
 
 
@@ -310,37 +234,37 @@ Starting Points with Worst Slack
 Instance             Reference                 Type        Pin     Net           Time        Slack  
                      Clock                                                                          
 ----------------------------------------------------------------------------------------------------
-driver.reset[7]      tester_module|CLOCK50     FD1S3AY     Q       reset[7]      1.148       994.519
-driver.reset[0]      tester_module|CLOCK50     FD1S3AY     Q       reset[0]      1.108       994.559
-driver.reset[10]     tester_module|CLOCK50     FD1P3AX     Q       reset[8]      1.044       994.623
-driver.reset[15]     tester_module|CLOCK50     FD1P3AX     Q       reset[15]     1.044       994.623
-driver.reset[16]     tester_module|CLOCK50     FD1P3AX     Q       reset[16]     1.044       994.623
-driver.reset[23]     tester_module|CLOCK50     FD1P3AX     Q       reset[23]     1.044       994.623
-driver.reset[24]     tester_module|CLOCK50     FD1P3AX     Q       reset[24]     1.044       994.623
-driver.reset[31]     tester_module|CLOCK50     FD1P3AX     Q       reset[31]     1.044       994.623
-driver.reset[32]     tester_module|CLOCK50     FD1P3AX     Q       reset[32]     1.044       994.623
-driver.reset[39]     tester_module|CLOCK50     FD1P3AX     Q       reset[39]     1.044       994.623
+uart.TX_ACK          tester_module|CLOCK50     FD1S3DX     Q       RES_ACK       1.204       498.268
+driver.RES_STB       tester_module|CLOCK50     FD1P3DX     Q       RES_STB       1.108       498.364
+uart.TX_RDY          tester_module|CLOCK50     FD1P3BX     Q       TX_RDY        0.972       498.500
+driver.state[14]     tester_module|CLOCK50     FD1P3DX     Q       state[14]     1.044       992.553
+driver.state[15]     tester_module|CLOCK50     FD1P3DX     Q       state[15]     1.044       992.553
+driver.state[17]     tester_module|CLOCK50     FD1P3DX     Q       state[17]     1.044       992.553
+driver.state[20]     tester_module|CLOCK50     FD1P3DX     Q       state[20]     1.044       992.553
+driver.state[16]     tester_module|CLOCK50     FD1P3DX     Q       state[16]     1.108       993.577
+driver.state[21]     tester_module|CLOCK50     FD1P3DX     Q       state[21]     1.108       993.577
+driver.state[13]     tester_module|CLOCK50     FD1P3DX     Q       state[13]     1.044       993.641
 ====================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                         Starting                                                             Required            
-Instance                 Reference                 Type         Pin     Net                   Time         Slack  
-                         Clock                                                                                    
-------------------------------------------------------------------------------------------------------------------
-driver_CSio              tester_module|CLOCK50     OFS1P3IX     CD      reset6_RNINB6C1_0     999.197      994.519
-driver.W_DATA_INS[0]     tester_module|CLOCK50     FD1P3IX      CD      reset6_RNINB6C1       999.197      994.655
-driver.W_DATA_INS[6]     tester_module|CLOCK50     FD1P3IX      CD      reset6_RNINB6C1       999.197      994.655
-driver.W_DATA_INS[7]     tester_module|CLOCK50     FD1P3IX      CD      reset6_RNINB6C1       999.197      994.655
-driver.reset[7]          tester_module|CLOCK50     FD1S3AY      D       reset_0[7]            1000.089     994.794
-driver.reset[10]         tester_module|CLOCK50     FD1P3AX      SP      reset6_RNINB6C1_0     999.528      994.850
-driver.reset[15]         tester_module|CLOCK50     FD1P3AX      SP      reset6_RNINB6C1_0     999.528      994.850
-driver.reset[16]         tester_module|CLOCK50     FD1P3AX      SP      reset6_RNINB6C1_0     999.528      994.850
-driver.reset[23]         tester_module|CLOCK50     FD1P3AX      SP      reset6_RNINB6C1_0     999.528      994.850
-driver.reset[24]         tester_module|CLOCK50     FD1P3AX      SP      reset6_RNINB6C1_0     999.528      994.850
-==================================================================================================================
+                     Starting                                                       Required            
+Instance             Reference                 Type        Pin     Net              Time         Slack  
+                     Clock                                                                              
+--------------------------------------------------------------------------------------------------------
+driver.RES_STB       tester_module|CLOCK50     FD1P3DX     D       N_470            500.089      498.268
+driver.state[1]      tester_module|CLOCK50     FD1S3DX     D       state_ns[1]      500.089      498.268
+driver.state[2]      tester_module|CLOCK50     FD1S3DX     D       N_139_i          500.089      498.268
+driver.state[29]     tester_module|CLOCK50     FD1S3DX     D       state_ns[29]     500.089      498.268
+driver.state[30]     tester_module|CLOCK50     FD1S3DX     D       N_193_i          500.089      498.268
+driver.state[31]     tester_module|CLOCK50     FD1S3DX     D       state_ns[31]     500.089      498.268
+driver.state[32]     tester_module|CLOCK50     FD1S3DX     D       N_388_0          500.089      498.268
+uart.TX_ACK          tester_module|CLOCK50     FD1S3DX     D       TX_ACK_2         500.089      498.364
+driver.W_DATA[0]     tester_module|CLOCK50     FD1P3DX     SP      N_361_i          999.528      992.553
+driver.W_DATA[1]     tester_module|CLOCK50     FD1P3DX     SP      N_361_i          999.528      992.553
+========================================================================================================
 
 
 
@@ -349,37 +273,31 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      1000.000
-    - Setup time:                            0.803
+      Requested Period:                      500.000
+    - Setup time:                            -0.089
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         999.197
+    = Required time:                         500.089
 
-    - Propagation time:                      4.678
+    - Propagation time:                      1.821
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 994.519
+    = Slack (critical) :                     498.268
 
-    Number of logic level(s):                3
-    Starting point:                          driver.reset[7] / Q
-    Ending point:                            driver_CSio / CD
-    The start point is clocked by            tester_module|CLOCK50 [rising] on pin CK
-    The end   point is clocked by            tester_module|CLOCK50 [rising] on pin SCLK
+    Number of logic level(s):                1
+    Starting point:                          uart.TX_ACK / Q
+    Ending point:                            driver.RES_STB / D
+    The start point is clocked by            tester_module|CLOCK50 [falling] on pin CK
+    The end   point is clocked by            tester_module|CLOCK50 [rising] on pin CK
 
-Instance / Net                            Pin      Pin               Arrival     No. of    
-Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------
-driver.reset[7]              FD1S3AY      Q        Out     1.148     1.148       -         
-reset[7]                     Net          -        -       -         -           4         
-driver.reset6_8              ORCALUT4     A        In      0.000     1.148       -         
-driver.reset6_8              ORCALUT4     Z        Out     1.017     2.165       -         
-reset6_8                     Net          -        -       -         -           1         
-driver.reset6                ORCALUT4     C        In      0.000     2.165       -         
-driver.reset6                ORCALUT4     Z        Out     1.225     3.389       -         
-reset6                       Net          -        -       -         -           5         
-driver.reset6_RNINB6C1_0     ORCALUT4     D        In      0.000     3.389       -         
-driver.reset6_RNINB6C1_0     ORCALUT4     Z        Out     1.289     4.678       -         
-reset6_RNINB6C1_0            Net          -        -       -         -           12        
-driver_CSio                  OFS1P3IX     CD       In      0.000     4.678       -         
-===========================================================================================
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                   Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+uart.TX_ACK            FD1S3DX      Q        Out     1.204     1.204       -         
+RES_ACK                Net          -        -       -         -           7         
+driver.RES_STB_RNO     ORCALUT4     C        In      0.000     1.204       -         
+driver.RES_STB_RNO     ORCALUT4     Z        Out     0.617     1.821       -         
+N_470                  Net          -        -       -         -           1         
+driver.RES_STB         FD1P3DX      D        In      0.000     1.821       -         
+=====================================================================================
 
 
 
@@ -388,49 +306,41 @@ driver_CSio                  OFS1P3IX     CD       In      0.000     4.678      
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_4000hc-4
 
-Register bits: 120 of 4320 (3%)
+Register bits: 166 of 4320 (4%)
 PIC Latch:       0
-I/O cells:       7
+I/O cells:       11
 
 
 Details:
-CCU2D:          19
-FD1P3AX:        31
-FD1P3AY:        1
-FD1P3BX:        14
-FD1P3DX:        24
-FD1P3IX:        13
-FD1P3JX:        2
-FD1S3AX:        1
-FD1S3AY:        2
-FD1S3BX:        2
-FD1S3DX:        25
-FD1S3JX:        1
+CCU2D:          23
+FD1P3BX:        9
+FD1P3DX:        91
+FD1S3BX:        9
+FD1S3DX:        53
 GSR:            1
 IB:             3
 IFS1P3DX:       1
-INV:            5
-OB:             4
-OFS1P3BX:       1
-OFS1P3IX:       2
-ORCALUT4:       81
+INV:            7
+OB:             8
+OFS1P3BX:       3
+ORCALUT4:       105
 PUR:            1
 VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 145MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 149MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Nov  8 21:39:56 2019
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Nov 12 22:33:54 2019
 
 ###########################################################]

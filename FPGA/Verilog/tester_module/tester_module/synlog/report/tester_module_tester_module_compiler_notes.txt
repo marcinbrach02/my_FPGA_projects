@@ -3,34 +3,10 @@
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":20:7:20:17|Synthesizing module dev_uart_tx in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":17:7:17:18|Synthesizing module dev_uart_asy in library work.
-@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\SPI_cont.v":1:7:1:14|Synthesizing module SPI_cont in library work.
-@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":3:7:3:17|Synthesizing module card_driver in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\SPI_cont.v":4:7:4:14|Synthesizing module SPI_cont in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":4:7:4:17|Synthesizing module card_driver in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[1] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[3] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[5] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[6] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[3] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[9] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[11] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[13] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[14] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[2] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[17] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[19] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[21] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[22] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit count_CS[1] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[25] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[27] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[29] is always 0.
-@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":100:0:100:5|Register bit reset[30] is always 0.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":7:12:7:17|Input WR_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":8:19:8:25|Input WR_ADDR is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":11:12:11:17|Input WD_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":12:18:12:24|Input WD_DATA is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":16:12:16:17|Input RD_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":17:19:17:25|Input RD_ADDR is unused.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":53:0:53:5|Trying to extract state machine for register state.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":103:0:103:5|Trying to extract state machine for register rxstate.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Trying to extract state machine for register txstate.

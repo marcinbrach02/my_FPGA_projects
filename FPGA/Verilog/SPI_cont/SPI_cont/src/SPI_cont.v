@@ -1,16 +1,17 @@
 `timescale 1 ns / 1 ns
+`default_nettype none
 
 module SPI_cont(
-	input wire IN_SCLK,
+	input wire CLK,
 	input wire RST,
+	input wire TICK,
 	
 	input wire W_STB,
 	input wire [7:0] W_DATA,
-	output reg W_ACK,
+	output wire W_READY,
 	
 	output reg R_STB,
 	output reg [7:0] R_DATA,
-   	output reg R_ACK,
 	
 	output reg MOSI,
 	input wire MISO,
@@ -20,85 +21,67 @@ module SPI_cont(
 );
 
 
-reg wr_ready = 0;	
-reg rd_ready = 0;
-
-reg [1:0] period; 
-reg [3:0] wr_period;
-reg [3:0] rd_period;
+reg receiving;
+reg sending;
+reg [3:0] period;
 
 reg [7:0] WR_DATA;
 reg [7:0] RD_DATA;
 
+reg INT_SCLK;
+always @(posedge CLK or posedge RST) INT_SCLK <= (RST) ? 0 : (W_STB) ? 1 : INT_SCLK ^ TICK;
+	
+assign SCLK = INT_SCLK & receiving;
 
-assign SCLK = IN_SCLK;
-
-
-always@(posedge SCLK)	   						//proces zapisu
+assign W_READY = !sending;
+	   
+always@(posedge CLK or posedge RST)	   						
 begin
 	if(RST)
-		begin 
-		MOSI <= 0;
+		begin 	  
+		MOSI <= 1;  // 1'bx
+		receiving <= 0;   
+		sending <= 0;
+		WR_DATA <= 0;
+		RD_DATA <= 0;
+		R_DATA <= 0;
+		R_STB <= 0;	 
+		period <= 0;
 		end	
-	else if(W_STB)
+	else if (W_STB)
 		begin
 		WR_DATA <= W_DATA;
-		wr_ready <= 1;
-		wr_period = 8;	
+		R_DATA <= 0;
+		sending <= 1;
+		period <= (8-1);	
 		end
-	else if(wr_ready)
-		begin
-			MOSI <= WR_DATA[7];					   
+	else if (sending && TICK && (INT_SCLK==1)) // neg edge
+		begin	 			
 		    WR_DATA <= WR_DATA << 1; 
-			wr_period = wr_period - 1;			
-			if(wr_period[3])
-				begin
-				wr_ready <= 0;
-				W_ACK <= 1;
-				MOSI <= 1;
+			period <= period - 1;	
+			if(period[3]) 
+				begin  
+					receiving <= 0;
+					sending <= 0;
+					MOSI <= 1;  // 1'bx
+					R_DATA <= RD_DATA;
+					R_STB  <= 1;
 				end
+			else
+				begin	  
+					receiving <= 1;
+					MOSI <= WR_DATA[7];					   					
+				end
+		end		
+	else if (receiving && TICK && (INT_SCLK==0)) // pos edge
+		begin	 						
+		   RD_DATA <= { RD_DATA, MISO};
 		end		
 	else 
 		begin
-			MOSI <= 1;
-			W_ACK <= 0;		
+			R_STB <= 0;		
 		end		
 end		
-
-		
-		
-always@(negedge SCLK)	   						//proces odczytu					
-begin
-	if(RST)
-		begin 
-		R_STB <= 0;
-		R_DATA <= 0;
-		end	
-	else if((MISO == 0) && (rd_ready == 0))
-		begin		
-		rd_ready <= 1; 
-		rd_period = 7;
-		RD_DATA[0] <= 0;
-		end	
-	else if(rd_ready)
-		begin
-		RD_DATA <= RD_DATA << 1;			
-		RD_DATA[0] <= MISO;
-		rd_period = rd_period - 1;	
-			if(rd_period[3])
-				begin
-				rd_ready <= 0;
-				R_ACK <= 1;
-				R_STB <= 1;
-				R_DATA <= RD_DATA;	
-				end
-		end
-	else 
-		begin
-			R_STB <= 0;
-			R_ACK <= 0;
-			R_DATA <= 0;
-		end	
-end	 
+		 
 	
 endmodule 

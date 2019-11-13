@@ -11,12 +11,12 @@ compile=SPI_cont
 SPI_cont=.\SPI_cont\SPI_cont.lib
 
 [Settings]
-AccessRead=0
+AccessRead=1
 AccessReadWrite=0
 AccessACCB=0
 AccessACCR=0
 AccessReadWriteSLP=0
-AccessReadTopLevel=1
+AccessReadTopLevel=0
 DisableC=1
 ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
@@ -24,13 +24,71 @@ LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=Lattice MACHXO2
+AddGeneratedFilesToDesignBrowser=0
+DesignStatusPath=$dsn\src\DESIGN_STATUS
+DesignActivationScript=$dsn\design.do
+NoTimingChecks=0
+NoTchkMsg=0
+EnableXtrace=0
+SplitNetVectors=0
+RetvalMemorySize=32
+StackMemorySize=32
+resolution=Auto
+VsimAdditionalOptions=
+NoWarningsSDF=0
+ChangeSDFErrorToWarning=0
+EnableSDFErrorLimit=0
+SDFErrorLimit=0
+DisableIEEEWarnings=0
+DisableVitalMsg=0
+VitalAccel=1
+UnboundError=0
+VitalGlitches=0
+WireDelay=2
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
 
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
+VerilogLanguage=8
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+AdditionalOptions=
+ErrorOutputLimit=0
+MonitoringOfEventsUDP=0
+DisablePulseError=0
+PulseErrorFilter=0
+ErrorLimit=100
+RejectionLimit=100
+SetErrorLimit=0
+SetRejectionLimit=0
+InitialRegsValue=X
+HasInitialRegsValue=0
+LibNames=
+PriorityLibNames=
 
 [LocalVhdlSets]
 CompileWithDebug=0
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2008Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
 
 [$LibMap$]
 SPI_cont=.
@@ -52,3 +110,38 @@ Selected=
 .\src\SPI_cont.v=Verilog Source Code
 .\src\SPI_cont_tb.v=Verilog Source Code
 
+[DesignStructure]
+BlockDiagram=.\src
+StateDiagram=.\src
+VHDLSourceCode=.\src
+VerilogSourceCode=.\src
+SystemVerilogSourceCode=.\src
+SDF=.\src
+Waveform=.\src
+OvaSourceCode=.\src
+SymbolSheet=.\src
+ExternalFile=.\src
+PslSourceCode=.\src
+EDIFNetlist=.\src
+PerlScript=.\src
+adc=.\src
+Text=.\src
+MemFile=.\src
+WaveformASDB=.\src
+Macro=.\src
+ListFile=.\src
+Drawing=.\src
+TclScript=.\src
+WaveformASDBC=.\src
+Cpp=.\src
+WaveformASDBAWC=.\src
+ActiveCADTestVectors=.\src
+EDIFSchematic=.\src
+HTMLDocument=.\src
+GenerateToCustomFolder=0
+[DefineMacro]
+Global=
+[LocalVerilogDirs]
+Count=0
+[LoadVHPI]
+Count=0

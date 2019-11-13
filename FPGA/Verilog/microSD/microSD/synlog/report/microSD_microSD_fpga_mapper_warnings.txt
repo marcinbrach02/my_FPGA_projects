@@ -1,1 +1,0 @@
-@W: MT420 |Found inferred clock microSD|CLK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLK50"

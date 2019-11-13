@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>14</data>
+<data>11</data>
 <report_link name="more">
 <data>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\report\tester_module_tester_module_premap_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>2</data>
+<data>1</data>
 <report_link name="more">
 <data>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\report\tester_module_tester_module_premap_warnings.txt</data>
 </report_link>
@@ -34,13 +34,13 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:03s</data>
+<data>0h:00m:01s</data>
 </info>
 <info name="Peak Memory">
-<data>141MB</data>
+<data>144MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1573245593</data>
+<data type="timestamp">1573594432</data>
 </info>
 </job_info>
 </job_run_status>
