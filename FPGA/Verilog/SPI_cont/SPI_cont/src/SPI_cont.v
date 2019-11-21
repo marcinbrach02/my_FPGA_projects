@@ -16,7 +16,7 @@ module SPI_cont(
 	output reg MOSI,
 	input wire MISO,
 	output wire SCLK
-	//output reg CS					sygna³ przeniesiony do top level
+
 	
 );
 

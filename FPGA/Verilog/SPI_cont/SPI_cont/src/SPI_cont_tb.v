@@ -38,17 +38,18 @@ initial begin
 	@(negedge RST);
 	#103;
 	@(posedge CLK);
-	W_STB=1; W_DATA=171;  // 0xAB  1010 1011
+	W_STB=1; W_DATA=85;  // 171 0xAB  1010 1011
 	@(posedge CLK);
 	W_STB=0; W_DATA=0;
+	
 	@(posedge R_STB);	
 	@(posedge CLK);
-	W_STB=1; W_DATA=171;  // 0xAB  1010 1011
+	W_STB=1; W_DATA=85;  // 0xAB  1010 1011
 	@(posedge CLK);
 	W_STB=0; W_DATA=0;
 	@(posedge CLK);
 	//#64	W_STB=1; W_DATA=254;
-	//#8		W_STB=0; W_DATA=0;
+	#8		W_STB=0; W_DATA=0;		
 end	
 
 

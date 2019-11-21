@@ -13,51 +13,6 @@ alog -O2 -sve -msg 5 -sv2k12 -work SPI_cont $dsn/src/SPI_cont.v $dsn/src/SPI_con
 # Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
 # Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # done
-asim -O5 +access +r +m+SPI_cont_tb SPI_cont_tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ns.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.1 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 1.6 [s]
-# SLP: Finished : 2.2 [s]
-# SLP: 0 primitives and 11 (100.00%) other processes in SLP
-# SLP: 29 (100.00%) signals in SLP and 0 interface signals
-# ELAB2: Elaboration final pass complete - time: 3.2 [s].
-# KERNEL: SLP loading done - time: 0.3 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location e:\GIT\my_projects\FPGA\Verilog\SPI_cont\SPI_cont\src\wave.asdb
-#  19:22, wtorek, 12 listopada 2019
-#  Simulation has been initialized
-endsim
-# VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k12 -work SPI_cont $dsn/src/SPI_cont.v $dsn/src/SPI_cont_tb.v
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: SPI_cont_tb.
-# $root top modules: microSD_tb SPI_cont_tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
 asim -O5 +access +r SPI_cont_tb
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -72,21 +27,21 @@ asim -O5 +access +r SPI_cont_tb
 # ELAB2: Create instances complete.
 # SLP: Started
 # SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Elaboration phase ... done : 0.0 [s]
 # SLP: Generation phase ...
-# SLP: Generation phase ... done : 0.9 [s]
-# SLP: Finished : 1.0 [s]
+# SLP: Generation phase ... done : 1.7 [s]
+# SLP: Finished : 1.8 [s]
 # SLP: 0 primitives and 11 (100.00%) other processes in SLP
 # SLP: 29 (100.00%) signals in SLP and 0 interface signals
-# ELAB2: Elaboration final pass complete - time: 1.1 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
+# ELAB2: Elaboration final pass complete - time: 2.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: SLP simulation initialization done - time: 0.0 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4113 kernel=133 sdf=0)
 # KERNEL: ASDB file was created in location e:\GIT\my_projects\FPGA\Verilog\SPI_cont\SPI_cont\src\wave.asdb
-#  19:24, wtorek, 12 listopada 2019
+#  23:48, czwartek, 21 listopada 2019
 #  Simulation has been initialized
 # 12 signal(s) traced.
 # Waveform file 'untitled.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/wave.asdb'.
@@ -102,68 +57,5 @@ run 100 ns
 # KERNEL: stopped at time: 500 ns
 run 100 ns
 # KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-endsim
-# VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k12 -work SPI_cont $dsn/src/SPI_cont.v $dsn/src/SPI_cont_tb.v
-# Pass 1. Scanning modules hierarchy.
-# Info: VCP2113 Module \$root found in current working library.
-# Pass 2. Processing instantiations.
-# Pass 3. Processing behavioral statements.
-# Running Optimizer.
-# ELB/DAG code generating.
-# Info: VCP2113 Module \$root found in current working library.
-# Unit top modules: SPI_cont_tb.
-# $root top modules: microSD_tb SPI_cont_tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
-# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# done
-asim -O5 +access +r SPI_cont_tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ns.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... done : 0.1 [s]
-# SLP: Generation phase ...
-# SLP: Generation phase ... done : 2.0 [s]
-# SLP: Finished : 2.1 [s]
-# SLP: 0 primitives and 11 (100.00%) other processes in SLP
-# SLP: 29 (100.00%) signals in SLP and 0 interface signals
-# ELAB2: Elaboration final pass complete - time: 2.4 [s].
-# KERNEL: SLP loading done - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: SLP simulation initialization done - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
-# KERNEL: ASDB file was created in location e:\GIT\my_projects\FPGA\Verilog\SPI_cont\SPI_cont\src\wave.asdb
-#  20:14, wtorek, 12 listopada 2019
-#  Simulation has been initialized
-# 12 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'e:/GIT/my_projects/FPGA/Verilog/SPI_cont/SPI_cont/src/wave.asdb'.
-run 100 ns
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
 endsim
 # VSIM: Simulation has finished.

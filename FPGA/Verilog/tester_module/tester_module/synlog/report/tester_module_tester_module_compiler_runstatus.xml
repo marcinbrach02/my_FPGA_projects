@@ -14,11 +14,11 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>14</data>
+  <data>20</data>
   <report_link name="more"><data>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\report\tester_module_tester_module_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>23</data>
+  <data>30</data>
   <report_link name="more"><data>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\report\tester_module_tester_module_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1573594429</data>
+  <data type="timestamp">1574377173</data>
   </info>
 			</job_info>
 </job_run_status>

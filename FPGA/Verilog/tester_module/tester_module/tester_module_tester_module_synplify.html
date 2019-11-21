@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: MARCIN-VAIO
 
-# Tue Nov 12 22:33:48 2019
+# Thu Nov 21 23:59:32 2019
 
 #Implementation: tester_module
 
@@ -37,7 +37,9 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v" (library work)
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v" (library work)
 Verilog syntax check successful!
-File E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module tester_module
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
@@ -56,17 +58,17 @@ Selecting top level module tester_module
 	DIVIDER=32'b00000000000000000000000011111111
 	DIVIDER_WIDTH=32'b00000000000000000000000000001001
    Generated name = card_driver_255s_9s
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":10:12:10:17|Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":14:13:14:18|Removing wire WD_ACK, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
-@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":93:8:93:8|Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":70:8:70:8|Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":20:5:20:10|Removing wire WR_STB, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":21:12:21:18|Removing wire WR_ADDR, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":22:5:22:10|Removing wire WR_ACK, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|Removing wire WD_STB, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:11:25:17|Removing wire WD_DATA, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":26:5:26:10|Removing wire WD_ACK, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":28:5:28:10|Removing wire RD_STB, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":29:12:29:18|Removing wire RD_ADDR, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":30:5:30:10|Removing wire RD_ACK, as there is no assignment to it.
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":38:12:38:17|Object RX_STB is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":39:12:39:17|Object RX_DAT is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":40:12:40:17|Removing wire RX_ACK, as there is no assignment to it.
@@ -77,9 +79,15 @@ Selecting top level module tester_module
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":47:12:47:16|Removing wire r_stb, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":48:12:48:16|Removing wire r_dat, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":49:12:49:16|Removing wire r_ack, as there is no assignment to it.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":20:5:20:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":21:12:21:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|*Input WD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:11:25:17|*Input WD_DATA[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":28:5:28:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":29:12:29:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":53:0:53:5|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 33 reachable states with original encodings of:
+State machine has 85 reachable states with original encodings of:
    00000000
    00000001
    00000010
@@ -113,6 +121,67 @@ State machine has 33 reachable states with original encodings of:
    00011110
    00011111
    00100000
+   00100001
+   00100010
+   00101000
+   00101001
+   00101010
+   00101011
+   00101100
+   00101101
+   00101110
+   00101111
+   00110000
+   00110001
+   00110010
+   00110011
+   00110100
+   00110101
+   00110110
+   00110111
+   00111000
+   00111001
+   00111010
+   00111011
+   00111100
+   00111101
+   00111110
+   00111111
+   01000000
+   01000001
+   01000010
+   01000110
+   01000111
+   01001000
+   01001001
+   01001010
+   01001011
+   01001100
+   01001101
+   01001110
+   01001111
+   01010000
+   01010001
+   01010010
+   01010011
+   01010100
+   01010101
+   01010110
+   01010111
+   01011000
+   10000001
+   10000010
+   10000011
+   10000100
+@A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":10:12:10:17|*Unassigned bits of WR_ACK are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|*Unassigned bits of RD_ACK are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL157 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":14:13:14:18|*Output WD_ACK has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":8:12:8:17|Input WR_STB is unused.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":9:19:9:25|Input WR_ADDR is unused.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":12:12:12:17|Input WD_STB is unused.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":13:18:13:24|Input WD_DATA is unused.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":16:12:16:17|Input RD_STB is unused.
+@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":17:19:17:25|Input RD_ADDR is unused.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 Extracted state machine for register txstate
 State machine has 4 reachable states with original encodings of:
@@ -157,24 +226,23 @@ State machine has 13 reachable states with original encodings of:
    0001011
    0001100
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 74MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 12 22:33:49 2019
+# Thu Nov 21 23:59:33 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
 @N|Running in 64-bit mode
-File E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 12 22:33:49 2019
+# Thu Nov 21 23:59:33 2019
 
 ###########################################################]
 @END
@@ -184,7 +252,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 12 22:33:49 2019
+# Thu Nov 21 23:59:33 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -196,10 +264,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 12 22:33:50 2019
+# Thu Nov 21 23:59:34 2019
 
 ###########################################################]
-# Tue Nov 12 22:33:50 2019
+# Thu Nov 21 23:59:35 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -216,7 +284,7 @@ Printing clock  summary report in "E:\GIT\my_projects\FPGA\Verilog\tester_module
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
@@ -224,6 +292,7 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
+@N: MO111 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":14:13:14:18|Tristate driver WD_ACK (in view: work.card_driver_255s_9s(verilog)) on net WD_ACK (in view: work.card_driver_255s_9s(verilog)) has its enable tied to GND.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v":41:0:41:5|Removing sequential instance txrdy (in view: work.dev_uart_tx(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance RX_STB (in view: work.dev_uart_asy_50s_54s_6s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance RX_DAT[7:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -237,7 +306,7 @@ Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=10  set on top level netlist tester_module
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 
 
@@ -247,14 +316,14 @@ Clock Summary
           Start                     Requested     Requested     Clock        Clock                   Clock
 Level     Clock                     Frequency     Period        Type         Group                   Load 
 ----------------------------------------------------------------------------------------------------------
-0 -       tester_module|CLOCK50     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     168  
+0 -       tester_module|CLOCK50     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     193  
 ==========================================================================================================
 
-@W: MT529 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v":41:0:41:5|Found inferred clock tester_module|CLOCK50 which controls 168 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v":41:0:41:5|Found inferred clock tester_module|CLOCK50 which controls 193 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
 
 Encoding state machine txstate[10:0] (in view: work.dev_uart_tx(verilog))
 original code -> new code
@@ -276,58 +345,110 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)); safe FSM implementation is not required.
-Encoding state machine state[32:0] (in view: work.card_driver_255s_9s(verilog))
+Encoding state machine state[84:0] (in view: work.card_driver_255s_9s(verilog))
 original code -> new code
-   00000000 -> 000000000000000000000000000000001
-   00000001 -> 000000000000000000000000000000010
-   00000010 -> 000000000000000000000000000000100
-   00000011 -> 000000000000000000000000000001000
-   00000100 -> 000000000000000000000000000010000
-   00000101 -> 000000000000000000000000000100000
-   00000110 -> 000000000000000000000000001000000
-   00000111 -> 000000000000000000000000010000000
-   00001000 -> 000000000000000000000000100000000
-   00001001 -> 000000000000000000000001000000000
-   00001010 -> 000000000000000000000010000000000
-   00001011 -> 000000000000000000000100000000000
-   00001100 -> 000000000000000000001000000000000
-   00001101 -> 000000000000000000010000000000000
-   00001110 -> 000000000000000000100000000000000
-   00001111 -> 000000000000000001000000000000000
-   00010000 -> 000000000000000010000000000000000
-   00010001 -> 000000000000000100000000000000000
-   00010010 -> 000000000000001000000000000000000
-   00010011 -> 000000000000010000000000000000000
-   00010100 -> 000000000000100000000000000000000
-   00010101 -> 000000000001000000000000000000000
-   00010110 -> 000000000010000000000000000000000
-   00010111 -> 000000000100000000000000000000000
-   00011000 -> 000000001000000000000000000000000
-   00011001 -> 000000010000000000000000000000000
-   00011010 -> 000000100000000000000000000000000
-   00011011 -> 000001000000000000000000000000000
-   00011100 -> 000010000000000000000000000000000
-   00011101 -> 000100000000000000000000000000000
-   00011110 -> 001000000000000000000000000000000
-   00011111 -> 010000000000000000000000000000000
-   00100000 -> 100000000000000000000000000000000
+   00000000 -> 0000000
+   00000001 -> 0000001
+   00000010 -> 0000011
+   00000011 -> 0000010
+   00000100 -> 0000110
+   00000101 -> 0000111
+   00000110 -> 0000101
+   00000111 -> 0000100
+   00001000 -> 0001100
+   00001001 -> 0001101
+   00001010 -> 0001111
+   00001011 -> 0001110
+   00001100 -> 0001010
+   00001101 -> 0001011
+   00001110 -> 0001001
+   00001111 -> 0001000
+   00010000 -> 0011000
+   00010001 -> 0011001
+   00010010 -> 0011011
+   00010011 -> 0011010
+   00010100 -> 0011110
+   00010101 -> 0011111
+   00010110 -> 0011101
+   00010111 -> 0011100
+   00011000 -> 0010100
+   00011001 -> 0010101
+   00011010 -> 0010111
+   00011011 -> 0010110
+   00011100 -> 0010010
+   00011101 -> 0010011
+   00011110 -> 0010001
+   00011111 -> 0010000
+   00100000 -> 0110000
+   00100001 -> 0110001
+   00100010 -> 0110011
+   00101000 -> 0110010
+   00101001 -> 0110110
+   00101010 -> 0110111
+   00101011 -> 0110101
+   00101100 -> 0110100
+   00101101 -> 0111100
+   00101110 -> 0111101
+   00101111 -> 0111111
+   00110000 -> 0111110
+   00110001 -> 0111010
+   00110010 -> 0111011
+   00110011 -> 0111001
+   00110100 -> 0111000
+   00110101 -> 0101000
+   00110110 -> 0101001
+   00110111 -> 0101011
+   00111000 -> 0101010
+   00111001 -> 0101110
+   00111010 -> 0101111
+   00111011 -> 0101101
+   00111100 -> 0101100
+   00111101 -> 0100100
+   00111110 -> 0100101
+   00111111 -> 0100111
+   01000000 -> 0100110
+   01000001 -> 0100010
+   01000010 -> 0100011
+   01000110 -> 0100001
+   01000111 -> 0100000
+   01001000 -> 1100000
+   01001001 -> 1100001
+   01001010 -> 1100011
+   01001011 -> 1100010
+   01001100 -> 1100110
+   01001101 -> 1100111
+   01001110 -> 1100101
+   01001111 -> 1100100
+   01010000 -> 1101100
+   01010001 -> 1101101
+   01010010 -> 1101111
+   01010011 -> 1101110
+   01010100 -> 1101010
+   01010101 -> 1101011
+   01010110 -> 1101001
+   01010111 -> 1101000
+   01011000 -> 1111000
+   10000001 -> 1111001
+   10000010 -> 1111011
+   10000011 -> 1111010
+   10000100 -> 1111110
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 144MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 22:33:52 2019
+# Thu Nov 21 23:59:35 2019
 
 ###########################################################]
-# Tue Nov 12 22:33:52 2019
+# Thu Nov 21 23:59:36 2019
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -353,14 +474,14 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
+@N: MO111 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":14:13:14:18|Tristate driver WD_ACK (in view: work.card_driver_255s_9s(verilog)) on net WD_ACK (in view: work.card_driver_255s_9s(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 141MB)
 
-@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":137:0:137:5|Found counter in view:work.tester_module(verilog) instance counter[26:0] 
 Encoding state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog))
 original code -> new code
    00 -> 00
@@ -381,81 +502,133 @@ original code -> new code
    1000 -> 00100000000
    1001 -> 01000000000
    1010 -> 10000000000
-Encoding state machine state[32:0] (in view: work.card_driver_255s_9s(verilog))
+Encoding state machine state[84:0] (in view: work.card_driver_255s_9s(verilog))
 original code -> new code
-   00000000 -> 000000000000000000000000000000001
-   00000001 -> 000000000000000000000000000000010
-   00000010 -> 000000000000000000000000000000100
-   00000011 -> 000000000000000000000000000001000
-   00000100 -> 000000000000000000000000000010000
-   00000101 -> 000000000000000000000000000100000
-   00000110 -> 000000000000000000000000001000000
-   00000111 -> 000000000000000000000000010000000
-   00001000 -> 000000000000000000000000100000000
-   00001001 -> 000000000000000000000001000000000
-   00001010 -> 000000000000000000000010000000000
-   00001011 -> 000000000000000000000100000000000
-   00001100 -> 000000000000000000001000000000000
-   00001101 -> 000000000000000000010000000000000
-   00001110 -> 000000000000000000100000000000000
-   00001111 -> 000000000000000001000000000000000
-   00010000 -> 000000000000000010000000000000000
-   00010001 -> 000000000000000100000000000000000
-   00010010 -> 000000000000001000000000000000000
-   00010011 -> 000000000000010000000000000000000
-   00010100 -> 000000000000100000000000000000000
-   00010101 -> 000000000001000000000000000000000
-   00010110 -> 000000000010000000000000000000000
-   00010111 -> 000000000100000000000000000000000
-   00011000 -> 000000001000000000000000000000000
-   00011001 -> 000000010000000000000000000000000
-   00011010 -> 000000100000000000000000000000000
-   00011011 -> 000001000000000000000000000000000
-   00011100 -> 000010000000000000000000000000000
-   00011101 -> 000100000000000000000000000000000
-   00011110 -> 001000000000000000000000000000000
-   00011111 -> 010000000000000000000000000000000
-   00100000 -> 100000000000000000000000000000000
+   00000000 -> 0000000
+   00000001 -> 0000001
+   00000010 -> 0000011
+   00000011 -> 0000010
+   00000100 -> 0000110
+   00000101 -> 0000111
+   00000110 -> 0000101
+   00000111 -> 0000100
+   00001000 -> 0001100
+   00001001 -> 0001101
+   00001010 -> 0001111
+   00001011 -> 0001110
+   00001100 -> 0001010
+   00001101 -> 0001011
+   00001110 -> 0001001
+   00001111 -> 0001000
+   00010000 -> 0011000
+   00010001 -> 0011001
+   00010010 -> 0011011
+   00010011 -> 0011010
+   00010100 -> 0011110
+   00010101 -> 0011111
+   00010110 -> 0011101
+   00010111 -> 0011100
+   00011000 -> 0010100
+   00011001 -> 0010101
+   00011010 -> 0010111
+   00011011 -> 0010110
+   00011100 -> 0010010
+   00011101 -> 0010011
+   00011110 -> 0010001
+   00011111 -> 0010000
+   00100000 -> 0110000
+   00100001 -> 0110001
+   00100010 -> 0110011
+   00101000 -> 0110010
+   00101001 -> 0110110
+   00101010 -> 0110111
+   00101011 -> 0110101
+   00101100 -> 0110100
+   00101101 -> 0111100
+   00101110 -> 0111101
+   00101111 -> 0111111
+   00110000 -> 0111110
+   00110001 -> 0111010
+   00110010 -> 0111011
+   00110011 -> 0111001
+   00110100 -> 0111000
+   00110101 -> 0101000
+   00110110 -> 0101001
+   00110111 -> 0101011
+   00111000 -> 0101010
+   00111001 -> 0101110
+   00111010 -> 0101111
+   00111011 -> 0101101
+   00111100 -> 0101100
+   00111101 -> 0100100
+   00111110 -> 0100101
+   00111111 -> 0100111
+   01000000 -> 0100110
+   01000001 -> 0100010
+   01000010 -> 0100011
+   01000110 -> 0100001
+   01000111 -> 0100000
+   01001000 -> 1100000
+   01001001 -> 1100001
+   01001010 -> 1100011
+   01001011 -> 1100010
+   01001100 -> 1100110
+   01001101 -> 1100111
+   01001110 -> 1100101
+   01001111 -> 1100100
+   01010000 -> 1101100
+   01010001 -> 1101101
+   01010010 -> 1101111
+   01010011 -> 1101110
+   01010100 -> 1101010
+   01010101 -> 1101011
+   01010110 -> 1101001
+   01010111 -> 1101000
+   01011000 -> 1111000
+   10000001 -> 1111001
+   10000010 -> 1111011
+   10000011 -> 1111010
+   10000100 -> 1111110
 @N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":38:0:38:5|Found counter in view:work.SPI_cont(verilog) instance period[3:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 155MB peak: 157MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		   497.88ns		 112 /       158
+   1		0h:00m:00s		   497.92ns		 190 /       105
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 157MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 157MB)
 
 
 
@@ -464,41 +637,41 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 166 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 113 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0001       CLOCK50             port                   166        counter[0]     
+@K:CKID0001       CLOCK50             port                   113        driver_CSio    
 =======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 109MB peak: 144MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 157MB)
 
 Writing Analyst data base E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synwork\tester_module_tester_module_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 157MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\tester_module_tester_module.edi
 M-2017.03L-SP1-1
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 159MB peak: 161MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 159MB peak: 161MB)
 
 @W: MT420 |Found inferred clock tester_module|CLOCK50 with period 1000.00ns. Please declare a user-defined clock on object "p:CLOCK50"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov 12 22:33:54 2019
+# Timing Report written on Thu Nov 21 23:59:38 2019
 #
 
 
@@ -517,12 +690,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 498.268
+Worst slack in design: 497.347
 
                           Requested     Estimated     Requested     Estimated                 Clock        Clock              
 Starting Clock            Frequency     Frequency     Period        Period        Slack       Type         Group              
 ------------------------------------------------------------------------------------------------------------------------------
-tester_module|CLOCK50     1.0 MHz       134.3 MHz     1000.000      7.447         498.268     inferred     Inferred_clkgroup_0
+tester_module|CLOCK50     1.0 MHz       132.4 MHz     1000.000      7.553         497.347     inferred     Inferred_clkgroup_0
 ==============================================================================================================================
 
 
@@ -536,7 +709,7 @@ Clocks                                        |    rise  to  rise     |    fall 
 ------------------------------------------------------------------------------------------------------------------------------------------
 Starting               Ending                 |  constraint  slack    |  constraint  slack  |  constraint  slack    |  constraint  slack  
 ------------------------------------------------------------------------------------------------------------------------------------------
-tester_module|CLOCK50  tester_module|CLOCK50  |  1000.000    992.553  |  No paths    -      |  500.000     498.364  |  500.000     498.268
+tester_module|CLOCK50  tester_module|CLOCK50  |  1000.000    992.447  |  No paths    -      |  500.000     498.364  |  500.000     497.347
 ==========================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -559,41 +732,41 @@ Detailed Report for Clock: tester_module|CLOCK50
 Starting Points with Worst Slack
 ********************************
 
-                     Starting                                                    Arrival            
-Instance             Reference                 Type        Pin     Net           Time        Slack  
-                     Clock                                                                          
-----------------------------------------------------------------------------------------------------
-uart.TX_ACK          tester_module|CLOCK50     FD1S3DX     Q       RES_ACK       1.204       498.268
-driver.RES_STB       tester_module|CLOCK50     FD1P3DX     Q       RES_STB       1.108       498.364
-uart.TX_RDY          tester_module|CLOCK50     FD1P3BX     Q       TX_RDY        0.972       498.500
-driver.state[14]     tester_module|CLOCK50     FD1P3DX     Q       state[14]     1.044       992.553
-driver.state[15]     tester_module|CLOCK50     FD1P3DX     Q       state[15]     1.044       992.553
-driver.state[17]     tester_module|CLOCK50     FD1P3DX     Q       state[17]     1.044       992.553
-driver.state[20]     tester_module|CLOCK50     FD1P3DX     Q       state[20]     1.044       992.553
-driver.state[16]     tester_module|CLOCK50     FD1P3DX     Q       state[16]     1.108       993.577
-driver.state[21]     tester_module|CLOCK50     FD1P3DX     Q       state[21]     1.108       993.577
-driver.state[13]     tester_module|CLOCK50     FD1P3DX     Q       state[13]     1.044       993.641
-====================================================================================================
+                    Starting                                                   Arrival            
+Instance            Reference                 Type        Pin     Net          Time        Slack  
+                    Clock                                                                         
+--------------------------------------------------------------------------------------------------
+uart.TX_ACK         tester_module|CLOCK50     FD1S3DX     Q       RES_ACK      1.108       497.347
+driver.RES_STB      tester_module|CLOCK50     FD1P3DX     Q       RES_STB      1.108       498.364
+uart.TX_RDY         tester_module|CLOCK50     FD1P3BX     Q       TX_RDY       0.972       498.500
+driver.state[1]     tester_module|CLOCK50     FD1S3DX     Q       state[1]     1.333       992.447
+driver.state[2]     tester_module|CLOCK50     FD1S3DX     Q       state[2]     1.309       992.472
+driver.state[3]     tester_module|CLOCK50     FD1P3DX     Q       state[3]     1.326       992.926
+driver.state[0]     tester_module|CLOCK50     FD1S3DX     Q       state[0]     1.312       993.125
+driver.state[4]     tester_module|CLOCK50     FD1S3DX     Q       state[4]     1.317       993.576
+driver.state[6]     tester_module|CLOCK50     FD1S3DX     Q       state[6]     1.314       993.635
+driver.state[5]     tester_module|CLOCK50     FD1S3DX     Q       state[5]     1.299       993.706
+==================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                     Starting                                                       Required            
-Instance             Reference                 Type        Pin     Net              Time         Slack  
-                     Clock                                                                              
---------------------------------------------------------------------------------------------------------
-driver.RES_STB       tester_module|CLOCK50     FD1P3DX     D       N_470            500.089      498.268
-driver.state[1]      tester_module|CLOCK50     FD1S3DX     D       state_ns[1]      500.089      498.268
-driver.state[2]      tester_module|CLOCK50     FD1S3DX     D       N_139_i          500.089      498.268
-driver.state[29]     tester_module|CLOCK50     FD1S3DX     D       state_ns[29]     500.089      498.268
-driver.state[30]     tester_module|CLOCK50     FD1S3DX     D       N_193_i          500.089      498.268
-driver.state[31]     tester_module|CLOCK50     FD1S3DX     D       state_ns[31]     500.089      498.268
-driver.state[32]     tester_module|CLOCK50     FD1S3DX     D       N_388_0          500.089      498.268
-uart.TX_ACK          tester_module|CLOCK50     FD1S3DX     D       TX_ACK_2         500.089      498.364
-driver.W_DATA[0]     tester_module|CLOCK50     FD1P3DX     SP      N_361_i          999.528      992.553
-driver.W_DATA[1]     tester_module|CLOCK50     FD1P3DX     SP      N_361_i          999.528      992.553
-========================================================================================================
+                       Starting                                                      Required            
+Instance               Reference                 Type        Pin     Net             Time         Slack  
+                       Clock                                                                             
+---------------------------------------------------------------------------------------------------------
+driver.state[2]        tester_module|CLOCK50     FD1S3DX     D       state_ns[2]     500.089      497.347
+driver.RES_STB         tester_module|CLOCK50     FD1P3DX     D       N_862_i         500.089      498.364
+uart.TX_ACK            tester_module|CLOCK50     FD1S3DX     D       TX_ACK_2        500.089      498.364
+driver.state[1]        tester_module|CLOCK50     FD1S3DX     D       state_ns[1]     500.089      498.364
+driver.RES_DATA[0]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+driver.RES_DATA[1]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+driver.RES_DATA[2]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+driver.RES_DATA[3]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+driver.RES_DATA[4]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+driver.RES_DATA[5]     tester_module|CLOCK50     FD1P3DX     SP      N_427_i         999.528      992.447
+=========================================================================================================
 
 
 
@@ -607,26 +780,29 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         500.089
 
-    - Propagation time:                      1.821
+    - Propagation time:                      2.741
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     498.268
+    = Slack (critical) :                     497.347
 
-    Number of logic level(s):                1
+    Number of logic level(s):                2
     Starting point:                          uart.TX_ACK / Q
-    Ending point:                            driver.RES_STB / D
+    Ending point:                            driver.state[2] / D
     The start point is clocked by            tester_module|CLOCK50 [falling] on pin CK
     The end   point is clocked by            tester_module|CLOCK50 [rising] on pin CK
 
-Instance / Net                      Pin      Pin               Arrival     No. of    
-Name                   Type         Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------
-uart.TX_ACK            FD1S3DX      Q        Out     1.204     1.204       -         
-RES_ACK                Net          -        -       -         -           7         
-driver.RES_STB_RNO     ORCALUT4     C        In      0.000     1.204       -         
-driver.RES_STB_RNO     ORCALUT4     Z        Out     0.617     1.821       -         
-N_470                  Net          -        -       -         -           1         
-driver.RES_STB         FD1P3DX      D        In      0.000     1.821       -         
-=====================================================================================
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+uart.TX_ACK                    FD1S3DX      Q        Out     1.108     1.108       -         
+RES_ACK                        Net          -        -       -         -           3         
+driver.state_ns_0_0_RNO[2]     ORCALUT4     A        In      0.000     1.108       -         
+driver.state_ns_0_0_RNO[2]     ORCALUT4     Z        Out     1.017     2.125       -         
+N_215                          Net          -        -       -         -           1         
+driver.state_ns_0_0[2]         ORCALUT4     B        In      0.000     2.125       -         
+driver.state_ns_0_0[2]         ORCALUT4     Z        Out     0.617     2.741       -         
+state_ns[2]                    Net          -        -       -         -           1         
+driver.state[2]                FD1S3DX      D        In      0.000     2.741       -         
+=============================================================================================
 
 
 
@@ -635,42 +811,42 @@ driver.RES_STB         FD1P3DX      D        In      0.000     1.821       -
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 159MB peak: 161MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 159MB peak: 161MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo2_4000hc-4
 
-Register bits: 166 of 4320 (4%)
+Register bits: 113 of 4320 (3%)
 PIC Latch:       0
-I/O cells:       11
+I/O cells:       8
 
 
 Details:
-CCU2D:          23
+CCU2D:          9
 FD1P3BX:        9
-FD1P3DX:        91
-FD1S3BX:        9
-FD1S3DX:        53
+FD1P3DX:        67
+FD1S3BX:        8
+FD1S3DX:        25
 GSR:            1
 IB:             3
 IFS1P3DX:       1
 INV:            7
-OB:             8
+OB:             5
 OFS1P3BX:       3
-ORCALUT4:       105
+ORCALUT4:       184
 PUR:            1
 VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 149MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 161MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Nov 12 22:33:54 2019
+# Thu Nov 21 23:59:38 2019
 
 ###########################################################]
 

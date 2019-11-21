@@ -3,54 +3,54 @@ Report for cell tester_module
    Instance path: tester_module
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      90.00        100.0
+                                  SLIC	     105.00        100.0
                                  IOLGC	       4.00        100.0
-                                  LUT4	     110.00        100.0
+                                  LUT4	     189.00        100.0
                                  IOREG	          4        100.0
-                                 IOBUF	         11        100.0
-                                PFUREG	        162        100.0
-                                RIPPLE	         23        100.0
+                                 IOBUF	          8        100.0
+                                PFUREG	        109        100.0
+                                RIPPLE	          9        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-               dev_uart_asy_50s_54s_6s	          1        29.3
-                   card_driver_255s_9s	          1        55.2
+               dev_uart_asy_50s_54s_6s	          1        22.8
+                   card_driver_255s_9s	          1        77.2
 ---------------------------------------------------
 Report for cell card_driver_255s_9s
    Instance path: tester_module/driver
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      49.67        55.2
-                                  LUT4	      78.00        70.9
-                                PFUREG	         91        56.2
-                                RIPPLE	          5        21.7
+                                  SLIC	      81.03        77.2
+                                  LUT4	     157.00        83.1
+                                PFUREG	         65        59.6
+                                RIPPLE	          5        55.6
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                              SPI_cont	          1        18.2
+                              SPI_cont	          1        15.8
 ---------------------------------------------------
 Report for cell SPI_cont
    Instance path: tester_module/driver/SPI
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      16.42        18.2
-                                  LUT4	      31.00        28.2
-                                PFUREG	         31        19.1
+                                  SLIC	      16.57        15.8
+                                  LUT4	      32.00        16.9
+                                PFUREG	         31        28.4
 ---------------------------------------------------
 Report for cell dev_uart_asy_50s_54s_6s
    Instance path: tester_module/uart
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      26.33        29.3
-                                  LUT4	      32.00        29.1
-                                PFUREG	         44        27.2
-                                RIPPLE	          4        17.4
+                                  SLIC	      23.97        22.8
+                                  LUT4	      32.00        16.9
+                                PFUREG	         44        40.4
+                                RIPPLE	          4        44.4
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           dev_uart_tx	          1        12.2
+                           dev_uart_tx	          1         8.5
 ---------------------------------------------------
 Report for cell dev_uart_tx
    Instance path: tester_module/uart/tx
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.00        12.2
-                                  LUT4	      14.00        12.7
-                                PFUREG	         20        12.3
+                                  SLIC	       8.97         8.5
+                                  LUT4	      14.00         7.4
+                                PFUREG	         20        18.3

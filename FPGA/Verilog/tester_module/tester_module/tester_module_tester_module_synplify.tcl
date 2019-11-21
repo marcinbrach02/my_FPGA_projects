@@ -64,4 +64,4 @@ project -log_file {tester_module_tester_module.srf}
 
 
 #-- run Synplify with 'arrange HDL file'
-project -run
+project -run -clean

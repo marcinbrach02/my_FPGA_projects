@@ -116,12 +116,48 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:93:8:93:8|Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:10:12:10:17|Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:14:13:14:18|Removing wire WD_ACK, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Removing wire WD_ACK, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:18:15:18:20|Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:70:8:70:8|Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>93</Navigation>
+            <Navigation>70</Navigation>
             <Navigation>8</Navigation>
-            <Navigation>93</Navigation>
+            <Navigation>70</Navigation>
             <Navigation>8</Navigation>
             <Navigation>Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
@@ -152,18 +188,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:22:5:22:10|Removing wire WR_ACK, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>22</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing wire WR_ACK, as there is no assignment to it.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:24:5:24:10|Removing wire WD_STB, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
@@ -188,18 +212,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:26:5:26:10|Removing wire WD_ACK, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>26</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>26</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing wire WD_ACK, as there is no assignment to it.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:28:5:28:10|Removing wire RD_STB, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
@@ -220,18 +232,6 @@
             <Navigation>29</Navigation>
             <Navigation>18</Navigation>
             <Navigation>Removing wire RD_ADDR, as there is no assignment to it.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:30:5:30:10|Removing wire RD_ACK, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>30</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>30</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing wire RD_ACK, as there is no assignment to it.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -356,14 +356,98 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v&quot;:41:0:41:5|Found inferred clock tester_module|CLOCK50 which controls 168 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:20:5:20:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:21:12:21:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:24:5:24:10|*Input WD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>*Input WD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:25:11:25:17|*Input WD_DATA[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>*Input WD_DATA[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:28:5:28:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL156 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:29:12:29:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Navigation>CL156</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL157 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:14:13:14:18|*Output WD_ACK has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL157</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>*Output WD_ACK has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v&quot;:41:0:41:5|Found inferred clock tester_module|CLOCK50 which controls 193 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v</Navigation>
             <Navigation>41</Navigation>
             <Navigation>0</Navigation>
             <Navigation>41</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 168 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 193 sequential elements including uart.tx.txack. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>
