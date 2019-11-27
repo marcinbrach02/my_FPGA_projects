@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.44
 
-Thu Nov 21 23:59:43 2019
+Wed Nov 27 22:10:49 2019
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -16,6 +16,7 @@ Pinout by Port Name:
 | CS        | 10/5     | LVCMOS25_OUT | PL7B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MISO      | 11/5     | LVCMOS25_IN  | PL8A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | MOSI      | 12/5     | LVCMOS25_OUT | PL8B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| RxD       | 121/0    | LVCMOS25_IN  | PT21B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCLK      | 9/5      | LVCMOS25_OUT | PL7A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | SCLK_LED  | 15/4     | LVCMOS25_OUT | PL10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | TxD       | 122/0    | LVCMOS25_OUT | PT21A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -139,7 +140,7 @@ Pinout by Pin Number:
 | 117/0    |     unused, PULL:DOWN |            |              | PT24A |                |           |           |
 | 119/0    |     unused, PULL:DOWN |            |              | PT23D | PROGRAMN       |           |           |
 | 120/0    |     unused, PULL:DOWN |            |              | PT23C | JTAGENB        |           |           |
-| 121/0    |     unused, PULL:DOWN |            |              | PT21B |                |           |           |
+| 121/0    | RxD                   | LOCATED    | LVCMOS25_IN  | PT21B |                |           |           |
 | 122/0    | TxD                   | LOCATED    | LVCMOS25_OUT | PT21A |                |           |           |
 | 125/0    |     unused, PULL:DOWN |            |              | PT20D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT20C | SCL/PCLKT0_0   |           |           |
@@ -344,6 +345,7 @@ LOCATE  COMP  "CLOCK50"  SITE  "105";
 LOCATE  COMP  "CS"  SITE  "10";
 LOCATE  COMP  "MISO"  SITE  "11";
 LOCATE  COMP  "MOSI"  SITE  "12";
+LOCATE  COMP  "RxD"  SITE  "121";
 LOCATE  COMP  "SCLK"  SITE  "9";
 LOCATE  COMP  "SCLK_LED"  SITE  "15";
 LOCATE  COMP  "TxD"  SITE  "122";
@@ -359,5 +361,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 23:59:43 2019
+Wed Nov 27 22:10:49 2019
 

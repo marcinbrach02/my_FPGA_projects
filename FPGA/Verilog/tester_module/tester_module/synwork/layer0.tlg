@@ -1,4 +1,8 @@
 Selecting top level module tester_module
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1482:7:1482:13|Synthesizing module FIFO8KB in library work.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\fifo_dc.v":8:7:8:13|Synthesizing module fifo_dc in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":19:7:19:17|Synthesizing module dev_uart_rx in library work.
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":20:7:20:17|Synthesizing module dev_uart_tx in library work.
@@ -15,40 +19,97 @@ Selecting top level module tester_module
 
 	DIVIDER=32'b00000000000000000000000011111111
 	DIVIDER_WIDTH=32'b00000000000000000000000000001001
-   Generated name = card_driver_255s_9s
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":10:12:10:17|Object WR_ACK is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":14:13:14:18|Removing wire WD_ACK, as there is no assignment to it.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|Object RD_ACK is declared but not assigned. Either assign a value or remove the declaration.
-@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":1:7:1:19|Synthesizing module tester_module in library work.
-@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":70:8:70:8|Port-width mismatch for port RX_ACK. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":20:5:20:10|Removing wire WR_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":21:12:21:18|Removing wire WR_ADDR, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|Removing wire WD_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:11:25:17|Removing wire WD_DATA, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":28:5:28:10|Removing wire RD_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":29:12:29:18|Removing wire RD_ADDR, as there is no assignment to it.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":38:12:38:17|Object RX_STB is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":39:12:39:17|Object RX_DAT is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":40:12:40:17|Removing wire RX_ACK, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":42:12:42:17|Removing wire TX_STB, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":43:12:43:17|Removing wire TX_DAT, as there is no assignment to it.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":44:12:44:17|Object TX_ACK is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":45:12:45:17|Object TX_RDY is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":47:12:47:16|Removing wire r_stb, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":48:12:48:16|Removing wire r_dat, as there is no assignment to it.
-@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":49:12:49:16|Removing wire r_ack, as there is no assignment to it.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":20:5:20:10|*Input WR_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":21:12:21:18|*Input WR_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":24:5:24:10|*Input WD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":25:11:25:17|*Input WD_DATA[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":28:5:28:10|*Input RD_STB to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":29:12:29:18|*Input RD_ADDR[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":53:0:53:5|Trying to extract state machine for register state.
+	SC_SIZE=32'b00000000000000000000000000001001
+   Generated name = card_driver_255s_9s_9s
+@A: CL282 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":65:0:65:5|Feedback mux created for signal WR_ACK. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":65:0:65:5|Feedback mux created for signal RD_ACK. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":5:7:5:19|Synthesizing module tester_module in library work.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":51:12:51:16|Removing wire r_stb, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":52:12:52:16|Removing wire r_dat, as there is no assignment to it.
+@W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":53:12:53:16|Removing wire r_ack, as there is no assignment to it.
+@W: CG133 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":106:4:106:11|Object INT_SCLK is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL113 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":147:0:147:5|Feedback mux created for signal WD_STB. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@A: CL282 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":109:0:109:5|Feedback mux created for signal TX_STB. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":109:0:109:5|Feedback mux created for signal TX_DAT[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL251 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":147:0:147:5|All reachable assignments to WD_STB assign 1, register removed by optimization
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit RD_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Optimizing register bit WR_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Pruning unused register RD_ADDR[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":154:0:154:5|Pruning unused register WR_ADDR[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":109:0:109:5|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 85 reachable states with original encodings of:
+State machine has 4 reachable states with original encodings of:
    00000000
    00000001
    00000010
+   00000011
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":65:0:65:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 114 reachable states with original encodings of:
+   00000000
+   00000001
    00000011
    00000100
    00000101
@@ -108,6 +169,7 @@ State machine has 85 reachable states with original encodings of:
    01000000
    01000001
    01000010
+   01000101
    01000110
    01000111
    01001000
@@ -127,19 +189,39 @@ State machine has 85 reachable states with original encodings of:
    01010110
    01010111
    01011000
-   10000001
-   10000010
-   10000011
-   10000100
-@A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":10:12:10:17|*Unassigned bits of WR_ACK are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":18:15:18:20|*Unassigned bits of RD_ACK are referenced and tied to 0 -- simulation mismatch possible.
-@W: CL157 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":14:13:14:18|*Output WD_ACK has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":8:12:8:17|Input WR_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":9:19:9:25|Input WR_ADDR is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":12:12:12:17|Input WD_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":13:18:13:24|Input WD_DATA is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":16:12:16:17|Input RD_STB is unused.
-@N: CL159 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":17:19:17:25|Input RD_ADDR is unused.
+   01011001
+   01011010
+   01011011
+   01011100
+   01011101
+   01011110
+   01011111
+   01100000
+   01100001
+   01100010
+   01100011
+   01100100
+   01100101
+   01100110
+   01100111
+   01101000
+   01101001
+   01101010
+   01101011
+   01101110
+   01101111
+   01110000
+   01110001
+   01110010
+   01110011
+   01110100
+   01110101
+   01110110
+   01110111
+   01111000
+   01111010
+   01111011
+   01111100
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 Extracted state machine for register txstate
 State machine has 4 reachable states with original encodings of:

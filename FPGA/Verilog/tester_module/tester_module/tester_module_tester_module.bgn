@@ -19,6 +19,7 @@ Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 DRC detected 0 errors and 0 warnings.
 Reading Preference File from tester_module_tester_module.prf.
 

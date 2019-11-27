@@ -1,0 +1,2 @@
+@W: MT246 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\fifo_dc.v":46:12:46:22|Blackbox FIFO8KB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock tester_module|CLOCK50 with period 5.81ns. Please declare a user-defined clock on object "p:CLOCK50"

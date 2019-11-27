@@ -1,0 +1,20 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO111 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":14:13:14:18|Tristate driver WD_ACK (in view: work.card_driver_255s_9s(verilog)) on net WD_ACK (in view: work.card_driver_255s_9s(verilog)) has its enable tied to GND.
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO225 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\tester_module.v":109:0:109:5|There are no possible illegal states for state machine state[3:0] (in view: work.tester_module(verilog)); safe FSM implementation is not required.
+@N: MO225 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)); safe FSM implementation is not required.
+@N: MO231 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Found counter in view:work.card_driver_255s_9s(verilog) instance statecounter[4:0] 
+@N: MO231 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\spi_cont.v":38:0:38:5|Found counter in view:work.SPI_cont(verilog) instance period[3:0] 
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.state[2] (in view: work.tester_module(verilog)) with 61 loads 3 times to improve timing.
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.state[3] (in view: work.tester_module(verilog)) with 60 loads 3 times to improve timing.
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.state[4] (in view: work.tester_module(verilog)) with 76 loads 3 times to improve timing.
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.state[6] (in view: work.tester_module(verilog)) with 43 loads 3 times to improve timing.
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.state[5] (in view: work.tester_module(verilog)) with 64 loads 3 times to improve timing.
+@N: FX271 :"f:\dydaktykanowe\magisterki_inzynierki\2019\brach - machxo2 - sd - zaoczne\test333\tester_module\card_driver.v":55:0:55:5|Replicating instance driver.W_STB (in view: work.tester_module(verilog)) with 26 loads 1 time to improve timing.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: F:\dydaktykaNowe\magisterki_inzynierki\2019\Brach - MachXO2 - SD - zaoczne\test333\tester_module\tester_module\tester_module.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.

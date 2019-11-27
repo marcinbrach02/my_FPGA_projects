@@ -1,8 +1,0 @@
-#Start recording tcl command: 10/26/2019 21:47:56
-#Project Location: E:/GIT/my_projects/FPGA/Verilog/tester_module; Project name: tester_module
-prj_project new -name "tester_module" -impl "tester_module" -dev LCMXO2-4000HC-4TG144C -synthesis "synplify"
-prj_project save
-prj_src add "E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.v"
-prj_src add "E:/GIT/my_projects/FPGA/Verilog/tester_module/SPI_cont.v"
-prj_src add "E:/GIT/my_projects/FPGA/Verilog/tester_module/card_driver.v"
-#Stop recording: 10/26/2019 22:29:06

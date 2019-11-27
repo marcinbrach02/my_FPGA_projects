@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="tester_module" device="LCMXO2-4000HC-4TG144C" default_implementation="tester_module">
     <Options/>
     <Implementation title="tester_module" dir="tester_module" description="tester_module" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="tester_module"/>
+        <Options def_top="distributed_fifo_shift" top="tester_module"/>
         <Source name="tester_module.v" type="Verilog" type_short="Verilog">
             <Options top_module="tester_module"/>
         </Source>
@@ -19,6 +19,12 @@
             <Options/>
         </Source>
         <Source name="dev_uart_asy.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="distributed_fifo_shift.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="fifo_dc.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="tester_module.lpf" type="Logic Preference" type_short="LPF">
