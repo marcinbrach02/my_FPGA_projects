@@ -968,14 +968,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v&quot;:42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 347 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v&quot;:42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 326 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v</Navigation>
             <Navigation>42</Navigation>
             <Navigation>0</Navigation>
             <Navigation>42</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 347 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 326 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

@@ -107,7 +107,7 @@ State machine has 4 reachable states with original encodings of:
    00000011
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":65:0:65:5|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 114 reachable states with original encodings of:
+State machine has 93 reachable states with original encodings of:
    00000000
    00000001
    00000011
@@ -142,6 +142,11 @@ State machine has 114 reachable states with original encodings of:
    00100000
    00100001
    00100010
+   00100011
+   00100100
+   00100101
+   00100110
+   00100111
    00101000
    00101001
    00101010
@@ -151,44 +156,15 @@ State machine has 114 reachable states with original encodings of:
    00101110
    00101111
    00110000
-   00110001
    00110010
    00110011
    00110100
    00110101
    00110110
    00110111
-   00111000
-   00111001
-   00111010
-   00111011
-   00111100
    00111101
    00111110
    00111111
-   01000000
-   01000001
-   01000010
-   01000101
-   01000110
-   01000111
-   01001000
-   01001001
-   01001010
-   01001011
-   01001100
-   01001101
-   01001110
-   01001111
-   01010000
-   01010001
-   01010010
-   01010011
-   01010100
-   01010101
-   01010110
-   01010111
-   01011000
    01011001
    01011010
    01011011
@@ -222,6 +198,9 @@ State machine has 114 reachable states with original encodings of:
    01111010
    01111011
    01111100
+   10010110
+   10010111
+   11001000
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 Extracted state machine for register txstate
 State machine has 4 reachable states with original encodings of:

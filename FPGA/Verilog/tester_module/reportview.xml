@@ -3,7 +3,7 @@
 <ReportView version="2.0">
     <Implement name="tester_module">
         <ToolReport id="tooldec" path="" status="0"/>
-        <ToolReport id="toolhle_genhierarchy" path="F:/dydaktykaNowe/magisterki_inzynierki/2019/Brach - MachXO2 - SD - zaoczne/test333/tester_module/tester_module/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolhle_genhierarchy" path="E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module/hdla_gen_hierarchy.html" status="1"/>
         <ToolReport id="toolpio" path="" status="0"/>
         <ToolReport id="toolsso" path="" status="0"/>
     </Implement>

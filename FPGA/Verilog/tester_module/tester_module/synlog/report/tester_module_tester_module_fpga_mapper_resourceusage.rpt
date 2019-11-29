@@ -8,7 +8,7 @@ I/O cells:       9
 Details:
 CCU2D:          20
 FD1P3AX:        9
-FD1P3BX:        11
+FD1P3BX:        10
 FD1P3DX:        125
 FD1S3BX:        18
 FD1S3DX:        43
@@ -17,11 +17,11 @@ GSR:            1
 IB:             4
 IFS1P3BX:       1
 IFS1P3DX:       1
-INV:            9
+INV:            8
 OB:             5
-OFS1P3BX:       2
-ORCALUT4:       413
-PFUMX:          2
+OFS1P3BX:       3
+ORCALUT4:       499
+PFUMX:          1
 PUR:            1
 VHI:            7
 VLO:            7
