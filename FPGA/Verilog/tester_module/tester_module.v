@@ -150,12 +150,13 @@ if (RESET) begin
   WD_DATA <= "A"; // d65 h41
 end else if (WD_ACK) WD_DATA <= WD_DATA+1;
 
+
+
 // automat odbioru komend z UART i zlecania karcie SD
 always @(posedge CLOCK50 or posedge RESET) 
 if (RESET) begin
   WR_STB <= 0;
   WR_ADDR <= 0;
-	
   RD_STB <= 0;
   RD_ADDR <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
@@ -169,6 +170,7 @@ end else begin
 	WR_STB <= 0;	
 end
 	
+
 
 card_driver 
 #(

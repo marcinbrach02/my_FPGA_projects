@@ -1,15 +1,15 @@
-@P:  Worst Slack : 991.301
-@P:  tester_module|CLOCK50 - Estimated Frequency : 115.0 MHz
+@P:  Worst Slack : 991.237
+@P:  tester_module|CLOCK50 - Estimated Frequency : 114.1 MHz
 @P:  tester_module|CLOCK50 - Requested Frequency : 1.0 MHz
-@P:  tester_module|CLOCK50 - Estimated Period : 8.699
+@P:  tester_module|CLOCK50 - Estimated Period : 8.763
 @P:  tester_module|CLOCK50 - Requested Period : 1000.000
-@P:  tester_module|CLOCK50 - Slack : 991.301
+@P:  tester_module|CLOCK50 - Slack : 991.237
 @P:  System - Estimated Frequency : 279.5 MHz
 @P:  System - Requested Frequency : 1.0 MHz
 @P:  System - Estimated Period : 3.578
 @P:  System - Requested Period : 1000.000
 @P:  System - Slack : 996.422
-@P:  Total Area : 507.0
+@P:  Total Area : 483.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0

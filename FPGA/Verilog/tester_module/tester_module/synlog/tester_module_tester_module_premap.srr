@@ -1,4 +1,4 @@
-# Fri Nov 29 23:21:08 2019
+# Sat Dec  7 23:41:34 2019
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -25,8 +25,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_tx.v":41:0:41:5|Removing sequential instance txrdy (in view: work.dev_uart_tx(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":140:0:140:5|Removing sequential instance TX_ACK (in view: work.dev_uart_asy_50s_54s_6s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":65:0:65:5|Removing sequential instance WR_ACK (in view: work.card_driver_255s_9s_9s(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":65:0:65:5|Removing sequential instance RD_ACK (in view: work.card_driver_255s_9s_9s(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":73:0:73:5|Removing sequential instance WR_ACK (in view: work.card_driver_255s_9s_11s(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -44,10 +43,10 @@ Level     Clock                     Frequency     Period        Type         Gro
 ----------------------------------------------------------------------------------------------------------
 0 -       System                    1.0 MHz       1000.000      system       system_clkgroup         0    
                                                                                                           
-0 -       tester_module|CLOCK50     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     326  
+0 -       tester_module|CLOCK50     1.0 MHz       1000.000      inferred     Inferred_clkgroup_0     342  
 ==========================================================================================================
 
-@W: MT529 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 326 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 342 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 
@@ -94,101 +93,103 @@ original code -> new code
    10 -> 10
    11 -> 11
 @N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)); safe FSM implementation is not required.
-Encoding state machine state[92:0] (in view: work.card_driver_255s_9s_9s(verilog))
+Encoding state machine state[94:0] (in view: work.card_driver_255s_9s_11s(verilog))
 original code -> new code
    00000000 -> 0000000
    00000001 -> 0000001
-   00000011 -> 0000011
-   00000100 -> 0000010
-   00000101 -> 0000110
-   00000110 -> 0000111
-   00000111 -> 0000101
-   00001000 -> 0000100
-   00001001 -> 0001100
-   00001010 -> 0001101
-   00001011 -> 0001111
-   00001100 -> 0001110
-   00001101 -> 0001010
-   00001110 -> 0001011
-   00001111 -> 0001001
-   00010000 -> 0001000
-   00010001 -> 0011000
-   00010010 -> 0011001
-   00010011 -> 0011011
-   00010100 -> 0011010
-   00010101 -> 0011110
-   00010110 -> 0011111
-   00010111 -> 0011101
-   00011000 -> 0011100
-   00011001 -> 0010100
-   00011010 -> 0010101
-   00011011 -> 0010111
-   00011100 -> 0010110
-   00011101 -> 0010010
-   00011110 -> 0010011
-   00011111 -> 0010001
-   00100000 -> 0010000
-   00100001 -> 0110000
-   00100010 -> 0110001
-   00100011 -> 0110011
-   00100100 -> 0110010
-   00100101 -> 0110110
-   00100110 -> 0110111
-   00100111 -> 0110101
-   00101000 -> 0110100
-   00101001 -> 0111100
-   00101010 -> 0111101
-   00101011 -> 0111111
-   00101100 -> 0111110
-   00101101 -> 0111010
-   00101110 -> 0111011
-   00101111 -> 0111001
-   00110000 -> 0111000
-   00110010 -> 0101000
-   00110011 -> 0101001
-   00110100 -> 0101011
-   00110101 -> 0101010
-   00110110 -> 0101110
-   00110111 -> 0101111
-   00111101 -> 0101101
-   00111110 -> 0101100
-   00111111 -> 0100100
-   01011001 -> 0100101
-   01011010 -> 0100111
-   01011011 -> 0100110
-   01011100 -> 0100010
-   01011101 -> 0100011
-   01011110 -> 0100001
-   01011111 -> 0100000
-   01100000 -> 1100000
-   01100001 -> 1100001
-   01100010 -> 1100011
-   01100011 -> 1100010
-   01100100 -> 1100110
-   01100101 -> 1100111
-   01100110 -> 1100101
-   01100111 -> 1100100
-   01101000 -> 1101100
-   01101001 -> 1101101
-   01101010 -> 1101111
-   01101011 -> 1101110
-   01101110 -> 1101010
-   01101111 -> 1101011
-   01110000 -> 1101001
-   01110001 -> 1101000
-   01110010 -> 1111000
-   01110011 -> 1111001
-   01110100 -> 1111011
-   01110101 -> 1111010
-   01110110 -> 1111110
-   01110111 -> 1111111
-   01111000 -> 1111101
-   01111010 -> 1111100
-   01111011 -> 1110100
-   01111100 -> 1110101
-   10010110 -> 1110111
-   10010111 -> 1110110
-   11001000 -> 1110010
+   00000010 -> 0000011
+   00000011 -> 0000010
+   00000100 -> 0000110
+   00000101 -> 0000111
+   00000110 -> 0000101
+   00000111 -> 0000100
+   00001000 -> 0001100
+   00001001 -> 0001101
+   00001010 -> 0001111
+   00001011 -> 0001110
+   00001100 -> 0001010
+   00001101 -> 0001011
+   00001110 -> 0001001
+   00001111 -> 0001000
+   00010000 -> 0011000
+   00010001 -> 0011001
+   00010010 -> 0011011
+   00010011 -> 0011010
+   00010100 -> 0011110
+   00010101 -> 0011111
+   00010110 -> 0011101
+   00010111 -> 0011100
+   00011000 -> 0010100
+   00011001 -> 0010101
+   00011010 -> 0010111
+   00011011 -> 0010110
+   00011100 -> 0010010
+   00011101 -> 0010011
+   00011110 -> 0010001
+   00011111 -> 0010000
+   00100000 -> 0110000
+   00100001 -> 0110001
+   00100010 -> 0110011
+   00100011 -> 0110010
+   00100100 -> 0110110
+   00100101 -> 0110111
+   00100110 -> 0110101
+   00100111 -> 0110100
+   00101000 -> 0111100
+   00101001 -> 0111101
+   00101010 -> 0111111
+   00101011 -> 0111110
+   00101100 -> 0111010
+   00101101 -> 0111011
+   00101110 -> 0111001
+   00101111 -> 0111000
+   00110000 -> 0101000
+   00110001 -> 0101001
+   00110010 -> 0101011
+   00110011 -> 0101010
+   00110100 -> 0101110
+   00110101 -> 0101111
+   00110110 -> 0101101
+   00110111 -> 0101100
+   00111000 -> 0100100
+   00111001 -> 0100101
+   00111010 -> 0100111
+   00111011 -> 0100110
+   00111100 -> 0100010
+   00111101 -> 0100011
+   00111110 -> 0100001
+   00111111 -> 0100000
+   01000000 -> 1100000
+   01000001 -> 1100001
+   01000010 -> 1100011
+   01000011 -> 1100010
+   01000100 -> 1100110
+   01000101 -> 1100111
+   01000110 -> 1100101
+   01000111 -> 1100100
+   01010010 -> 1101100
+   01010011 -> 1101101
+   01010100 -> 1101111
+   01010101 -> 1101110
+   01010110 -> 1101010
+   01010111 -> 1101011
+   01011010 -> 1101001
+   01011011 -> 1101000
+   01011100 -> 1111000
+   01101101 -> 1111001
+   01101110 -> 1111011
+   01101111 -> 1111010
+   01110000 -> 1111110
+   01110001 -> 1111111
+   01110010 -> 1111101
+   01110011 -> 1111100
+   01110100 -> 1110100
+   01110101 -> 1110101
+   01110110 -> 1110111
+   01110111 -> 1110110
+   01111010 -> 1110010
+   01111011 -> 1110011
+   01111100 -> 1110001
 Encoding state machine state[3:0] (in view: work.tester_module(verilog))
 original code -> new code
    00000000 -> 00
@@ -202,13 +203,13 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Tim
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 144MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 144MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Nov 29 23:21:10 2019
+# Sat Dec  7 23:41:35 2019
 
 ###########################################################]

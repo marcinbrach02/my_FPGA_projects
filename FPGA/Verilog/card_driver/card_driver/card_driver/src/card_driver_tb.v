@@ -4,36 +4,36 @@
 module card_driver_tb();
 
 reg RST, CLK;	
-wire RES_S, RES_AC=1;
-wire [7:0] WD_D, RES_D;
-wire SCK, MI, MO, CS;
+wire RES_STB, RES_ACK=1;
+wire [7:0] WD_DATA, RES_DATA;
+//wire SCK, MI, MO, CS;
 
-//reg RST, CLK, WR_S, WR_AC, WD_S, WD_AC, RD_S, RD_AC, RES_S, RES_AC, SCK, MI, MO, CS, C8_temp, C48_temp, T74_temp, W_STB_I_TE; 	   
+reg WR_STB, WR_ACK, WD_STB, WD_ACK, RD_STB, RD_ACK, SCLK, MISO, MOSI, CS; 	   
 //reg [7:0] WD_D, RES_D, W_DATA_I_TE;
-//reg [31:0] WR_A, RD_A;
+reg [31:0] WR_ADDR, RD_ADDR;
 	   
 
 card_driver driver(
 .CLK(CLK), 
 .RST(RST), 
-/*
-.WR_STB(WR_S),
-.WR_ADDR(WR_A),
-.WR_ACK(WR_AC),
-.WD_STB(WD_S),
-.WD_DATA(WD_D),
-.WD_ACK(WD_AC),
-.RD_STB(RD_S),
-.RD_ADDR(RD_A),
-.RD_ACK(RD_AC),
-*/
-.RES_STB(RES_S),
-.RES_DATA(RES_D),
-.RES_ACK(RES_AC),
 
-.MOSI(MO), 
-.MISO(MI), 
-.SCLK(SCK),
+.WR_STB(WR_STB),
+.WR_ADDR(WR_ADDR),
+.WR_ACK(WR_ACK),
+.WD_STB(WD_STB),
+.WD_DATA(WD_DATA),
+.WD_ACK(WD_ACK),
+.RD_STB(RD_STB),
+.RD_ADDR(RD_ADDR),
+.RD_ACK(RD_ACK),
+
+.RES_STB(RES_STB),
+.RES_DATA(RES_DATA),
+.RES_ACK(RES_ACK),
+
+.MOSI(MOSI), 
+.MISO(MISO), 
+.SCLK(SCLK),
 .CS(CS) 
 	
 );
@@ -56,13 +56,13 @@ localparam DATA_WIDTH = 7*8;
 
 reg [DATA_WIDTH-1:0] do_wysylki;
 
-always @(negedge SCK or posedge RST ) 						   
+always @(negedge SCLK or posedge RST ) 						   
 if (RST)	
 	do_wysylki <= {8'b00000001,8'b00000010,8'b00000011,8'b00000100,8'b00000101,8'b00000110,8'b00000111};
 else if (CS==0)	
 	do_wysylki <= do_wysylki << 1;	
 
-assign MI = do_wysylki[DATA_WIDTH-1];
+assign MISO = do_wysylki[DATA_WIDTH-1];
 
 
 

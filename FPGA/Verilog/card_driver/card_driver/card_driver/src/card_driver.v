@@ -4,7 +4,7 @@
 module card_driver(
 	input wire CLK,
 	input wire RST,
-			  /*
+			  
 	input wire WR_STB,
 	input wire [31:0] WR_ADDR,
 	output reg WR_ACK,
@@ -16,7 +16,7 @@ module card_driver(
 	input wire RD_STB,
 	input wire [31:0] RD_ADDR,
    	output reg RD_ACK,
-*/
+
 
 	output reg RES_STB,
 	output reg [7:0] RES_DATA,

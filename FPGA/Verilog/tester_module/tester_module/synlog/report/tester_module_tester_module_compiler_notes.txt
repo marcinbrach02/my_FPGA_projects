@@ -9,9 +9,10 @@
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":17:7:17:18|Synthesizing module dev_uart_asy in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\SPI_cont.v":4:7:4:14|Synthesizing module SPI_cont in library work.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":4:7:4:17|Synthesizing module card_driver in library work.
+@N: CL189 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":73:0:73:5|Register bit RD_ACK is always 0.
 @N: CG364 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":5:7:5:19|Synthesizing module tester_module in library work.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":109:0:109:5|Trying to extract state machine for register state.
-@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":65:0:65:5|Trying to extract state machine for register state.
+@N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":73:0:73:5|Trying to extract state machine for register state.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":103:0:103:5|Trying to extract state machine for register rxstate.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Trying to extract state machine for register txstate.

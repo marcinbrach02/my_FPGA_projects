@@ -27,20 +27,24 @@ uart/un7_counter_fast_cry_0_0_S1
 uart/un7_counter_fast_cry_0_0_S0
 uart/N_5
 uart/un7_counter_fast_cry_5_0_COUT
-driver/statecounter_cry_0_S0[0]
+driver/statecounter_rd_cry_0_S0[0]
 driver/N_1
-driver/statecounter_s_0_S1[9]
-driver/statecounter_s_0_COUT[9]
+driver/statecounter_rd_s_0_S1[11]
+driver/statecounter_rd_s_0_COUT[11]
+driver/statecounter_cry_0_S0[0]
+driver/N_2
+driver/statecounter_s_0_S1[11]
+driver/statecounter_s_0_COUT[11]
 driver/un7_tickcounter_cry_0_0_S1
 driver/un7_tickcounter_cry_0_0_S0
-driver/N_2
+driver/N_3
 driver/un7_tickcounter_cry_7_0_COUT
 WD_DATA_3_cry_0_0_S0
-N_5
+N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Fri Nov 29 23:21:17 2019
+# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Sat Dec 07 23:41:43 2019
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MOSI" SITE "12" ;

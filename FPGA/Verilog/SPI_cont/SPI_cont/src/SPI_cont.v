@@ -29,7 +29,8 @@ reg [7:0] WR_DATA;
 reg [7:0] RD_DATA;
 
 reg INT_SCLK;
-always @(posedge CLK or posedge RST) INT_SCLK <= (RST) ? 0 : (W_STB) ? 1 : INT_SCLK ^ TICK;
+always @(posedge CLK or posedge RST) 
+	INT_SCLK <= (RST) ? 0 : (W_STB) ? 1 : INT_SCLK ^ TICK;
 	
 assign SCLK = INT_SCLK & receiving;
 
