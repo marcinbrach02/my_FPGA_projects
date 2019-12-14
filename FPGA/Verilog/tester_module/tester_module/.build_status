@@ -6,39 +6,35 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1575758516"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1576333008"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1575758504">
-            <Task name="Map" build_result="2" update_result="0" update_time="1575758504"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1574525203"/>
+        <Milestone name="Map" build_result="2" build_time="1576332996">
+            <Task name="Map" build_result="2" update_result="0" update_time="1576332996"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1575758511">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1575758511"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1574525180"/>
+        <Milestone name="PAR" build_result="2" build_time="1576333003">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1576333003"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1575758502">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1575758502"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1576332994">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1576332994"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1575758488"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
-            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
-            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
-            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1576332979"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1575758502">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1575758502"/>
+        <Milestone name="Translate" build_result="2" build_time="1576332995">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1576332995"/>
         </Milestone>
-        <Report name="tester_module_tester_module.bgn" last_build_time="1575758516" last_build_size="4593"/>
-        <Report name="tester_module_tester_module.edi" last_build_time="1575758499" last_build_size="419642"/>
-        <Report name="tester_module_tester_module.jed" last_build_time="1575758516" last_build_size="849256"/>
-        <Report name="tester_module_tester_module.ncd" last_build_time="1575758511" last_build_size="515399"/>
-        <Report name="tester_module_tester_module.ngd" last_build_time="1575758502" last_build_size="407322"/>
+        <Report name="tester_module_tester_module.bgn" last_build_time="1576333008" last_build_size="4593"/>
+        <Report name="tester_module_tester_module.edi" last_build_time="1576332993" last_build_size="578052"/>
+        <Report name="tester_module_tester_module.jed" last_build_time="1576333008" last_build_size="849256"/>
+        <Report name="tester_module_tester_module.ncd" last_build_time="1576333003" last_build_size="734109"/>
+        <Report name="tester_module_tester_module.ngd" last_build_time="1576332995" last_build_size="554967"/>
         <Report name="tester_module_tester_module.tw1" last_build_time="1574525203" last_build_size="10352"/>
         <Report name="tester_module_tester_module.twr" last_build_time="1574525180" last_build_size="48466"/>
-        <Report name="tester_module_tester_module_map.ncd" last_build_time="1575758503" last_build_size="350027"/>
+        <Report name="tester_module_tester_module_map.ncd" last_build_time="1576332996" last_build_size="496811"/>
     </Strategy>
 </BuildStatus>

@@ -37,6 +37,16 @@
         <Message>
             <ID>1121028</ID>
             <Severity>Warning</Severity>
+            <Dynamic>LEN_WIDTH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ADDR_WIDTH</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
             <Dynamic>BITS_TOTAL</Dynamic>
         </Message>
         <Message>
@@ -104,1022 +114,1262 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:63:16:63:30|Object statecounter_wr is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
-            <Navigation>CG133</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>63</Navigation>
-            <Navigation>16</Navigation>
-            <Navigation>63</Navigation>
-            <Navigation>30</Navigation>
-            <Navigation>Object statecounter_wr is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:73:0:73:5|Pruning unused register statecount[11:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v&quot;:78:0:78:5|Pruning unused register statecount[11:0]. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning unused register statecount[11:0]. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:51:12:51:16|Removing wire r_stb, as there is no assignment to it.</Dynamic>
+            <Dynamic>CS263 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:192:11:192:19|Port-width mismatch for port WR_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>192</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>192</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Port-width mismatch for port WR_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:201:11:201:19|Port-width mismatch for port RD_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>201</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>201</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Port-width mismatch for port RD_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:53:12:53:16|Removing wire r_stb, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>51</Navigation>
+            <Navigation>53</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>51</Navigation>
+            <Navigation>53</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Removing wire r_stb, as there is no assignment to it.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:52:12:52:16|Removing wire r_dat, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:54:12:54:16|Removing wire r_dat, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>54</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>54</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Removing wire r_dat, as there is no assignment to it.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:53:12:53:16|Removing wire r_ack, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:55:12:55:16|Removing wire r_ack, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>53</Navigation>
+            <Navigation>55</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>53</Navigation>
+            <Navigation>55</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Removing wire r_ack, as there is no assignment to it.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:106:4:106:11|Object INT_SCLK is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:108:4:108:11|Object INT_SCLK is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>106</Navigation>
+            <Navigation>108</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>106</Navigation>
+            <Navigation>108</Navigation>
             <Navigation>11</Navigation>
             <Navigation>Object INT_SCLK is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL113 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:147:0:147:5|Feedback mux created for signal WD_STB. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Dynamic>CL113 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:149:0:149:5|Feedback mux created for signal WD_STB. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
             <Navigation>CL113</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>147</Navigation>
+            <Navigation>149</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>147</Navigation>
+            <Navigation>149</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Feedback mux created for signal WD_STB. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL251 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:147:0:147:5|All reachable assignments to WD_STB assign 1, register removed by optimization</Dynamic>
+            <Dynamic>CL251 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:149:0:149:5|All reachable assignments to WD_STB assign 1, register removed by optimization</Dynamic>
             <Navigation>CL251</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>147</Navigation>
+            <Navigation>149</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>147</Navigation>
+            <Navigation>149</Navigation>
             <Navigation>5</Navigation>
             <Navigation>All reachable assignments to WD_STB assign 1, register removed by optimization</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit RD_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit RD_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit RD_LENGTH[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit RD_LENGTH[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Optimizing register bit WR_ADDR[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Optimizing register bit WR_ADDR[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Optimizing register bit WR_ADDR[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>CL190</Navigation>
-            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Optimizing register bit WR_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Optimizing register bit WR_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Pruning unused register RD_ADDR[31:0]. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Optimizing register bit WR_LENGTH[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Optimizing register bit WR_LENGTH[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bits 7 to 4 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 7 to 4 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 2 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 2 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 0 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 0 of RD_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning unused register RD_ADDR[31:0]. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning unused register RD_ADDR[31:0]. Make sure that there are no unused intermediate registers.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:156:0:156:5|Pruning unused register WR_ADDR[31:0]. Make sure that there are no unused intermediate registers.</Dynamic>
-            <Navigation>CL169</Navigation>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bits 7 to 4 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
             <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>156</Navigation>
+            <Navigation>158</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Pruning unused register WR_ADDR[31:0]. Make sure that there are no unused intermediate registers.</Navigation>
+            <Navigation>Pruning register bits 7 to 4 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v&quot;:42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 342 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 2 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 2 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 0 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 0 of WR_LENGTH[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bits 31 to 13 of WR_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 31 to 13 of WR_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 11 of WR_ADDR[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 11 of WR_ADDR[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bits 8 to 0 of WR_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 8 to 0 of WR_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v&quot;:158:0:158:5|Pruning register bit 10 of WR_ADDR[10:9]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 10 of WR_ADDR[10:9]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\tester_module.v&quot;:158:0:158:5|Removing sequential instance WR_ADDR[9] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance WR_ADDR[9] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\tester_module.v&quot;:158:0:158:5|Removing sequential instance WR_LENGTH[3] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance WR_LENGTH[3] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\tester_module.v&quot;:158:0:158:5|Removing sequential instance WR_LENGTH[1] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance WR_LENGTH[1] because it is equivalent to instance WR_ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\tester_module.v&quot;:158:0:158:5|Removing sequential instance RD_LENGTH[3] because it is equivalent to instance RD_LENGTH[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\tester_module.v</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing sequential instance RD_LENGTH[3] because it is equivalent to instance RD_LENGTH[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v&quot;:42:0:42:5|Found inferred clock tester_module|CLOCK50 which controls 301 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v</Navigation>
             <Navigation>42</Navigation>
             <Navigation>0</Navigation>
             <Navigation>42</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 342 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock tester_module|CLOCK50 which controls 301 sequential elements including uart.rx.rxstate[12:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[7] because it is equivalent to instance driver.ADDR[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[7] because it is equivalent to instance driver.ADDR[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[7] because it is equivalent to instance driver.ADDR[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[6] because it is equivalent to instance driver.ADDR[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[6] because it is equivalent to instance driver.ADDR[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[6] because it is equivalent to instance driver.ADDR[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[5] because it is equivalent to instance driver.ADDR[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[5] because it is equivalent to instance driver.ADDR[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[5] because it is equivalent to instance driver.ADDR[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[4] because it is equivalent to instance driver.ADDR[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[4] because it is equivalent to instance driver.ADDR[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[4] because it is equivalent to instance driver.ADDR[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[3] because it is equivalent to instance driver.ADDR[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[3] because it is equivalent to instance driver.ADDR[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[3] because it is equivalent to instance driver.ADDR[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[2] because it is equivalent to instance driver.ADDR[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[2] because it is equivalent to instance driver.ADDR[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[2] because it is equivalent to instance driver.ADDR[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[1] because it is equivalent to instance driver.ADDR[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:78:0:78:5|Removing instance driver.ADDR[1] because it is equivalent to instance driver.ADDR[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
+            <Navigation>78</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance driver.ADDR[1] because it is equivalent to instance driver.ADDR[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[15] because it is equivalent to instance driver.ADDR[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance driver.ADDR[15] because it is equivalent to instance driver.ADDR[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[14] because it is equivalent to instance driver.ADDR[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance driver.ADDR[14] because it is equivalent to instance driver.ADDR[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;e:\git\my_projects\fpga\verilog\tester_module\card_driver.v&quot;:73:0:73:5|Removing instance driver.ADDR[13] because it is equivalent to instance driver.ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>e:\git\my_projects\fpga\verilog\tester_module\card_driver.v</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>73</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance driver.ADDR[13] because it is equivalent to instance driver.ADDR[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

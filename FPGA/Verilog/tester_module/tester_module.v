@@ -23,6 +23,7 @@ wire RESET;
 
 reg WR_STB;
 reg [31:0] WR_ADDR;
+reg [7:0] WR_LENGTH;
 wire WR_ACK;
 	
 reg WD_STB;
@@ -31,6 +32,7 @@ wire WD_ACK;
 	
 reg RD_STB;
 reg [31:0] RD_ADDR;
+reg [7:0] RD_LENGTH;
 wire RD_ACK;
 	   
 wire RES_STB;
@@ -157,13 +159,17 @@ always @(posedge CLOCK50 or posedge RESET)
 if (RESET) begin
   WR_STB <= 0;
   WR_ADDR <= 0;
+  WR_LENGTH <= 0;
   RD_STB <= 0;
   RD_ADDR <= 0;
+  RD_LENGTH <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
 	WR_STB <= 1;
-	WR_ADDR <= 0;
+	WR_LENGTH <= 10;  //1125042687;
+	WR_ADDR <= 32'h00001600;   //8'h00000600;
 end else if (RX_STB && (RX_DAT=="o")) begin
 	RD_STB <= 1;
+	RD_LENGTH <= 10;
 	RD_ADDR <= 0;
 end else begin
 	RD_STB <= 0;
@@ -183,6 +189,7 @@ driver
 
 .WR_STB(WR_STB),
 .WR_ADDR(WR_ADDR),
+.WR_LENGTH(WR_LENGTH),
 .WR_ACK(WR_ACK),
 
 .WD_STB(WD_STB),
@@ -191,6 +198,7 @@ driver
 
 .RD_STB(RD_STB),
 .RD_ADDR(RD_ADDR),
+.RD_LENGTH(RD_LENGTH),
 .RD_ACK(RD_ACK),
 
 .RES_STB(RES_STB),
