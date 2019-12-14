@@ -16,7 +16,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  12/14/19  15:16:35
+Mapped on:  12/14/19  21:55:55
 
 Design Summary
 --------------
@@ -24,12 +24,12 @@ Design Summary
    Number of registers:    277 out of  4665 (6%)
       PFU registers:          272 out of  4320 (6%)
       PIO registers:            5 out of   345 (1%)
-   Number of SLICEs:       391 out of  2160 (18%)
-      SLICEs as Logic/ROM:    391 out of  2160 (18%)
+   Number of SLICEs:       418 out of  2160 (19%)
+      SLICEs as Logic/ROM:    418 out of  2160 (19%)
       SLICEs as RAM:            0 out of  1620 (0%)
       SLICEs as Carry:         52 out of  2160 (2%)
-   Number of LUT4s:        776 out of  4320 (18%)
-      Number used as logic LUTs:        672
+   Number of LUT4s:        830 out of  4320 (19%)
+      Number used as logic LUTs:        726
       Number used as distributed RAM:     0
       Number used as ripple logic:      104
       Number used as shift registers:     0
@@ -59,14 +59,14 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net CLOCK50_c: 159 loads, 159 rising, 0 falling (Driver: PIO CLOCK50 )
+     Net CLOCK50_c: 160 loads, 160 rising, 0 falling (Driver: PIO CLOCK50 )
 
                                     Page 1
 
 
 
 
-Design:  tester_module                                 Date:  12/14/19  15:16:35
+Design:  tester_module                                 Date:  12/14/19  21:55:55
 
 Design Summary (cont)
 ---------------------
@@ -74,23 +74,23 @@ Design Summary (cont)
      Net WR_STB8_i: 1 loads, 1 LSLICEs
      Net driver.SPI.WR_DATA10: 5 loads, 4 LSLICEs
      Net RD_EN: 2 loads, 0 LSLICEs
-     Net driver.un1_state_272_0_i: 1 loads, 0 LSLICEs
+     Net driver.un1_state_265_0_i_0: 1 loads, 0 LSLICEs
      Net TX_DAT_1_sqmuxa: 4 loads, 4 LSLICEs
      Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
-     Net driver/SPI/un1_W_STB_2_i_0_0: 5 loads, 5 LSLICEs
+     Net driver/statecounter_rde: 7 loads, 7 LSLICEs
+     Net driver/W_DATA_11_i_0_o2_0_RNINTUL2[3]: 1 loads, 1 LSLICEs
+     Net driver/SPI/N_27: 6 loads, 6 LSLICEs
      Net driver/SPI/periode: 6 loads, 6 LSLICEs
      Net driver/SPI/un1_W_STB_4_i: 1 loads, 1 LSLICEs
-     Net driver/statecounter_wre: 7 loads, 7 LSLICEs
-     Net driver/statecounter_rde: 7 loads, 7 LSLICEs
+     Net driver/un1_RES_STB275_i_0_0: 4 loads, 4 LSLICEs
+     Net driver/un1_state_262_0: 1 loads, 1 LSLICEs
+     Net driver/un1_state_235_0: 4 loads, 4 LSLICEs
+     Net driver/un1_state_267_0_i_0: 4 loads, 4 LSLICEs
+     Net driver/un1_state_263_i_0: 1 loads, 1 LSLICEs
+     Net driver/N_40: 7 loads, 7 LSLICEs
      Net driver/statecountere: 7 loads, 7 LSLICEs
-     Net driver/N_101: 4 loads, 4 LSLICEs
-     Net driver/un1_state_270_i: 1 loads, 1 LSLICEs
-     Net driver/un1_state_273_0_i: 4 loads, 4 LSLICEs
-     Net driver/un1_state_221_0_0: 1 loads, 1 LSLICEs
-     Net driver/N_23: 1 loads, 1 LSLICEs
+     Net driver/statecounter_wre: 7 loads, 7 LSLICEs
      Net RES_STB: 1 loads, 0 LSLICEs
-     Net driver/un1_state_264_0_0: 4 loads, 4 LSLICEs
-     Net driver/N_35: 7 loads, 7 LSLICEs
      Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
      Net N_12_i: 6 loads, 5 LSLICEs
      Net uart/counter_fast[6]: 2 loads, 2 LSLICEs
@@ -110,16 +110,16 @@ Design Summary (cont)
      Net nRESET_c: 2 loads, 0 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net driver/state[0]: 111 loads
-     Net driver/state[3]: 108 loads
-     Net driver/state[5]: 102 loads
-     Net driver/state[6]: 99 loads
-     Net driver/state[4]: 96 loads
-     Net driver/state[2]: 94 loads
-     Net driver/state[1]: 92 loads
-     Net driver/state[7]: 84 loads
-     Net driver/N_3001_i: 34 loads
-     Net driver/un1_WR_LENGTH_1_0_o5[1]: 31 loads
+     Net driver/state[0]: 126 loads
+     Net driver/state[4]: 124 loads
+     Net driver/state[3]: 114 loads
+     Net driver/state[2]: 111 loads
+     Net driver/state[5]: 107 loads
+     Net driver/state[6]: 106 loads
+     Net driver/state[1]: 103 loads
+     Net driver/state[7]: 102 loads
+     Net driver/N_799: 33 loads
+     Net driver/un1_state_220_i: 33 loads
 
 
 
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  tester_module                                 Date:  12/14/19  15:16:35
+Design:  tester_module                                 Date:  12/14/19  21:55:55
 
  (cont)
 -------
@@ -198,7 +198,7 @@ Signal WD_DATA_3_s_7_0_COUT undriven or does not drive anything - clipped.
 
 
 
-Design:  tester_module                                 Date:  12/14/19  15:16:35
+Design:  tester_module                                 Date:  12/14/19  21:55:55
 
 Removed logic (cont)
 --------------------
@@ -264,7 +264,7 @@ Signal WD_DATA_3_cry_0_0_S0 undriven or does not drive anything - clipped.
 
 
 
-Design:  tester_module                                 Date:  12/14/19  15:16:35
+Design:  tester_module                                 Date:  12/14/19  21:55:55
 
 Removed logic (cont)
 --------------------
@@ -330,7 +330,7 @@ GSR Component:
 
 
 
-Design:  tester_module                                 Date:  12/14/19  15:16:35
+Design:  tester_module                                 Date:  12/14/19  21:55:55
 
 GSR Usage (cont)
 ----------------
@@ -342,7 +342,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 54 MB
+   Peak Memory Usage: 53 MB
         
 
 

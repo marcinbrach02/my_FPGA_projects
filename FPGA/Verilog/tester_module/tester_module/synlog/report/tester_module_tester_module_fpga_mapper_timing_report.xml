@@ -17,13 +17,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>tester_module|CLOCK50</data>
 <data>1.0 MHz</data>
-<data>85.4 MHz</data>
-<data>988.294</data>
+<data>93.7 MHz</data>
+<data>989.328</data>
 </row>
 <row>
 <data>System</data>
 <data>1.0 MHz</data>
-<data>208.9 MHz</data>
-<data>995.213</data>
+<data>142.4 MHz</data>
+<data>992.979</data>
 </row>
 </report_table>

@@ -20,8 +20,7 @@ I/O cells:       9
                                 INV       10       100.0
                                  OB        5       100.0
                            OFS1P3BX        3       100.0
-                           ORCALUT4      665       100.0
-                              PFUMX        2       100.0
+                           ORCALUT4      719       100.0
                                 PUR        1       100.0
                                 VHI        7       100.0
                                 VLO        7       100.0
@@ -33,7 +32,7 @@ SUB MODULES
                         dev_uart_tx        1       100.0
                             fifo_dc        1       100.0
                             
-                         TOTAL          1038           
+                         TOTAL          1090           
 ----------------------------------------------------------------------
 Report for cell card_driver_32s_32s_255s_9s_11s.netlist
      Instance path:  driver
@@ -44,14 +43,13 @@ Report for cell card_driver_32s_32s_255s_9s_11s.netlist
                             FD1S3BX        7        38.9
                             FD1S3DX       35        50.0
                                 INV        5        50.0
-                           ORCALUT4      591        88.9
-                              PFUMX        2       100.0
+                           ORCALUT4      645        89.7
                                 VHI        2        28.6
                                 VLO        2        28.6
 SUB MODULES 
                            SPI_cont        1       100.0
                             
-                         TOTAL           795           
+                         TOTAL           847           
 ----------------------------------------------------------------------
 Report for cell SPI_cont.netlist
      Instance path:  driver.SPI
@@ -60,11 +58,11 @@ Report for cell SPI_cont.netlist
                             FD1P3DX       30        18.2
                             FD1S3DX        1         1.4
                                 INV        1        10.0
-                           ORCALUT4       32         4.8
+                           ORCALUT4      640        89.0
                                 VHI        1        14.3
                                 VLO        1        14.3
                             
-                         TOTAL            66           
+                         TOTAL           674           
 ----------------------------------------------------------------------
 Report for cell dev_uart_asy_50s_54s_6s.netlist
      Instance path:  uart
@@ -76,7 +74,7 @@ Report for cell dev_uart_asy_50s_54s_6s.netlist
                             FD1S3BX        2        11.1
                             FD1S3DX       25        35.7
                                 INV        3        30.0
-                           ORCALUT4       72        10.8
+                           ORCALUT4       72        10.0
                                 VHI        3        42.9
                                 VLO        3        42.9
 SUB MODULES 
@@ -93,7 +91,7 @@ Report for cell dev_uart_tx.netlist
                             FD1P3DX        9         5.5
                             FD1S3BX        1         5.6
                             FD1S3DX        2         2.9
-                           ORCALUT4       14         2.1
+                           ORCALUT4       14         1.9
                                 VHI        1        14.3
                                 VLO        1        14.3
                             
@@ -106,7 +104,7 @@ Report for cell dev_uart_rx.netlist
                             FD1P3DX       29        17.6
                             FD1S3BX        1         5.6
                             FD1S3DX        8        11.4
-                           ORCALUT4       26         3.9
+                           ORCALUT4       26         3.6
                                 VHI        1        14.3
                                 VLO        1        14.3
                             
