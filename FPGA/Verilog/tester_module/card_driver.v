@@ -67,6 +67,7 @@ reg [SC_SIZE:0] statecount;
 
 reg [ADDR_WIDTH-1:0] ADDR;
 reg [LEN_WIDTH-1:0] len_counter;
+reg [LEN_WIDTH-1:0] len_count;
 
 
 always@(posedge CLK or posedge RST)	
@@ -153,6 +154,7 @@ end else case(state)
   49: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'h01) state <= 50; else if (statecounter[SC_SIZE]) state <= 40 ; else state <= 48; end
   50: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 51; end
 
+
       //wys³anie komendy ACMD41													                                           			  
   51: begin CS<=0; W_DATA <= 8'b01101001; W_STB <= W_READY && !R_STB;  RES_STB <= 0;                            if (R_STB)   state <= 52; end
   52: begin CS<=0; W_DATA <= 8'b01000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 53; end
@@ -164,146 +166,212 @@ end else case(state)
       //czekanie na odpowiedz po ACMD41                                                                                               
   57: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 58; end
   58: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 59; else if (statecounter[SC_SIZE]) state <= 40; else state <= 57; end
-  59: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 159; end
+  59: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 61; end
 
-//------------------------
-  159: begin                           statecounter <= 5;                                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 162; end
+
+  61: begin                           statecounter <= 5;                                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 62; end
  // 160: begin                                       statecounter <= 15;  RES_STB <= 0;                 state <= 162; end
 
+	  //wys³anie komendy CMD59 - wy³¹czenie sum kontrolnych CRC
+  62: begin CS<=0; W_DATA <= 8'b01111011; 		W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 63; end
+  63: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 64; ADDR <= ADDR<<8;end end
+  64: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 65; ADDR <= ADDR<<8;end end
+  65: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 66; ADDR <= ADDR<<8;end end
+  66: begin CS<=0; W_DATA <= 8'b00000000; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 67; end
+  67: begin CS<=0; W_DATA <= 8'b00000000; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 68; end
 
-	  //wys³anie komendy CMD59
-  162: begin CS<=0; W_DATA <= 8'b01111011; 		W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 163; end
-  163: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 164; ADDR <= ADDR<<8;end end
-  164: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 165; ADDR <= ADDR<<8;end end
-  165: begin CS<=0; W_DATA <= 8'b00000000;		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 166; ADDR <= ADDR<<8;end end
-  166: begin CS<=0; W_DATA <= 8'b00000000; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 167; end
-  167: begin CS<=0; W_DATA <= 8'b00000000; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 168; end
 
-
-  168: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 169; end
-  169: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 170; else if (statecounter[SC_SIZE]) state <= 159 ; else state <= 168; end
-  170: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 60; end
-
+  68: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 69; end
+  69: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 70; else if (statecounter[SC_SIZE]) state <= 61 ; else state <= 68; end
+  70: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 73; end
 
 
 
-  60: begin CS<=1; statecounter_wr <= 510; statecounter_rd <= 514; statecount <= 15; WR_ACK <= 0; RD_ACK <= 0; RES_STB <= 0; if (WR_STB) begin ADDR <= WR_ADDR; len_counter <= WR_LENGTH-2; state <= 61; end else if (RD_STB) begin ADDR <= RD_ADDR;  len_counter <= RD_LENGTH-2; state <= 109; end end
+
+  73: begin     len_count <= WR_LENGTH;     statecounter <= 15;             RES_STB <= 0;          if (RES_BUSY==0) state <= 74; end
+
+       //wys³anie komendy CMD55	pe³na inicjalizacja											                                           			  
+  74: begin CS<=0; W_DATA <= 8'b01110111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;                            if (R_STB)   state <= 75; end
+  75: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 76; end
+  76: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 77; end
+  77: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 78; end
+  78: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 79; end
+  79: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 80; end
+  
+  
+ 
+  80: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 81; end
+  81: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 82; end
+  82: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 83; end
+  83: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 84; end
+    
+	
+  /*
+      //czekanie na odpowiedz po CMD55   //01
+  80: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 81; end
+  81: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'h00) state <= 82; else if (statecounter[SC_SIZE]) state <= 73 ; else state <= 80; end
+  82: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 84; end
+*/
+
+
+      //wys³anie komendy ACMD23								                                           			  
+  84: begin CS<=0; W_DATA <= 8'b01010111; 			W_STB <= W_READY && !R_STB;  RES_STB <= 0;                            if (R_STB)   state <= 85; end
+  85: begin CS<=0; W_DATA <= 8'b00000000; 			W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 86; end
+  86: begin CS<=0; W_DATA <= 8'b00000000; 			W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 87; end
+  87: begin CS<=0; W_DATA <= len_count[23:16];	    W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 88; len_count <= len_count<<8; end end
+  88: begin CS<=0; W_DATA <= len_count[23:16];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 89; len_count <= len_count<<8; end end
+  89: begin CS<=0; W_DATA <= len_count[23:16]; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 90; len_count <= len_count<<8; end end
+		
+		
+  90: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 91; end
+  91: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 92; end
+  92: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 93; end
+  93: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 95; end
+    
+	
+		/*
+      //czekanie na odpowiedz po ACMD23                                                                                              
+  90: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 91; end
+  91: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 92; else if (statecounter[SC_SIZE]) state <= 73; else state <= 90; end
+  92: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 100; end
+*/
+
+
+
+//------------------------
+
+
+
+  95: begin CS<=1; statecounter_wr <= 510; statecounter_rd <= 514; statecount <= 15; WR_ACK <= 0; RD_ACK <= 0; RES_STB <= 0; if (WR_STB) begin ADDR <= WR_ADDR; len_counter <= WR_LENGTH-2; state <= 100; end else if (RD_STB) begin ADDR <= RD_ADDR;  len_counter <= RD_LENGTH-2; state <= 150; end end
 
 
 //-----------------------------------------------------------------------------------------------------
 //---------zapis multiblock
 
-  61: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 0;        RES_DATA <= "z";        state <= 240; end  //RES_STB <= 1; - dla wys³ania znaku "z"    
+ // 96: begin CS<=0; 	 		            W_STB <= 0;             RES_STB <= 0;        RES_DATA <= "z";        state <= 100; end  //RES_STB <= 1; - dla wys³ania znaku "z"    
 
 
-  240: begin                     statecounter <= 5;                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 62; end
+
+
+  100: begin                     statecounter <= 15;                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 101; end
 
       //wys³anie komendy CMD25 zapis wielu bloków
-  62: begin CS<=0; W_DATA <= 8'b01011001; 		W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 63; end
-  63: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 64; ADDR <= ADDR<<8;end end
-  64: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 65; ADDR <= ADDR<<8;end end
-  65: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 66; ADDR <= ADDR<<8;end end
-  66: begin CS<=0; W_DATA <= ADDR[31:24]; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 67; end
-  67: begin CS<=0; W_DATA <= 8'b11111111; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 68; end
+  101: begin CS<=0; W_DATA <= 8'b01011001; 		W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 102; end
+  102: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 103; ADDR <= ADDR<<8;end end
+  103: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 104; ADDR <= ADDR<<8;end end
+  104: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 105; ADDR <= ADDR<<8;end end
+  105: begin CS<=0; W_DATA <= ADDR[31:24]; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 106; end
+  106: begin CS<=0; W_DATA <= 8'b11111111; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 107; end
   
-  68: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 69; end
-  69: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 70; else if (statecounter[SC_SIZE]) state <= 240 ; else state <= 68; end
-  70: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 82; end
+  107: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 108; end
+  108: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 109; else if (statecounter[SC_SIZE]) state <= 100 ; else state <= 107; end
+  109: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 110; end
+ 
  
   // Token do CMD25
-  82:  begin CS<=0; W_DATA <= 8'b11111100; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 83; end	
+  110:  begin CS<=0; W_DATA <= 8'b11111100; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 111; end	//RES_DATA <= R_DATA;
 
   // petla 512 bajtow
-  83: begin CS<=0; ADDR[31:24] <= WD_DATA; W_STB <= 0;                 WD_ACK <= WD_STB;  		RES_STB <= 0;		         if (WD_STB)  state <= 84; end
-  84: begin CS<=0; W_DATA <= ADDR[31:24];	W_STB <= W_READY && !R_STB; WD_ACK <= 0;                             if (R_STB)   state <= 85; end
-  85: begin CS<=0;                          W_STB <= 0;      statecounter_wr <=statecounter_wr-1;                      if (statecounter_wr[SC_SIZE]) state <= 86; else state <= 83; end
+  111: begin CS<=0; ADDR[31:24] <= WD_DATA; W_STB <= 0;                 WD_ACK <= WD_STB;  		RES_STB <= 0;		         if (WD_STB)  state <= 112; end
+  112: begin CS<=0; W_DATA <= ADDR[31:24];	W_STB <= W_READY && !R_STB; WD_ACK <= 0;                             if (R_STB)   state <= 113; end
+  113: begin CS<=0;                          W_STB <= 0;      statecounter_wr <=statecounter_wr-1;                      if (statecounter_wr[SC_SIZE]) state <= 114; else state <= 111; end
 
-  86:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 87; end	
-  87:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 88; end	  
-  88:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 89; end		  
-  89:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 190; end	  190:  begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 90; end	
 
-  90: begin CS<=0;  statecounter_wr <= 510;    W_STB <= 0;      len_counter <=len_counter-1;                      if (len_counter[LEN_WIDTH-1]) state <= 94; else state <= 82; end	  
-  94:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 95; end	  
-  95:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 96; end	
-  96:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 97; end	
-  97:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 98; end	
-  98:  begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 100; end	
 
+// 114: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 115; end
+ // 115: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'hE5) state <= 119; else state <= 114; end
+ 
+//  116: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 117; end
+//  117: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'h00) state <= 119; else state <= 116; end
+
+
+  114:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 115; end	
+  115:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 116; end	  
+  116:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 117; end		  
+  117:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 118; end	  118:  begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 119; end	
+
+
+
+  119: begin CS<=0;  statecounter_wr <= 510;    W_STB <= 0;      len_counter <=len_counter-1;                      if (len_counter[LEN_WIDTH-1]) state <= 120; else state <= 110; end	  
+  120:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 121; end	  
+  121:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 122; end	
+  122:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 123; end	
+  123:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 124; end	
+  124:  begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 125; end	
 
 		//stop train CMD25
-  100:  begin CS<=0; W_DATA <= 8'b11111101; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 101; end
+  125:  begin CS<=0; W_DATA <= 8'b11111101; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 126; end
 
-  101:  begin statecounter <= 5; CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 102; end	
+  126:  begin statecounter <= 15; CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 127; end	
   
-  102: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 103; end
-  103: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 104; else if (statecounter[SC_SIZE]) state <= 101 ; else state <= 102; end
-  104: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 106; end
- 
+  127: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 128; end
+  128: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 129; else if (statecounter[SC_SIZE]) state <= 126 ; else state <= 127; end
+  129: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 130; end
 
-  106: begin CS<=1;                         W_STB <= 0;                                              			  state <= 107; end 
-  107: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 0;        RES_DATA <= "Z";         state <= 108; end //RES_STB <= 1; - dla wys³ania "Z"
-  108: begin CS<=1;                                                 WR_ACK <= 1; 		 RES_STB <= 0;            state <= 60;  end
+
+  130: begin CS<=1;                         W_STB <= 0;                                              			  state <= 131; end 
+  131: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 1;        RES_DATA <= "Z";         state <= 132; end //RES_STB <= 1; - dla wys³ania "Z"
+  132: begin CS<=1;                                                 WR_ACK <= 1; 		 RES_STB <= 0;            state <= 95;  end
 	
 
 //------------------------------------------------------------------------------------
 //------------odczyt multiblock
 
-  109: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 0;        RES_DATA <= "o";        state <= 110; end  //RES_STB <= 1; - dla wys³ania znaku "o"
+  150: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 0;        RES_DATA <= "o";        state <= 151; end  //RES_STB <= 1; - dla wys³ania znaku "o"
 
-  22: begin                     statecounter <= 5;                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 110; end
+  151: begin                     statecounter <= 5;                 RES_STB <= 0;                         if (RES_BUSY==0) state <= 152; end
 
        //wys³anie komendy CMD18										                                           			  
-  110: begin CS<=0; W_DATA <= 8'b01010010; 	 	W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 111; end
-  111: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 112; ADDR <= ADDR<<8;end end
-  112: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 113; ADDR <= ADDR<<8;end end
-  113: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 114; ADDR <= ADDR<<8;end end
-  114: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 115; end
-  115: begin CS<=0; W_DATA <= 8'b11111111; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 116; end
+  152: begin CS<=0; W_DATA <= 8'b01010010; 	 	W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 153; end
+  153: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 154; ADDR <= ADDR<<8;end end
+  154: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 155; ADDR <= ADDR<<8;end end
+  155: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 156; ADDR <= ADDR<<8;end end
+  156: begin CS<=0; W_DATA <= ADDR[31:24];		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 157; end
+  157: begin CS<=0; W_DATA <= 8'b11111111; 		W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 159; end
 																																	  
 	
 	  //czekanie na odpowiedz po CMD18  
-  116: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 117; end   //RES_STB <= R_STB;
-  117: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 118; else if (statecounter[SC_SIZE]) state <= 22; else state <= 116; end
-  118: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 120; end  //RES_STB <= R_STB;
+  159: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 160; end   //RES_STB <= R_STB;
+  160: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 161; else if (statecounter[SC_SIZE]) state <= 151; else state <= 159; end
+  161: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 162; end  //RES_STB <= R_STB;
 	  
 	  
 		//token do CMD18
-  120: begin CS<=0; W_DATA <= 8'b11111110; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 122; end  //RES_STB <= R_STB;	
+  162: begin CS<=0; W_DATA <= 8'b11111110; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 163; end  //RES_STB <= R_STB;	
 	  
   // petla 512 bajtow
-  122: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_STB <= R_STB;          RES_DATA <= R_DATA;  if (R_STB)   state <= 123; end // RES_DATA,  wzedzie indziej DBG_DATA
-  123: begin CS<=0;                        W_STB <= 0;      RES_STB <= 0; statecounter_rd <=statecounter_rd-1;      if (statecounter_rd[SC_SIZE]) state <= 124 ; else state <= 122; end
+  163: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_STB <= R_STB;          RES_DATA <= R_DATA;  if (R_STB)   state <= 164; end // RES_DATA,  wzedzie indziej DBG_DATA
+  164: begin CS<=0;                        W_STB <= 0;      RES_STB <= 0; statecounter_rd <=statecounter_rd-1;      if (statecounter_rd[SC_SIZE]) state <= 165 ; else state <= 163; end
 	
-  124: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  if (len_counter[LEN_WIDTH-1]) begin RES_STB <= 0; end else begin RES_STB <= R_STB; end     RES_DATA <= R_DATA; if (R_STB)   state <= 125; end  //odebranie koñca bloku
-  125: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    	  RES_DATA <= R_DATA; if (R_STB)   state <= 126; end  //RES_STB <= R_STB;	
-  126: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    	  RES_DATA <= R_DATA; if (R_STB)   state <= 127; end  //RES_STB <= R_STB;	 
+  165: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  if (len_counter[LEN_WIDTH-1]) begin RES_STB <= 0; end else begin RES_STB <= R_STB; end     RES_DATA <= R_DATA; if (R_STB)   state <= 166; end  //odebranie koñca bloku
+  166: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    	  RES_DATA <= R_DATA; if (R_STB)   state <= 167; end  //RES_STB <= R_STB;	
+  167: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    	  RES_DATA <= R_DATA; if (R_STB)   state <= 168; end  //RES_STB <= R_STB;	 
 
-  127: begin CS<=0;  statecounter_rd <= 514;    W_STB <= 0;      len_counter <=len_counter-1;                      if (len_counter[LEN_WIDTH-1]) state <= 128; else state <= 120; end
-
-
-  128: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 129; end // RES_STB <= R_STB;
-  129: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 130; end	 
-  130: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 131; end
-  131: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 132; end	 
+  168: begin CS<=0;  statecounter_rd <= 514;    W_STB <= 0;      len_counter <=len_counter-1;          if (len_counter[LEN_WIDTH-1]) state <= 169; else state <= 162; end
 
 
-  132: begin                     statecounter <= 5;                     RES_STB <= 0;                         if (RES_BUSY==0) state <= 134; end
+  169: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 170; end // RES_STB <= R_STB;
+  170: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 171; end	 
+  171: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 172; end
+  172: begin CS<=1; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 173; end	 
+
+
+  173: begin                     statecounter <= 5;                     RES_STB <= 0;                         if (RES_BUSY==0) state <= 174; end
 
        //wys³anie komendy CMD12										                                           			  
-  134: begin CS<=0; W_DATA <= 8'b01001100; W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 135; end
-  135: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 136; ADDR <= ADDR<<8;end end
-  136: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 137; ADDR <= ADDR<<8;end end
-  137: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 138; ADDR <= ADDR<<8;end end
-  138: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 139; end
-  139: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 140; end
+  174: begin CS<=0; W_DATA <= 8'b01001100; W_STB <= W_READY && !R_STB; RES_STB <= 0;                             if (R_STB)   state <= 175; end
+  175: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 176; ADDR <= ADDR<<8;end end
+  176: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 177; ADDR <= ADDR<<8;end end
+  177: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   begin state <= 178; ADDR <= ADDR<<8;end end
+  178: begin CS<=0; W_DATA <= 8'b00000000; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 179; end
+  179: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;                                           if (R_STB)   state <= 180; end
 																																	  	  
       //czekanie na odpowiedz po CMD12
-  140: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 141; end  //RES_STB <= R_STB;
-  141: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'h00) state <= 142; else if (statecounter[SC_SIZE]) state <= 132 ; else state <= 140; end
-  142: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 144; end  //RES_STB <= R_STB;
+  180: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 181; end  //RES_STB <= R_STB;
+  181: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	 if (RES_DATA==8'h00) state <= 182; else if (statecounter[SC_SIZE]) state <= 173; else state <= 180; end
+  182: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= 0;    RES_DATA <= R_DATA; if (R_STB)   state <= 183; end  //RES_STB <= R_STB;
 	  
-  144: begin CS<=1;                        W_STB <= 0;             RES_STB <= 0;      RES_DATA <= "O";                        state <= 60; end //RES_STB <= 1; - dla wys³ania znaku "O"
+  183: begin CS<=1;                        W_STB <= 0;             RES_STB <= 0;      RES_DATA <= "O";                        state <= 95; end //RES_STB <= 1; - dla wys³ania znaku "O"
   
 endcase
 			

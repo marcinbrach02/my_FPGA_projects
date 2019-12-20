@@ -165,12 +165,12 @@ if (RESET) begin
   RD_LENGTH <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
 	WR_STB <= 1;
-	WR_LENGTH <= 3;  //1125042687;
-	WR_ADDR <= 10; //8'h00001600;   //8'h00000600;
+	WR_LENGTH <= 15;  //8388607; // 1125042687;
+	WR_ADDR <= 1; //8'h00001600;   //8'h00000600;
 end else if (RX_STB && (RX_DAT=="o")) begin
 	RD_STB <= 1;
-	RD_LENGTH <= 3;
-	RD_ADDR <= 10;
+	RD_LENGTH <= 15;  //1125042600;
+	RD_ADDR <= 1;
 end else begin
 	RD_STB <= 0;
 	WR_STB <= 0;	
