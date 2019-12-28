@@ -180,7 +180,7 @@ end
 
 card_driver 
 #(
-  .DIVIDER(255)
+  .START_DIVIDER(255)
 ) 
 driver
 (

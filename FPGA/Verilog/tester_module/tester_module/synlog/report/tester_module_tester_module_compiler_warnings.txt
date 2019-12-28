@@ -1,10 +1,9 @@
+@W: CG104 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":241:30:241:30|Unsized number in concatenation is 32 bits
 @W: CL265 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing unused bit 0 of rxreg[9:0]. Either assign all bits or reduce the width of the signal.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Optimizing register bit txreg[9] to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_tx.v":41:0:41:5|Pruning register bit 9 of txreg[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL169 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":73:0:73:5|Pruning unused register statecount[11:0]. Make sure that there are no unused intermediate registers.
-@W: CL271 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":73:0:73:5|Pruning unused bits 31 to 24 of len_count[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":192:11:192:19|Port-width mismatch for port WR_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":201:11:201:19|Port-width mismatch for port RD_LENGTH. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":192:11:192:19|Port-width mismatch for port WR_LENGTH. The port definition is 24 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":201:11:201:19|Port-width mismatch for port RD_LENGTH. The port definition is 24 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":53:12:53:16|Removing wire r_stb, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":54:12:54:16|Removing wire r_dat, as there is no assignment to it.
 @W: CG360 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":55:12:55:16|Removing wire r_ack, as there is no assignment to it.
