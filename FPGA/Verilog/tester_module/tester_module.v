@@ -23,7 +23,7 @@ wire RESET;
 
 reg WR_STB;
 reg [31:0] WR_ADDR;
-reg [7:0] WR_LENGTH;
+reg [31:0] WR_LENGTH;
 wire WR_ACK;
 	
 reg WD_STB;
@@ -32,7 +32,7 @@ wire WD_ACK;
 	
 reg RD_STB;
 reg [31:0] RD_ADDR;
-reg [7:0] RD_LENGTH;
+reg [31:0] RD_LENGTH;
 wire RD_ACK;
 	   
 wire RES_STB;
@@ -165,11 +165,11 @@ if (RESET) begin
   RD_LENGTH <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
 	WR_STB <= 1;
-	WR_LENGTH <= 15;  //8388607; // 1125042687;
-	WR_ADDR <= 1; //8'h00001600;   //8'h00000600;
+	WR_LENGTH <= 500;  
+	WR_ADDR <= 1; 
 end else if (RX_STB && (RX_DAT=="o")) begin
 	RD_STB <= 1;
-	RD_LENGTH <= 15;  //1125042600;
+	RD_LENGTH <= 500;  
 	RD_ADDR <= 1;
 end else begin
 	RD_STB <= 0;

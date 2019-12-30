@@ -7,19 +7,33 @@
 @N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Found counter in view:work.card_driver_32s_24s_255s_255s_9s_11s(verilog) instance statecounter_wr[11:0] 
 @N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Found counter in view:work.card_driver_32s_24s_255s_255s_9s_11s(verilog) instance statecounter_rd[11:0] 
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance divider_m1[0] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[7] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[6] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[5] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[4] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[3] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[1] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[0] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
 @N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":38:0:38:5|Found counter in view:work.SPI_cont(verilog) instance period[3:0] 
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[12] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.len_count[20] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance len_count[11] (in view: work.card_driver_32s_24s_255s_255s_9s_11s(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.len_count[17] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: FA113 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":103:9:103:12|Pipelining module un176[23:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Pushed in register len_counter[23:0].
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":158:0:158:5|Pushed in register RD_ADDR[0].
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":158:0:158:5|Pushed in register WR_ADDR[0].
+@N: MF169 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":158:0:158:5|Pushed in register WR_STB.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[10] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[17] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[18] (in view: work.tester_module(verilog)) because it does not drive other instances.
-@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[23] (in view: work.tester_module(verilog)) because it does not drive other instances.
 @N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.divider_m1[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[15] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[14] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[13] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[12] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[11] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[10] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[9] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[23] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[22] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[21] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[20] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[19] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[18] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":88:0:88:5|Removing sequential instance driver.ADDR[17] (in view: work.tester_module(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\tester_module_tester_module.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 

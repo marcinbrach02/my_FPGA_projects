@@ -3,68 +3,68 @@ Report for cell tester_module
    Instance path: tester_module
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     456.00        100.0
+                                  SLIC	     480.00        100.0
                                  IOLGC	       5.00        100.0
-                                  LUT4	     812.00        100.0
+                                  LUT4	     858.00        100.0
                                  IOREG	          5        100.0
                                  IOBUF	          9        100.0
-                                PFUREG	        264        100.0
+                                PFUREG	        266        100.0
                                 RIPPLE	         48        100.0
                                    EBR	          1        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-  card_driver_32s_24s_255s_255s_9s_11s	          1        87.1
                                fifo_dc	          1         0.0
-               dev_uart_asy_50s_54s_6s	          1        10.3
+               dev_uart_asy_50s_54s_6s	          1         9.8
+  card_driver_32s_24s_255s_255s_9s_11s	          1        87.7
 ---------------------------------------------------
 Report for cell card_driver_32s_24s_255s_255s_9s_11s
    Instance path: tester_module/driver
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     397.25        87.1
-                                  LUT4	     736.00        90.6
-                                PFUREG	        141        53.4
+                                  SLIC	     421.03        87.7
+                                  LUT4	     782.00        91.1
+                                PFUREG	        143        53.8
                                 RIPPLE	         39        81.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                              SPI_cont	          1        75.0
+                              SPI_cont	          1         3.5
 ---------------------------------------------------
 Report for cell SPI_cont
    Instance path: tester_module/driver/SPI
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     342.00        75.0
-                                  LUT4	     727.50        89.6
+                                  SLIC	      16.75         3.5
+                                  LUT4	      33.00         3.8
                                 PFUREG	         31        11.7
 ---------------------------------------------------
 Report for cell dev_uart_asy_50s_54s_6s
    Instance path: tester_module/uart
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      46.92        10.3
-                                  LUT4	      74.00         9.1
-                                PFUREG	         92        34.8
+                                  SLIC	      46.88         9.8
+                                  LUT4	      74.00         8.6
+                                PFUREG	         92        34.6
                                 RIPPLE	          4         8.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           dev_uart_rx	          1         3.7
-                           dev_uart_tx	          1         1.9
+                           dev_uart_rx	          1         3.5
+                           dev_uart_tx	          1         1.8
 ---------------------------------------------------
 Report for cell dev_uart_tx
    Instance path: tester_module/uart/tx
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.75         1.9
-                                  LUT4	      14.00         1.7
-                                PFUREG	         20         7.6
+                                  SLIC	       8.65         1.8
+                                  LUT4	      14.00         1.6
+                                PFUREG	         20         7.5
 ---------------------------------------------------
 Report for cell dev_uart_rx
    Instance path: tester_module/uart/rx
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      16.83         3.7
-                                  LUT4	      26.00         3.2
-                                PFUREG	         38        14.4
+                                  SLIC	      16.90         3.5
+                                  LUT4	      26.00         3.0
+                                PFUREG	         38        14.3
 ---------------------------------------------------
 Report for cell fifo_dc
    Instance path: tester_module/fifo
