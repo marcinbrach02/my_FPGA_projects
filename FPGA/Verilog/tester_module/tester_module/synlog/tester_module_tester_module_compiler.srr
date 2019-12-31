@@ -22,6 +22,7 @@ Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated
 @I::"E:\GIT\my_projects\FPGA\Verilog\tester_module\fifo_dc.v" (library work)
 Verilog syntax check successful!
 File E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v changed - recompiling
+File E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v changed - recompiling
 Selecting top level module tester_module
 @N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1120:7:1120:9|Synthesizing module VHI in library work.
 @N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
@@ -128,7 +129,10 @@ Selecting top level module tester_module
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_ADDR[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -146,7 +150,10 @@ Selecting top level module tester_module
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit RD_LENGTH[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -157,18 +164,15 @@ Selecting top level module tester_module
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Optimizing register bit WR_LENGTH[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 23 to 9 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bit 3 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 1 to 0 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+Only the first 100 messages of id 'CL190' are reported. To see all messages use 'report_messages -log E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\synlog\tester_module_tester_module_compiler.srr -id CL190' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CL190} -count unlimited' in the Tcl shell.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 23 to 8 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 5 to 4 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 2 to 0 of RD_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 31 to 1 of RD_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 23 to 9 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bit 3 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 1 to 0 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 23 to 8 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 5 to 4 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 2 to 0 of WR_LENGTH[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 31 to 1 of WR_ADDR[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":111:0:111:5|Trying to extract state machine for register state.
 Extracted state machine for register state
@@ -177,8 +181,8 @@ State machine has 4 reachable states with original encodings of:
    00000001
    00000010
    00000011
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 8 to 5 of WR_LENGTH[8:4]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bits 8 to 5 of RD_LENGTH[8:4]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bit 7 of WR_LENGTH[7:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":158:0:158:5|Pruning register bit 7 of RD_LENGTH[7:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\card_driver.v":88:0:88:5|Trying to extract state machine for register state.
 @N: CL201 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\dev_uart_asy.v":142:0:142:5|Trying to extract state machine for register txstate.
 Extracted state machine for register txstate
@@ -224,12 +228,12 @@ State machine has 13 reachable states with original encodings of:
    0001011
    0001100
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 81MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Dec 31 00:07:04 2019
+# Tue Dec 31 16:04:08 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
@@ -240,7 +244,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Dec 31 00:07:04 2019
+# Tue Dec 31 16:04:08 2019
 
 ###########################################################]
 @END
@@ -250,6 +254,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Dec 31 00:07:04 2019
+# Tue Dec 31 16:04:08 2019
 
 ###########################################################]

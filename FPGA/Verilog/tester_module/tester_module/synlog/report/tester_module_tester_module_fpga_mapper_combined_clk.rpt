@@ -5,14 +5,14 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 271 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 255 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@K:CKID0001       CLOCK50             port                   271        TX_DAT[0]      
+@K:CKID0001       CLOCK50             port                   255        TX_DAT[0]      
 =======================================================================================
 
 

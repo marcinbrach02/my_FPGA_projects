@@ -16,22 +16,22 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  12/31/19  00:07:17
+Mapped on:  12/31/19  16:04:19
 
 Design Summary
 --------------
 
-   Number of registers:    271 out of  4665 (6%)
-      PFU registers:          266 out of  4320 (6%)
+   Number of registers:    255 out of  4665 (5%)
+      PFU registers:          250 out of  4320 (6%)
       PIO registers:            5 out of   345 (1%)
-   Number of SLICEs:       480 out of  2160 (22%)
-      SLICEs as Logic/ROM:    480 out of  2160 (22%)
+   Number of SLICEs:       421 out of  2160 (19%)
+      SLICEs as Logic/ROM:    421 out of  2160 (19%)
       SLICEs as RAM:            0 out of  1620 (0%)
-      SLICEs as Carry:         48 out of  2160 (2%)
-   Number of LUT4s:        954 out of  4320 (22%)
-      Number used as logic LUTs:        858
+      SLICEs as Carry:         43 out of  2160 (2%)
+   Number of LUT4s:        836 out of  4320 (19%)
+      Number used as logic LUTs:        750
       Number used as distributed RAM:     0
-      Number used as ripple logic:       96
+      Number used as ripple logic:       86
       Number used as shift registers:     0
    Number of PIO sites used: 9 + 4(JTAG) out of 115 (11%)
    Number of block RAMs:  1 out of 10 (10%)
@@ -59,40 +59,39 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net CLOCK50_c: 158 loads, 158 rising, 0 falling (Driver: PIO CLOCK50 )
+     Net CLOCK50_c: 148 loads, 148 rising, 0 falling (Driver: PIO CLOCK50 )
 
                                     Page 1
 
 
 
 
-Design:  tester_module                                 Date:  12/31/19  00:07:17
+Design:  tester_module                                 Date:  12/31/19  16:04:19
 
 Design Summary (cont)
 ---------------------
-   Number of Clock Enables:  35
+   Number of Clock Enables:  34
      Net WR_STB8_i: 1 loads, 1 LSLICEs
      Net driver.SPI.WR_DATA10: 5 loads, 4 LSLICEs
      Net RD_EN: 2 loads, 0 LSLICEs
-     Net driver.un1_state_300_0_i: 1 loads, 0 LSLICEs
+     Net driver.un1_state_304_0_i: 1 loads, 0 LSLICEs
      Net TX_DAT_1_sqmuxa: 4 loads, 4 LSLICEs
-     Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
      Net driver/SPI/periode: 6 loads, 6 LSLICEs
-     Net driver/SPI/un1_W_STB_2_i: 5 loads, 5 LSLICEs
+     Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
+     Net driver/SPI/N_75: 5 loads, 5 LSLICEs
      Net driver/SPI/un1_W_STB_4_i: 1 loads, 1 LSLICEs
-     Net nRESET_c: 1 loads, 1 LSLICEs
-     Net driver/WD_ACK_RNO_0: 1 loads, 1 LSLICEs
      Net driver/statecounter_wre: 7 loads, 7 LSLICEs
-     Net driver/un1_RES_STB309_0_i: 4 loads, 4 LSLICEs
-     Net driver/statecounter_rde: 7 loads, 7 LSLICEs
      Net driver/statecountere: 7 loads, 7 LSLICEs
-     Net driver/un1_len_count_1_sqmuxa_0: 2 loads, 2 LSLICEs
-     Net driver/un1_state_298_i: 1 loads, 1 LSLICEs
-     Net driver/un1_state_302_0_i: 4 loads, 4 LSLICEs
-     Net driver/N_1153_i: 1 loads, 1 LSLICEs
+     Net driver/un1_RES_STB309_2_i_o2_i_o3: 4 loads, 4 LSLICEs
+     Net driver/statecounter_rde: 7 loads, 7 LSLICEs
+     Net driver/un1_len_count_1_sqmuxa_0_0: 2 loads, 2 LSLICEs
+     Net driver/un1_state_302_i: 1 loads, 1 LSLICEs
+     Net driver/un1_state_306_0_i: 4 loads, 4 LSLICEs
+     Net driver/N_1098_i: 1 loads, 1 LSLICEs
      Net RES_STB: 1 loads, 0 LSLICEs
-     Net driver/un1_state_265_0: 4 loads, 4 LSLICEs
-     Net driver/N_75: 6 loads, 6 LSLICEs
+     Net driver/N_54_i: 4 loads, 4 LSLICEs
+     Net driver/N_80: 3 loads, 3 LSLICEs
+     Net nRESET_c: 1 loads, 1 LSLICEs
      Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
      Net N_12_i: 6 loads, 5 LSLICEs
      Net uart/counter_fast[6]: 2 loads, 2 LSLICEs
@@ -106,37 +105,37 @@ Design Summary (cont)
      Net uart/N_24_i_0: 4 loads, 4 LSLICEs
      Net state[1]: 1 loads, 1 LSLICEs
      Net WR_STB9_i: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net nRESET_c merged into GSR:  259
+   Number of local set/reset loads for net nRESET_c merged into GSR:  243
    Number of LSRs:  1
      Net nRESET_c: 2 loads, 0 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net driver/state[3]: 147 loads
-     Net driver/state[5]: 145 loads
-     Net driver/state[2]: 129 loads
-     Net driver/state[4]: 128 loads
-     Net driver/state[0]: 112 loads
-     Net driver/state[6]: 110 loads
-     Net driver/state[7]: 109 loads
-     Net driver/state[1]: 108 loads
-     Net WR_STB: 32 loads
-     Net driver/N_2891: 30 loads
+     Net driver/state[2]: 123 loads
+     Net driver/state[5]: 123 loads
+     Net driver/state[4]: 117 loads
+     Net driver/state[6]: 113 loads
+     Net driver/state[3]: 112 loads
+     Net driver/state[1]: 109 loads
+     Net driver/state[7]: 104 loads
+     Net driver/state[0]: 103 loads
+     Net driver/N_1315: 27 loads
+     Net driver/W_STB: 27 loads
 
 
 
 
    Number of warnings:  1
+   Number of errors:    0
 
                                     Page 2
 
 
 
 
-Design:  tester_module                                 Date:  12/31/19  00:07:17
+Design:  tester_module                                 Date:  12/31/19  16:04:19
 
  (cont)
 -------
-   Number of errors:    0
      
 
 Design Errors/Warnings
@@ -174,36 +173,35 @@ Removed logic
 -------------
 
 Block VCC undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
 Block uart/VCC undriven or does not drive anything - clipped.
 Block uart/rx/VCC undriven or does not drive anything - clipped.
 Block uart/rx/GND undriven or does not drive anything - clipped.
 Block uart/tx/GND undriven or does not drive anything - clipped.
 Block uart/tx/VCC undriven or does not drive anything - clipped.
 Block driver/VCC undriven or does not drive anything - clipped.
-Block driver/SPI/GND undriven or does not drive anything - clipped.
 Block driver/SPI/VCC undriven or does not drive anything - clipped.
+Block driver/SPI/GND undriven or does not drive anything - clipped.
 Signal state_i[1] was merged into signal state[1]
 Signal nRESET_c_i was merged into signal nRESET_c
 Signal uart/rxstate_i[1] was merged into signal uart/rxstate[1]
-Signal GND undriven or does not drive anything - clipped.
+Signal driver/W_DATA_RNO_0[7] undriven or does not drive anything - clipped.
 Signal fifo/VCC undriven or does not drive anything - clipped.
 Signal fifo/GND undriven or does not drive anything - clipped.
 Signal uart/GND undriven or does not drive anything - clipped.
 Signal driver/GND undriven or does not drive anything - clipped.
 Signal VCC undriven or does not drive anything - clipped.
-Signal WD_DATA_3_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal fifo/AlmostEmpty undriven or does not drive anything - clipped.
 
                                     Page 3
 
 
 
 
-Design:  tester_module                                 Date:  12/31/19  00:07:17
+Design:  tester_module                                 Date:  12/31/19  16:04:19
 
 Removed logic (cont)
 --------------------
-Signal WD_DATA_3_s_7_0_COUT undriven or does not drive anything - clipped.
-Signal fifo/AlmostEmpty undriven or does not drive anything - clipped.
 Signal fifo/DO17 undriven or does not drive anything - clipped.
 Signal fifo/DO16 undriven or does not drive anything - clipped.
 Signal fifo/DO15 undriven or does not drive anything - clipped.
@@ -214,13 +212,13 @@ Signal fifo/DO11 undriven or does not drive anything - clipped.
 Signal fifo/DO10 undriven or does not drive anything - clipped.
 Signal fifo/DO9 undriven or does not drive anything - clipped.
 Signal fifo/DO8 undriven or does not drive anything - clipped.
+Signal uart/un7_counter_fast_cry_5_0_COUT undriven or does not drive anything -
+     clipped.
 Signal uart/un7_counter_fast_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal uart/un7_counter_fast_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal uart/N_5 undriven or does not drive anything - clipped.
-Signal uart/un7_counter_fast_cry_5_0_COUT undriven or does not drive anything -
-     clipped.
 Signal driver/statecounter_rd_cry_0_S0[0] undriven or does not drive anything -
      clipped.
 Signal driver/N_1 undriven or does not drive anything - clipped.
@@ -249,29 +247,27 @@ Signal driver/un8_tickcounter_cry_0_0_S0 undriven or does not drive anything -
 Signal driver/N_4 undriven or does not drive anything - clipped.
 Signal driver/un8_tickcounter_cry_7_0_COUT undriven or does not drive anything -
      clipped.
-Signal driver/un176_cry_0_0_S1 undriven or does not drive anything - clipped.
-Signal driver/un176_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal driver/un178_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal driver/un178_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal driver/N_5 undriven or does not drive anything - clipped.
-Signal driver/un176_s_23_0_S1 undriven or does not drive anything - clipped.
-Signal driver/un176_s_23_0_COUT undriven or does not drive anything - clipped.
-Signal WD_DATA_3_cry_0_0_S0 undriven or does not drive anything - clipped.
-Signal N_5 undriven or does not drive anything - clipped.
+Signal driver/un178_s_23_0_S1 undriven or does not drive anything - clipped.
+Signal driver/un178_s_23_0_COUT undriven or does not drive anything - clipped.
 Block RD_EN_RNO was optimized away.
 Block nRESET_pad_RNI5681 was optimized away.
+Block uart/RX_STB_RNO_0 was optimized away.
+Block driver/W_DATA_RNO_0[7] was optimized away.
+Block fifo/VCC was optimized away.
+Block fifo/GND was optimized away.
 
                                     Page 4
 
 
 
 
-Design:  tester_module                                 Date:  12/31/19  00:07:17
+Design:  tester_module                                 Date:  12/31/19  16:04:19
 
 Removed logic (cont)
 --------------------
-Block uart/RX_STB_RNO_0 was optimized away.
-Block GND was optimized away.
-Block fifo/VCC was optimized away.
-Block fifo/GND was optimized away.
 Block uart/GND was optimized away.
 Block driver/GND was optimized away.
 
@@ -324,21 +320,25 @@ GSR Component:
    FIFO8KB : fifo/fifo_dc_0_0
    FIFO8KB : fifo/fifo_dc_0_0
 
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
 
                                     Page 5
 
 
 
 
-Design:  tester_module                                 Date:  12/31/19  00:07:17
+Design:  tester_module                                 Date:  12/31/19  16:04:19
 
-Run Time and Memory Usage
--------------------------
-
-   Total CPU Time: 0 secs  
+Run Time and Memory Usage (cont)
+--------------------------------
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 55 MB
+   Peak Memory Usage: 54 MB
         
+
+
 
 
 

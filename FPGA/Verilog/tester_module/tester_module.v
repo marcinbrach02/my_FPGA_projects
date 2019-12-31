@@ -149,8 +149,8 @@ uart(
 always @(posedge CLOCK50 or posedge RESET) 
 if (RESET) begin
   WD_STB <= 1;
-  WD_DATA <= "A"; // d65 h41
-end else if (WD_ACK) WD_DATA <= WD_DATA+1;
+  WD_DATA <= "B"; // d65 h41
+end else if (WD_ACK) WD_DATA <= "B"; //WD_DATA+1;
 
 
 
@@ -165,11 +165,11 @@ if (RESET) begin
   RD_LENGTH <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
 	WR_STB <= 1;
-	WR_LENGTH <= 500;  
+	WR_LENGTH <= 200;  
 	WR_ADDR <= 1; 
 end else if (RX_STB && (RX_DAT=="o")) begin
 	RD_STB <= 1;
-	RD_LENGTH <= 500;  
+	RD_LENGTH <= 200;  
 	RD_ADDR <= 1;
 end else begin
 	RD_STB <= 0;
