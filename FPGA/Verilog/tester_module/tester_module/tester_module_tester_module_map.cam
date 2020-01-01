@@ -1,15 +1,21 @@
 [ START MERGED ]
 nRESET_c_i nRESET_c
 state_i[1] state[1]
-uart/rxstate_i[1] uart/rxstate[1]
+wstate_i[1] wstate[1]
 [ END MERGED ]
 [ START CLIPPED ]
-driver/W_DATA_RNO_0[7]
-fifo/VCC
+GND
 fifo/GND
 uart/GND
 driver/GND
 VCC
+WD_DATA_3_s_7_0_S1
+WD_DATA_3_s_7_0_COUT
+un3_WR_ADDR_cry_0_0_S1
+un3_WR_ADDR_cry_0_0_S0
+N_6
+un3_WR_ADDR_s_27_0_S1
+un3_WR_ADDR_s_27_0_COUT
 fifo/AlmostEmpty
 fifo/DO17
 fifo/DO16
@@ -21,10 +27,10 @@ fifo/DO11
 fifo/DO10
 fifo/DO9
 fifo/DO8
-uart/un7_counter_fast_cry_5_0_COUT
 uart/un7_counter_fast_cry_0_0_S1
 uart/un7_counter_fast_cry_0_0_S0
-uart/N_5
+uart/N_13
+uart/un7_counter_fast_cry_5_0_COUT
 driver/statecounter_rd_cry_0_S0[0]
 driver/N_1
 driver/statecounter_rd_s_0_S1[11]
@@ -46,17 +52,18 @@ driver/un178_cry_0_0_S0
 driver/N_5
 driver/un178_s_23_0_S1
 driver/un178_s_23_0_COUT
+WD_DATA_3_cry_0_0_S0
+N_5
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Tue Dec 31 16:04:20 2019
+# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Tue Jan 01 22:00:16 2019
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "MOSI" SITE "12" ;
 LOCATE COMP "CLOCK50" SITE "105" ;
 LOCATE COMP "SCLK_LED" SITE "15" ;
 LOCATE COMP "TxD" SITE "122" ;
-LOCATE COMP "RxD" SITE "121" ;
 LOCATE COMP "CS" SITE "10" ;
 LOCATE COMP "SCLK" SITE "9" ;
 LOCATE COMP "MISO" SITE "11" ;

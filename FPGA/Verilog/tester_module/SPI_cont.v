@@ -15,11 +15,8 @@ module SPI_cont(
 	
 	output reg MOSI,
 	input wire MISO,
-	output wire SCLK
-	//output reg CS					sygna³ przeniesiony do top level
-	
+	output wire SCLK	
 );
-
 
 reg receiving;
 reg sending;
@@ -35,11 +32,11 @@ assign SCLK = INT_SCLK & receiving;
 
 assign W_READY = !sending;
 	   
-always@(posedge CLK or posedge RST)	   						//proces zapisu
+always@(posedge CLK or posedge RST)
 begin
 	if(RST)
 		begin 	  
-		MOSI <= 1;  // 1'bx
+		MOSI <= 1;
 		receiving <= 0;   
 		sending <= 0;
 		WR_DATA <= 0;
@@ -63,7 +60,7 @@ begin
 				begin  
 					receiving <= 0;
 					sending <= 0;
-					MOSI <= 1;  // 1'bx
+					MOSI <= 1;
 					R_DATA <= RD_DATA;
 					R_STB  <= 1;
 				end

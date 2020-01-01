@@ -57,42 +57,30 @@ wire        r_ack;
 assign RESET = !nRESET;
 
 assign SCLK_LED = SCLK;
-/*
-distributed_fifo_shift
-#(
-  .WIDTH(8), 
-  .AWIDTH(6), // 2^6 = 64   2^1024
-  .BUSY_NUM(26) // 24
-)
-fifo
-(
-  .fi_clk   (CLOCK50),
-  .fi_rst   (RESET),
-  
-  .fi_stb   (RES_STB),
-  .fi_dat   (RES_DATA),
-  .fi_busy  (RES_BUSY),
-  .fi_empty (),
-  .fi_error (), 
-  
-  .fo_stb  (TX_STB),
-  .fo_dat  (TX_DAT),
-  .fo_ack  (TX_ACK)
-);
-*/
 
 reg RD_EN;
 wire RD_EMPTY;
 wire [7:0] RD_Q;
 
+wire BUSY;
+assign RES_BUSY=0;
+
 fifo_dc fifo (
-.Data(RES_DATA), 
 .WrClock(CLOCK50), 
+
+/*
+.Data(RES_DATA), 
 .WrEn(RES_STB), 
 .AlmostFull(RES_BUSY),
+*/
+
+.Data("k"), 
+.WrEn(WR_ACK||RD_ACK), 
+.AlmostFull(BUSY),
+
 
 .RdClock(CLOCK50), 
-.RdEn(RD_EN ), 
+.RdEn(RD_EN), 
 
 .Reset(RESET), 
 .RPReset(RESET), 
@@ -149,11 +137,11 @@ uart(
 always @(posedge CLOCK50 or posedge RESET) 
 if (RESET) begin
   WD_STB <= 1;
-  WD_DATA <= "B"; // d65 h41
-end else if (WD_ACK) WD_DATA <= "B"; //WD_DATA+1;
+  WD_DATA <= "A"; // d65 h41
+end else if (WD_ACK) WD_DATA <= WD_DATA+1;
 
 
-
+/*
 // automat odbioru komend z UART i zlecania karcie SD
 always @(posedge CLOCK50 or posedge RESET) 
 if (RESET) begin
@@ -165,17 +153,81 @@ if (RESET) begin
   RD_LENGTH <= 0;
 end else if (RX_STB && (RX_DAT=="z")) begin
 	WR_STB <= 1;
-	WR_LENGTH <= 200;  
-	WR_ADDR <= 1; 
+	WR_LENGTH <= 20000;  
+	WR_ADDR <= 0; 
 end else if (RX_STB && (RX_DAT=="o")) begin
 	RD_STB <= 1;
-	RD_LENGTH <= 200;  
-	RD_ADDR <= 1;
+	RD_LENGTH <= 20000;  
+	RD_ADDR <= 0;
 end else begin
 	RD_STB <= 0;
 	WR_STB <= 0;	
 end
-	
+*/
+
+
+localparam BURST_SIZE = 10000;
+
+
+// test zapisu
+reg [7:0] wstate;
+always @(posedge CLOCK50 or posedge RESET) 
+if (RESET) begin
+  WR_STB <= 0;
+  WR_ADDR <= 0;
+  WR_LENGTH <= BURST_SIZE;
+  RD_STB <= 0;
+  RD_ADDR <= 0;
+  RD_LENGTH <= BURST_SIZE;
+  wstate <=0;
+end else case (wstate)
+  0: begin
+	WR_STB <= 1;
+	WR_LENGTH <= BURST_SIZE;  
+	if (WR_ACK) wstate <= 1;
+  end
+  1: begin
+    WR_STB <= 0;
+    if (!BUSY) wstate <= 2;
+  end
+  2: begin
+    WR_ADDR <= WR_ADDR + BURST_SIZE; 
+    wstate <= 0;
+  end
+endcase
+
+
+/*
+// test odczytu
+reg [7:0] rstate;
+// automat odbioru komend z UART i zlecania karcie SD
+always @(posedge CLOCK50 or posedge RESET) 
+if (RESET) begin
+  WR_STB <= 0;
+  WR_ADDR <= 0;
+  WR_LENGTH <= BURST_SIZE;
+  RD_STB <= 0;
+  RD_ADDR <= 0;
+  RD_LENGTH <= BURST_SIZE;
+  rstate <=0;
+end else case (rstate)
+  0: begin
+	RD_STB <= 1;
+	RD_LENGTH <= BURST_SIZE;  
+	if (RD_ACK) rstate <= 1;
+  end
+  1: begin
+    RD_STB <= 0;
+    if (!BUSY) rstate <= 2;
+  end
+  2: begin
+    RD_ADDR <= RD_ADDR + BURST_SIZE; 
+    rstate <= 0;
+  end
+endcase
+*/
+
+
 
 
 card_driver 
@@ -215,6 +267,32 @@ driver
 .SCLK(SCLK),
 .CS(CS)
 );	
+
+
+/*
+distributed_fifo_shift
+#(
+  .WIDTH(8), 
+  .AWIDTH(6), // 2^6 = 64   2^1024
+  .BUSY_NUM(26) // 24
+)
+fifo
+(
+  .fi_clk   (CLOCK50),
+  .fi_rst   (RESET),
+  
+  .fi_stb   (RES_STB),
+  .fi_dat   (RES_DATA),
+  .fi_busy  (RES_BUSY),
+  .fi_empty (),
+  .fi_error (), 
+  
+  .fo_stb  (TX_STB),
+  .fo_dat  (TX_DAT),
+  .fo_ack  (TX_ACK)
+);
+*/
+
 
 endmodule
  

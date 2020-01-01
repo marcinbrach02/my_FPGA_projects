@@ -49,9 +49,9 @@ always @(posedge CLK or posedge RST) tickcounter <= (RST) ? DIVIDER-1 : (TICK) ?
 */
 
 parameter START_DIVIDER = 5;
-parameter TRANSMISSION_DIVIDER = START_DIVIDER;
+parameter TRANSMISSION_DIVIDER = 4; //START_DIVIDER;
 							   
-localparam DIVIDER_WIDTH = 9; // log2(255)
+localparam DIVIDER_WIDTH = 9; 
 
 reg [DIVIDER_WIDTH-1:0] tickcounter;
 wire TICK = tickcounter[DIVIDER_WIDTH-1];

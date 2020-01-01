@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 31 16:04:20 2019
+Tue Jan 01 22:00:17 2019
 
 C:/lscc/diamond/3.10_x64/ispfpga\bin\nt64\par -f
 tester_module_tester_module.p2t tester_module_tester_module_map.ncd
