@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module/tester_module_tester_module.jed</File>
-			<FileTime>01/01/19 22:00:28</FileTime>
-			<JedecChecksum>0xE860</JedecChecksum>
+			<FileTime>01/02/20 22:23:05</FileTime>
+			<JedecChecksum>0x39C3</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

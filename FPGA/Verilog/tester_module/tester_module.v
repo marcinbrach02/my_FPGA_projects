@@ -166,7 +166,8 @@ end
 */
 
 
-localparam BURST_SIZE = 10000;
+
+localparam BURST_SIZE = 100;
 
 
 // test zapisu

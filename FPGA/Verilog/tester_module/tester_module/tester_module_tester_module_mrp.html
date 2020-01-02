@@ -24,21 +24,21 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000HCTQFP144
 Target Performance:   4
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  01/01/19  22:00:15
+Mapped on:  01/02/20  22:22:50
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    259 out of  4665 (6%)
-      PFU registers:          255 out of  4320 (6%)
+   Number of registers:    263 out of  4665 (6%)
+      PFU registers:          259 out of  4320 (6%)
       PIO registers:            4 out of   345 (1%)
-   Number of SLICEs:       422 out of  2160 (20%)
-      SLICEs as Logic/ROM:    422 out of  2160 (20%)
+   Number of SLICEs:       425 out of  2160 (20%)
+      SLICEs as Logic/ROM:    425 out of  2160 (20%)
       SLICEs as RAM:            0 out of  1620 (0%)
-      SLICEs as Carry:         63 out of  2160 (3%)
-   Number of LUT4s:        839 out of  4320 (19%)
-      Number used as logic LUTs:        713
+      SLICEs as Carry:         64 out of  2160 (3%)
+   Number of LUT4s:        845 out of  4320 (20%)
+      Number used as logic LUTs:        717
       Number used as distributed RAM:     0
-      Number used as ripple logic:      126
+      Number used as ripple logic:      128
       Number used as shift registers:     0
    Number of PIO sites used: 8 + 4(JTAG) out of 115 (10%)
    Number of block RAMs:  1 out of 10 (10%)
@@ -66,29 +66,29 @@ Mapped on:  01/01/19  22:00:15
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  1
-     Net CLOCK50_c: 150 loads, 150 rising, 0 falling (Driver: PIO CLOCK50 )
+     Net CLOCK50_c: 152 loads, 152 rising, 0 falling (Driver: PIO CLOCK50 )
 
    Number of Clock Enables:  27
-     Net wstate[1]: 15 loads, 15 LSLICEs
+     Net wstate[1]: 16 loads, 16 LSLICEs
      Net driver.SPI.WR_DATA10: 5 loads, 4 LSLICEs
      Net RD_EN: 2 loads, 0 LSLICEs
-     Net driver.un1_state_304_0_i: 1 loads, 0 LSLICEs
+     Net driver.un1_state_309_0_i: 1 loads, 0 LSLICEs
      Net TX_DAT_1_sqmuxa: 4 loads, 4 LSLICEs
      Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
-     Net driver/SPI/N_128: 5 loads, 5 LSLICEs
+     Net driver/SPI/un1_W_STB_2_i_0_0: 5 loads, 5 LSLICEs
      Net driver/SPI/periode: 6 loads, 6 LSLICEs
      Net driver/SPI/un1_W_STB_4_i: 1 loads, 1 LSLICEs
-     Net driver/statecountere: 7 loads, 7 LSLICEs
-     Net driver/statecounter_wre: 7 loads, 7 LSLICEs
-     Net driver/N_44_i: 4 loads, 4 LSLICEs
      Net driver/statecounter_rde: 7 loads, 7 LSLICEs
+     Net driver/statecounter_wre: 7 loads, 7 LSLICEs
+     Net driver/un1_RES_STB312_2_i_o2_i: 4 loads, 4 LSLICEs
+     Net driver/statecountere: 7 loads, 7 LSLICEs
      Net driver/un1_len_count_1_sqmuxa_0_0: 2 loads, 2 LSLICEs
-     Net driver/un1_state_302_i: 1 loads, 1 LSLICEs
-     Net driver/un1_state_306_0_i: 4 loads, 4 LSLICEs
+     Net driver/un1_state_308_i: 1 loads, 1 LSLICEs
+     Net driver/un1_state_312_0_i: 4 loads, 4 LSLICEs
      Net nRESET_c: 3 loads, 3 LSLICEs
-     Net driver/un1_state_242_0_0: 1 loads, 1 LSLICEs
-     Net driver/N_26_i: 4 loads, 4 LSLICEs
-     Net driver/N_41: 14 loads, 14 LSLICEs
+     Net driver/un1_state_255_0_0: 1 loads, 1 LSLICEs
+     Net driver/N_3211_i: 4 loads, 4 LSLICEs
+     Net driver/un1_state_305_i_0_0: 15 loads, 15 LSLICEs
      Net un1_WR_ACK: 1 loads, 0 LSLICEs
      Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
      Net N_12_i: 6 loads, 5 LSLICEs
@@ -96,21 +96,21 @@ Mapped on:  01/01/19  22:00:15
      Net uart/N_34: 4 loads, 4 LSLICEs
      Net uart/N_23_i_i: 1 loads, 1 LSLICEs
      Net state[1]: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net nRESET_c merged into GSR:  245
+   Number of local set/reset loads for net nRESET_c merged into GSR:  249
    Number of LSRs:  1
      Net nRESET_c: 2 loads, 0 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net driver/state[2]: 120 loads
-     Net driver/state[4]: 117 loads
-     Net driver/state[0]: 114 loads
-     Net driver/state[6]: 109 loads
-     Net driver/state[7]: 101 loads
-     Net driver/state[1]: 100 loads
-     Net driver/state[3]: 96 loads
-     Net driver/state[5]: 96 loads
-     Net driver/N_283: 50 loads
-     Net driver/N_306: 36 loads
+     Net driver/state[2]: 118 loads
+     Net driver/state[5]: 112 loads
+     Net driver/state[1]: 106 loads
+     Net driver/state[3]: 105 loads
+     Net driver/state[4]: 103 loads
+     Net driver/state[0]: 99 loads
+     Net driver/state[6]: 90 loads
+     Net driver/state[7]: 78 loads
+     Net driver/N_273: 39 loads
+     Net driver/N_260: 32 loads
 
 
 
@@ -178,8 +178,8 @@ Signal WD_DATA_3_s_7_0_COUT undriven or does not drive anything - clipped.
 Signal un3_WR_ADDR_cry_0_0_S1 undriven or does not drive anything - clipped.
 Signal un3_WR_ADDR_cry_0_0_S0 undriven or does not drive anything - clipped.
 Signal N_6 undriven or does not drive anything - clipped.
-Signal un3_WR_ADDR_s_27_0_S1 undriven or does not drive anything - clipped.
-Signal un3_WR_ADDR_s_27_0_COUT undriven or does not drive anything - clipped.
+Signal un3_WR_ADDR_s_29_0_S1 undriven or does not drive anything - clipped.
+Signal un3_WR_ADDR_s_29_0_COUT undriven or does not drive anything - clipped.
 Signal fifo/AlmostEmpty undriven or does not drive anything - clipped.
 Signal fifo/DO17 undriven or does not drive anything - clipped.
 Signal fifo/DO16 undriven or does not drive anything - clipped.
