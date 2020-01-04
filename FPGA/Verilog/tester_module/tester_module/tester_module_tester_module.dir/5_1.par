@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "tester_module_tester_module_map.ncd"
-Thu Jan 02 22:22:51 2020
+Sat Jan 04 16:15:29 2020
 
 PAR: Place And Route Diamond (64-bit) 3.10.3.144.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF tester_module_tester_module_map.ncd tester_module_tester_module.dir/5_1.ncd tester_module_tester_module.prf
@@ -28,27 +28,27 @@ Device utilization summary:
                    8+4(JTAG)/115     10% bonded
    IOLOGIC            4/280           1% used
 
-   SLICE            425/2160         19% used
+   SLICE            418/2160         19% used
 
    GSR                1/1           100% used
    EBR                1/10           10% used
 
 
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
-Number of Signals: 1158
-Number of Connections: 3363
+Number of Signals: 1140
+Number of Connections: 3332
 
 Pin Constraint Summary:
    8 out of 8 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    CLOCK50_c (driver: CLOCK50, clk load #: 152)
+    CLOCK50_c (driver: CLOCK50, clk load #: 150)
 
 WARNING - par: Signal "CLOCK50_c" is selected to use Primary clock resources. However, its driver comp "CLOCK50" is located at "105", which is not a dedicated pin for connecting to Primary clock resources. General routing has to be used to route this signal, and it might suffer from excessive delay or skew.
 
 The following 2 signals are selected to use the secondary clock routing resources:
-    wstate[1] (driver: SLICE_154, clk load #: 0, sr load #: 0, ce load #: 16)
-    driver/un1_state_305_i_0_0 (driver: driver/SLICE_296, clk load #: 0, sr load #: 0, ce load #: 15)
+    rstate[1] (driver: SLICE_128, clk load #: 0, sr load #: 0, ce load #: 15)
+    driver/N_26 (driver: driver/SLICE_297, clk load #: 0, sr load #: 0, ce load #: 14)
 
 Signal nRESET_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
@@ -57,13 +57,13 @@ Finished Placer Phase 0.  REAL time: 0 secs
 
 Starting Placer Phase 1.
 ......................
-Placer score = 166539.
-Finished Placer Phase 1.  REAL time: 4 secs 
+Placer score = 156065.
+Finished Placer Phase 1.  REAL time: 3 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  163484
-Finished Placer Phase 2.  REAL time: 4 secs 
+Placer score =  155206
+Finished Placer Phase 2.  REAL time: 3 secs 
 
 
 ------------------ Clock Report ------------------
@@ -76,9 +76,9 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "CLOCK50_c" from comp "CLOCK50" on PIO site "105 (PR3A)", clk load = 152
-  SECONDARY "wstate[1]" from Q1 on comp "SLICE_154" on site "R12C17B", clk load = 0, ce load = 16, sr load = 0
-  SECONDARY "driver/un1_state_305_i_0_0" from F0 on comp "driver/SLICE_296" on site "R12C17D", clk load = 0, ce load = 15, sr load = 0
+  PRIMARY "CLOCK50_c" from comp "CLOCK50" on PIO site "105 (PR3A)", clk load = 150
+  SECONDARY "rstate[1]" from Q1 on comp "SLICE_128" on site "R12C15A", clk load = 0, ce load = 15, sr load = 0
+  SECONDARY "driver/N_26" from F0 on comp "driver/SLICE_297" on site "R12C15D", clk load = 0, ce load = 14, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
   SECONDARY: 2 out of 8 (25%)
@@ -116,12 +116,12 @@ Dumping design to file tester_module_tester_module.dir/5_1.ncd.
 INFO - par: ASE feature is off due to non timing-driven settings.  
 -----------------------------------------------------------------
 
-0 connections routed; 3363 unrouted.
+0 connections routed; 3332 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 5 secs 
+Completed router resource preassignment. Real time: 4 secs 
 
-Start NBR router at 22:22:56 01/02/20
+Start NBR router at 16:15:33 01/04/20
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -136,32 +136,30 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 22:22:56 01/02/20
+Start NBR special constraint process at 16:15:33 01/04/20
 
-Start NBR section for initial routing at 22:22:56 01/02/20
+Start NBR section for initial routing at 16:15:33 01/04/20
 Level 4, iteration 1
-59(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+46(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:22:57 01/02/20
+Start NBR section for normal routing at 16:15:34 01/04/20
 Level 4, iteration 1
-20(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 2
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 3
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 4
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
-Level 4, iteration 5
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for re-routing at 22:22:58 01/02/20
+Start NBR section for re-routing at 16:15:34 01/04/20
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 
-Start NBR section for post-routing at 22:22:58 01/02/20
+Start NBR section for post-routing at 16:15:34 01/04/20
 
 End NBR router with 0 unrouted connection
 
@@ -176,10 +174,10 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 6 secs 
-Total REAL time: 7 secs 
+Total CPU time 5 secs 
+Total REAL time: 5 secs 
 Completely routed.
-End of route.  3363 routed (100.00%); 0 unrouted.
+End of route.  3332 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -199,8 +197,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
 PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 7 secs 
-Total REAL time to completion: 8 secs 
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 6 secs 
 
 par done!
 

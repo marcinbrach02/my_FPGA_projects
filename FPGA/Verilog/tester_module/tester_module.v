@@ -74,6 +74,7 @@ fifo_dc fifo (
 .AlmostFull(RES_BUSY),
 */
 
+
 .Data("k"), 
 .WrEn(WR_ACK||RD_ACK), 
 .AlmostFull(BUSY),
@@ -166,10 +167,9 @@ end
 */
 
 
+localparam BURST_SIZE = 10000;
 
-localparam BURST_SIZE = 100;
-
-
+/*
 // test zapisu
 reg [7:0] wstate;
 always @(posedge CLOCK50 or posedge RESET) 
@@ -196,9 +196,9 @@ end else case (wstate)
     wstate <= 0;
   end
 endcase
+*/
 
 
-/*
 // test odczytu
 reg [7:0] rstate;
 // automat odbioru komend z UART i zlecania karcie SD
@@ -226,7 +226,7 @@ end else case (rstate)
     rstate <= 0;
   end
 endcase
-*/
+
 
 
 

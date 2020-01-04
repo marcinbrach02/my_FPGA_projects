@@ -49,7 +49,7 @@ always @(posedge CLK or posedge RST) tickcounter <= (RST) ? DIVIDER-1 : (TICK) ?
 */
 
 parameter START_DIVIDER = 5;
-parameter TRANSMISSION_DIVIDER = 4; //START_DIVIDER;
+parameter TRANSMISSION_DIVIDER = 1; //START_DIVIDER;
 							   
 localparam DIVIDER_WIDTH = 9; 
 
@@ -260,13 +260,14 @@ end else case(state)
   
   107: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 108; end
   108: begin statecounter <= statecounter-1; W_STB <= 0;                RES_STB <= 0;	if (RES_DATA==8'h00) state <= 109; else if (statecounter[SC_SIZE]) state <= 100 ; else state <= 107; end
-  109: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 110; end
+  109: begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 114; end
 
+/*
 		//ustawienie WR_ACK po akceptacji komendy z adresami
   110: begin CS<=0;                                                 WR_ACK <= 1; 		 RES_STB <= 0;            state <= 111;  end 
 	    //ustawienie WR_ACK spowrotem na 0
   111: begin CS<=0;                                                 WR_ACK <= 0; 		 RES_STB <= 0;            state <= 114;  end 
-
+*/
 //  112:  begin CS<=0;  W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 113; end
 //  113:  begin CS<=0; W_DATA <= 8'b11111111; W_STB <= W_READY && !R_STB;  RES_STB <= R_STB;    RES_DATA <= R_DATA; if (R_STB)   state <= 114; end
 
@@ -310,9 +311,9 @@ end else case(state)
 
   140: begin CS<=1;                         W_STB <= 0;                                              			  state <= 141; end 
   141: begin CS<=1; 			            W_STB <= 0;             RES_STB <= 1;        RES_DATA <= "Z";         state <= 142; end //RES_STB <= 1; - dla wys³ania "Z"
-  142: begin CS<=1;                         			            WD_ACK <= 1; 		 RES_STB <= 0;            state <= 72;  end
+ // 142: begin CS<=1;                         			            WD_ACK <= 1; 		 RES_STB <= 0;            state <= 72;  end
 	
- // 142: begin CS<=1;                         WR_ACK <= 1;            WD_ACK <= 0; 		 RES_STB <= 0;            state <= 72;  end
+  142: begin CS<=1;                         WR_ACK <= 1;            WD_ACK <= 0; 		 RES_STB <= 0;            state <= 72;  end
 
 //------------------------------------------------------------------------------------
 //------------odczyt multiblock

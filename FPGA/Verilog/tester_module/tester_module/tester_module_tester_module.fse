@@ -1,25 +1,25 @@
 
-fsm_encoding {6990992} sequential
+fsm_encoding {610001002} sequential
 
-fsm_state_encoding {6990992} 00000000 {00}
+fsm_state_encoding {610001002} 00000000 {00}
 
-fsm_state_encoding {6990992} 00000001 {01}
+fsm_state_encoding {610001002} 00000001 {01}
 
-fsm_state_encoding {6990992} 00000010 {10}
+fsm_state_encoding {610001002} 00000010 {10}
 
-fsm_state_encoding {6990992} 00000011 {11}
+fsm_state_encoding {610001002} 00000011 {11}
 
-fsm_registers {6990992} {state[1]}  {state[0]} 
+fsm_registers {610001002} {state[1]}  {state[0]} 
 
-fsm_encoding {617501751} sequential
+fsm_encoding {620502051} sequential
 
-fsm_state_encoding {617501751} 00000000 {00}
+fsm_state_encoding {620502051} 00000000 {00}
 
-fsm_state_encoding {617501751} 00000001 {01}
+fsm_state_encoding {620502051} 00000001 {01}
 
-fsm_state_encoding {617501751} 00000010 {10}
+fsm_state_encoding {620502051} 00000010 {10}
 
-fsm_registers {617501751} {wstate[1]}  {wstate[0]} 
+fsm_registers {620502051} {rstate[1]}  {rstate[0]} 
 
 fsm_encoding {1110301034} sequential
 
