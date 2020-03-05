@@ -1,7 +1,0 @@
-94
-~M 0 "" 0 $root
-~A 1 "" 0 $root
-~M 1 "./../src/microSD.v" 1 microSD
-~A 1 "./../src/microSD.v" 1 microSD
-~M 3 "./../src/microSD_tb.v" 4 microSD_tb
-~A 1 "./../src/microSD_tb.v" 4 microSD_tb

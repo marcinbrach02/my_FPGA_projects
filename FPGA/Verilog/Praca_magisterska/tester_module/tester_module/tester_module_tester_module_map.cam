@@ -1,0 +1,86 @@
+[ START MERGED ]
+nRESET_c_i nRESET_c
+state_i[1] state[1]
+rwstate_i[1] rwstate[1]
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+fifo/GND
+uart/GND
+driver/GND
+counter_s_0_S1[25]
+counter_s_0_COUT[25]
+WD_DATA_3_cry_0_0_S0
+N_6
+WD_DATA_3_s_7_0_S1
+WD_DATA_3_s_7_0_COUT
+un2_RD_ADDR_cry_0_0_S1
+un2_RD_ADDR_cry_0_0_S0
+N_7
+un2_RD_ADDR_s_31_0_S1
+un2_RD_ADDR_s_31_0_COUT
+un2_WR_ADDR_cry_0_0_S1
+un2_WR_ADDR_cry_0_0_S0
+N_8
+un2_WR_ADDR_s_31_0_S1
+un2_WR_ADDR_s_31_0_COUT
+fifo/AlmostEmpty
+fifo/DO17
+fifo/DO16
+fifo/DO15
+fifo/DO14
+fifo/DO13
+fifo/DO12
+fifo/DO11
+fifo/DO10
+fifo/DO9
+fifo/DO8
+uart/un7_counter_fast_cry_0_0_S1
+uart/un7_counter_fast_cry_0_0_S0
+uart/N_13
+uart/un7_counter_fast_cry_5_0_COUT
+driver/statecnt_rd_cry_0_S0[0]
+driver/N_1
+driver/statecnt_rd_s_0_S1[11]
+driver/statecnt_rd_s_0_COUT[11]
+driver/statecnt_wr_cry_0_S0[0]
+driver/N_2
+driver/statecnt_wr_s_0_S1[11]
+driver/statecnt_wr_s_0_COUT[11]
+driver/statecnt_cry_0_S0[0]
+driver/N_3
+driver/statecnt_s_0_S1[11]
+driver/statecnt_s_0_COUT[11]
+driver/len_counter_cry_0_S0[0]
+driver/N_4
+driver/len_counter_s_0_S1[23]
+driver/len_counter_s_0_COUT[23]
+driver/un8_tickcounter_cry_0_0_S1
+driver/un8_tickcounter_cry_0_0_S0
+driver/N_5
+driver/un8_tickcounter_cry_7_0_COUT
+counter_cry_0_S0[0]
+N_5
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.3.144 -- WARNING: Map write only section -- Tue Jan 14 19:22:21 2020
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "MOSI" SITE "12" ;
+LOCATE COMP "CLOCK50" SITE "105" ;
+LOCATE COMP "LED[3]" SITE "20" ;
+LOCATE COMP "LED[2]" SITE "19" ;
+LOCATE COMP "LED[1]" SITE "17" ;
+LOCATE COMP "LED[0]" SITE "15" ;
+LOCATE COMP "SWITCH[3]" SITE "22" ;
+LOCATE COMP "SWITCH[2]" SITE "21" ;
+LOCATE COMP "SWITCH[1]" SITE "14" ;
+LOCATE COMP "SWITCH[0]" SITE "13" ;
+LOCATE COMP "TxD" SITE "122" ;
+LOCATE COMP "CS" SITE "10" ;
+LOCATE COMP "SCLK" SITE "9" ;
+LOCATE COMP "MISO" SITE "11" ;
+LOCATE COMP "nRESET" SITE "23" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

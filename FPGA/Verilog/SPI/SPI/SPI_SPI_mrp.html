@@ -1,371 +1,0 @@
-<HTML>
-<HEAD><TITLE>Project Summary</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Mrp"></A>
-             Lattice Mapping Report File for Design Module 'SPI'
-
-
-
-<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
-
-Command line:   map -a MachXO2 -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial
-     SPI_SPI.ngd -o SPI_SPI_map.ncd -pr SPI_SPI.prf -mp SPI_SPI.mrp -lpf
-     E:/GIT/my_projects/FPGA/Verilog/SPI/SPI/SPI_SPI_synplify.lpf -lpf
-     E:/GIT/my_projects/FPGA/Verilog/SPI/SPI.lpf -c 0 -gui -msgset
-     E:/GIT/my_projects/FPGA/Verilog/SPI/promote.xml 
-Target Vendor:  LATTICE
-Target Device:  LCMXO2-4000HCTQFP144
-Target Performance:   4
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
-Mapped on:  08/25/19  10:40:19
-
-
-<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     66 out of  4665 (1%)
-      PFU registers:           49 out of  4320 (1%)
-      PIO registers:           17 out of   345 (5%)
-   Number of SLICEs:        66 out of  2160 (3%)
-      SLICEs as Logic/ROM:     54 out of  2160 (3%)
-      SLICEs as RAM:           12 out of  1620 (1%)
-      SLICEs as Carry:          6 out of  2160 (0%)
-   Number of LUT4s:        129 out of  4320 (3%)
-      Number used as logic LUTs:         93
-      Number used as distributed RAM:    24
-      Number used as ripple logic:       12
-      Number used as shift registers:     0
-   Number of PIO sites used: 28 + 4(JTAG) out of 115 (28%)
-   Number of block RAMs:  0 out of 10 (0%)
-   Number of GSRs:  1 out of 1 (100%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  No
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
-   Number of Power Controller:  0 out of 1 (0%)
-   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
-   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
-   Number of DCCA:  0 out of 8 (0%)
-   Number of DCMA:  0 out of 2 (0%)
-   Number of PLLs:  0 out of 2 (0%)
-   Number of DQSDLLs:  0 out of 2 (0%)
-   Number of CLKDIVC:  0 out of 4 (0%)
-   Number of ECLKSYNCA:  0 out of 4 (0%)
-   Number of ECLKBRIDGECS:  0 out of 2 (0%)
-   Notes:-
-      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
-     distributed RAMs) + 2*(Number of ripple logic)
-      2. Number of logic LUT4s does not include count of distributed RAM and
-     ripple logic.
-   Number of clocks:  1
-     Net clk_i_c: 56 loads, 56 rising, 0 falling (Driver: PIO clk_i )
-   Number of Clock Enables:  8
-     Net un1_sck_o_1_sqmuxa_0: 1 loads, 1 LSLICEs
-
-     Net sper_0_sqmuxa: 5 loads, 4 LSLICEs
-     Net spcr_0_sqmuxa: 7 loads, 0 LSLICEs
-     Net wfifo/un1_clr_1_0: 1 loads, 1 LSLICEs
-     Net wfifo/un1_re_0: 1 loads, 1 LSLICEs
-     Net N_143: 5 loads, 5 LSLICEs
-     Net rfifo/N_254_i: 1 loads, 1 LSLICEs
-     Net rfifo/un1_re: 1 loads, 1 LSLICEs
-   Number of local set/reset loads for net rst_i_c merged into GSR:  24
-   Number of LSRs:  2
-     Net spcr[6]: 12 loads, 12 LSLICEs
-     Net rst_i_c: 2 loads, 2 LSLICEs
-   Number of nets driven by tri-state buffers:  0
-   Top 10 highest fanout non-clock nets:
-     Net spcr[6]: 33 loads
-     Net state[1]: 22 loads
-     Net adr_i_c[1]: 18 loads
-     Net adr_i_c[0]: 14 loads
-     Net rfifo/rp[0]: 12 loads
-     Net sper[1]: 12 loads
-     Net wfifo/rp[0]: 12 loads
-     Net N_103_i: 11 loads
-     Net spcr[1]: 11 loads
-     Net wfifo/rp[1]: 11 loads
-
-
-
-
-   Number of warnings:  1
-   Number of errors:    0
-     
-
-
-
-
-<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
-
-WARNING - map: Using local reset signal 'rst_i_c' to infer global GSR net.
-
-
-
-<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
-
-+---------------------+-----------+-----------+------------+
-| IO Name             | Direction | Levelmode | IO         |
-|                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| dat_o[0]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| clk_i               | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| miso_i              | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| mosi_o              | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| sck_o               | OUTPUT    | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| inta_o              | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| ack_o               | OUTPUT    | LVCMOS25  |            |
-
-+---------------------+-----------+-----------+------------+
-| dat_o[7]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[6]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[5]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[4]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[3]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[2]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_o[1]            | OUTPUT    | LVCMOS25  | OUT        |
-+---------------------+-----------+-----------+------------+
-| dat_i[7]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[6]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[5]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[4]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[3]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[2]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[1]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| dat_i[0]            | INPUT     | LVCMOS25  | IN         |
-+---------------------+-----------+-----------+------------+
-| we_i                | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| adr_i[1]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| adr_i[0]            | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| stb_i               | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| cyc_i               | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-| rst_i               | INPUT     | LVCMOS25  |            |
-+---------------------+-----------+-----------+------------+
-
-
-
-<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
-
-Block VCC undriven or does not drive anything - clipped.
-Block rfifo/VCC undriven or does not drive anything - clipped.
-Block wfifo/VCC undriven or does not drive anything - clipped.
-Signal spcr_i[6] was merged into signal spcr[6]
-Signal rst_i_c_i was merged into signal rst_i_c
-Signal GND undriven or does not drive anything - clipped.
-Signal rfifo/GND undriven or does not drive anything - clipped.
-Signal wfifo/GND undriven or does not drive anything - clipped.
-Signal VCC undriven or does not drive anything - clipped.
-
-Signal clkcnt_cry_0_COUT[9] undriven or does not drive anything - clipped.
-Signal clkcnt_cry_0_S0[0] undriven or does not drive anything - clipped.
-Signal N_1 undriven or does not drive anything - clipped.
-Block spcr_0io_RNIDB28[6] was optimized away.
-Block rst_i_pad_RNIL779 was optimized away.
-Block GND was optimized away.
-Block rfifo/GND was optimized away.
-Block wfifo/GND was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
-/rfifo/mem_ram:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-/rfifo/mem_ram_0:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-/wfifo/mem_ram:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-/wfifo/mem_ram_0:
-    EBRs: 0
-    RAM SLICEs: 3
-    Logic SLICEs: 0
-    PFU Registers: 0
-
-     
-
-
-
-<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
----------
-
-GSR Component:
-   The local reset signal 'rst_i_c' of the design has been inferred as Global
-        Set Reset (GSR). The reset signal used for GSR control is 'rst_i_c'.
-        
-
-     GSR Property:
-   The design components with GSR property set to ENABLED will respond to global
-        set reset while the components with GSR property set to DISABLED will
-        not.
-        
-
-     Components on inferred reset domain with GSR Property disabled
---------------------------------------------------------------
-
-     These components have the GSR property set to DISABLED and are on the
-     inferred reset domain. The components will respond to the reset signal
-     'rst_i_c' via the local reset on the component and not the GSR component.
-
-
-     Type and number of components of the type: 
-   Register = 2 
-
-     Type and instance name of component: 
-   Register : wfifo/gb
-   Register : rfifo/gb
-
-
-
-<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
--------------------------
-
-   Total CPU Time: 0 secs  
-   Total REAL Time: 2 secs  
-   Peak Memory Usage: 34 MB
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-     Copyright (c) 1995 AT&T Corp.   All rights reserved.
-     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-     Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
-     reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>

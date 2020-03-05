@@ -1,0 +1,321 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file tester_module_tester_module_map.ncd.
+Design name: tester_module
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.3.144</big></U></B>
+Tue Jan 14 19:22:22 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o tester_module_tester_module.tw1 -gui -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml tester_module_tester_module_map.ncd tester_module_tester_module.prf 
+Design file:     tester_module_tester_module_map.ncd
+Preference file: tester_module_tester_module.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "CLOCK50_c" 149.993000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  81.024MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "CLOCK50_c" 149.993000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 5.675ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              driver/state[4]  (from CLOCK50_c +)
+   Destination:    FF         Data in        driver/state[5]  (to CLOCK50_c +)
+                   FF                        driver/state[4]
+
+   Delay:              12.060ns  (28.4% logic, 71.6% route), 7 logic levels.
+
+ Constraint Details:
+
+     12.060ns physical path delay driver/SLICE_161 to driver/SLICE_161 exceeds
+      6.667ns delay constraint less
+      0.282ns CE_SET requirement (totaling 6.385ns) by 5.675ns
+
+ Physical Path Details:
+
+      Data path driver/SLICE_161 to driver/SLICE_161:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_161.CLK to */SLICE_161.Q0 driver/SLICE_161 (from CLOCK50_c)
+ROUTE        89   e 1.234 */SLICE_161.Q0 to */SLICE_357.A1 driver/state[4]
+CTOF_DEL    ---     0.495 */SLICE_357.A1 to */SLICE_357.F1 driver/SLICE_357
+ROUTE        11   e 1.234 */SLICE_357.F1 to */SLICE_400.B1 driver/N_625
+CTOF_DEL    ---     0.495 */SLICE_400.B1 to */SLICE_400.F1 driver/SLICE_400
+ROUTE         1   e 1.234 */SLICE_400.F1 to */SLICE_257.C1 driver/N_508
+CTOF_DEL    ---     0.495 */SLICE_257.C1 to */SLICE_257.F1 driver/SLICE_257
+ROUTE         1   e 1.234 */SLICE_257.F1 to */SLICE_258.C1 driver/un1_CS191_i_0_8
+CTOF_DEL    ---     0.495 */SLICE_258.C1 to */SLICE_258.F1 driver/SLICE_258
+ROUTE         1   e 1.234 */SLICE_258.F1 to */SLICE_302.D0 driver/un1_CS191_i_0_20
+CTOF_DEL    ---     0.495 */SLICE_302.D0 to */SLICE_302.F0 driver/SLICE_302
+ROUTE         1   e 1.234 */SLICE_302.F0 to */SLICE_299.D0 driver/un1_CS191_i_0_23
+CTOF_DEL    ---     0.495 */SLICE_299.D0 to */SLICE_299.F0 driver/SLICE_299
+ROUTE         4   e 1.234 */SLICE_299.F0 to */SLICE_161.CE driver/un1_CS191_i_0 (to CLOCK50_c)
+                  --------
+                   12.060   (28.4% logic, 71.6% route), 7 logic levels.
+
+Warning:  81.024MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "CLOCK50_c" 149.993000    |             |             |
+MHz ;                                   |  149.993 MHz|   81.024 MHz|   7 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+driver/N_211                            |       2|    1082|     26.42%
+                                        |        |        |
+driver/un1_state_182_sn                 |      32|     762|     18.60%
+                                        |        |        |
+driver/un1_CS191_i_0                    |       4|     688|     16.80%
+                                        |        |        |
+driver/state[1]                         |      69|     645|     15.75%
+                                        |        |        |
+driver/state[2]                         |      88|     584|     14.26%
+                                        |        |        |
+driver/N_652                            |       1|     576|     14.06%
+                                        |        |        |
+driver/state[7]                         |      91|     566|     13.82%
+                                        |        |        |
+driver/N_56                             |      16|     544|     13.28%
+                                        |        |        |
+driver/state[4]                         |      89|     492|     12.01%
+                                        |        |        |
+driver/state[3]                         |      82|     476|     11.62%
+                                        |        |        |
+driver/state[6]                         |      79|     462|     11.28%
+                                        |        |        |
+driver/un1_CS191_i_0_23                 |       1|     420|     10.25%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: CLOCK50_c   Source: CLOCK50.PAD   Loads: 190
+   Covered under: FREQUENCY NET "CLOCK50_c" 149.993000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 8188109
+Cumulative negative slack: 8188109
+
+Constraints cover 11971 paths, 1 nets, and 2957 connections (91.78% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.3.144</big></U></B>
+Tue Jan 14 19:22:23 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o tester_module_tester_module.tw1 -gui -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml tester_module_tester_module_map.ncd tester_module_tester_module.prf 
+Design file:     tester_module_tester_module_map.ncd
+Preference file: tester_module_tester_module.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "CLOCK50_c" 149.993000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "CLOCK50_c" 149.993000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uart/tx/txstate[9]  (from CLOCK50_c +)
+   Destination:    FF         Data in        uart/tx/txstate_0[10]  (to CLOCK50_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_77 to SLICE_77 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_77 to SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_77.CLK to    SLICE_77.Q0 SLICE_77 (from CLOCK50_c)
+ROUTE         1   e 0.199    SLICE_77.Q0 to    SLICE_77.M1 uart/tx/txstate_Q[9] (to CLOCK50_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "CLOCK50_c" 149.993000    |             |             |
+MHz ;                                   |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: CLOCK50_c   Source: CLOCK50.PAD   Loads: 190
+   Covered under: FREQUENCY NET "CLOCK50_c" 149.993000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 11971 paths, 1 nets, and 3092 connections (95.97% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 8188109 (setup), 0 (hold)
+Cumulative negative slack: 8188109 (8188109+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

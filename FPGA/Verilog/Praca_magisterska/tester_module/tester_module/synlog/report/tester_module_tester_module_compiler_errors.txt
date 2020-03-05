@@ -1,0 +1,3 @@
+@E: CG306 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":74:12:74:15|default_nettype is set to none. Net type of BUSY must be declared.
+@E: CS187 :"E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module.v":263:0:263:8|Expecting endmodule
+

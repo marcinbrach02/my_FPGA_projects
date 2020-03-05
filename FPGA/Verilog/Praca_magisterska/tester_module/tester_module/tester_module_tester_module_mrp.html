@@ -1,0 +1,432 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+        Lattice Mapping Report File for Design Module 'tester_module'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t TQFP144 -s 4 -oc Commercial
+     tester_module_tester_module.ngd -o tester_module_tester_module_map.ncd -pr
+     tester_module_tester_module.prf -mp tester_module_tester_module.mrp -lpf E:
+     /GIT/my_projects/FPGA/Verilog/tester_module/tester_module/tester_module_tes
+     ter_module_synplify.lpf -lpf
+     E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.lpf -c 0 -gui
+     -msgset E:/GIT/my_projects/FPGA/Verilog/tester_module/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.3.144
+Mapped on:  01/14/20  19:22:19
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    331 out of  4665 (7%)
+      PFU registers:          327 out of  4320 (8%)
+      PIO registers:            4 out of   345 (1%)
+   Number of SLICEs:       413 out of  2160 (19%)
+      SLICEs as Logic/ROM:    413 out of  2160 (19%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         96 out of  2160 (4%)
+   Number of LUT4s:        822 out of  4320 (19%)
+      Number used as logic LUTs:        630
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      192
+      Number used as shift registers:     0
+   Number of PIO sites used: 15 + 4(JTAG) out of 115 (17%)
+   Number of block RAMs:  1 out of 10 (10%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net CLOCK50_c: 190 loads, 190 rising, 0 falling (Driver: PIO CLOCK50 )
+
+   Number of Clock Enables:  22
+     Net rwstate[1]: 36 loads, 36 LSLICEs
+     Net driver.SPI.WR_DATA10: 5 loads, 4 LSLICEs
+     Net RD_EN: 2 loads, 0 LSLICEs
+     Net TX_DAT_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net driver/SPI/periode: 6 loads, 6 LSLICEs
+     Net driver.SPI.WR_DATA9: 2 loads, 1 LSLICEs
+     Net driver/SPI/N_69: 1 loads, 1 LSLICEs
+     Net driver/statecnt_wre: 7 loads, 7 LSLICEs
+     Net driver/statecnte: 7 loads, 7 LSLICEs
+     Net driver/un1_CS191_i_0: 4 loads, 4 LSLICEs
+     Net driver/statecnt_rde: 7 loads, 7 LSLICEs
+     Net driver/N_56: 16 loads, 16 LSLICEs
+     Net driver/un1_state_188_i_0: 13 loads, 13 LSLICEs
+     Net uart/counter_slow[3]: 4 loads, 4 LSLICEs
+     Net N_382_i: 6 loads, 5 LSLICEs
+     Net uart/un1_txstate_0_0[3]: 1 loads, 1 LSLICEs
+     Net uart/N_34: 4 loads, 4 LSLICEs
+     Net uart/N_23_i_i: 1 loads, 1 LSLICEs
+     Net state[1]: 1 loads, 1 LSLICEs
+     Net nRESET_c: 1 loads, 1 LSLICEs
+     Net un1_WR_ACK: 1 loads, 0 LSLICEs
+     Net rwstate_26_d: 6 loads, 6 LSLICEs
+   Number of local set/reset loads for net nRESET_c merged into GSR:  322
+   Number of LSRs:  1
+     Net nRESET_c: 2 loads, 0 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net driver/state[7]: 91 loads
+     Net driver/state[4]: 89 loads
+     Net driver/state[2]: 88 loads
+     Net driver/state[5]: 88 loads
+     Net driver/state[0]: 86 loads
+     Net driver/state[3]: 82 loads
+     Net driver/state[6]: 79 loads
+     Net driver/state[1]: 69 loads
+     Net rwstate[1]: 38 loads
+     Net driver/un1_state_81_sn: 33 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'nRESET_c' to infer global GSR net.
+WARNING - map: IO buffer missing for top level port RxD...logic will be
+     discarded.
+
+
+
+
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| MOSI                | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| CLOCK50             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SWITCH[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SWITCH[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SWITCH[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SWITCH[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| TxD                 | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| CS                  | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| SCLK                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| MISO                | INPUT     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| nRESET              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block uart/VCC undriven or does not drive anything - clipped.
+Block uart/tx/GND undriven or does not drive anything - clipped.
+Block uart/tx/VCC undriven or does not drive anything - clipped.
+Block driver/VCC undriven or does not drive anything - clipped.
+Block driver/SPI/VCC undriven or does not drive anything - clipped.
+Block driver/SPI/GND undriven or does not drive anything - clipped.
+Signal rwstate_i[1] was merged into signal rwstate[1]
+Signal state_i[1] was merged into signal state[1]
+Signal nRESET_c_i was merged into signal nRESET_c
+Signal GND undriven or does not drive anything - clipped.
+Signal fifo/GND undriven or does not drive anything - clipped.
+Signal uart/GND undriven or does not drive anything - clipped.
+Signal driver/GND undriven or does not drive anything - clipped.
+Signal counter_s_0_S1[25] undriven or does not drive anything - clipped.
+Signal counter_s_0_COUT[25] undriven or does not drive anything - clipped.
+Signal WD_DATA_3_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_6 undriven or does not drive anything - clipped.
+
+Signal WD_DATA_3_s_7_0_S1 undriven or does not drive anything - clipped.
+Signal WD_DATA_3_s_7_0_COUT undriven or does not drive anything - clipped.
+Signal un2_RD_ADDR_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un2_RD_ADDR_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_7 undriven or does not drive anything - clipped.
+Signal un2_RD_ADDR_s_31_0_S1 undriven or does not drive anything - clipped.
+Signal un2_RD_ADDR_s_31_0_COUT undriven or does not drive anything - clipped.
+Signal un2_WR_ADDR_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un2_WR_ADDR_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_8 undriven or does not drive anything - clipped.
+Signal un2_WR_ADDR_s_31_0_S1 undriven or does not drive anything - clipped.
+Signal un2_WR_ADDR_s_31_0_COUT undriven or does not drive anything - clipped.
+Signal fifo/AlmostEmpty undriven or does not drive anything - clipped.
+Signal fifo/DO17 undriven or does not drive anything - clipped.
+Signal fifo/DO16 undriven or does not drive anything - clipped.
+Signal fifo/DO15 undriven or does not drive anything - clipped.
+Signal fifo/DO14 undriven or does not drive anything - clipped.
+Signal fifo/DO13 undriven or does not drive anything - clipped.
+Signal fifo/DO12 undriven or does not drive anything - clipped.
+Signal fifo/DO11 undriven or does not drive anything - clipped.
+Signal fifo/DO10 undriven or does not drive anything - clipped.
+Signal fifo/DO9 undriven or does not drive anything - clipped.
+Signal fifo/DO8 undriven or does not drive anything - clipped.
+Signal uart/un7_counter_fast_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal uart/un7_counter_fast_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal uart/N_13 undriven or does not drive anything - clipped.
+Signal uart/un7_counter_fast_cry_5_0_COUT undriven or does not drive anything -
+     clipped.
+Signal driver/statecnt_rd_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal driver/N_1 undriven or does not drive anything - clipped.
+Signal driver/statecnt_rd_s_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal driver/statecnt_rd_s_0_COUT[11] undriven or does not drive anything -
+     clipped.
+Signal driver/statecnt_wr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal driver/N_2 undriven or does not drive anything - clipped.
+Signal driver/statecnt_wr_s_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal driver/statecnt_wr_s_0_COUT[11] undriven or does not drive anything -
+     clipped.
+Signal driver/statecnt_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal driver/N_3 undriven or does not drive anything - clipped.
+Signal driver/statecnt_s_0_S1[11] undriven or does not drive anything - clipped.
+     
+Signal driver/statecnt_s_0_COUT[11] undriven or does not drive anything -
+     clipped.
+Signal driver/len_counter_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal driver/N_4 undriven or does not drive anything - clipped.
+Signal driver/len_counter_s_0_S1[23] undriven or does not drive anything -
+     clipped.
+
+Signal driver/len_counter_s_0_COUT[23] undriven or does not drive anything -
+     clipped.
+Signal driver/un8_tickcounter_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal driver/un8_tickcounter_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal driver/N_5 undriven or does not drive anything - clipped.
+Signal driver/un8_tickcounter_cry_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal counter_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal N_5 undriven or does not drive anything - clipped.
+Block rwstate_RNIJ1F7[1] was optimized away.
+Block RD_EN_RNO was optimized away.
+Block nRESET_pad_RNI5681 was optimized away.
+Block GND was optimized away.
+Block fifo/GND was optimized away.
+Block uart/GND was optimized away.
+Block driver/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/fifo:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR fifo_dc_0_0:  TYPE= FIFO8KB,  Width= 8,  REGMODE= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
+
+     
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: fifo/fifo_dc_0_0
+         Type: FIFO8KB
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'nRESET_c' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 'nRESET_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+     These components have the GSR property set to DISABLED and are on the
+
+     inferred reset domain. The components will respond to the reset signal
+     'nRESET_c' via the local reset on the component and not the GSR component.
+
+     Type and number of components of the type: 
+   Register = 1 
+   FIFO8KB = 2
+
+     Type and instance name of component: 
+   Register : TX_STB
+   FIFO8KB : fifo/fifo_dc_0_0
+   FIFO8KB : fifo/fifo_dc_0_0
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 54 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

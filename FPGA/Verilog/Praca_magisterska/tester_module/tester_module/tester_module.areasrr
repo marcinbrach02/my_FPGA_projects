@@ -1,0 +1,106 @@
+----------------------------------------------------------------------
+Report for cell tester_module.verilog
+
+Register bits: 145 of 4320 (3%)
+PIC Latch:       0
+I/O cells:       8
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        3       100.0
+                            FD1P3AX        9       100.0
+                            FD1P3BX       10       100.0
+                            FD1P3DX       72       100.0
+                            FD1S3BX        8       100.0
+                            FD1S3DX       42       100.0
+                            FIFO8KB        1       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                           IFS1P3DX        1       100.0
+                                INV        6       100.0
+                                 OB        5       100.0
+                           OFS1P3BX        3       100.0
+                           ORCALUT4      302       100.0
+                              PFUMX        1       100.0
+                                PUR        1       100.0
+                                VHI        6       100.0
+                                VLO        6       100.0
+SUB MODULES 
+                           SPI_cont        1       100.0
+                card_driver_255s_9s        1       100.0
+            dev_uart_asy_50s_54s_6s        1       100.0
+                        dev_uart_tx        1       100.0
+                            fifo_dc        1       100.0
+                            
+                         TOTAL           485           
+----------------------------------------------------------------------
+Report for cell card_driver_255s_9s.netlist
+     Instance path:  driver
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        3       100.0
+                            FD1P3DX       54        75.0
+                            FD1S3BX        7        87.5
+                            FD1S3DX       25        59.5
+                                INV        3        50.0
+                           ORCALUT4      263        87.1
+                              PFUMX        1       100.0
+                                VHI        2        33.3
+                                VLO        2        33.3
+SUB MODULES 
+                           SPI_cont        1       100.0
+                            
+                         TOTAL           361           
+----------------------------------------------------------------------
+Report for cell SPI_cont.netlist
+     Instance path:  driver.SPI
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3DX       30        41.7
+                            FD1S3DX        1         2.4
+                                INV        1        16.7
+                           ORCALUT4       31        10.3
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            65           
+----------------------------------------------------------------------
+Report for cell dev_uart_asy_50s_54s_6s.netlist
+     Instance path:  uart
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        9        90.0
+                            FD1P3DX       18        25.0
+                            FD1S3BX        1        12.5
+                            FD1S3DX       15        35.7
+                                INV        1        16.7
+                           ORCALUT4       39        12.9
+                                VHI        2        33.3
+                                VLO        2        33.3
+SUB MODULES 
+                        dev_uart_tx        1       100.0
+                            
+                         TOTAL            88           
+----------------------------------------------------------------------
+Report for cell dev_uart_tx.netlist
+     Instance path:  uart.tx
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3BX        8        80.0
+                            FD1P3DX        9        12.5
+                            FD1S3BX        1        12.5
+                            FD1S3DX        2         4.8
+                           ORCALUT4       14         4.6
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL            36           
+----------------------------------------------------------------------
+Report for cell fifo_dc.netlist
+     Instance path:  fifo
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FIFO8KB        1       100.0
+                                VHI        1        16.7
+                                VLO        1        16.7
+                            
+                         TOTAL             3           

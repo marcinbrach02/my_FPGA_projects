@@ -1,2 +1,0 @@
-@E: CG389 :"E:\GIT\my_projects\SPI\SPI.v":205:2:205:6|Reference to undefined module fifo4
-

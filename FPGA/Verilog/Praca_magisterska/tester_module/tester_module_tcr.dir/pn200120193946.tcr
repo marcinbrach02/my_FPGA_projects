@@ -1,0 +1,4 @@
+#Start recording tcl command: 1/20/2020 19:37:36
+#Project Location: E:/GIT/my_projects/FPGA/Verilog/tester_module; Project name: tester_module
+prj_project open "E:/GIT/my_projects/FPGA/Verilog/tester_module/tester_module.ldf"
+#Stop recording: 1/20/2020 19:39:46

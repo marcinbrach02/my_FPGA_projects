@@ -1,5 +1,0 @@
-#Start recording tcl command: 9/19/2019 19:55:38
-#Project Location: E:/GIT/my_projects/FPGA/Verilog/microSD; Project name: microSD
-prj_project open "E:/GIT/my_projects/FPGA/Verilog/microSD/microSD.ldf"
-prj_run Export -impl microSD -task Jedecgen -forceAll
-#Stop recording: 9/19/2019 22:29:33

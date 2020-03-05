@@ -1,9 +1,0 @@
-#Start recording tcl command: 7/21/2019 21:31:59
-#Project Location: E:/GIT/my_projects/SPI; Project name: SPI
-prj_project new -name "SPI" -impl "SPI" -dev LCMXO2-4000HC-4TG144C -synthesis "synplify"
-prj_project save
-prj_src add "E:/GIT/my_projects/SPI/SPI.v"
-prj_run Export -impl SPI -task Jedecgen
-prj_src add "E:/GIT/my_projects/SPI/fifo4.v"
-prj_run Export -impl SPI -task Jedecgen
-#Stop recording: 7/21/2019 21:53:09

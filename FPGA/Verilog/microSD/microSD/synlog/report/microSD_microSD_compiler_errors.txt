@@ -1,2 +1,0 @@
-@E: CL123 :"E:\GIT\my_projects\FPGA\Verilog\microSD\microSD.v":34:0:34:5|Logic for period1[3:0] does not match a standard flip-flop
-
