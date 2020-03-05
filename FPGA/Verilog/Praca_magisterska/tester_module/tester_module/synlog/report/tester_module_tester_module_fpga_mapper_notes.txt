@@ -1,0 +1,59 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO106 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":131:0:131:3|Found ROM .delname. (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) with 139 words by 1 bit.
+@N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":130:0:130:5|There are no possible illegal states for state machine state[3:0] (in view: work.tester_module(verilog)); safe FSM implementation is not required.
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":65:0:65:5|Found counter in view:work.tester_module(verilog) instance counter[25:0] 
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance rxstb_and (in view: work.dev_uart_asy_50s_54s_6s(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: MO225 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":142:0:142:5|There are no possible illegal states for state machine txstate[3:0] (in view: work.dev_uart_asy_50s_54s_6s(verilog)); safe FSM implementation is not required.
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Found counter in view:work.card_driver_32s_24s_255s_0s_9s_11s(verilog) instance len_counter[23:0] 
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Found counter in view:work.card_driver_32s_24s_255s_0s_9s_11s(verilog) instance statecnt[11:0] 
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Found counter in view:work.card_driver_32s_24s_255s_0s_9s_11s(verilog) instance statecnt_wr[11:0] 
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Found counter in view:work.card_driver_32s_24s_255s_0s_9s_11s(verilog) instance statecnt_rd[11:0] 
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[6] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[5] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[4] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[3] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[2] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[1] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance RES_DATA[0] (in view: work.card_driver_32s_24s_255s_0s_9s_11s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: MO231 :"e:\git\my_projects\fpga\verilog\tester_module\spi_cont.v":35:0:35:5|Found counter in view:work.SPI_cont(verilog) instance period[3:0] 
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[7] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[6] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[5] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[4] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[3] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[2] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\tester_module.v":144:0:144:5|Removing sequential instance RxD_r[0] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance uart.rxstate[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance uart.rxstate[0] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_asy.v":103:0:103:5|Removing sequential instance uart.RX_STB (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.RxSTB (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxcnt[2] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxcnt[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxcnt[0] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":33:0:33:5|Removing sequential instance uart.rx.RxD_r[3] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":33:0:33:5|Removing sequential instance uart.rx.RxD_r[2] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":33:0:33:5|Removing sequential instance uart.rx.RxD_r[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":33:0:33:5|Removing sequential instance uart.rx.RxD_r[0] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[0] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[2] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[3] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[4] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[5] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[6] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[7] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[8] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[9] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[10] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[11] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\dev_uart_rx.v":42:0:42:5|Removing sequential instance uart.rx.rxstate[12] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: FX214 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":131:0:131:3|Generating ROM driver.CS_2_0[1:0] (in view: work.tester_module(verilog)).
+@N: BN362 :"e:\git\my_projects\fpga\verilog\tester_module\card_driver.v":92:0:92:5|Removing sequential instance driver.divider_m1[1] (in view: work.tester_module(verilog)) because it does not drive other instances.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: E:\GIT\my_projects\FPGA\Verilog\tester_module\tester_module\tester_module_tester_module.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.

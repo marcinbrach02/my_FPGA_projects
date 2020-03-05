@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="tester_module" device="LCMXO2-4000HC-4TG144C" default_implementation="tester_module">
+    <Options/>
+    <Implementation title="tester_module" dir="tester_module" description="tester_module" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="tester_module" top="tester_module"/>
+        <Source name="tester_module.v" type="Verilog" type_short="Verilog">
+            <Options top_module="tester_module"/>
+        </Source>
+        <Source name="SPI_cont.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="card_driver.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="dev_uart_rx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="dev_uart_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="dev_uart_asy.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="fifo_dc.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="tester_module.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="tester_module/tester_module.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="tester_module1.sty"/>
+</BaliProject>

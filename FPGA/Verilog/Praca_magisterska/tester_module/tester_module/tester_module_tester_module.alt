@@ -1,0 +1,23 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Mar 05 22:15:32 2020 *
+NOTE DESIGN NAME: tester_module *
+NOTE DEVICE NAME: LCMXO2-4000HC-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS MOSI : 12 : out *
+NOTE PINS CLOCK50 : 105 : in *
+NOTE PINS LED[3] : 20 : out *
+NOTE PINS LED[2] : 19 : out *
+NOTE PINS LED[1] : 17 : out *
+NOTE PINS LED[0] : 15 : out *
+NOTE PINS SWITCH[3] : 22 : in *
+NOTE PINS SWITCH[2] : 21 : in *
+NOTE PINS SWITCH[1] : 14 : in *
+NOTE PINS SWITCH[0] : 13 : in *
+NOTE PINS TxD : 122 : out *
+NOTE PINS CS : 10 : out *
+NOTE PINS SCLK : 9 : out *
+NOTE PINS MISO : 11 : in *
+NOTE PINS nRESET : 23 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *
