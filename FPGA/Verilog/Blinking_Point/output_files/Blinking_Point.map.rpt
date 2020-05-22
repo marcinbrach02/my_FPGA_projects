@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Blinking_Point
-Fri Apr 24 19:50:54 2020
+Fri May 22 15:30:48 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -15,8 +15,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |Blinking_Point|debouncer:debouncer1|state
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: debouncer:debouncer1
  14. Elapsed Time Per Partition
@@ -46,16 +46,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 24 19:50:54 2020           ;
+; Analysis & Synthesis Status        ; Successful - Fri May 22 15:30:48 2020           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Blinking_Point                                  ;
 ; Top-level Entity Name              ; Blinking_Point                                  ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 47                                              ;
-;     Total combinational functions  ; 30                                              ;
-;     Dedicated logic registers      ; 35                                              ;
-; Total registers                    ; 35                                              ;
-; Total pins                         ; 23                                              ;
+; Total logic elements               ; 145                                             ;
+;     Total combinational functions  ; 144                                             ;
+;     Dedicated logic registers      ; 82                                              ;
+; Total registers                    ; 82                                              ;
+; Total pins                         ; 22                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -174,28 +174,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 47    ;
+; Estimated Total logic elements              ; 145   ;
 ;                                             ;       ;
-; Total combinational functions               ; 30    ;
+; Total combinational functions               ; 144   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 11    ;
-;     -- 3 input functions                    ; 5     ;
-;     -- <=2 input functions                  ; 14    ;
+;     -- 4 input functions                    ; 43    ;
+;     -- 3 input functions                    ; 19    ;
+;     -- <=2 input functions                  ; 82    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 21    ;
-;     -- arithmetic mode                      ; 9     ;
+;     -- normal mode                          ; 88    ;
+;     -- arithmetic mode                      ; 56    ;
 ;                                             ;       ;
-; Total registers                             ; 35    ;
-;     -- Dedicated logic registers            ; 35    ;
+; Total registers                             ; 82    ;
+;     -- Dedicated logic registers            ; 82    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 23    ;
+; I/O pins                                    ; 22    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; reset ;
-; Maximum fan-out                             ; 35    ;
-; Total fan-out                               ; 229   ;
-; Average fan-out                             ; 2.60  ;
+; Maximum fan-out                             ; 82    ;
+; Total fan-out                               ; 674   ;
+; Average fan-out                             ; 2.72  ;
 +---------------------------------------------+-------+
 
 
@@ -204,8 +204,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
-; |Blinking_Point            ; 30 (15)           ; 35 (24)      ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |Blinking_Point                      ; work         ;
-;    |debouncer:debouncer1|  ; 15 (15)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Blinking_Point|debouncer:debouncer1 ; work         ;
+; |Blinking_Point            ; 144 (129)         ; 82 (70)      ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |Blinking_Point                      ; work         ;
+;    |debouncer:debouncer1|  ; 15 (15)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Blinking_Point|debouncer:debouncer1 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,29 +222,14 @@ Encoding Type:  One-Hot
 +-----------------+--------------+-----------------+-------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; counter[5..24]                         ; Merged with counter[25]                ;
-; counter[2..4,25]                       ; Stuck at GND due to stuck port data_in ;
-; debouncer:debouncer1|state~6           ; Lost fanout                            ;
-; debouncer:debouncer1|state.SET_O       ; Merged with debouncer:debouncer1|O     ;
-; period[4..25]                          ; Lost fanout                            ;
-; Total Number of Removed Registers = 48 ;                                        ;
-+----------------------------------------+----------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                 ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                          ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; counter[4]    ; Stuck at GND              ; period[4], period[5], period[6], period[7], period[8], period[9], period[10], period[11],       ;
-;               ; due to stuck port data_in ; period[12], period[13], period[14], period[15], period[16], period[17], period[18], period[19], ;
-;               ;                           ; period[20], period[21], period[22], period[23], period[24], period[25]                          ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; debouncer:debouncer1|state~6          ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -252,14 +237,26 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
+; Total registers                              ; 82    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Asynchronous Clear ; 82    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; counter[3]                             ; 13      ;
+; counter[0]                             ; 14      ;
+; counter[4]                             ; 4       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -267,8 +264,8 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Blinking_Point|counter[0]                   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Blinking_Point|debouncer:debouncer1|DCNT[7] ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |Blinking_Point|register[17]                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
@@ -277,7 +274,7 @@ Encoding Type:  One-Hot
 +----------------+-------+------------------------------------------+
 ; Parameter Name ; Value ; Type                                     ;
 +----------------+-------+------------------------------------------+
-; MIN_LEN        ; 20    ; Signed Integer                           ;
+; MIN_LEN        ; 2     ; Signed Integer                           ;
 +----------------+-------+------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -287,7 +284,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -297,7 +294,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 24 19:50:52 2020
+    Info: Processing started: Fri May 22 15:30:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Blinking_Point -c Blinking_Point
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file blinking_point.v
@@ -305,23 +302,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file blinkin
 Info (12021): Found 1 design units, including 1 entities, in source file debouncer.v
     Info (12023): Found entity 1: debouncer
 Info (12127): Elaborating entity "Blinking_Point" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Blinking_Point.v(29): truncated value with size 32 to match size of target (26)
+Warning (10230): Verilog HDL assignment warning at Blinking_Point.v(27): truncated value with size 32 to match size of target (26)
+Warning (10230): Verilog HDL assignment warning at Blinking_Point.v(35): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:debouncer1"
-Warning (10230): Verilog HDL assignment warning at debouncer.v(27): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at debouncer.v(28): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at debouncer.v(32): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at debouncer.v(33): truncated value with size 32 to match size of target (8)
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer Mux0
-Info (17049): 23 registers lost all their fanouts during netlist optimizations.
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 169 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4606 megabytes
-    Info: Processing ended: Fri Apr 24 19:50:54 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21059): Implemented 19 output pins
+    Info (21061): Implemented 147 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4605 megabytes
+    Info: Processing ended: Fri May 22 15:30:48 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
 
 

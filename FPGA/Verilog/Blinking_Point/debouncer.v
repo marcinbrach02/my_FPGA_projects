@@ -1,6 +1,11 @@
-module debouncer( input wire RST, input wire CLK, input wire I, output reg O );
+module debouncer( 
+	input wire RST, 
+	input wire CLK, 
+	input wire I, 
+	output reg O 
+);
 
-parameter MIN_LEN = 8;
+parameter MIN_LEN = 2;  //8;
 localparam WAIT_I= 0, SET_O = 1, DECR_DCNT = 2;
 
 reg[2:0] state, next_state;
