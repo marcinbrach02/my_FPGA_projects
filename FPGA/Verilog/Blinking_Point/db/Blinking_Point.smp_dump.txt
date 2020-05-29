@@ -1,0 +1,6 @@
+
+State Machine - |Blinking_Point|debouncer:debouncer1|state
+Name state.WAIT_I state.DECR_DCNT state.SET_O 
+state.WAIT_I 0 0 0 
+state.SET_O 1 0 1 
+state.DECR_DCNT 1 1 0 

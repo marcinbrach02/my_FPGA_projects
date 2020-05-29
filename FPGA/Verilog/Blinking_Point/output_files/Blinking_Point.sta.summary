@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'debouncer:debouncer1|O'
+Slack : -4.037
+TNS   : -43.619
+
+Type  : Slow Model Setup 'clock'
+Slack : -2.531
+TNS   : -39.191
+
+Type  : Slow Model Setup 'period[25]'
+Slack : -1.957
+TNS   : -19.829
+
+Type  : Slow Model Hold 'period[25]'
+Slack : -3.046
+TNS   : -48.756
+
+Type  : Slow Model Hold 'clock'
+Slack : -2.571
+TNS   : -2.571
+
+Type  : Slow Model Hold 'debouncer:debouncer1|O'
+Slack : -0.958
+TNS   : -6.198
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'period[25]'
+Slack : -0.500
+TNS   : -30.000
+
+Type  : Slow Model Minimum Pulse Width 'debouncer:debouncer1|O'
+Slack : -0.500
+TNS   : -26.000
+
+Type  : Fast Model Setup 'debouncer:debouncer1|O'
+Slack : -1.583
+TNS   : -9.478
+
+Type  : Fast Model Setup 'clock'
+Slack : -0.693
+TNS   : -6.093
+
+Type  : Fast Model Setup 'period[25]'
+Slack : -0.409
+TNS   : -3.363
+
+Type  : Fast Model Hold 'period[25]'
+Slack : -1.728
+TNS   : -28.020
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.462
+TNS   : -1.462
+
+Type  : Fast Model Hold 'debouncer:debouncer1|O'
+Slack : -0.738
+TNS   : -6.831
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'period[25]'
+Slack : -0.500
+TNS   : -30.000
+
+Type  : Fast Model Minimum Pulse Width 'debouncer:debouncer1|O'
+Slack : -0.500
+TNS   : -26.000
+
+------------------------------------------------------------

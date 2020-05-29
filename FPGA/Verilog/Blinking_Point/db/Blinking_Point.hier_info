@@ -1,0 +1,76 @@
+|Blinking_Point
+clock => period[0].CLK
+clock => period[1].CLK
+clock => period[2].CLK
+clock => period[3].CLK
+clock => period[4].CLK
+clock => period[5].CLK
+clock => period[6].CLK
+clock => period[7].CLK
+clock => period[8].CLK
+clock => period[9].CLK
+clock => period[10].CLK
+clock => period[11].CLK
+clock => period[12].CLK
+clock => period[13].CLK
+clock => period[14].CLK
+clock => period[15].CLK
+clock => period[16].CLK
+clock => period[17].CLK
+clock => period[18].CLK
+clock => period[19].CLK
+clock => period[20].CLK
+clock => period[21].CLK
+clock => period[22].CLK
+clock => period[23].CLK
+clock => period[24].CLK
+clock => period[25].CLK
+reset => rst.IN1
+rate => tempo.IN1
+clock_out <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= register[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= register[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= register[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= register[3].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= register[4].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= register[5].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= register[6].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= register[7].DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= register[8].DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= register[9].DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= register[10].DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= register[11].DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= register[12].DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= register[13].DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= register[14].DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= register[15].DB_MAX_OUTPUT_PORT_TYPE
+out[16] <= register[16].DB_MAX_OUTPUT_PORT_TYPE
+out[17] <= register[17].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Blinking_Point|debouncer:debouncer1
+RST => O~reg0.ACLR
+RST => DCNT[0].ACLR
+RST => DCNT[1].ACLR
+RST => DCNT[2].ACLR
+RST => DCNT[3].ACLR
+RST => DCNT[4].ACLR
+RST => DCNT[5].ACLR
+RST => DCNT[6].ACLR
+RST => DCNT[7].ACLR
+RST => state~3.DATAIN
+CLK => O~reg0.CLK
+CLK => DCNT[0].CLK
+CLK => DCNT[1].CLK
+CLK => DCNT[2].CLK
+CLK => DCNT[3].CLK
+CLK => DCNT[4].CLK
+CLK => DCNT[5].CLK
+CLK => DCNT[6].CLK
+CLK => DCNT[7].CLK
+CLK => state~1.DATAIN
+I => next_state.SET_O.DATAB
+I => Selector0.IN1
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

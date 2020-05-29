@@ -1,0 +1,35 @@
+module Blinking_Point(
+	input clk,
+	input rst,
+	
+	output wire [17:0] wy
+	
+);
+
+reg [25:0] period;
+reg [25:0] register;
+wire clk_new;
+
+always @(posedge clk or posedge rst)		   
+	if(rst) 								  
+		period <= 0;
+	else
+		period <= period + 1;
+
+assign clk_new = period[25];
+
+
+always @ (posedge clk_new or posedge rst)
+	if(rst)
+		register <= 0;
+	else if(clk_new)
+			register[0] <= 1;
+			//register <= register << 1;
+	else
+			register[0] <= 0;
+
+			
+assign wy = register;			
+
+
+endmodule
